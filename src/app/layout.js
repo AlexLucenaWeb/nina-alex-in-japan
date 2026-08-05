@@ -16,6 +16,14 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Nina & Alex in Japan",
   description: "A 21-day trip through Japan, day by day.",
+  appleWebApp: {
+    title: "Japan Trip",
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport = {
+  themeColor: "#A8321F",
 };
 
 export default function RootLayout({ children }) {
