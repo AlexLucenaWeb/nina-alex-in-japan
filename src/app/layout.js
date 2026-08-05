@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import SiteHeaderNav from "@/components/SiteHeaderNav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,10 +26,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <header className="border-b border-zinc-200 dark:border-zinc-800">
-          <div className="mx-auto flex w-full max-w-5xl items-center px-6 py-4">
+          <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
             <Link href="/" className="text-sm font-semibold tracking-tight">
               Nina &amp; Alex in Japan
             </Link>
+            <SiteHeaderNav />
           </div>
         </header>
         <main className="flex flex-1 flex-col">{children}</main>

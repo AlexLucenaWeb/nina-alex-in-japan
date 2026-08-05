@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* Tailwind v4 defaults to CSS-based config; @config opts back into tailwind.config.js */
+@config "../../tailwind.config.js";
 
 :root {
   --background: #ffffff;
