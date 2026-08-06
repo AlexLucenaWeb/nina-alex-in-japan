@@ -6,7 +6,7 @@ import { HIGASHIYAMA_GION_STOPS } from "@/data/higashiyama-gion-stops";
 export default function HigashiyamaGionItinerary() {
   return (
     <JapanRouteDayShell>
-      <div className="rounded-2xl border border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
+      <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
             Everything is done on foot:
@@ -30,7 +30,7 @@ export default function HigashiyamaGionItinerary() {
               {index < HIGASHIYAMA_GION_STOPS.length - 1 && (
                 <span
                   aria-hidden="true"
-                  className="absolute bottom-0 left-5 top-10 border-l border-dashed border-line"
+                  className="stop-connector absolute bottom-0 left-5 top-10 -translate-x-1/2"
                 />
               )}
               <span className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-momiji bg-card font-display text-sm font-semibold text-momiji">
@@ -42,7 +42,7 @@ export default function HigashiyamaGionItinerary() {
         </ol>
       </section>
 
-      <div className="rounded-2xl border border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
+      <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
         <h2 className="font-display text-lg font-semibold text-pine">
           Autumn illuminations (November)
         </h2>

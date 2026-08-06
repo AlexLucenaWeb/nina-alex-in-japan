@@ -1,18 +1,8 @@
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import SiteHeaderNav from "@/components/SiteHeaderNav";
+import { shipporiMincho, zenKakuGothicNew } from "@/lib/fonts";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Nina & Alex in Japan",
@@ -24,19 +14,34 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#A8321F",
+  // Matches --paper in each theme so the browser and PWA chrome blend into
+  // the page instead of sitting on it as a coloured band.
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#e7e1d4" },
+    { media: "(prefers-color-scheme: dark)", color: "#14110d" },
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${shipporiMincho.variable} ${zenKakuGothicNew.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <header className="border-b border-zinc-200 dark:border-zinc-800">
+      {/* Browser extensions (ColorZilla, Grammarly…) add their own attributes
+          to <body> before React hydrates, which React reports as a mismatch.
+          This silences that for this element's attributes only — it does not
+          cascade to children. */}
+      <body
+        suppressHydrationWarning
+        className="flex min-h-full flex-col bg-paper font-sans text-ink"
+      >
+        <header className="border-b border-line bg-paper">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-sm font-semibold tracking-tight">
+            <Link
+              href="/"
+              className="font-display text-sm font-semibold tracking-tight"
+            >
               Nina &amp; Alex in Japan
             </Link>
             <SiteHeaderNav />

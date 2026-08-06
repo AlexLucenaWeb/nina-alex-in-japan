@@ -1,28 +1,118 @@
 @import "tailwindcss";
-/* Tailwind v4 defaults to CSS-based config; @config opts back into tailwind.config.js */
-@config "../../tailwind.config.js";
+/* Tailwind v4 scans from this file's directory; src/ is the whole app. */
+@source "../";
 
+/*
+ * One palette for every page. Each colour is a plain CSS variable, so the dark
+ * theme is a single override block below and components never need a `dark:`
+ * variant — `bg-card` is correct in both themes.
+ *
+ * `@theme inline` is what makes that work: utilities compile to `var(--card)`
+ * instead of to whatever hex value was current when Tailwind ran.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  color-scheme: light dark;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --paper: #e7e1d4; /* page background */
+  --card: #fbf8f1; /* raised surfaces: cards, tables */
+  --band: #dcd4c3; /* header bars — deliberately not --card, so headers read
+                      as structure rather than as one more box */
+  --ink: #241e17; /* text — /70 for secondary, /50 for muted */
+  --line: #cdc3af; /* borders and rules */
+  --momiji: #a8321f; /* maple red: the one accent */
+  --on-momiji: #fbf8f1; /* text sitting on a momiji fill */
+  --ochre: #9c7020;
+  --pine: #4a5a44;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Neutral greys, no hue: warm near-blacks read as a brown cast on screen.
+       The warmth in this theme comes from the accents, not the surfaces. */
+    --paper: #121212;
+    --card: #1e1e1e;
+    /* Lighter than the cards here, darker than the page in the light theme:
+       either way the header is the heaviest surface on screen. */
+    --band: #2b2b2b;
+    --ink: #ebebeb;
+    --line: #3d3d3d;
+    /* The light theme's deep red disappears on a dark background, so this is a
+       lightened version of it — same hue (~9°), kept at ~5:1 against --paper.
+       Any lighter and it slides into salmon. */
+    --momiji: #e2543a;
+    --on-momiji: #141414;
+    --ochre: #d9a441;
+    --pine: #93a98a;
   }
 }
 
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-band: var(--band);
+  --color-ink: var(--ink);
+  --color-line: var(--line);
+  --color-momiji: var(--momiji);
+  --color-on-momiji: var(--on-momiji);
+  --color-ochre: var(--ochre);
+  --color-pine: var(--pine);
+}
+
+/* Fonts are not themed, so they stay in a regular @theme block: Tailwind's
+   --default-font-family reads --font-sans, and an inline block would leave it
+   with nothing to resolve. */
+@theme {
+  --font-sans: var(--font-zen-kaku-gothic-new), "Hiragino Kaku Gothic ProN",
+    system-ui, sans-serif;
+  --font-display: var(--font-shippori-mincho), "Hiragino Mincho ProN", serif;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* The dotted rail linking itinerary stops. Painted with a gradient rather than
+   border-dotted, which locks the dot size to the border width and gives no
+   control at all over the gap between dots. */
+.stop-connector {
+  width: 3px;
+  background-image: radial-gradient(
+    circle,
+    var(--line) 1.5px,
+    transparent 1.6px
+  );
+  background-size: 3px 12px;
+  background-repeat: repeat-y;
+}
+
+/*
+ * Leaflet ships its own light-only stylesheet and renders outside the React
+ * tree, so its chrome has to be themed here by hand.
+ */
+.leaflet-container {
+  background: var(--paper);
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background: var(--card);
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
+
+.leaflet-control-attribution {
+  background: color-mix(in oklab, var(--card) 85%, transparent);
+  color: color-mix(in oklab, var(--ink) 70%, transparent);
+}
+
+.leaflet-control-attribution a {
+  color: var(--momiji);
 }

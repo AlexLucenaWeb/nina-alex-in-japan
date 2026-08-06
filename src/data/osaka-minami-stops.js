@@ -1,11 +1,13 @@
+// No coordinates here, unlike the other route days: this day's map is a Google
+// My Maps embed, so the stop positions live in that map rather than the repo.
+// `maps` is a place-id (cid) link, which is what the stop cards link to — it
+// opens the place's Google listing, not a bare pin, so it needs no lat/lng.
 export const OSAKA_MINAMI_STOPS = [
   {
     n: 1,
     time: "12:30",
     name: "Namba Yasaka Jinja",
     jp: "難波八阪神社",
-    lat: 34.6615592,
-    lng: 135.4967039,
     hours: "6:30–17:00 · free",
     maps: "https://maps.google.com/?cid=9278387310004857503",
     photo:
@@ -17,8 +19,6 @@ export const OSAKA_MINAMI_STOPS = [
     time: "13:15",
     name: "Kuromon Ichiba Market",
     jp: "黒門市場",
-    lat: 34.6653511,
-    lng: 135.5062417,
     hours: "9:00–18:00",
     maps: "https://maps.google.com/?cid=12402117845945925953",
     photo:
@@ -30,8 +30,6 @@ export const OSAKA_MINAMI_STOPS = [
     time: "14:45",
     name: "Amerika-mura (Triangle Park)",
     jp: "アメリカ村",
-    lat: 34.6722072,
-    lng: 135.4978861,
     hours: "shops ~11:00–20:00",
     maps: "https://maps.google.com/?cid=7984796630724712892",
     photo:
@@ -43,8 +41,6 @@ export const OSAKA_MINAMI_STOPS = [
     time: "15:45",
     name: "Shinsaibashi-suji",
     jp: "心斎橋筋",
-    lat: 34.6725061,
-    lng: 135.5013659,
     hours: "shops ~11:00–20:00",
     maps: "https://maps.google.com/?cid=7087755665176380195",
     photo:
@@ -56,8 +52,6 @@ export const OSAKA_MINAMI_STOPS = [
     time: "17:00",
     name: "Hozenji Temple & Hozenji Yokocho",
     jp: "法善寺横丁",
-    lat: 34.6679398,
-    lng: 135.5024676,
     hours: "always open · free",
     maps: "https://maps.google.com/?cid=17670300510256525139",
     photo:
@@ -69,8 +63,6 @@ export const OSAKA_MINAMI_STOPS = [
     time: "17:45",
     name: "Dotonbori · Glico Man · Ebisubashi",
     jp: "道頓堀",
-    lat: 34.6689339,
-    lng: 135.5010679,
     hours: "best at night · dinner here",
     maps: "https://maps.google.com/?cid=6582327784679221695",
     photo:

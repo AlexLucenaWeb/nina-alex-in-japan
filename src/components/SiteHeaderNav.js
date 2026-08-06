@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Arrow from "@/components/Arrow";
 import { getDay } from "@/data/days";
+
+const LINK_CLASS =
+  "inline-flex items-center gap-1.5 font-medium text-ink/60 transition-colors hover:text-momiji";
 
 export default function SiteHeaderNav() {
   const pathname = usePathname();
@@ -15,25 +19,18 @@ export default function SiteHeaderNav() {
   return (
     <nav className="flex items-center gap-4 text-sm">
       {prev && (
-        <Link
-          href={`/day/${prev.day}`}
-          className="font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-        >
-          ← Day {prev.day}
+        <Link href={`/day/${prev.day}`} className={LINK_CLASS}>
+          <Arrow direction="left" />
+          Day {prev.day}
         </Link>
       )}
-      <Link
-        href="/"
-        className="font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-      >
+      <Link href="/" className={LINK_CLASS}>
         All days
       </Link>
       {next && (
-        <Link
-          href={`/day/${next.day}`}
-          className="font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-        >
-          Day {next.day} →
+        <Link href={`/day/${next.day}`} className={LINK_CLASS}>
+          Day {next.day}
+          <Arrow />
         </Link>
       )}
     </nav>

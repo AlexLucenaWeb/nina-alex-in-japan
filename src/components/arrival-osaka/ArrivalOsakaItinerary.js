@@ -11,7 +11,9 @@ import {
 
 function SectionHeading({ children }) {
   return (
-    <h2 className="text-xl font-semibold tracking-tight">{children}</h2>
+    <h2 className="font-display text-xl font-semibold tracking-tight">
+      {children}
+    </h2>
   );
 }
 
@@ -24,24 +26,20 @@ export default function ArrivalOsakaItinerary() {
           {DAY2_TIMELINE.map((item, index) => (
             <li
               key={index}
-              className={`flex gap-4 rounded-xl border px-4 py-3 text-sm leading-6 ${
+              className={`flex gap-4 rounded-xl border-2 px-4 py-3 text-sm leading-6 ${
                 item.highlight
-                  ? "border-rose-300 bg-rose-50 dark:border-rose-800 dark:bg-rose-950/30"
-                  : "border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950"
+                  ? "border-momiji/40 bg-momiji/5"
+                  : "border-line bg-card"
               }`}
             >
               <span
                 className={`w-24 shrink-0 font-medium ${
-                  item.highlight
-                    ? "text-rose-600 dark:text-rose-400"
-                    : "text-rose-500"
+                  item.highlight ? "font-semibold text-momiji" : "text-momiji"
                 }`}
               >
                 {item.time}
               </span>
-              <span className="text-zinc-600 dark:text-zinc-300">
-                {item.event}
-              </span>
+              <span className="text-ink/80">{item.event}</span>
             </li>
           ))}
         </ol>
@@ -51,21 +49,14 @@ export default function ArrivalOsakaItinerary() {
         <SectionHeading>Airport arrival process (NRT)</SectionHeading>
         <DataTable columns={["Step", "Duration", "Notes"]} minWidth={560}>
           {DAY2_AIRPORT_PROCESS.map((row, index) => (
-            <tr
-              key={index}
-              className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
-            >
-              <td className="px-4 py-3 font-medium text-zinc-800 dark:text-zinc-200">
-                {row.step}
-              </td>
-              <td className="px-4 py-3 text-rose-500">{row.duration}</td>
-              <td className="px-4 py-3 text-zinc-500 dark:text-zinc-400">
-                {row.notes}
-              </td>
+            <tr key={index} className="border-b border-line/50 last:border-0">
+              <td className="px-4 py-3 font-medium">{row.step}</td>
+              <td className="px-4 py-3 text-momiji">{row.duration}</td>
+              <td className="px-4 py-3 text-ink/70">{row.notes}</td>
             </tr>
           ))}
         </DataTable>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+        <p className="text-sm text-ink/60">
           Each traveler shows their own Visit Japan Web QR at immigration and
           customs — it&apos;s noticeably faster than the paper forms.
         </p>
@@ -78,29 +69,16 @@ export default function ArrivalOsakaItinerary() {
           minWidth={640}
         >
           {DAY2_TRAINS.map((row, index) => (
-            <tr
-              key={index}
-              className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
-            >
-              <td className="px-4 py-3 font-medium text-zinc-800 dark:text-zinc-200">
-                {row.leg}
-              </td>
-              <td className="px-4 py-3 text-zinc-600 dark:text-zinc-300">
-                {row.train}
-              </td>
-              <td className="px-4 py-3 text-rose-500">{row.duration}</td>
-              <td className="px-4 py-3 text-zinc-600 dark:text-zinc-300">
-                {row.price}
-              </td>
-              <td className="px-4 py-3 text-zinc-500 dark:text-zinc-400">
-                {row.arrival}
-              </td>
+            <tr key={index} className="border-b border-line/50 last:border-0">
+              <td className="px-4 py-3 font-medium">{row.leg}</td>
+              <td className="px-4 py-3 text-ink/80">{row.train}</td>
+              <td className="px-4 py-3 text-momiji">{row.duration}</td>
+              <td className="px-4 py-3 text-ink/80">{row.price}</td>
+              <td className="px-4 py-3 text-ink/70">{row.arrival}</td>
             </tr>
           ))}
         </DataTable>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          {DAY2_TRANSPORT_COST_NOTE}
-        </p>
+        <p className="text-sm text-ink/60">{DAY2_TRANSPORT_COST_NOTE}</p>
       </section>
 
       <section className="flex flex-col gap-3">
@@ -110,24 +88,20 @@ export default function ArrivalOsakaItinerary() {
 
       <section className="flex flex-col gap-3">
         <SectionHeading>Hotel in Osaka</SectionHeading>
-        <div className="flex flex-col gap-2 rounded-xl border border-dashed border-zinc-300 bg-zinc-50 px-4 py-4 text-sm leading-6 dark:border-zinc-700 dark:bg-zinc-900/40">
-          <p className="text-xs font-semibold uppercase tracking-wide text-rose-500">
+        <div className="flex flex-col gap-2 rounded-xl border-2 border-dashed border-line bg-card px-4 py-4 text-sm leading-6">
+          <p className="text-xs font-semibold uppercase tracking-wide text-momiji">
             Pending confirmation
           </p>
-          <p className="text-zinc-600 dark:text-zinc-300">
-            <span className="font-medium text-zinc-800 dark:text-zinc-200">
-              Name:
-            </span>{" "}
+          <p className="text-ink/80">
+            <span className="font-medium text-ink">Name:</span>{" "}
             {DAY2_HOTEL_PLACEHOLDER.name ?? "TBD"}
           </p>
-          <p className="text-zinc-600 dark:text-zinc-300">
-            <span className="font-medium text-zinc-800 dark:text-zinc-200">
-              Address:
-            </span>{" "}
+          <p className="text-ink/80">
+            <span className="font-medium text-ink">Address:</span>{" "}
             {DAY2_HOTEL_PLACEHOLDER.address ?? "TBD"}
           </p>
-          <p className="text-zinc-600 dark:text-zinc-300">
-            <span className="font-medium text-zinc-800 dark:text-zinc-200">
+          <p className="text-ink/80">
+            <span className="font-medium text-ink">
               Getting there from Shin-Osaka:
             </span>{" "}
             {DAY2_HOTEL_PLACEHOLDER.directions ?? "TBD"}

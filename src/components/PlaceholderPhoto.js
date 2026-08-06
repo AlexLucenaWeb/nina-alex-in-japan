@@ -1,7 +1,8 @@
+// Same gradient as StopPhoto's fallback so every missing photo looks alike.
 export default function PlaceholderPhoto({ label, className = "" }) {
   return (
     <div
-      className={`flex aspect-video w-full items-center justify-center rounded-xl bg-gradient-to-br from-rose-100 to-indigo-100 text-sm font-medium text-zinc-500 dark:from-zinc-800 dark:to-zinc-900 dark:text-zinc-400 ${className}`}
+      className={`flex aspect-video w-full items-center justify-center rounded-xl bg-gradient-to-br from-pine/15 via-ochre/10 to-momiji/10 font-display text-sm tracking-wide text-ink/50 ${className}`}
     >
       {label ?? "Photo coming soon"}
     </div>
