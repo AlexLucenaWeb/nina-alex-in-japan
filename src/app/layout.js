@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import SiteHeaderNav from "@/components/SiteHeaderNav";
 import "./globals.css";
 
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <main className="flex flex-1 flex-col">{children}</main>
+        <ServiceWorkerRegistrar />
       </body>
     </html>
   );
