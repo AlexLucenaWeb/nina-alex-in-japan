@@ -8,7 +8,7 @@
  * Bump VERSION on any change here — old caches are dropped on activate.
  */
 
-const VERSION = "v1";
+const VERSION = "v2";
 const DOCUMENTS = `documents-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
 const CURRENT_CACHES = [DOCUMENTS, ASSETS];
@@ -26,23 +26,47 @@ const PRECACHE_URLS = [
   ...Array.from({ length: TRIP_LENGTH }, (_, i) => `/day/${i + 1}`),
 ];
 
+// The stop photos, listed by scripts/photos.mjs. Fetched at install time
+// rather than hard-coded here so adding a day's photos needs no edit to this
+// file — running `npm run photos` is enough.
+const PHOTO_MANIFEST = "/photos/manifest.json";
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
-      const cache = await caches.open(DOCUMENTS);
-      // Not cache.addAll(): one failed URL would abort the whole precache.
-      await Promise.allSettled(
-        PRECACHE_URLS.map(async (url) => {
-          const response = await fetch(url, { cache: "reload" });
-          if (response.ok) {
-            await cache.put(url, response);
-          }
-        }),
-      );
+      await Promise.all([
+        precache(DOCUMENTS, PRECACHE_URLS),
+        precache(ASSETS, await photoUrls()),
+      ]);
       await self.skipWaiting();
     })(),
   );
 });
+
+async function photoUrls() {
+  try {
+    const response = await fetch(PHOTO_MANIFEST, { cache: "reload" });
+    if (!response.ok) return [];
+    return [PHOTO_MANIFEST, ...(await response.json())];
+  } catch {
+    // No manifest, no photos precached — the pages still work, and the images
+    // get cached individually as the fetch handler sees them.
+    return [];
+  }
+}
+
+async function precache(cacheName, urls) {
+  const cache = await caches.open(cacheName);
+  // Not cache.addAll(): one failed URL would abort the whole precache.
+  await Promise.allSettled(
+    urls.map(async (url) => {
+      const response = await fetch(url, { cache: "reload" });
+      if (response.ok) {
+        await cache.put(url, response);
+      }
+    }),
+  );
+}
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
@@ -65,8 +89,9 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
 
-  // Cross-origin requests (Google Photos images, Leaflet map tiles) are left
+  // Cross-origin requests (Leaflet map tiles, Google My Maps embeds) are left
   // alone: offline they just fail and the UI falls back to its placeholders.
+  // The stop photos are no longer among them — they live in /photos.
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {

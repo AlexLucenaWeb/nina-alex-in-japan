@@ -16,11 +16,16 @@ export default function StopPhoto({ src, label }) {
   }
 
   return (
-    // Remote Google Photos URLs expire; plain <img> avoids configuring next/image remote domains.
+    // Plain <img>, not next/image: scripts/photos.mjs already ships these at
+    // exactly one size, cropped to this aspect ratio, so there is nothing left
+    // to optimise at request time — and the files stay precacheable by the
+    // service worker under their own URLs.
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
       alt={label}
+      width={1000}
+      height={625}
       loading="lazy"
       onError={() => setFailed(true)}
       className="aspect-[16/10] w-full object-cover"

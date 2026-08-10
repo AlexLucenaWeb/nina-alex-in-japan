@@ -20,6 +20,21 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Photos
+
+Stop photos live in `public/photos` as 1000×625 WebP, committed to the repo so
+the itinerary still shows them offline and after the Google Places URLs expire.
+
+```bash
+npm run photos            # download whatever is missing
+npm run photos -- --force # re-download everything
+```
+
+To add one, put the image URL in a stop's `photoSource` and run `npm run photos`
+— it prints the `photo` path to set alongside it. It also rewrites
+`public/photos/manifest.json`, which the service worker precaches on install, so
+new photos are available offline without touching `public/sw.js`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -52,6 +52,22 @@ const overrides = {
       "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back is cheap and frequent.",
     ],
   },
+  6: {
+    title: "Himeji & Kobe",
+    date: "November 16 · Sunday",
+    location: "Himeji & Kobe (from Osaka)",
+    summary:
+      "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner.",
+    recommendations: [
+      "Leave Osaka around 08:00. The castle opens at 9:00, and arriving with it is the difference between walking in and queuing for tickets.",
+      "Buy the combined castle + Koko-en ticket (¥2,600) at the castle gate rather than paying for each separately. Under-18s get into the castle free.",
+      "Budget roughly ¥8,000 per person for the day including trains and entry — Kobe beef for dinner is on top of that.",
+      "The castle keep is steep, with narrow wooden stairs and no shoes allowed inside: easy shoes to take off and put back on save a lot of fumbling.",
+      "Book Kobe beef for dinner before you travel. The places worth going to fill up, and a Sunday night is no exception.",
+      "Nankinmachi is at its liveliest at weekends, so this Sunday afternoon is good timing — but it's street food, so keep lunch on Miyuki-dori light.",
+      "Sunset is around 17:00 in November and the route reaches Meriken Park at 16:45, which is when the port lights come on. Don't rush that last stretch.",
+    ],
+  },
   14: {
     title: "Higashiyama & Gion",
     location: "Kyoto",
