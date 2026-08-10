@@ -28,7 +28,7 @@ export default function OsakaMinamiItinerary() {
       </div>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">El recorrido</h2>
+        <h2 className="font-display text-2xl font-semibold">The route</h2>
 
         <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
           <DayMapEmbed mid={MY_MAPS_ID} />
@@ -40,7 +40,7 @@ export default function OsakaMinamiItinerary() {
           rel="noopener noreferrer"
           className="self-start text-sm text-momiji hover:underline"
         >
-          Abrir en Google Maps
+          Open in Google Maps
         </a>
       </section>
 

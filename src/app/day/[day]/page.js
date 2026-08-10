@@ -8,6 +8,7 @@ import HigashiyamaGionItinerary from "@/components/higashiyama-gion/HigashiyamaG
 import FlightItinerary from "@/components/flight-itinerary/FlightItinerary";
 import ArrivalOsakaItinerary from "@/components/arrival-osaka/ArrivalOsakaItinerary";
 import OsakaMinamiItinerary from "@/components/osaka-minami/OsakaMinamiItinerary";
+import NaraItinerary from "@/components/nara/NaraItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
 import { hasFoodSection } from "@/data/food";
@@ -22,6 +23,7 @@ const DAY_CONTENT = {
   ),
   2: () => <ArrivalOsakaItinerary />,
   3: () => <OsakaMinamiItinerary />,
+  4: () => <NaraItinerary />,
   14: () => <HigashiyamaGionItinerary />,
 };
 

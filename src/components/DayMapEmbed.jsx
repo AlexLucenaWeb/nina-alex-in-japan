@@ -63,7 +63,7 @@ export default function DayMapEmbed({ mid, height = DEFAULT_HEIGHT }) {
       {isOnline ? (
         <iframe
           src={`https://www.google.com/maps/d/embed?mid=${mid}`}
-          title="Mapa del día"
+          title="Map of the day"
           loading="lazy"
           className="block h-full w-full border-0"
         />
@@ -71,11 +71,10 @@ export default function DayMapEmbed({ mid, height = DEFAULT_HEIGHT }) {
         <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-paper px-6 text-center">
           <MapPinIcon />
           <p className="font-display text-lg font-semibold">
-            Mapa disponible con conexión
+            The map needs a connection
           </p>
           <p className="max-w-sm text-sm leading-6 text-ink/60">
-            Conéctate a internet para ver el recorrido. El itinerario de abajo
-            funciona sin conexión.
+            Get back online to see the route. The itinerary below works offline.
           </p>
         </div>
       )}

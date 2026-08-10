@@ -110,6 +110,78 @@ export const foodByDay = {
     reservations:
       "No bookings needed today — it's all casual street food and market grazing, walk-in everywhere. Only caveat: the famous Dotonbori okonomiyaki spots (Ajinoya) fill up at peak dinner (roughly 19:30–20:30). Go before 18:30 or after 21:00, or put your name on the door's waiting list and take a stroll.",
   },
+  4: {
+    dishesTitle: "What to eat in Nara",
+    meals: [
+      {
+        time: "12:15",
+        place: "Mizuya Chaya, Nara Park",
+        type: "Lunch",
+        reserve: false,
+        note: "A teahouse inside the park, between Tōdai-ji and Kasuga Taisha — udon, kudzu drinks, warabimochi and ice cream, at a table under the trees. The unhurried option, and the one that keeps you inside the park.",
+      },
+      {
+        time: "12:15",
+        place: "Kakinoha-zushi, wherever you like",
+        type: "Lunch, the other option",
+        reserve: false,
+        note: "Persimmon-leaf sushi, sold boxed along Sanjo-dori and at the stations. The leaf preserves it, so it travels — buy it in the morning and eat it on a bench in the park.",
+      },
+      {
+        time: "16:30",
+        place: "Nakatanidō",
+        type: "Street snack",
+        reserve: false,
+        note: "On Sanjo-dori, on the way into Naramachi at the end of the day. Time it well and you catch the famous high-speed mochi pounding out front; eat the yomogi mochi warm, standing there.",
+      },
+      {
+        time: "18:30",
+        place: "Naramachi",
+        type: "Dinner",
+        reserve: false,
+        note: "Dinner in the old merchant quarter before the train back. Small places inside machiya houses, all walk-in — pick one that looks good on the way through.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Yomogi mochi",
+        jp: "よもぎ餅",
+        desc: "Mugwort mochi, green and grassy, filled with red bean paste. Nakatanidō's is the one people queue for — best eaten within minutes of the pounding.",
+      },
+      {
+        name: "Kakinoha-zushi",
+        jp: "柿の葉寿司",
+        desc: "Pressed sushi of mackerel or salmon wrapped in a persimmon leaf. The leaf preserves it, so it keeps for hours — Nara's answer to a packed lunch.",
+      },
+      {
+        name: "Miwa sōmen",
+        jp: "三輪素麺",
+        desc: "Very fine wheat noodles said to have been born in Nara. Cold with dipping sauce, or hot in broth (nyūmen) as the weather turns.",
+      },
+      {
+        name: "Narazuke",
+        jp: "奈良漬",
+        desc: "Vegetables pickled in sake lees for months. Deep brown, sweet and boozy — an acquired taste, and a classic souvenir.",
+      },
+      {
+        name: "Kuzumochi & kuzukiri",
+        jp: "葛餅・葛切り",
+        desc: "Nara is arrowroot (kudzu) country: translucent jellies and noodles served cold with black sugar syrup. Teahouse food.",
+      },
+      {
+        name: "Chagayu",
+        jp: "茶粥",
+        desc: "Rice porridge simmered in roasted green tea. A thousand-year-old local breakfast, still served at old inns and temple restaurants.",
+      },
+      {
+        name: "Yamato beef & Yamato pork",
+        jp: "大和牛・大和ポーク",
+        desc: "The prefecture's own beef and pork. Turns up on set menus in Naramachi if you want a proper sit-down dinner.",
+      },
+    ],
+    reservations:
+      "Only one thing needs booking today, and it needs it early: the Aoniyoshi train (¥1,410 per person, sells out in November). The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
+  },
 };
 
 export function hasFoodSection(day) {

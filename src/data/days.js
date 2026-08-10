@@ -30,6 +30,28 @@ const overrides = {
     summary:
       "An easy-going day on foot through Osaka's Minami district: a quiet shrine, the Kuromon Ichiba food market, Amerika-mura, Shinsaibashi-suji, Hozenji Yokocho, and Dotonbori after dark. See the interactive map and stop-by-stop itinerary below.",
   },
+  4: {
+    title: "Day Trip to Nara",
+    date: "November 14",
+    location: "Nara (from Osaka)",
+    summary:
+      "A day out of Osaka on the Aoniyoshi sightseeing train, then everything on foot inside Nara Park: Kōfuku-ji, the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, and the light going gold over the Ukimidō pavilion. Deer throughout. Dinner in Naramachi before the train back.",
+    recommendations: [
+      {
+        text: "Book the Aoniyoshi as far ahead as you can — November fills it up, and it doesn't run on Thursdays. Seats go on sale at 10:30 Japan time exactly one month before the date of travel.",
+        link: {
+          href: "https://www.ticket.kintetsu.co.jp/vs/en/e-ticket/",
+          label: "Book on Kintetsu (English) →",
+        },
+      },
+      "Take your passport: it's what gets you into Yoshikien for free. Isuien next door is ¥1,200, and both close at 16:30 — the earliest closing time of the day.",
+      "A day almost entirely outdoors — comfortable shoes, and layers for the morning.",
+      "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
+      "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
+      "Sunset is around 17:00 in November. The route reaches Ukimidō at 15:30, and Naramachi is five minutes away — it's worth walking back to the pond at dusk before dinner.",
+      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back is cheap and frequent.",
+    ],
+  },
   14: {
     title: "Higashiyama & Gion",
     location: "Kyoto",
