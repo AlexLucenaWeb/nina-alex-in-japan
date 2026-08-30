@@ -8,7 +8,7 @@ import { OSAKA_MINAMI_STOPS } from "@/data/osaka-minami-stops";
 // without touching the stop coordinates in the repo.
 const MY_MAPS_ID = "1iayqCvduuz6nUscoAieibPQung10m9E";
 
-export default function OsakaMinamiItinerary() {
+export default function OsakaMinamiItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
@@ -43,6 +43,8 @@ export default function OsakaMinamiItinerary() {
           Open in Google Maps
         </a>
       </section>
+
+      {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>

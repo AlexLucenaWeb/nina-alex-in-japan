@@ -17,9 +17,13 @@ function SectionHeading({ children }) {
   );
 }
 
-export default function ArrivalOsakaItinerary() {
+export default function ArrivalOsakaItinerary({ food }) {
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-6">
+      {/* No route map on a travel day, so the food section stays up top rather
+          than after one, as it does on the walking days. */}
+      {food}
+
       <section className="flex flex-col gap-3">
         <SectionHeading>Timeline</SectionHeading>
         <ol className="flex flex-col gap-2">

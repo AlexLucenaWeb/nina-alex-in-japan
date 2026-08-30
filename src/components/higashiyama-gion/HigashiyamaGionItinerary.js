@@ -3,7 +3,7 @@ import RouteMapLoader from "@/components/route-itinerary/RouteMapLoader";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { HIGASHIYAMA_GION_STOPS } from "@/data/higashiyama-gion-stops";
 
-export default function HigashiyamaGionItinerary() {
+export default function HigashiyamaGionItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
@@ -20,6 +20,8 @@ export default function HigashiyamaGionItinerary() {
       <section aria-label="Route map" className="flex flex-col gap-3">
         <RouteMapLoader stops={HIGASHIYAMA_GION_STOPS} />
       </section>
+
+      {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>

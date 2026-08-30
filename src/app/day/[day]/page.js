@@ -16,17 +16,22 @@ import { hasFoodSection } from "@/data/food";
 
 // Each entry renders the full content block for that day number.
 // Days without an entry fall back to the placeholder photo below.
+//
+// `food` is the day's Food section, handed down as a slot rather than rendered
+// by this page: on the days that have a route map it belongs directly after it,
+// which is a position only the day's own component knows where to put.
 const DAY_CONTENT = {
-  1: () => (
-    <div className="mx-auto w-full max-w-3xl px-6">
+  1: ({ food }) => (
+    <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6">
+      {food}
       <FlightItinerary legs={DAY1_FLIGHT_LEGS} />
     </div>
   ),
-  2: () => <ArrivalOsakaItinerary />,
-  3: () => <OsakaMinamiItinerary />,
-  4: () => <NaraItinerary />,
-  6: () => <HimejiKobeItinerary />,
-  14: () => <HigashiyamaGionItinerary />,
+  2: (props) => <ArrivalOsakaItinerary {...props} />,
+  3: (props) => <OsakaMinamiItinerary {...props} />,
+  4: (props) => <NaraItinerary {...props} />,
+  6: (props) => <HimejiKobeItinerary {...props} />,
+  14: (props) => <HigashiyamaGionItinerary {...props} />,
 };
 
 export function generateStaticParams() {
@@ -57,6 +62,9 @@ export default async function DayPage({ params }) {
   const next = getDay(dayNumber + 1);
 
   const DayContent = DAY_CONTENT[dayNumber];
+  const foodSection = hasFoodSection(dayNumber) ? (
+    <FoodSection day={dayNumber} />
+  ) : null;
 
   return (
     <div className="flex w-full flex-col">
@@ -85,14 +93,13 @@ export default async function DayPage({ params }) {
             </p>
             <p className="text-base leading-7 text-ink/80">{current.summary}</p>
           </div>
-
-          {hasFoodSection(dayNumber) && <FoodSection day={dayNumber} />}
         </div>
 
         {DayContent ? (
-          <DayContent />
+          <DayContent food={foodSection} />
         ) : (
           <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6">
+            {foodSection}
             <PlaceholderPhoto label={`Day ${current.day} photo`} />
           </div>
         )}

@@ -12,7 +12,7 @@ import {
 // edited from Google Maps without touching the repo.
 const MY_MAPS_ID = "1OlDXc-HMyxnRVYUN-GS37j44hfZ6s0A";
 
-export default function HimejiKobeItinerary() {
+export default function HimejiKobeItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
@@ -79,6 +79,8 @@ export default function HimejiKobeItinerary() {
           Open in Google Maps
         </a>
       </section>
+
+      {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>

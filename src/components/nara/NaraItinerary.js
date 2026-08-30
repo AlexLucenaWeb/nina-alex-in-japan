@@ -8,7 +8,7 @@ import { NARA_STOPS } from "@/data/nara-stops";
 // stop data in the repo.
 const MY_MAPS_ID = "1E9hNlm0Ds5LztbAYOH7KQVfhVaQMY9Q";
 
-export default function NaraItinerary() {
+export default function NaraItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
@@ -43,6 +43,8 @@ export default function NaraItinerary() {
           Open in Google Maps
         </a>
       </section>
+
+      {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
