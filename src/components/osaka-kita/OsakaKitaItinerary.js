@@ -6,10 +6,7 @@ import { OSAKA_KITA_STOPS } from "@/data/osaka-kita-stops";
 // Same as Day 3 and Day 4: this day's route lives in a Google My Maps map
 // instead of the Leaflet component, so it can be edited from Google Maps
 // without touching the stop data in the repo.
-//
-// TODO: paste the mid here once the My Maps layer exists. Until then the map
-// section is skipped rather than embedding a broken iframe.
-const MY_MAPS_ID = null;
+const MY_MAPS_ID = "12hCMy2AWKi0KCxbBwTQ4fwouzRqWSSo";
 
 export default function OsakaKitaItinerary({ food }) {
   return (
@@ -88,24 +85,22 @@ export default function OsakaKitaItinerary({ food }) {
         </p>
       </section>
 
-      {MY_MAPS_ID && (
-        <section aria-label="Route map" className="flex flex-col gap-3">
-          <h2 className="font-display text-2xl font-semibold">The route</h2>
+      <section aria-label="Route map" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">The route</h2>
 
-          <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
-            <DayMapEmbed mid={MY_MAPS_ID} />
-          </div>
+        <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+          <DayMapEmbed mid={MY_MAPS_ID} />
+        </div>
 
-          <a
-            href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="self-start text-sm text-momiji hover:underline"
-          >
-            Open in Google Maps
-          </a>
-        </section>
-      )}
+        <a
+          href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start text-sm text-momiji hover:underline"
+        >
+          Open in Google Maps
+        </a>
+      </section>
 
       {food}
 
