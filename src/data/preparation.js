@@ -5,6 +5,7 @@ export const PREPARATION_CHECKLIST = [
       "Passport valid for your full stay — check the expiry date now, some airlines ask for extra margin beyond your trip.",
       "Confirm visa requirements for your nationality. EU/Spanish passport holders can typically enter Japan visa-free for tourism up to 90 days, but double-check current rules before flying.",
       "Register on Visit Japan Web ahead of time — it speeds up immigration and customs with a QR code.",
+      "Take out travel insurance before you fly — one that covers medical care and repatriation in Japan, where hospital bills are high and most treatment is paid up front.",
       "Save digital and printed copies of your flight itinerary, hotel bookings, and travel insurance policy.",
       "Photograph your passport and insurance documents and store them somewhere accessible offline.",
     ],
@@ -36,6 +37,13 @@ export const PREPARATION_CHECKLIST = [
       "Revolut — for card management and currency exchange.",
       "A transit app (Google Maps or Japan Transit Planner) for train times and platform info.",
       "Suica or PASMO in Apple Wallet / Google Wallet, if your phone supports it, for tap-to-pay on trains.",
+      "Your travel insurance app — log in before you fly so the policy number and the 24h assistance phone are one tap away.",
+    ],
+  },
+  {
+    category: "Packing",
+    items: [
+      "Buy comfortable walking shoes and break them in at home before the trip — expect 15-20 km a day between temples, stations, and city walking.",
     ],
   },
 ];
