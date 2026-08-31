@@ -1,4 +1,4 @@
-import BulletList from "@/components/BulletList";
+import PreparationChecklist from "@/components/PreparationChecklist";
 import { PREPARATION_CHECKLIST } from "@/data/preparation";
 
 export const metadata = {
@@ -19,20 +19,12 @@ export default function PreparationPage() {
         </h1>
         <p className="text-lg leading-8 text-ink/70">
           Everything to sort out before departure: documents, money,
-          connectivity, and the apps worth having installed.
+          connectivity, and the apps worth having installed. Tick things off as
+          you go — this page remembers what you have done on this device.
         </p>
       </header>
 
-      <div className="flex flex-col gap-8">
-        {PREPARATION_CHECKLIST.map((section) => (
-          <section key={section.category} className="flex flex-col gap-3">
-            <h2 className="font-display text-xl font-semibold tracking-tight">
-              {section.category}
-            </h2>
-            <BulletList items={section.items} icon="✓" />
-          </section>
-        ))}
-      </div>
+      <PreparationChecklist sections={PREPARATION_CHECKLIST} />
     </div>
   );
 }
