@@ -33,8 +33,10 @@ const QUALITY = 72;
 // the day number is what makes the filenames readable.
 const SOURCES = [
   { file: "src/data/osaka-minami-stops.js", day: 3 },
-  { file: "src/data/nara-stops.js", day: 4 },
-  { file: "src/data/himeji-kobe-stops.js", day: 6 },
+  { file: "src/data/nara-stops.js", day: 8 },
+  { file: "src/data/himeji-kobe-stops.js", day: 4 },
+  { file: "src/data/osaka-kita-stops.js", day: 5 },
+  { file: "src/data/universal-studios-stops.js", day: 6 },
   { file: "src/data/higashiyama-gion-stops.js", day: 14 },
 ];
 

@@ -26,8 +26,9 @@ export const DAY2_TIMELINE = [
     highlight: true,
   },
   {
-    time: "18:00–18:20",
-    event: "Transfer from Shin-Osaka to the hotel (pending)",
+    time: "18:00–18:25",
+    event:
+      "Shin-Osaka → Hotel Arashi Nippombashi 1 (Midosuji Line to Dobutsuen-mae, then Ebisucho)",
   },
 ];
 
@@ -88,13 +89,22 @@ export const DAY2_TIPS = [
   "Suica in Apple Wallet: activate and top it up with Revolut ideally before leaving Madrid, or right after landing (Apple Wallet lets you top up without a physical machine).",
   "Buy train tickets at the JR office/machines in Narita, paying with Revolut. The Nozomi can also be booked ahead via the smartEX app, but foreign cards sometimes fail 3D Secure there — the ticket counter doesn't have that problem.",
   "Oversized luggage (over 160 cm height + width + length combined): reserve the large-luggage seat on the Nozomi. It's free, but you have to ask for it explicitly.",
-  "You arrive at SHIN-OSAKA, not Osaka Station — they're different stations. From Shin-Osaka, the Midosuji subway line or a JR train gets you to the hotel in 5–15 min.",
+  "You arrive at SHIN-OSAKA, not Osaka Station — they're different stations. From Shin-Osaka the Midosuji subway line runs straight down to Dobutsuen-mae, the stop for the hotel, in about 16 minutes without changing trains.",
   "No rush: we land with the whole afternoon still ahead, so a slow immigration line doesn't put the rest of the day at risk.",
   "Seat E (right-hand side) on the Nozomi = Mt. Fuji views about 40–50 min after leaving Tokyo, weather permitting. Request it when booking.",
 ];
 
-export const DAY2_HOTEL_PLACEHOLDER = {
-  name: null,
-  address: null,
-  directions: null,
+// Where we sleep for the Osaka half of the trip: nights 2 to 6, checking out
+// on the morning of Day 7 to move up to Kyoto.
+export const DAY2_HOTEL = {
+  name: "Hotel Arashi Nippombashi 1",
+  jp: "嵐 日本橋1号店",
+  address: "5-13-18 Nipponbashi, Naniwa-ku, Osaka 556-0005",
+  maps: "https://www.google.com/maps/search/?api=1&query=Hotel+Arashi+Nippombashi+1+5-13-18+Nipponbashi+Naniwa-ku+Osaka",
+  station: "Ebisucho (Sakaisuji Line), 2 min on foot · Imamiyaebisu, 7 min",
+  checkIn: "16:00–24:00 (front desk open 24 h)",
+  checkOut: "Before 11:00",
+  directions:
+    "Midosuji Line from Shin-Osaka straight to Dobutsuen-mae (~16 min, ~¥290, no changes), then either one stop on the Sakaisuji Line to Ebisucho or a 10-minute walk. Roughly 25 minutes door to door with luggage.",
+  note: "In Nipponbashi, a few minutes from Den-Den Town and Tsutenkaku, and a 15-minute walk south of Dotonbori — the same Minami district Day 3 walks through.",
 };

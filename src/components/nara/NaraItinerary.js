@@ -78,9 +78,9 @@ export default function NaraItinerary({ food }) {
             The way home
           </h3>
           <p className="mt-2">
-            Back from Kintetsu-Nara: the Aoniyoshi runs in the afternoon too, or
-            take a regular Kintetsu train — far more frequent and only ¥680.
-            Either way you land back in Osaka-Namba.
+            Back to Kyoto from Kintetsu-Nara: a regular Kintetsu express (¥760,
+            ~45 min) or a limited express (¥1,280, ~35 min), both frequent
+            enough that there is no need to plan a train after dinner.
           </p>
         </div>
 

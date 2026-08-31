@@ -6,7 +6,7 @@ import {
   DAY2_TRAINS,
   DAY2_TRANSPORT_COST_NOTE,
   DAY2_TIPS,
-  DAY2_HOTEL_PLACEHOLDER,
+  DAY2_HOTEL,
 } from "@/data/day2-arrival";
 
 function SectionHeading({ children }) {
@@ -92,24 +92,47 @@ export default function ArrivalOsakaItinerary({ food }) {
 
       <section className="flex flex-col gap-3">
         <SectionHeading>Hotel in Osaka</SectionHeading>
-        <div className="flex flex-col gap-2 rounded-xl border-2 border-dashed border-line bg-card px-4 py-4 text-sm leading-6">
-          <p className="text-xs font-semibold uppercase tracking-wide text-momiji">
-            Pending confirmation
-          </p>
-          <p className="text-ink/80">
-            <span className="font-medium text-ink">Name:</span>{" "}
-            {DAY2_HOTEL_PLACEHOLDER.name ?? "TBD"}
-          </p>
-          <p className="text-ink/80">
-            <span className="font-medium text-ink">Address:</span>{" "}
-            {DAY2_HOTEL_PLACEHOLDER.address ?? "TBD"}
-          </p>
-          <p className="text-ink/80">
-            <span className="font-medium text-ink">
-              Getting there from Shin-Osaka:
-            </span>{" "}
-            {DAY2_HOTEL_PLACEHOLDER.directions ?? "TBD"}
-          </p>
+        <div className="flex flex-col gap-3 rounded-xl border-2 border-line bg-card px-4 py-4 text-sm leading-6">
+          <div>
+            <p className="font-display text-lg font-semibold tracking-tight">
+              {DAY2_HOTEL.name}
+            </p>
+            <p className="text-ink/60">{DAY2_HOTEL.jp}</p>
+          </div>
+
+          <dl className="flex flex-col gap-2">
+            <div>
+              <dt className="inline font-medium text-ink">Address: </dt>
+              <dd className="inline text-ink/80">{DAY2_HOTEL.address}</dd>
+            </div>
+            <div>
+              <dt className="inline font-medium text-ink">Nearest station: </dt>
+              <dd className="inline text-ink/80">{DAY2_HOTEL.station}</dd>
+            </div>
+            <div>
+              <dt className="inline font-medium text-ink">
+                Getting there from Shin-Osaka:{" "}
+              </dt>
+              <dd className="inline text-ink/80">{DAY2_HOTEL.directions}</dd>
+            </div>
+            <div>
+              <dt className="inline font-medium text-ink">Check-in: </dt>
+              <dd className="inline text-ink/80">
+                {DAY2_HOTEL.checkIn} · check-out {DAY2_HOTEL.checkOut}
+              </dd>
+            </div>
+          </dl>
+
+          <p className="text-ink/70">{DAY2_HOTEL.note}</p>
+
+          <a
+            href={DAY2_HOTEL.maps}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start text-momiji hover:underline"
+          >
+            Open in Google Maps
+          </a>
         </div>
       </section>
     </div>

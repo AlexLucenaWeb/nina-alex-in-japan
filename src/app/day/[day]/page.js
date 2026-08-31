@@ -8,8 +8,10 @@ import HigashiyamaGionItinerary from "@/components/higashiyama-gion/HigashiyamaG
 import FlightItinerary from "@/components/flight-itinerary/FlightItinerary";
 import ArrivalOsakaItinerary from "@/components/arrival-osaka/ArrivalOsakaItinerary";
 import OsakaMinamiItinerary from "@/components/osaka-minami/OsakaMinamiItinerary";
+import OsakaKitaItinerary from "@/components/osaka-kita/OsakaKitaItinerary";
 import NaraItinerary from "@/components/nara/NaraItinerary";
 import HimejiKobeItinerary from "@/components/himeji-kobe/HimejiKobeItinerary";
+import UniversalStudiosItinerary from "@/components/universal-studios/UniversalStudiosItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
 import { hasFoodSection } from "@/data/food";
@@ -29,8 +31,10 @@ const DAY_CONTENT = {
   ),
   2: (props) => <ArrivalOsakaItinerary {...props} />,
   3: (props) => <OsakaMinamiItinerary {...props} />,
-  4: (props) => <NaraItinerary {...props} />,
-  6: (props) => <HimejiKobeItinerary {...props} />,
+  4: (props) => <HimejiKobeItinerary {...props} />,
+  5: (props) => <OsakaKitaItinerary {...props} />,
+  6: (props) => <UniversalStudiosItinerary {...props} />,
+  8: (props) => <NaraItinerary {...props} />,
   14: (props) => <HigashiyamaGionItinerary {...props} />,
 };
 

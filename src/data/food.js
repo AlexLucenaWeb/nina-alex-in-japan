@@ -31,35 +31,35 @@ export const FOOD_LAST_DAY = 20;
 
 export const foodByDay = {
   3: {
-    dishesTitle: "What to eat in Minami",
+    dishesTitle: "What to eat in the South & Minami",
     meals: [
       {
-        time: "13:15",
+        time: "11:30",
+        place: "Shinsekai",
+        type: "Lunch · kushikatsu",
+        reserve: false,
+        note: "The reason the route comes through here. Kushikatsu Daruma (the icon, with the angry chef on the sign) or Yaekatsu, quieter and just as good. Both are counters, both are walk-in, and both fill up at peak lunch — going at 11:30 is what keeps it a short wait.",
+      },
+      {
+        time: "13:30",
         place: "Kuromon Ichiba Market",
         type: "Market grazing",
         reserve: false,
-        note: "Graze stall to stall (tabe-aruki). Many stalls grill and serve on the spot — pick dishes, not a restaurant.",
+        note: "Not a second lunch: graze stall to stall (tabe-aruki), a skewer here and an oyster there. Many stalls grill and serve on the spot — pick dishes, not a restaurant.",
       },
       {
-        time: "14:45",
-        place: "Triangle Park, Amerika-mura",
-        type: "Street snack",
-        reserve: false,
-        note: "Grab a takoyaki and sit for a bit. Just a snack, not a full meal.",
-      },
-      {
-        time: "18:00",
+        time: "18:30",
         place: "Dotonbori",
         type: "Dinner",
         reserve: false,
-        note: "Okonomiyaki at Ajinoya or Fugetsu — both a short walk from the canal.",
+        note: "Okonomiyaki at Ajinoya or Fugetsu, both a short walk from the canal. Around it: a 551 Horai butaman on the go, and Rikuro's warm cheesecake just off the water for dessert.",
       },
     ],
     dishes: [
       {
         name: "Takoyaki",
         jp: "たこ焼き",
-        desc: "Batter balls filled with octopus, topped with sweet sauce, mayo, bonito flakes and seaweed. Osaka's signature. Try Wanaka or Kukuru nearby.",
+        desc: "Batter balls filled with octopus, topped with sweet sauce, mayo, bonito flakes and seaweed. Osaka's signature. Wanaka and Kukuru both have counters around Dotonbori.",
       },
       {
         name: "Okonomiyaki",
@@ -69,7 +69,7 @@ export const foodByDay = {
       {
         name: "Kushikatsu",
         jp: "串カツ",
-        desc: "Battered, deep-fried skewers dipped in a shared sauce. Sacred rule: dip ONCE only — no double-dipping. Shinsekai is the mecca; Kushikatsu Daruma is the icon.",
+        desc: "Battered, deep-fried skewers dipped in a shared sauce. Sacred rule: dip ONCE only — the sauce pot is shared with the whole counter, and there's a cabbage leaf on the table for scooping more. Shinsekai is the mecca, and it's where you're eating lunch: Daruma is the icon, Yaekatsu the calmer alternative.",
       },
       {
         name: "Butaman",
@@ -108,9 +108,29 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "No bookings needed today — it's all casual street food and market grazing, walk-in everywhere. Only caveat: the famous Dotonbori okonomiyaki spots (Ajinoya) fill up at peak dinner (roughly 19:30–20:30). Go before 18:30 or after 21:00, or put your name on the door's waiting list and take a stroll.",
+      "No bookings needed today — kushikatsu counters, market stalls and okonomiyaki griddles are all walk-in. Two caveats, one at each end of the day: Kushikatsu Daruma's Shinsekai branches queue out of the door from about 12:00, which is why lunch is at 11:30; and the famous Dotonbori okonomiyaki spots (Ajinoya) fill up at peak dinner, roughly 19:30–20:30. Sitting down at 18:30 lands you ahead of both.",
   },
-  4: {
+  5: {
+    meals: [
+      {
+        time: "12:45",
+        place: "Takimi Koji, under the Umeda Sky Building",
+        type: "Lunch",
+        reserve: false,
+        note: "A food alley in the basement dressed as a 1920s street — okonomiyaki, yakitori, katsu, bento. All walk-in, and you're already in the building you're about to go up. Closed Thursdays, which this day isn't.",
+      },
+      {
+        time: "19:00",
+        place: "Dotonbori",
+        type: "Dinner",
+        reserve: false,
+        note: "Hareruya leaves you five minutes from the canal, so dinner is whenever you're done there. Okonomiyaki at Ajinoya or Fugetsu, or two stops down the Sakaisuji Line for another round of kushikatsu in Shinsekai.",
+      },
+    ],
+    reservations:
+      "Nothing to book today. The only thing worth knowing is that lunch is early on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so eating at 12:45 is what gets you up there in time. Dinner has no such constraint: Hareruya is open until 23:00 at weekends, so the evening runs as long as you want it to.",
+  },
+  8: {
     dishesTitle: "What to eat in Nara",
     meals: [
       {
@@ -180,7 +200,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "Only one thing needs booking today, and it needs it early: the Aoniyoshi train (¥1,410 per person, sells out in November). The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
+      "Nothing here needs booking — the only thing that might is the train out of Kyoto, if you end up taking the Aoniyoshi (¥1,490 per person, sells out in November). The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
   },
 };
 

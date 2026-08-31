@@ -24,21 +24,73 @@ const overrides = {
       "Landing at Narita and heading straight for Osaka: immigration with the Visit Japan Web QR, the Narita Express to Tokyo Station, then the Nozomi Shinkansen down to Shin-Osaka. Full airport process, train details, and a pre-flight checklist below.",
   },
   3: {
-    title: "Osaka on Foot: Minami",
+    title: "Osaka on Foot: South & Minami",
     date: "November 13",
     location: "Osaka",
     summary:
-      "An easy-going day on foot through Osaka's Minami district: a quiet shrine, the Kuromon Ichiba food market, Amerika-mura, Shinsaibashi-suji, Hozenji Yokocho, and Dotonbori after dark. See the interactive map and stop-by-stop itinerary below.",
+      "Osaka from south to north, on foot: the old temple at Shitenno-ji, kushikatsu under the Tsutenkaku tower in Shinsekai, then across into Minami for a quiet shrine, the Kuromon Ichiba food market, Shinsaibashi-suji and the lantern alley at Hozenji — finishing in Dotonbori as the neon comes on. See the interactive map and stop-by-stop itinerary below.",
   },
   4: {
-    title: "Day Trip to Nara",
+    title: "Himeji & Kobe",
     date: "November 14",
-    location: "Nara (from Osaka)",
+    location: "Himeji & Kobe (from Osaka)",
     summary:
-      "A day out of Osaka on the Aoniyoshi sightseeing train, then everything on foot inside Nara Park: Kōfuku-ji, the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, and the light going gold over the Ukimidō pavilion. Deer throughout. Dinner in Naramachi before the train back.",
+      "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner.",
+    recommendations: [
+      "Leave Osaka around 08:00. The castle opens at 9:00, and arriving with it is the difference between walking in and queuing for tickets.",
+      "Buy the combined castle + Koko-en ticket (¥2,600) at the castle gate rather than paying for each separately. Under-18s get into the castle free.",
+      "Budget roughly ¥8,000 per person for the day including trains and entry — Kobe beef for dinner is on top of that.",
+      "The castle keep is steep, with narrow wooden stairs and no shoes allowed inside: easy shoes to take off and put back on save a lot of fumbling.",
+      "Book Kobe beef for dinner before you travel. The places worth going to fill up, weeknight or not.",
+      "Nankinmachi is at its liveliest at weekends — but it's street food either way, so keep lunch on Miyuki-dori light.",
+      "Sunset is around 17:00 in November and the route reaches Meriken Park at 16:45, which is when the port lights come on. Don't rush that last stretch.",
+    ],
+  },
+  5: {
+    title: "Osaka Kita: Castle, River & Umeda",
+    date: "November 15",
+    location: "Osaka",
+    summary:
+      "The other half of Osaka: the castle and its park first thing, the Ōkawa river by boat across to the red brick of Nakanoshima, lunch and the 173 m open-air observatory at Umeda, then back south for the shrine, Japan's longest shopping arcade and Magic: The Gathering to finish. The day the Osaka Amazing Pass earns its keep.",
+    recommendations: [
+      "Buy the Amazing Pass the night before. It's digital now, so there's nothing to queue for in the morning — and paying the three entries separately costs about ¥2,400 more per person.",
+      "Be up the Umeda Sky Building before 15:00. After that the pass gives 10% off instead of free entry, which is most of the day's saving gone in one stop.",
+      "The castle keep is a 1930s concrete reconstruction with a museum inside. If museums aren't the plan, the park, the moats and the walls are free and are the better part anyway.",
+      "Tenjinbashisuji runs 2.6 km — nobody walks all of it. Drop in at the Tenmangu end and come out at whichever metro stop you've had enough at.",
+      "Take your passports: Hareruya is tax-free, and it's the kind of shop where that adds up.",
+      "The Aqua-liner runs hourly from the castle pier between 10:00 and 16:00. Missing the 11:00 costs a full hour, so it's the one departure worth watching the clock for.",
+    ],
+  },
+  6: {
+    title: "Universal Studios Japan",
+    date: "November 16",
+    location: "Universal Studios Japan, Osaka",
+    summary:
+      "A full day inside USJ: Super Nintendo World first thing, Hogsmeade and the Forbidden Journey late morning, dinosaurs after lunch, and the Minion Park and Hollywood end of the park as the light goes. Dinner at CityWalk on the way out.",
+    recommendations: [
+      "Express Pass is the alternative to the 07:30 queue: it's expensive, sells out online well before the date, and the versions that include Super Nintendo World are the first to go. Decide which side of that trade-off you're on before booking anything.",
+      "A day almost entirely on your feet and outdoors, with long stretches queuing without moving — comfortable shoes, and a warm layer for standing still in November.",
+      "The app shows live waiting times for every ride. Checking it before walking across the park is the difference between three big attractions in an afternoon and one.",
+      "Lockers by the entrance are worth the coins: the water rides in Jurassic Park mean carrying a wet coat around otherwise.",
+      "Last trains from Universal City are around 23:30, so there's no pressure on dinner at CityWalk — the pressure is all in the morning.",
+    ],
+  },
+  7: {
+    title: "Osaka → Kyoto",
+    date: "November 17",
+    location: "Osaka → Kyoto",
+    summary:
+      "Moving base: an early check-out in Osaka and the short hop up to Kyoto, which is home for the rest of the trip. The rest of the day is still open.",
+  },
+  8: {
+    title: "Day Trip to Nara",
+    date: "November 18",
+    location: "Nara (from Kyoto)",
+    summary:
+      "A day out of Kyoto, then everything on foot inside Nara Park: Kōfuku-ji, the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, and the light going gold over the Ukimidō pavilion. Deer throughout. Dinner in Naramachi before the train back.",
     recommendations: [
       {
-        text: "Book the Aoniyoshi as far ahead as you can — November fills it up, and it doesn't run on Thursdays. Seats go on sale at 10:30 Japan time exactly one month before the date of travel.",
+        text: "Still to settle: which train out. Kyoto–Kintetsu-Nara is ~35 min by limited express (¥1,280) or ~45 min on a regular express (¥760). The Aoniyoshi sightseeing train also runs this line, but its first departure from Kyoto is 10:55 — later than the 10:15 start below. If you want it, book as far ahead as you can (¥1,490, no service on Thursdays, seats on sale at 10:30 Japan time exactly one month before).",
         link: {
           href: "https://www.ticket.kintetsu.co.jp/vs/en/e-ticket/",
           label: "Book on Kintetsu (English) →",
@@ -49,23 +101,7 @@ const overrides = {
       "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
       "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
       "Sunset is around 17:00 in November. The route reaches Ukimidō at 15:30, and Naramachi is five minutes away — it's worth walking back to the pond at dusk before dinner.",
-      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back is cheap and frequent.",
-    ],
-  },
-  6: {
-    title: "Himeji & Kobe",
-    date: "November 16 · Sunday",
-    location: "Himeji & Kobe (from Osaka)",
-    summary:
-      "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner.",
-    recommendations: [
-      "Leave Osaka around 08:00. The castle opens at 9:00, and arriving with it is the difference between walking in and queuing for tickets.",
-      "Buy the combined castle + Koko-en ticket (¥2,600) at the castle gate rather than paying for each separately. Under-18s get into the castle free.",
-      "Budget roughly ¥8,000 per person for the day including trains and entry — Kobe beef for dinner is on top of that.",
-      "The castle keep is steep, with narrow wooden stairs and no shoes allowed inside: easy shoes to take off and put back on save a lot of fumbling.",
-      "Book Kobe beef for dinner before you travel. The places worth going to fill up, and a Sunday night is no exception.",
-      "Nankinmachi is at its liveliest at weekends, so this Sunday afternoon is good timing — but it's street food, so keep lunch on Miyuki-dori light.",
-      "Sunset is around 17:00 in November and the route reaches Meriken Park at 16:45, which is when the port lights come on. Don't rush that last stretch.",
+      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
     ],
   },
   14: {

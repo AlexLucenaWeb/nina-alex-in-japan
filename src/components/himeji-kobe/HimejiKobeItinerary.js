@@ -126,7 +126,7 @@ export default function HimejiKobeItinerary({ food }) {
             Lunch is on Miyuki-dori before the train: Himeji oden in its
             soy-ginger broth, or anago-don. In Kobe, Nankinmachi is street food
             — butaman, Kobe-beef croquettes, skewers — and it&apos;s at its
-            liveliest on a Sunday like this one. Save room for dinner.
+            liveliest at weekends. Save room for dinner.
           </p>
         </div>
 

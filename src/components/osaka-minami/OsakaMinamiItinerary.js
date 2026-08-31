@@ -14,16 +14,26 @@ export default function OsakaMinamiItinerary({ food }) {
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
-            Everything is done on foot:
+            Two districts in one day, south to north:
           </span>{" "}
-          about 2.5 km total, 5–15 minutes between stops. It&apos;s an
-          easy-going day by design — a soft landing for the jet lag. The
-          order is flexible, except for one thing:{" "}
-          <span className="font-semibold">Dotonbori has to be at night</span>.
+          the temple and the old Shinsekai quarter around Tennoji in the
+          morning, then Minami for the afternoon and evening. About 4 km on
+          foot in total, plus one metro hop between stops 2 and 3 — everything
+          else is walked, 5–15 minutes at a time.
         </p>
         <p className="mt-2">
-          Feeling like electronics or anime shopping? Den Den Town slots in
-          neatly as a detour between stops 2 and 3.
+          The order is flexible in the middle, but not at the two ends:{" "}
+          <span className="font-semibold">
+            lunch is kushikatsu in Shinsekai
+          </span>{" "}
+          (the whole reason the route goes through there), and{" "}
+          <span className="font-semibold">Dotonbori has to be at night</span> —
+          you arrive for sunset around 17:00 and sit down to dinner at
+          18:30–19:00, not before.
+        </p>
+        <p className="mt-2">
+          Feeling like electronics or anime shopping? Den Den Town sits right
+          between stops 2 and 4 and slots in as a detour.
         </p>
       </div>
 
