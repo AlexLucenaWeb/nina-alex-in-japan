@@ -51,14 +51,14 @@ const overrides = {
     date: "November 15",
     location: "Osaka",
     summary:
-      "The other half of Osaka: the castle and its park first thing, the Ōkawa river by boat across to the red brick of Nakanoshima, lunch and the 173 m open-air observatory at Umeda, then back south for the shrine, Japan's longest shopping arcade and Magic: The Gathering to finish. The day the Osaka Amazing Pass earns its keep.",
+      "The other half of Osaka: a long morning at the castle and its park, the Ōkawa river by boat as far as OAP and a walk across to the red brick of Nakanoshima, the 173 m open-air observatory at Umeda with lunch underneath it, then back south for the shrine, Japan's longest shopping arcade and Magic: The Gathering to finish. The day the Osaka Amazing Pass earns its keep.",
     recommendations: [
-      "Buy the Amazing Pass the night before. It's digital now, so there's nothing to queue for in the morning — and paying the three entries separately costs about ¥2,400 more per person.",
-      "Be up the Umeda Sky Building before 15:00. After that the pass gives 10% off instead of free entry, which is most of the day's saving gone in one stop.",
-      "The castle keep is a 1930s concrete reconstruction with a museum inside. If museums aren't the plan, the park, the moats and the walls are free and are the better part anyway.",
+      "Buy the Amazing Pass the night before. It's digital now, so there's nothing to queue for in the morning — and paying the day separately comes to about ¥4,300–4,500 a head against ¥3,300 for the pass.",
+      "Be up the Umeda Sky Building before 15:00. After that the pass gives 10% off instead of free entry, which is most of the day's saving gone in one stop — which is why the observatory comes at 14:00 and lunch after it.",
+      "The castle gets 2h30 rather than a quick look. The keep is a concrete reconstruction with a museum inside; the park, the moats and the walls are free and are the better part anyway.",
+      "Take the 12:00 Aqua-liner and get off at OAP — not the full 55-minute loop. It sails on the hour, so missing it costs a full hour, and the OAP stop only runs at weekends.",
       "Tenjinbashisuji runs 2.6 km — nobody walks all of it. Drop in at the Tenmangu end and come out at whichever metro stop you've had enough at.",
       "Take your passports: Hareruya is tax-free, and it's the kind of shop where that adds up.",
-      "The Aqua-liner runs hourly from the castle pier between 10:00 and 16:00. Missing the 11:00 costs a full hour, so it's the one departure worth watching the clock for.",
     ],
   },
   6: {

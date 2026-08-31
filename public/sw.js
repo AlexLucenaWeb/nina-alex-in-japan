@@ -8,7 +8,7 @@
  * Bump VERSION on any change here — old caches are dropped on activate.
  */
 
-const VERSION = "v3";
+const VERSION = "v4";
 const DOCUMENTS = `documents-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
 const CURRENT_CACHES = [DOCUMENTS, ASSETS];

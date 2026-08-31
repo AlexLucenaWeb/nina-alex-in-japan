@@ -1,4 +1,5 @@
 import StopPhoto from "./StopPhoto";
+import StopRouteImage from "./StopRouteImage";
 
 export default function StopCard({ stop }) {
   const label = stop.jp ? `${stop.name} (${stop.jp})` : stop.name;
@@ -22,6 +23,13 @@ export default function StopCard({ stop }) {
         </h3>
         <p className="text-sm text-ink/50">{stop.jp}</p>
         <p className="text-sm leading-relaxed text-ink/80">{stop.desc}</p>
+
+        {stop.routeImage && (
+          <StopRouteImage
+            src={stop.routeImage}
+            caption={stop.routeImageCaption}
+          />
+        )}
 
         <a
           href={stop.maps}

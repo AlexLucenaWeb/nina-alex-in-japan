@@ -19,18 +19,19 @@ export default function OsakaKitaItinerary({ food }) {
           <span className="font-semibold text-momiji">
             East to north, then south to finish:
           </span>{" "}
-          the castle first thing, the river as transport across to Nakanoshima,
-          Umeda for lunch and the view, and then back down to Nipponbashi to
-          close the day. Architecture, a boat, a rooftop, a shrine and Magic —
-          the most varied day of the trip.
+          a long morning at the castle, the river as transport across to
+          Nakanoshima, the view and then lunch at Umeda, and back down to
+          Nipponbashi to close the day. Architecture, a boat, a rooftop, a
+          shrine and Magic — the most varied day of the trip.
         </p>
         <p className="mt-2">
           One thing fixes the whole schedule:{" "}
           <span className="font-semibold">
             the Umeda Sky Building is only free on the pass before 15:00
           </span>
-          . That is why lunch is at 12:45 and the observatory at 13:30, and it
-          is the one time on this day worth protecting.
+          . That is why the observatory is at 14:00 and lunch comes after it, at
+          14:45, in the basement of the same building — it is the one time on
+          this day worth protecting.
         </p>
       </div>
 
@@ -56,7 +57,7 @@ export default function OsakaKitaItinerary({ food }) {
         <ul className="flex flex-col gap-1.5 text-sm leading-relaxed text-ink/80">
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Osaka Castle keep</span>
-            <span className="shrink-0 font-medium">¥1,200</span>
+            <span className="shrink-0 font-medium">¥600</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Aqua-liner river cruise</span>
@@ -67,23 +68,23 @@ export default function OsakaKitaItinerary({ food }) {
               Umeda Sky Building observatory{" "}
               <span className="text-ink/50">(before 15:00 only)</span>
             </span>
-            <span className="shrink-0 font-medium">¥2,000</span>
+            <span className="shrink-0 font-medium">¥1,500</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Unlimited metro all day</span>
-            <span className="shrink-0 font-medium">¥820–1,060</span>
+            <span className="shrink-0 font-medium">¥600–700</span>
           </li>
           <li className="flex justify-between gap-4 pt-1 font-semibold text-momiji">
             <span>Saved per person</span>
-            <span className="shrink-0">~¥2,400</span>
+            <span className="shrink-0">~¥1,000–1,200</span>
           </li>
         </ul>
 
         <p className="text-sm leading-relaxed text-ink/70">
-          Paid separately, today comes to about ¥5,700 a head. After 15:00 the
-          Sky Building drops from free to a 10% discount, which is most of the
-          saving gone — so the pass and the running order stand or fall
-          together.
+          Paid separately, today comes to about ¥4,300–4,500 a head, so the
+          ¥3,300 pass is worth it comfortably. After 15:00 the Sky Building
+          drops from free to a 10% discount, which is most of the saving gone —
+          so the pass and the running order stand or fall together.
         </p>
       </section>
 
@@ -137,13 +138,28 @@ export default function OsakaKitaItinerary({ food }) {
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">
+            The cruise is not the full loop
+          </h3>
+          <p className="mt-2">
+            We are not doing the 55-minute round trip. We get off at OAP Pier
+            after about 40 minutes from the castle, which is the prettiest
+            stretch of the river and puts us a 20-minute walk from Nakanoshima
+            instead of back where we started. Covered by the Amazing Pass either
+            way — and the OAP stop only runs at weekends, which this Saturday
+            is.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
+          <h3 className="font-display text-lg font-semibold text-pine">
             No rush at Hareruya
           </h3>
           <p className="mt-2">
-            It stays open until 23:00 at the weekend, so it is the one stop on
-            this trip with no closing time pressing on it. Arriving at 16:15
+            It stays open until 23:00 on Saturdays, so it is the one stop on
+            this trip with no closing time pressing on it. Arriving at 17:00
             leaves the whole evening — stay as long as the singles boxes hold
-            out.
+            out. Take your passports: it is tax-free, and it is the kind of shop
+            where that adds up.
           </p>
         </div>
 
@@ -152,7 +168,7 @@ export default function OsakaKitaItinerary({ food }) {
             Dinner is already next door
           </h3>
           <p className="mt-2">
-            Walking out of Hareruya puts you in Nipponbashi, five minutes from
+            Walking out of Hareruya puts you in Namba, five minutes from
             Dotonbori — okonomiyaki at Ajinoya or Fugetsu, same as Day 3. If
             you would rather have another round of kushikatsu, Shinsekai is two
             stops down the Sakaisuji Line and open late.
@@ -161,18 +177,18 @@ export default function OsakaKitaItinerary({ food }) {
 
         <div className="rounded-2xl border-2 border-ochre/50 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-ochre">
-            Going without the pass changes the day
+            If you did not buy the pass
           </h3>
           <p className="mt-2">
-            The three paid stops come to ¥4,900 a head on their own, close to
-            ¥5,700 once the metro is in. If you decide against the pass, it is
-            worth dropping one of them rather than paying full price for all
-            three — and the observatory is the one that stops being urgent,
-            since without the pass there is no reason to be up there before
-            15:00 rather than at sunset.
+            Paid at the gate, the day comes to roughly ¥4,300–4,500 a head
+            against ¥3,300 for the pass — so it is worth it by a wide margin.
+            If you start the morning without one, buy it before the castle
+            rather than partway through: the castle, the cruise and the
+            observatory are all on it, and the observatory only up to 15:00.
           </p>
         </div>
       </section>
+
     </JapanRouteDayShell>
   );
 }

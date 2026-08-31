@@ -113,22 +113,22 @@ export const foodByDay = {
   5: {
     meals: [
       {
-        time: "12:45",
+        time: "14:45",
         place: "Takimi Koji, under the Umeda Sky Building",
         type: "Lunch",
         reserve: false,
-        note: "A food alley in the basement dressed as a 1920s street — okonomiyaki, yakitori, katsu, bento. All walk-in, and you're already in the building you're about to go up. Closed Thursdays, which this day isn't.",
+        note: "A food alley in the basement dressed as a 1920s street — okonomiyaki, yakitori, katsu, bento. All walk-in, and you come straight down to it from the observatory upstairs. Closed Thursdays, which this day isn't.",
       },
       {
         time: "19:00",
         place: "Dotonbori",
         type: "Dinner",
         reserve: false,
-        note: "Hareruya leaves you five minutes from the canal, so dinner is whenever you're done there. Okonomiyaki at Ajinoya or Fugetsu, or two stops down the Sakaisuji Line for another round of kushikatsu in Shinsekai.",
+        note: "Hareruya leaves you in Namba, five minutes from the canal, so dinner is whenever you're done there. Okonomiyaki at Ajinoya or Fugetsu, or two stops down the Sakaisuji Line for another round of kushikatsu in Shinsekai.",
       },
     ],
     reservations:
-      "Nothing to book today. The only thing worth knowing is that lunch is early on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so eating at 12:45 is what gets you up there in time. Dinner has no such constraint: Hareruya is open until 23:00 at weekends, so the evening runs as long as you want it to.",
+      "Nothing to book today. The only thing worth knowing is that lunch is late on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so the observatory goes first at 14:00 and you eat afterwards, at 14:45, in the basement of the same building. Dinner has no such constraint: Hareruya is open until 23:00 on Saturdays, so the evening runs as long as you want it to.",
   },
   8: {
     dishesTitle: "What to eat in Nara",
