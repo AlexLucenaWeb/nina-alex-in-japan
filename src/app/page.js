@@ -18,23 +18,43 @@ export default function Home() {
         </p>
       </header>
 
-      <Link
-        href="/preparation"
-        className="group flex items-center justify-between gap-4 rounded-xl border-2 border-momiji/40 bg-card p-4 transition-colors hover:border-momiji"
-      >
-        <div className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wide text-momiji">
-            Before you fly
-          </span>
-          <span className="font-display text-lg font-semibold group-hover:underline">
-            Trip Preparation
-          </span>
-          <span className="text-sm text-ink/60">
-            Documents, visa, money, SIM card, and apps to sort out first.
-          </span>
-        </div>
-        <Arrow className="shrink-0 text-momiji transition-transform group-hover:translate-x-1" />
-      </Link>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Link
+          href="/preparation"
+          className="group flex items-center justify-between gap-4 rounded-xl border-2 border-momiji/40 bg-card p-4 transition-colors hover:border-momiji"
+        >
+          <div className="flex flex-col gap-1">
+            <span className="text-xs font-medium uppercase tracking-wide text-momiji">
+              Before you fly
+            </span>
+            <span className="font-display text-lg font-semibold group-hover:underline">
+              Trip Preparation
+            </span>
+            <span className="text-sm text-ink/60">
+              Documents, visa, money, SIM card, and apps to sort out first.
+            </span>
+          </div>
+          <Arrow className="shrink-0 text-momiji transition-transform group-hover:translate-x-1" />
+        </Link>
+
+        <Link
+          href="/hotels"
+          className="group flex items-center justify-between gap-4 rounded-xl border-2 border-momiji/40 bg-card p-4 transition-colors hover:border-momiji"
+        >
+          <div className="flex flex-col gap-1">
+            <span className="text-xs font-medium uppercase tracking-wide text-momiji">
+              Where we sleep
+            </span>
+            <span className="font-display text-lg font-semibold group-hover:underline">
+              Hotels
+            </span>
+            <span className="text-sm text-ink/60">
+              Addresses in Japanese, check-in times, and the nearest station.
+            </span>
+          </div>
+          <Arrow className="shrink-0 text-momiji transition-transform group-hover:translate-x-1" />
+        </Link>
+      </div>
 
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {days.map((day) => (

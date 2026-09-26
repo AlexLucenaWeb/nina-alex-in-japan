@@ -8,7 +8,7 @@
  * Bump VERSION on any change here — old caches are dropped on activate.
  */
 
-const VERSION = "v4";
+const VERSION = "v5";
 const DOCUMENTS = `documents-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
 const CURRENT_CACHES = [DOCUMENTS, ASSETS];
@@ -21,14 +21,15 @@ const TRIP_LENGTH = 21; // keep in sync with TRIP_LENGTH in src/data/days.js
 const PRECACHE_URLS = [
   "/",
   "/preparation",
+  "/hotels",
   OFFLINE_URL,
   "/manifest.webmanifest",
   ...Array.from({ length: TRIP_LENGTH }, (_, i) => `/day/${i + 1}`),
 ];
 
-// The stop photos, listed by scripts/photos.mjs. Fetched at install time
-// rather than hard-coded here so adding a day's photos needs no edit to this
-// file — running `npm run photos` is enough.
+// The stop and hotel photos, listed by scripts/photos.mjs. Fetched at install
+// time rather than hard-coded here so adding a day's photos needs no edit to
+// this file — running `npm run photos` is enough.
 const PHOTO_MANIFEST = "/photos/manifest.json";
 
 self.addEventListener("install", (event) => {

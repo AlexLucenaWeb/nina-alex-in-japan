@@ -5,8 +5,20 @@ import { usePathname } from "next/navigation";
 import Arrow from "@/components/Arrow";
 import { getDay } from "@/data/days";
 
-const LINK_CLASS =
-  "inline-flex items-center gap-1.5 font-medium text-ink/60 transition-colors hover:text-momiji";
+const BASE_CLASS =
+  "inline-flex items-center gap-1.5 font-medium transition-colors";
+const LINK_CLASS = `${BASE_CLASS} text-ink/60 hover:text-momiji`;
+// Not LINK_CLASS plus text-momiji: both are colour utilities of the same
+// specificity, so which one wins is down to their order in the compiled
+// stylesheet, not the order they appear in the class attribute.
+const ACTIVE_CLASS = `${BASE_CLASS} text-momiji`;
+
+// The two standalone pages, kept short: on a day page they sit next to the
+// day stepper, and five items in one row already fill a phone header.
+const SECTIONS = [
+  { href: "/preparation", label: "Prep" },
+  { href: "/hotels", label: "Hotels" },
+];
 
 export default function SiteHeaderNav() {
   const pathname = usePathname();
@@ -17,7 +29,10 @@ export default function SiteHeaderNav() {
   const next = dayNumber ? getDay(dayNumber + 1) : null;
 
   return (
-    <nav className="flex items-center gap-4 text-sm">
+    // Wraps rather than squeezing: on a day page the stepper plus both section
+    // links overflow a phone, and a second right-aligned row reads better than
+    // a cramped one.
+    <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm">
       {prev && (
         <Link href={`/day/${prev.day}`} className={LINK_CLASS}>
           <Arrow direction="left" />
@@ -33,6 +48,20 @@ export default function SiteHeaderNav() {
           <Arrow />
         </Link>
       )}
+      {SECTIONS.map((section) => {
+        const current = pathname === section.href;
+
+        return (
+          <Link
+            key={section.href}
+            href={section.href}
+            aria-current={current ? "page" : undefined}
+            className={current ? ACTIVE_CLASS : LINK_CLASS}
+          >
+            {section.label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }

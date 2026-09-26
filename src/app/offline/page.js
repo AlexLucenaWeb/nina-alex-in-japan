@@ -16,8 +16,8 @@ export default function OfflinePage() {
         This page isn&apos;t available offline
       </h1>
       <p className="text-lg text-ink/70">
-        The itinerary is saved on your device, so the day pages and the
-        preparation guide still open. Photos and the maps need a connection.
+        The itinerary is saved on your device, so the day pages, the hotels and
+        the preparation guide still open. The maps need a connection.
       </p>
       <div className="flex flex-wrap gap-3">
         <Link
@@ -31,6 +31,12 @@ export default function OfflinePage() {
           className="rounded-full border border-line bg-card px-4 py-2 text-sm font-medium transition-colors hover:border-momiji"
         >
           Trip Preparation
+        </Link>
+        <Link
+          href="/hotels"
+          className="rounded-full border border-line bg-card px-4 py-2 text-sm font-medium transition-colors hover:border-momiji"
+        >
+          Hotels
         </Link>
       </div>
     </div>

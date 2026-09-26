@@ -14,6 +14,7 @@ import NaraItinerary from "@/components/nara/NaraItinerary";
 import HimejiKobeItinerary from "@/components/himeji-kobe/HimejiKobeItinerary";
 import UniversalStudiosItinerary from "@/components/universal-studios/UniversalStudiosItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
+import { getHotelForDay } from "@/data/hotels";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
 import { hasFoodSection } from "@/data/food";
 
@@ -67,6 +68,10 @@ export default async function DayPage({ params }) {
   const prev = getDay(dayNumber - 1);
   const next = getDay(dayNumber + 1);
 
+  // Set only on the days we check in somewhere: the link is a shortcut to
+  // tonight's address, not a banner repeated across the whole stay.
+  const hotel = getHotelForDay(dayNumber);
+
   const DayContent = DAY_CONTENT[dayNumber];
   const foodSection = hasFoodSection(dayNumber) ? (
     <FoodSection day={dayNumber} />
@@ -99,6 +104,16 @@ export default async function DayPage({ params }) {
             </p>
             <p className="text-base leading-7 text-ink/80">{current.summary}</p>
           </div>
+
+          {hotel && (
+            <Link
+              href={`/hotels#${hotel.id}`}
+              className="inline-flex items-center gap-1.5 self-start text-sm font-medium text-momiji transition-colors hover:underline"
+            >
+              Tonight: {hotel.name ?? hotel.city}
+              <Arrow />
+            </Link>
+          )}
         </div>
 
         {DayContent ? (
