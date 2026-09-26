@@ -37,7 +37,8 @@ const SOURCES = [
   { file: "src/data/himeji-kobe-stops.js", day: 4 },
   { file: "src/data/osaka-kita-stops.js", day: 5 },
   { file: "src/data/universal-studios-stops.js", day: 6 },
-  { file: "src/data/higashiyama-gion-stops.js", day: 14 },
+  { file: "src/data/day9-stops.js", day: 9 },
+  { file: "src/data/day10-stops.js", day: 10 },
 ];
 
 const force = process.argv.includes("--force");

@@ -202,6 +202,104 @@ export const foodByDay = {
     reservations:
       "Nothing here needs booking — the only thing that might is the train out of Kyoto, if you end up taking the Aoniyoshi (¥1,490 per person, sells out in November). The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
   },
+  9: {
+    dishesTitle: "What to eat in Higashiyama & Gion",
+    meals: [
+      {
+        time: "12:00",
+        place: "Omen Kodai-ji, Higashiyama-ku",
+        type: "Lunch",
+        reserve: false,
+        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji temple along Nene-no-michi street. The obvious stop between Kodai-ji and Chion-in.",
+      },
+      {
+        time: "18:30",
+        place: "Nishin Soba Matsuba, Gionmachi Minamigawa",
+        type: "Dinner",
+        reserve: false,
+        note: "Two minutes from Hanamikoji-dori. A historic soba restaurant founded in the 19th century and the creators of nishin soba — buckwheat noodles with sweet simmered herring, Kyoto's classic winter dish. Casual, and walk-in friendly.",
+      },
+      {
+        time: "18:30",
+        place: "Gion Karyo, Gionmachi Minamigawa",
+        type: "Dinner, the special-occasion option",
+        reserve: true,
+        note: "Kaiseki ryori in a machiya house, on a seasonal tasting menu. More formal than Matsuba, and it needs booking ahead if you want this instead.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Kaiseki ryori",
+        jp: "懐石料理",
+        desc: "Kyoto's haute cuisine: a procession of small seasonal dishes born in Zen temples and the tea ceremony. Gion is one of the best places in the city to try it.",
+      },
+      {
+        name: "Yudofu",
+        jp: "湯豆腐",
+        desc: "Simmered tofu in a light kombu broth. Temple vegetarian cooking, especially associated with the area's Zen temples.",
+      },
+      {
+        name: "Nishin soba",
+        jp: "にしんそば",
+        desc: "Buckwheat noodles topped with a whole piece of sweet simmered herring. Invented in Kyoto in the 19th century and a cold-weather classic — Matsuba, right in Gion, is the historic specialty restaurant.",
+      },
+      {
+        name: "Obanzai",
+        jp: "おばんざい",
+        desc: "Kyoto home cooking: small seasonal vegetable and tofu dishes, found in the casual izakaya around Gion and Pontocho.",
+      },
+      {
+        name: "Matcha sweets",
+        jp: "抹茶スイーツ",
+        desc: "Kyoto is matcha country — parfaits, soft-serve and dango at teahouses like Tsujiri Gion, on the way between Yasaka Jinja and Hanamikoji-dori.",
+      },
+      {
+        name: "Yatsuhashi",
+        jp: "八ツ橋",
+        desc: "Kyoto's iconic cinnamon mochi sweet, sold all over Higashiyama. A souvenir, and a snack while walking Sannenzaka and Ninenzaka.",
+      },
+    ],
+    reservations:
+      "Nothing here needs booking except Gion Karyo, if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
+  },
+  10: {
+    dishesTitle: "What to eat in Kurama & Kibune",
+    meals: [
+      {
+        time: "13:15",
+        place: "Kibunesou or Kibune Kiraku, Kibune village",
+        type: "Lunch",
+        reserve: false,
+        note: "Traditional Kyoto kaiseki at one, seafood and wagyu set menus at the other, both in the village at the end of the crossing. The kawadoko terraces built out over the river come down at the end of summer, so in November you eat indoors. Walk-in, but get there early in high season.",
+      },
+      {
+        time: "18:00",
+        place: "Central Kyoto",
+        type: "Dinner",
+        reserve: false,
+        note: "The Kirara train drops you back in the city with the evening still open, and nothing about it needs planning — eat wherever you land coming off the Eizan line.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Yuba",
+        jp: "湯葉",
+        desc: "Tofu skin, lifted off the surface of simmering soymilk. Kyoto temple cooking at its most delicate — served rolled, in broth, or draped raw over rice.",
+      },
+      {
+        name: "Soba",
+        jp: "そば",
+        desc: "Buckwheat noodles from the mountains north of Kyoto, where the cold and the water suit them. The obvious thing to eat coming off the trail.",
+      },
+      {
+        name: "Seasonal sweets",
+        jp: "季節の和菓子",
+        desc: "Kibune's teahouses change their wagashi with the season — in November that means chestnut, persimmon and maple-leaf shapes, with matcha.",
+      },
+    ],
+    reservations:
+      "Kibunesou and Kibune Kiraku are both walk-in, but Kibune fills up through the autumn — arrive early or be ready to wait. One thing worth knowing: Hirobun's nagashi somen, the noodles you catch as they come down a bamboo pipe, is a summer-only affair; in November they serve a seasonal set menu instead. The Eizan Kirara train needs no reservation either — just tap in with an IC card.",
+  },
 };
 
 export function hasFoodSection(day) {

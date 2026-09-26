@@ -104,8 +104,9 @@ const overrides = {
       "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
     ],
   },
-  14: {
+  9: {
     title: "Higashiyama & Gion",
+    date: "November 19",
     location: "Kyoto",
     summary:
       "A full day on foot through Kyoto's Higashiyama district and Gion: temples, stone-paved lanes, and the old teahouse streets. See the interactive map and stop-by-stop itinerary below.",
@@ -117,6 +118,24 @@ const overrides = {
       "Respect the no-photo signs in residential areas like Ishibei-koji and in Gion's private alleys — fines apply.",
       "Visiting in November? Kōdai-ji and Kiyomizu-dera reopen at night for the autumn illuminations — worth a return visit after dark.",
       "For the best chance of spotting a maiko or geiko, be on Hanamikoji-dori around dusk (17:00–18:00).",
+    ],
+  },
+  10: {
+    title: "Kurama & Kibune",
+    date: "November 20",
+    location: "Kurama & Kibune, Kyoto",
+    summary:
+      "Out of the city and into the mountains north of Kyoto: the Eizan line up to Kurama, the climb past Yuki-jinja to the temple, and then the ridge trail — the cedar roots of Kinone-michi, the forest hall at Sōjō-ga-tani — down into the Kibune valley and its water shrine. Lunch in the village, then back down at dusk for the Eizan railway's illuminated momiji tunnel.",
+    recommendations: [
+      "The whole day hangs on one closing time: the crossing runs through Kurama-dera's grounds (the ¥500 entry covers it) and the Kinone-michi section shuts at 16:15. The mountain has to be done in the morning.",
+      "The trail has no lighting either, so walk it in daylight and keep the illuminated parts — the Kifune lanterns, the momiji tunnel — for the end of the day.",
+      "Kurama to Kibune is about 1h–1h15 of forest trail and stone steps. Going in this direction climbs the gentler side and descends into Kibune, and it needs comfortable shoes.",
+      "Confirm the 2026 dates for the Eizan momiji tunnel illumination and the Kifune Momiji Lantern festival before travelling: both run roughly early to late November, but are set year by year.",
+      "The Eizan Kirara panorama train takes no reservation — tap in with an IC card (ICOCA, Suica or Pasmo) and board.",
+      "Kifune-jinja down to Kibuneguchi Station is a 25–30 minute walk along the stream, or a short ride on Kyoto Bus 33.",
+      "Kurama Onsen, the open-air rotenburo by Kurama station, only fits if you drop or shorten something else — it competes with the trail rather than following it.",
+      "Kibune's restaurants are walk-in but fill up through the autumn: arrive early or be ready to wait.",
+      "The kawadoko terraces built out over the river are a summer thing and come down at the end of the season — in November you eat indoors.",
     ],
   },
 };

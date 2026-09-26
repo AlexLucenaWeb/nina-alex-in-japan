@@ -1,7 +1,12 @@
+import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
-import RouteMapLoader from "@/components/route-itinerary/RouteMapLoader";
 import StopCard from "@/components/route-itinerary/StopCard";
-import { HIGASHIYAMA_GION_STOPS } from "@/data/higashiyama-gion-stops";
+import { STOPS } from "@/data/day9-stops";
+
+// Same as Days 3 and 8: this day's route lives in a Google My Maps map instead
+// of the Leaflet component, so it can be edited from Google Maps without
+// touching the stop data in the repo.
+const MY_MAPS_ID = "1e9r1tAG6eYuex1dlQx0meW39IhRJUXM";
 
 export default function HigashiyamaGionItinerary({ food }) {
   return (
@@ -18,7 +23,20 @@ export default function HigashiyamaGionItinerary({ food }) {
       </div>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <RouteMapLoader stops={HIGASHIYAMA_GION_STOPS} />
+        <h2 className="font-display text-2xl font-semibold">The route</h2>
+
+        <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+          <DayMapEmbed mid={MY_MAPS_ID} />
+        </div>
+
+        <a
+          href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start text-sm text-momiji hover:underline"
+        >
+          Open in Google Maps
+        </a>
       </section>
 
       {food}
@@ -27,9 +45,9 @@ export default function HigashiyamaGionItinerary({ food }) {
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
 
         <ol className="relative flex flex-col">
-          {HIGASHIYAMA_GION_STOPS.map((stop, index) => (
+          {STOPS.map((stop, index) => (
             <li key={stop.n} className="relative pb-10 pl-14 last:pb-0">
-              {index < HIGASHIYAMA_GION_STOPS.length - 1 && (
+              {index < STOPS.length - 1 && (
                 <span
                   aria-hidden="true"
                   className="stop-connector absolute bottom-0 left-5 top-10 -translate-x-1/2"

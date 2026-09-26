@@ -1,4 +1,13 @@
-export const HIGASHIYAMA_GION_STOPS = [
+// Like Days 3 and 8, this day's route is a Google My Maps embed rather than the
+// Leaflet component, so the stop positions live in that map and not here.
+// `lat`/`lng` are kept as the source data the stops came from — nothing on the
+// page reads them today, but they are what the My Maps CSV import is built from.
+//
+// `maps` is a place link (cid or place_id), which is what the stop cards open:
+// the place's Google listing rather than a bare pin.
+//
+// Every stop is within walking distance of the next one: no trains, no buses.
+export const STOPS = [
   {
     n: 1,
     time: "8:30",
@@ -8,7 +17,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.784661,
     hours: "6:00–18:00",
     maps: "https://maps.google.com/?cid=7111013964196361402",
-    photo: "/photos/day14-1-kiyomizu-dera.webp",
+    photo: "/photos/day9-1-kiyomizu-dera.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAEl_1Iebrsv8V1Xg43KovPAkr4LyufUrSjad6Fs_U2MakthUJvsyMKA06FxzxOsWb_OXlWJENNQ-Y7xDc2dCwo_R5g0lJ1mngjIUnQWUdjCzKWJT24M__BAz3bLy8cp87QSjHbl9miG_9Ato3OX0XZ=s1200-w800-h600",
     desc: "Start early: fewer crowds and better light. A wooden terrace with views over the city. In November, red maples everywhere.",
@@ -18,11 +27,14 @@ export const HIGASHIYAMA_GION_STOPS = [
     time: "10:15",
     name: "Sannenzaka & Ninenzaka",
     jp: "三年坂・二年坂",
-    lat: 34.9969515,
-    lng: 135.7810289,
+    lat: 34.9983989,
+    lng: 135.7808431,
     hours: "Public street",
     maps: "https://maps.google.com/?cid=10971881891922379477",
-    photo: null,
+    // Sourced from Wikimedia Commons rather than Google Places like the rest.
+    photo: "/photos/day9-2-sannenzaka-ninenzaka.webp",
+    photoSource:
+      "https://upload.wikimedia.org/wikipedia/commons/e/eb/Ninenzaka_%2830613009603%29.jpg",
     desc: "Cobbled lanes lined with small shops, sweets, and wooden houses. Kyoto's postcard street. Stop for a snack and take your time.",
   },
   {
@@ -30,11 +42,11 @@ export const HIGASHIYAMA_GION_STOPS = [
     time: "11:00",
     name: "Yasaka Pagoda (Hōkan-ji)",
     jp: "法観寺",
-    lat: 34.998558,
-    lng: 135.7792358,
+    lat: 34.9985591,
+    lng: 135.7791783,
     hours: "Exterior view: anytime",
     maps: "https://maps.google.com/?cid=12811373430337320265",
-    photo: "/photos/day14-3-yasaka-pagoda-hokan-ji.webp",
+    photo: "/photos/day9-3-yasaka-pagoda-hokan-ji.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjD1HNf85QmOVdYnZYAoZ6rzuXvoVwxqrhY4Q-rgFpsjmt1mZhsKDZpAwRwCwXqRipUO6i6Errgyu-nbUbPJZcvkcF4FVVq1BW0g7dQcmden-BE6DiMWZ47oM_F68tQWYboYkfKRPxOdIWcB0V0=s1200-w800-h600",
     desc: "Kyoto's most photographed five-story pagoda. Best shot from the street below — walk a little down the slope for the classic angle.",
@@ -48,7 +60,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7794833,
     hours: "Public street",
     maps: "https://maps.google.com/?cid=1262656406215755316",
-    photo: "/photos/day14-4-ishibei-koji.webp",
+    photo: "/photos/day9-4-ishibei-koji.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAAFiSq3BBrZYD4dJjNkS9IqPtSsdKBNfB8D9eWThlN6u5FCQoc85BHZw-lVdYhuEoeuyUIr6t72RKllSXwShJmnyjEKKSP1ktpjJD9OfNn09RyYcFXoSgz61eLfC2gR-DAbkZJKGAriWmK=s1200-w800-h600",
     desc: "A hidden stone lane, almost always empty. It's a residential area — please respect the no-photo signs along some stretches.",
@@ -62,10 +74,10 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7812718,
     hours: "9:00–17:00",
     maps: "https://maps.google.com/?cid=2616919559259342976",
-    photo: "/photos/day14-5-kodai-ji.webp",
+    photo: "/photos/day9-5-kodai-ji.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjBdjyQYw2UElKeqQaFftc8-Liove_tcE72cvpMH9r8wrC8JMqQ-VmnHpkwAfP-wiwFOQ7KbFEIeIziizGT8gjEHvnhHDATn7m_JySGUg2J-7Wqj2btwJqzut4AZCLpukalPNkIgaigqWmCFenDVzGC4=s1200-w800-h600",
-    desc: "Beautiful gardens and a small bamboo grove. A good spot for lunch right after, along Nene-no-michi street. Spectacular night illumination in autumn.",
+    desc: "Beautiful gardens and a small bamboo grove. Lunch comes right after, on Nene-no-michi just outside the gate — see the Food section. Spectacular night illumination in autumn.",
   },
   {
     n: 6,
@@ -76,7 +88,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7833827,
     hours: "9:00–16:00",
     maps: "https://maps.google.com/?cid=6959033030999210364",
-    photo: "/photos/day14-6-chion-in.webp",
+    photo: "/photos/day9-6-chion-in.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjBNK97QAQKETJR9obX1BZCMmRr6Y1QnOQ2lwUwhRbAXM8B-eNxW4ImdpYCrw9f7DAT-plLqyIEKoVtxR93xUEEEaEK0MRmmA1foWjJWRyFMHtaBqC7LQjEsFV2BMWR6R2uYjvoxEi8A5seoBQ=s1200-w800-h600",
     desc: "After a relaxed lunch. Japan's largest wooden Sanmon gate. Going now gives you plenty of margin before closing.",
@@ -90,7 +102,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7805269,
     hours: "Open 24h",
     maps: "https://maps.google.com/?cid=16944245535046749515",
-    photo: "/photos/day14-7-maruyama-park.webp",
+    photo: "/photos/day9-7-maruyama-park.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAqLAXnAF_S7HBgfcsscjpZd9fzSL4C-Bqz1HyxXpe_21S77onaagW75uQp_neLI7ozcEhQ5sN7fw0XlOfjdVAr8VBCo0FQH7xDMfSBtjocd_ZYuGzq8AEEEfZSNkzmoo2BnuxNKgGIZEmyWyU=s1200-w800-h600",
     desc: "Right next to Chion-in. A quiet park with a pond, perfect for sitting down for a while. Great autumn colour in November.",
@@ -104,7 +116,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7785534,
     hours: "Open 24h · free",
     maps: "https://maps.google.com/?cid=14374021738854095593",
-    photo: "/photos/day14-8-yasaka-jinja.webp",
+    photo: "/photos/day9-8-yasaka-jinja.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAJZduV8TMnOlGfoEQrn-j4WGbdvhG7vvI_R0suP45EevdVCsLBDiPdvQKKDMCEiEPdr40maRD6FM_X4nO5hU7KJDKNuwds3afsMjaybMOHvUlzuA5cgopmXcDteVX6_WvriobZVcK7pFAXNA=s1200-w800-h600",
     desc: "A free shrine, the gateway into Gion. If you pass by again at dusk, the lit-up lanterns are magical.",
@@ -118,7 +130,7 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7735632,
     hours: "10:00–16:30",
     maps: "https://maps.google.com/?cid=9106435786341202770",
-    photo: "/photos/day14-9-kennin-ji.webp",
+    photo: "/photos/day9-9-kennin-ji.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjBI55JlBDR7wOHB0KpB9Cy4CA9bg3Apxmn3x10HCm2Ki9jXIZ6fp6dIvtJjEHfC_edBrIqFzKvsxVER8I1IFhmvLj4F0UTauqvrpAHjF4y_XApBJfzRdXuNdv6YGzJUoziGJuByIQineD-CGh9juhkIUw=s1200-w800-h600",
     desc: "Kyoto's oldest Zen temple: the twin dragons ceiling and the gods of wind and thunder. CLOSES 16:30 — head straight in when you arrive.",
@@ -132,7 +144,10 @@ export const HIGASHIYAMA_GION_STOPS = [
     lng: 135.7750189,
     hours: "Public street",
     maps: "https://maps.google.com/?q=%E8%8A%B1%E8%A6%8B%E5%B0%8F%E8%B7%AF%E9%80%9A",
-    photo: null,
+    // Sourced from Wikimedia Commons rather than Google Places like the rest.
+    photo: "/photos/day9-10-hanamikoji-dori-gion.webp",
+    photoSource:
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/150124_Gion_Kyoto_Japan01s3.jpg",
     desc: "The day's closing stop: the street of the teahouses. At dusk (5–6pm) is when you're most likely to spot a maiko/geiko. NO photos in the private alleys (fines up to ¥10,000). From here, head down to the Shirakawa canal and have dinner in Gion.",
   },
 ];

@@ -5,6 +5,7 @@ import FoodSection from "@/components/FoodSection";
 import PlaceholderPhoto from "@/components/PlaceholderPhoto";
 import BulletList from "@/components/BulletList";
 import HigashiyamaGionItinerary from "@/components/higashiyama-gion/HigashiyamaGionItinerary";
+import KuramaKibuneItinerary from "@/components/kurama-kibune/KuramaKibuneItinerary";
 import FlightItinerary from "@/components/flight-itinerary/FlightItinerary";
 import ArrivalOsakaItinerary from "@/components/arrival-osaka/ArrivalOsakaItinerary";
 import OsakaMinamiItinerary from "@/components/osaka-minami/OsakaMinamiItinerary";
@@ -35,7 +36,8 @@ const DAY_CONTENT = {
   5: (props) => <OsakaKitaItinerary {...props} />,
   6: (props) => <UniversalStudiosItinerary {...props} />,
   8: (props) => <NaraItinerary {...props} />,
-  14: (props) => <HigashiyamaGionItinerary {...props} />,
+  9: (props) => <HigashiyamaGionItinerary {...props} />,
+  10: (props) => <KuramaKibuneItinerary {...props} />,
 };
 
 export function generateStaticParams() {
