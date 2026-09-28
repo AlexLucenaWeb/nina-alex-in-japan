@@ -178,25 +178,25 @@ export const foodByDay = {
     dishesTitle: "What to eat in Nara",
     meals: [
       {
-        time: "12:15",
+        time: "13:15",
         place: "Mizuya Chaya, Nara Park",
         type: "Lunch",
         reserve: false,
         note: "A teahouse inside the park, between Tōdai-ji and Kasuga Taisha — udon, kudzu drinks, warabimochi and ice cream, at a table under the trees. The unhurried option, and the one that keeps you inside the park.",
       },
       {
-        time: "12:15",
+        time: "13:15",
         place: "Kakinoha-zushi, wherever you like",
         type: "Lunch, the other option",
         reserve: false,
         note: "Persimmon-leaf sushi, sold boxed along Sanjo-dori and at the stations. The leaf preserves it, so it travels — buy it in the morning and eat it on a bench in the park.",
       },
       {
-        time: "16:30",
+        time: "17:40",
         place: "Nakatanidō",
         type: "Street snack",
         reserve: false,
-        note: "On Sanjo-dori, on the way into Naramachi at the end of the day. Time it well and you catch the famous high-speed mochi pounding out front; eat the yomogi mochi warm, standing there.",
+        note: "On Sanjo-dori, between Kōfuku-ji and Sarusawa Pond and the entrance to Naramachi — you walk past it at the end of the day. Time it well and you catch the famous high-speed mochi pounding out front; eat the yomogi mochi warm, standing there.",
       },
       {
         time: "18:30",
@@ -244,7 +244,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "Nothing here needs booking — the only thing that might is the train out of Kyoto, if you end up taking the Aoniyoshi (¥1,490 per person, sells out in November). The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
+      "One thing does need booking, and it is not the food: the Aoniyoshi is the train out of Kyoto, at ¥1,490 per person. Seats go on sale at 10:30 Japan time exactly one month before — for this trip that is 18 October, which is 03:30 in Madrid — and they sell out in November. The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
   },
   9: {
     dishesTitle: "What to eat in Higashiyama & Gion",

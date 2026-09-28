@@ -17,9 +17,10 @@ export default function NaraItinerary({ food }) {
             Everything is done on foot:
           </span>{" "}
           the whole day fits inside Nara Park and the streets around it, no
-          trains and no buses once you arrive. Temples in the morning, a long
-          lunch, gardens in the early afternoon, and the light going gold over
-          the pond by the end.
+          trains and no buses once you arrive. The Aoniyoshi gets in at 11:29,
+          so it starts late morning: the Great Buddha first, a long lunch,
+          gardens and the lantern shrine through the afternoon, and the light
+          going gold over the pond by the end.
         </p>
         <p className="mt-2">
           It&apos;s a deliberately unhurried day — the times below are a rhythm,
@@ -80,7 +81,9 @@ export default function NaraItinerary({ food }) {
           <p className="mt-2">
             Back to Kyoto from Kintetsu-Nara: a regular Kintetsu express (¥760,
             ~45 min) or a limited express (¥1,280, ~35 min), both frequent
-            enough that there is no need to plan a train after dinner.
+            enough that there is no need to plan a train after dinner. Don&apos;t
+            go looking for an Aoniyoshi back — the last one leaves Nara at
+            15:55, hours before you are done.
           </p>
         </div>
 

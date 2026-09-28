@@ -94,10 +94,10 @@ const overrides = {
     date: "November 18",
     location: "Nara (from Kyoto)",
     summary:
-      "A day out of Kyoto, then everything on foot inside Nara Park: Kōfuku-ji, the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, and the light going gold over the Ukimidō pavilion. Deer throughout. Dinner in Naramachi before the train back.",
+      "The Aoniyoshi sightseeing train out of Kyoto, then everything on foot inside Nara Park: the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, sunset at the Ukimidō pavilion, and Kōfuku-ji and Sarusawa Pond at dusk on the way out. Deer throughout. Dinner in Naramachi before the train back.",
     recommendations: [
       {
-        text: "Still to settle: which train out. Kyoto–Kintetsu-Nara is ~35 min by limited express (¥1,280) or ~45 min on a regular express (¥760). The Aoniyoshi sightseeing train also runs this line, but its first departure from Kyoto is 10:55 — later than the 10:15 start below. If you want it, book as far ahead as you can (¥1,490, no service on Thursdays, seats on sale at 10:30 Japan time exactly one month before).",
+        text: "The train out is settled: the Aoniyoshi sightseeing train, Kyoto 10:55 → Kintetsu-Nara 11:29. ¥1,490 per person in twin seats, and no service on Thursdays — Nov 18 is a Wednesday, so it runs. Seats go on sale at 10:30 Japan time exactly one month before, which is 18 October at 03:30 Madrid time. Book it then: it sells out in November.",
         link: {
           href: "https://www.ticket.kintetsu.co.jp/vs/en/e-ticket/",
           label: "Book on Kintetsu (English) →",
@@ -107,7 +107,7 @@ const overrides = {
       "A day almost entirely outdoors — comfortable shoes, and layers for the morning.",
       "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
       "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
-      "Sunset is around 17:00 in November. The route reaches Ukimidō at 15:30, and Naramachi is five minutes away — it's worth walking back to the pond at dusk before dinner.",
+      "Sunset is around 17:00 in November, and the route is built around it: Ukimidō at 16:45 puts you at the pond just as the light goes.",
       "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
     ],
   },
