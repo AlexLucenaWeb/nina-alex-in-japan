@@ -38,6 +38,10 @@ export const PREPARATION_CHECKLIST = [
       "A transit app (Google Maps or Japan Transit Planner) for train times and platform info.",
       "Suica or PASMO in Apple Wallet / Google Wallet, if your phone supports it, for tap-to-pay on trains.",
       "Your travel insurance app — log in before you fly so the policy number and the 24h assistance phone are one tap away.",
+      "Taxi apps — Japan has no private-driver Uber: every app books a licensed taxi. Install them before the trip, register with your Spanish phone number and add the Revolut card as payment — no Japanese SIM or bank account needed.",
+      "GO — The main one: Japan's most used taxi app, covering every region including Kyoto, Osaka and Tokyo. Install this first.",
+      "Uber — The backup. Familiar interface and the easiest sign-up, but coverage is strongest in central Tokyo and Osaka and thins out elsewhere.",
+      "DiDi — Another alternative, well established in Kyoto and Osaka and often with promo discounts.",
     ],
   },
   {
