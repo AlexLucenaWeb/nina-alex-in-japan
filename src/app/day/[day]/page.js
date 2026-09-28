@@ -12,6 +12,7 @@ import OsakaMinamiItinerary from "@/components/osaka-minami/OsakaMinamiItinerary
 import OsakaKitaItinerary from "@/components/osaka-kita/OsakaKitaItinerary";
 import NaraItinerary from "@/components/nara/NaraItinerary";
 import HimejiKobeItinerary from "@/components/himeji-kobe/HimejiKobeItinerary";
+import KyotoArrivalItinerary from "@/components/kyoto-arrival/KyotoArrivalItinerary";
 import UniversalStudiosItinerary from "@/components/universal-studios/UniversalStudiosItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
@@ -36,6 +37,7 @@ const DAY_CONTENT = {
   4: (props) => <HimejiKobeItinerary {...props} />,
   5: (props) => <OsakaKitaItinerary {...props} />,
   6: (props) => <UniversalStudiosItinerary {...props} />,
+  7: (props) => <KyotoArrivalItinerary {...props} />,
   8: (props) => <NaraItinerary {...props} />,
   9: (props) => <HigashiyamaGionItinerary {...props} />,
   10: (props) => <KuramaKibuneItinerary {...props} />,

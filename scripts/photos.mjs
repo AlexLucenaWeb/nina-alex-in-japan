@@ -45,6 +45,7 @@ const SOURCES = [
   { file: "src/data/himeji-kobe-stops.js", day: 4 },
   { file: "src/data/osaka-kita-stops.js", day: 5 },
   { file: "src/data/universal-studios-stops.js", day: 6 },
+  { file: "src/data/day7-stops.js", day: 7 },
   { file: "src/data/day9-stops.js", day: 9 },
   { file: "src/data/day10-stops.js", day: 10 },
   // The hotels belong to a block of days rather than to one, and the pending

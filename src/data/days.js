@@ -76,11 +76,18 @@ const overrides = {
     ],
   },
   7: {
-    title: "Osaka → Kyoto",
+    title: "Arrival in Kyoto",
     date: "November 17",
     location: "Osaka → Kyoto",
     summary:
-      "Moving base: an early check-out in Osaka and the short hop up to Kyoto, which is home for the rest of the trip. The rest of the day is still open.",
+      "Moving base from Osaka to Kyoto, home for the next five nights. Bags at the hotel by 10:00, then the Golden Pavilion, the maples of Tōfuku-ji, and Fushimi Inari's torii climbed to sunset.",
+    recommendations: [
+      "Taxi to Kinkaku-ji: about 25 minutes from Gojō, and with two of you it's worth it — the autumn buses to the north-west are standing-room only.",
+      "Kinkaku-ji is cash only: have ¥1,000 ready for the two of you.",
+      "Be inside Tōfuku-ji before 15:00. It's the only stop today with a closing time that matters.",
+      "At Fushimi Inari, walk straight through the crowded first torii on the way up. Photograph them on the way down, when they're lit and empty.",
+      "Sunset is around 16:50 in November — Yotsutsuji faces west, so time the climb to be there for it.",
+    ],
   },
   8: {
     title: "Day Trip to Nara",

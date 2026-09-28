@@ -130,6 +130,50 @@ export const foodByDay = {
     reservations:
       "Nothing to book today. The only thing worth knowing is that lunch is late on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so the observatory goes first at 14:00 and you eat afterwards, at 14:45, in the basement of the same building. Dinner has no such constraint: Hareruya is open until 23:00 on Saturdays, so the evening runs as long as you want it to.",
   },
+  7: {
+    meals: [
+      {
+        time: "12:45",
+        place: "Kyoto Station",
+        type: "Lunch",
+        reserve: false,
+        note: "Ramen Koji on the 10th floor of the station building, the Porta underground mall, or the restaurant floors upstairs. You change trains here anyway, so lunch costs no extra travel.",
+      },
+      {
+        time: "15:30",
+        place: "Fushimi Inari approach",
+        type: "Street snack",
+        reserve: false,
+        note: "Stalls and small shops along the approach to the shrine. This is the place for inari-zushi and kitsune udon: fried tofu is said to be the fox's favourite food, and the fox is Inari's messenger.",
+      },
+      {
+        time: "19:00",
+        place: "Around Gojō & Kyoto Station",
+        type: "Dinner",
+        reserve: false,
+        note: "Nothing booked: eat near the hotel after the climb. For something local, the Takabashi ramen shops east of Kyoto Station (Honke Daiichi-Asahi, Shinpuku Saikan) are a Kyoto institution — expect a short queue.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Inari-zushi",
+        jp: "いなり寿司",
+        desc: "Sushi rice packed into pouches of sweet fried tofu. Named after Inari himself — eat it at the shrine it comes from.",
+      },
+      {
+        name: "Kitsune udon",
+        jp: "きつねうどん",
+        desc: "Udon topped with a big slice of sweet simmered fried tofu. 'Kitsune' means fox, for the same reason as above.",
+      },
+      {
+        name: "Kyoto ramen",
+        jp: "京都ラーメン",
+        desc: "Soy-based broth with pork, often rich and dark. Takabashi, by the station, is its historic home.",
+      },
+    ],
+    reservations:
+      "Nothing today needs booking. Carry cash: Kinkaku-ji only takes cash, and so do many of the stalls on the Fushimi Inari approach.",
+  },
   8: {
     dishesTitle: "What to eat in Nara",
     meals: [
