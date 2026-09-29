@@ -16,9 +16,12 @@ export default function HigashiyamaGionItinerary({ food }) {
           <span className="font-semibold text-momiji">
             Everything is done on foot:
           </span>{" "}
-          about 20–25 minutes end to end, not counting stops. Only{" "}
-          <span className="font-semibold">Kennin-ji</span> closes early
-          (16:30) — prioritize it if you&apos;re short on time.
+          short walks between stops, no trains and no buses. Only two things on
+          the day are fixed:{" "}
+          <span className="font-semibold">Kennin-ji</span>, which closes at
+          16:30, and getting the kimono back to{" "}
+          <span className="font-semibold">Maikoya</span> — be there at 17:45,
+          the deadline is 18:00.
         </p>
       </div>
 

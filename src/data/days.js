@@ -116,12 +116,20 @@ const overrides = {
     date: "November 19",
     location: "Kyoto",
     summary:
-      "A full day on foot through Kyoto's Higashiyama district and Gion: temples, stone-paved lanes, and the old teahouse streets. See the interactive map and stop-by-stop itinerary below.",
+      "An early Kiyomizu-dera before the crowds, then into kimono for a tea ceremony at Maikoya — and the rest of the day spent in it, on foot through Sannenzaka and Ninenzaka, the Yasaka Pagoda, Kodai-ji and Yasaka Jinja, ending in Gion at dusk. See the interactive map and stop-by-stop itinerary below.",
     recommendations: [
-      "Start at Kiyomizu-dera right at opening (8:30) to beat the crowds and get the best light for photos.",
+      "Kiyomizu-dera opens at 6:00. Getting there for 8:00 beats most of the crowds, gets you the best light, and still leaves time to walk down to Maikoya for 9:30.",
+      {
+        text: "Kimono and tea ceremony booked at Maikoya Gion Kiyomizu, 9:30. You don't have to kneel in seiza — bamboo chairs can be requested in the booking comments. The kimono goes back at 17:45, and the deadline is 18:00. Changes or cancellations: cs@maikoya.com.",
+        link: {
+          href: "https://mai-ko.com/tour/kimono-tea-ceremony-gion-kiyomizu-at-the-registered-cultural-property/",
+          label: "Booking details →",
+        },
+      },
+      "In kimono and geta you walk slower than usual — budget extra time on the slopes of Sannenzaka and Ninenzaka.",
       "Carry cash — many small shops on Sannenzaka and Ninenzaka, and some temple entry fees, don't take cards.",
       "Kennin-ji closes at 16:30, earlier than the other stops — plan to reach it by mid-afternoon.",
-      "Wear comfortable walking shoes: the route covers stone-paved slopes and lanes, with about 20–25 minutes of walking between stops.",
+      "The walks between stops are short, but the lanes are steep and stone-paved — which is worth remembering when you are doing them in geta.",
       "Respect the no-photo signs in residential areas like Ishibei-koji and in Gion's private alleys — fines apply.",
       "Visiting in November? Kōdai-ji and Kiyomizu-dera reopen at night for the autumn illuminations — worth a return visit after dark.",
       "For the best chance of spotting a maiko or geiko, be on Hanamikoji-dori around dusk (17:00–18:00).",

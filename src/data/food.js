@@ -250,11 +250,11 @@ export const foodByDay = {
     dishesTitle: "What to eat in Higashiyama & Gion",
     meals: [
       {
-        time: "12:00",
+        time: "13:30",
         place: "Omen Kodai-ji, Higashiyama-ku",
         type: "Lunch",
         reserve: false,
-        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji temple along Nene-no-michi street. The obvious stop between Kodai-ji and Chion-in.",
+        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji along Nene-no-michi street — a couple of minutes from the temple gate. One practical note: udon in a rented kimono is a splash risk, so ask for an apron or an extra napkin before you start.",
       },
       {
         time: "18:30",
@@ -304,7 +304,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "Nothing here needs booking except Gion Karyo, if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
+      "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:30 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
   },
   10: {
     dishesTitle: "What to eat in Kurama & Kibune",
