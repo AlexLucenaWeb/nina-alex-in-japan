@@ -136,8 +136,23 @@ const overrides = {
     ],
   },
   10: {
-    title: "Kurama & Kibune",
+    title: "Arashiyama",
     date: "November 20",
+    location: "Arashiyama & Sagano, Kyoto",
+    summary:
+      "The bamboo grove at 8:00, before the crowds. Then up into Sagano's quiet gardens at Ōkōchi Sansō and Jōjakkō-ji, back down to Tenryū-ji, soba overlooking the river, and the maples over Togetsukyō Bridge.",
+    recommendations: [
+      "Be in the bamboo grove by 8:00. By 10:00 it's so packed you can barely see the bamboo.",
+      "Keep walking to the end of the path. Ōkōchi Sansō and Jōjakkō-ji are just beyond it, and they're the best maples of the day with a fraction of the crowd.",
+      "Enter Tenryū-ji by the north gate straight from the bamboo path — it saves walking round to the main entrance.",
+      "Get to Yoshimura for lunch by 12:00 and ask for the second floor.",
+      "Photograph Togetsukyō from the far bank, looking back towards the mountain.",
+      "The Monkey Park is a 20–30 minute climb up steps. Worth it for the view and the macaques, but it's the first thing to drop if you're tired.",
+    ],
+  },
+  11: {
+    title: "Kurama & Kibune",
+    date: "November 21",
     location: "Kurama & Kibune, Kyoto",
     summary:
       "Out of the city and into the mountains north of Kyoto: the Eizan line up to Kurama, the climb past Yuki-jinja to the temple, and then the ridge trail — the cedar roots of Kinone-michi, the forest hall at Sōjō-ga-tani — down into the Kibune valley and its water shrine. Lunch in the village, then back down at dusk for the Eizan railway's illuminated momiji tunnel.",

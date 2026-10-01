@@ -1,12 +1,11 @@
-import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
-import { day10Stops } from "@/data/day10-stops";
+import { day11Stops } from "@/data/day11-stops";
 
-// Same as Days 3, 8 and 9: this day's route lives in a Google My Maps map
-// instead of the Leaflet component. The map itself is still to be built —
-// import the stops as a CSV and replace this placeholder with the real mid.
-const MY_MAPS_ID = "MID_PENDIENTE_DAY10";
+// TODO: add My Maps mid — the "The route" section and its DayMapEmbed go here,
+// between the intro and the Food section, the same as Days 3, 8 and 9.
+// Nothing is rendered until the map exists: a placeholder mid only produces an
+// iframe that fails to load.
 
 export default function KuramaKibuneItinerary({ food }) {
   return (
@@ -28,32 +27,15 @@ export default function KuramaKibuneItinerary({ food }) {
         </p>
       </div>
 
-      <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The route</h2>
-
-        <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
-          <DayMapEmbed mid={MY_MAPS_ID} />
-        </div>
-
-        <a
-          href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="self-start text-sm text-momiji hover:underline"
-        >
-          Open in Google Maps
-        </a>
-      </section>
-
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
 
         <ol className="relative flex flex-col">
-          {day10Stops.map((stop, index) => (
+          {day11Stops.map((stop, index) => (
             <li key={stop.n} className="relative pb-10 pl-14 last:pb-0">
-              {index < day10Stops.length - 1 && (
+              {index < day11Stops.length - 1 && (
                 <span
                   aria-hidden="true"
                   className="stop-connector absolute bottom-0 left-5 top-10 -translate-x-1/2"

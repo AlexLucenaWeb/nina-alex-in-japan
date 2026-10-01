@@ -5,7 +5,11 @@ export default function StopCard({ stop }) {
   const label = stop.jp ? `${stop.name} (${stop.jp})` : stop.name;
 
   return (
-    <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+    <div
+      className={`overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm${
+        stop.optional ? " border-dashed" : ""
+      }`}
+    >
       <StopPhoto src={stop.photo} label={label} />
 
       <div className="flex flex-col gap-2 p-4">
@@ -21,6 +25,11 @@ export default function StopCard({ stop }) {
         <h3 className="font-display text-xl font-semibold leading-snug text-ink">
           {stop.name}
         </h3>
+        {stop.optional && (
+          <p className="text-sm font-medium text-momiji">
+            Optional · if you have energy
+          </p>
+        )}
         <p className="text-sm text-ink/50">{stop.jp}</p>
         <p className="text-sm leading-relaxed text-ink/80">{stop.desc}</p>
 

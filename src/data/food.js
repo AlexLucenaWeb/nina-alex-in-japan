@@ -307,6 +307,51 @@ export const foodByDay = {
       "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:30 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
   },
   10: {
+    dishesTitle: "What to eat in Arashiyama",
+    meals: [
+      {
+        time: "12:00",
+        place: "Arashiyama Yoshimura",
+        type: "Lunch",
+        reserve: false,
+        note: "Soba and tempura on the riverbank, with Togetsukyō Bridge and Mt Arashiyama framed in the windows. Ask for the second floor, which has the best view. Opens at 11:00 and the queue builds fast — get there by 12:00.",
+      },
+      {
+        time: "13:00",
+        place: "Arashiyama high street",
+        type: "Street snack",
+        reserve: false,
+        note: "The road between Tenryū-ji and the bridge is lined with snack stalls: matcha soft serve, dango, croquettes, yuba.",
+      },
+      {
+        time: "19:00",
+        place: "Pontochō (optional)",
+        type: "Dinner",
+        reserve: false,
+        note: "If you go out again after resting: the narrow alley of restaurants between Kiyamachi and the Kamo River, lantern-lit at night. Some places are tourist traps — check the menu and prices posted at the door before going in. If you stay in, eat near the hotel.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Yudōfu",
+        jp: "湯豆腐",
+        desc: "Tofu simmered in kelp broth, the classic dish of Arashiyama and Sagano, where temple cooking and good water go together.",
+      },
+      {
+        name: "Soba",
+        jp: "そば",
+        desc: "Buckwheat noodles, hot or cold. With tempura at Yoshimura, looking at the river.",
+      },
+      {
+        name: "Matcha sweets",
+        jp: "抹茶スイーツ",
+        desc: "Soft serve, parfaits and dango — Kyoto's green tea in every form along the high street.",
+      },
+    ],
+    reservations:
+      "Nothing today needs booking unless you add the Sagano train. Yoshimura is walk-in: arrive early.",
+  },
+  11: {
     dishesTitle: "What to eat in Kurama & Kibune",
     meals: [
       {

@@ -48,6 +48,7 @@ const SOURCES = [
   { file: "src/data/day7-stops.js", day: 7 },
   { file: "src/data/day9-stops.js", day: 9 },
   { file: "src/data/day10-stops.js", day: 10 },
+  { file: "src/data/day11-stops.js", day: 11 },
   // The hotels belong to a block of days rather than to one, and the pending
   // ones to no day at all, so they are keyed by their own id.
   {
@@ -69,7 +70,8 @@ function slugify(name) {
 }
 
 function localPath(day, stop) {
-  return `/photos/day${day}-${stop.n}-${slugify(stop.name)}.webp`;
+  // `n` is slugified too for the optional extras, whose `n` is "Extra".
+  return `/photos/day${day}-${slugify(String(stop.n))}-${slugify(stop.name)}.webp`;
 }
 
 /** How an entry is named in the "paths out of sync" report. */

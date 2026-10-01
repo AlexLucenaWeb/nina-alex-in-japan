@@ -134,7 +134,13 @@ function FitBounds({ positions }) {
   return null;
 }
 
-export default function RouteMap({ stops }) {
+export default function RouteMap({ stops: allStops }) {
+  // Optional extras (`optional: true`, `n: "Extra"`) aren't part of the walked
+  // route: no numbered marker for them, and no leg of the line.
+  const stops = useMemo(
+    () => allStops.filter((stop) => !stop.optional),
+    [allStops]
+  );
   const prefersDark = usePrefersDark();
   const routeColor = usePaletteColor("--momiji", prefersDark);
   const positions = useMemo(

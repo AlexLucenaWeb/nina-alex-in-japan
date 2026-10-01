@@ -3,7 +3,7 @@ import StopCard from "@/components/route-itinerary/StopCard";
 import { day7Stops } from "@/data/day7-stops";
 
 // TODO: add My Maps mid — the "The route" section and its DayMapEmbed go here,
-// between the intro and the Food section, the same as Days 3, 8, 9 and 10.
+// between the intro and the Food section, the same as Days 3, 8 and 9.
 // Nothing is rendered until the map exists: a placeholder mid only produces an
 // iframe that fails to load.
 

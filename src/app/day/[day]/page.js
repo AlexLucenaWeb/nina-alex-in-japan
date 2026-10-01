@@ -5,6 +5,7 @@ import FoodSection from "@/components/FoodSection";
 import PlaceholderPhoto from "@/components/PlaceholderPhoto";
 import BulletList from "@/components/BulletList";
 import HigashiyamaGionItinerary from "@/components/higashiyama-gion/HigashiyamaGionItinerary";
+import ArashiyamaItinerary from "@/components/arashiyama/ArashiyamaItinerary";
 import KuramaKibuneItinerary from "@/components/kurama-kibune/KuramaKibuneItinerary";
 import FlightItinerary from "@/components/flight-itinerary/FlightItinerary";
 import ArrivalOsakaItinerary from "@/components/arrival-osaka/ArrivalOsakaItinerary";
@@ -40,7 +41,8 @@ const DAY_CONTENT = {
   7: (props) => <KyotoArrivalItinerary {...props} />,
   8: (props) => <NaraItinerary {...props} />,
   9: (props) => <HigashiyamaGionItinerary {...props} />,
-  10: (props) => <KuramaKibuneItinerary {...props} />,
+  10: (props) => <ArashiyamaItinerary {...props} />,
+  11: (props) => <KuramaKibuneItinerary {...props} />,
 };
 
 export function generateStaticParams() {
