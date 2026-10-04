@@ -9,17 +9,14 @@ export const metadata = {
   description: "A 21-day trip through Japan, day by day.",
   appleWebApp: {
     title: "Japan Trip",
-    statusBarStyle: "default",
+    statusBarStyle: "black",
   },
 };
 
 export const viewport = {
-  // Matches --paper in each theme so the browser and PWA chrome blend into
-  // the page instead of sitting on it as a coloured band.
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#e7e1d4" },
-    { media: "(prefers-color-scheme: dark)", color: "#14110d" },
-  ],
+  // Matches --paper so the browser and PWA chrome blend into the page
+  // instead of sitting on it as a coloured band.
+  themeColor: "#121212",
 };
 
 export default function RootLayout({ children }) {

@@ -5,8 +5,8 @@ export default function manifest() {
     description: "A 21-day trip through Japan, day by day.",
     start_url: "/",
     display: "standalone",
-    background_color: "#FBF8F1",
-    theme_color: "#A8321F",
+    background_color: "#121212",
+    theme_color: "#121212",
     icons: [
       {
         src: "/icon-192.png",

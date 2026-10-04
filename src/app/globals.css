@@ -3,47 +3,33 @@
 @source "../";
 
 /*
- * One palette for every page. Each colour is a plain CSS variable, so the dark
- * theme is a single override block below and components never need a `dark:`
- * variant — `bg-card` is correct in both themes.
+ * One palette for every page. Each colour is a plain CSS variable, so
+ * components never need a `dark:` variant — `bg-card` is all they say.
+ *
+ * Dark only: the site no longer follows the system theme. A light palette
+ * would go back in here as a `prefers-color-scheme: light` override.
  *
  * `@theme inline` is what makes that work: utilities compile to `var(--card)`
  * instead of to whatever hex value was current when Tailwind ran.
  */
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 
-  --paper: #e7e1d4; /* page background */
-  --card: #fbf8f1; /* raised surfaces: cards, tables */
-  --band: #dcd4c3; /* header bars — deliberately not --card, so headers read
-                      as structure rather than as one more box */
-  --ink: #241e17; /* text — /70 for secondary, /50 for muted */
-  --line: #cdc3af; /* borders and rules */
-  --momiji: #a8321f; /* maple red: the one accent */
-  --on-momiji: #fbf8f1; /* text sitting on a momiji fill */
-  --ochre: #9c7020;
-  --pine: #4a5a44;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Neutral greys, no hue: warm near-blacks read as a brown cast on screen.
-       The warmth in this theme comes from the accents, not the surfaces. */
-    --paper: #121212;
-    --card: #1e1e1e;
-    /* Lighter than the cards here, darker than the page in the light theme:
-       either way the header is the heaviest surface on screen. */
-    --band: #2b2b2b;
-    --ink: #ebebeb;
-    --line: #3d3d3d;
-    /* The light theme's deep red disappears on a dark background, so this is a
-       lightened version of it — same hue (~9°), kept at ~5:1 against --paper.
-       Any lighter and it slides into salmon. */
-    --momiji: #e2543a;
-    --on-momiji: #141414;
-    --ochre: #d9a441;
-    --pine: #93a98a;
-  }
+  /* Neutral greys, no hue: warm near-blacks read as a brown cast on screen.
+     The warmth in this theme comes from the accents, not the surfaces. */
+  --paper: #121212; /* page background */
+  --card: #1e1e1e; /* raised surfaces: cards, tables */
+  /* Header bars — lighter than the cards, so the header is the heaviest
+     surface on screen and reads as structure rather than one more box. */
+  --band: #2b2b2b;
+  --ink: #ebebeb; /* text — /70 for secondary, /50 for muted */
+  --line: #3d3d3d; /* borders and rules */
+  /* Maple red, the one accent: a lightened red (hue ~9°) kept at ~5:1 against
+     --paper. Any lighter and it slides into salmon. */
+  --momiji: #e2543a;
+  --on-momiji: #141414; /* text sitting on a momiji fill */
+  --ochre: #d9a441;
+  --pine: #93a98a;
 }
 
 @theme inline {

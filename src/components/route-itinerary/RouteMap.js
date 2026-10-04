@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -14,12 +14,9 @@ import "leaflet/dist/leaflet.css";
 
 const FIT_PADDING = [40, 40];
 
-// A light basemap in dark mode is the one thing that gives the theme away, so
-// the tiles switch with it. Same provider, so the styling stays consistent.
-const TILE_URL = {
-  light: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-  dark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-};
+// The site is dark only, and a light basemap would be the one thing that
+// gives the theme away.
+const TILE_URL = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 const TILE_ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
 
@@ -37,37 +34,17 @@ function createNumberedIcon(n) {
   });
 }
 
-const DARK_SCHEME = "(prefers-color-scheme: dark)";
-
-function subscribeToColorScheme(onChange) {
-  const query = window.matchMedia(DARK_SCHEME);
-  query.addEventListener("change", onChange);
-  return () => query.removeEventListener("change", onChange);
-}
-
-// The OS colour scheme is external state, so it is read rather than mirrored
-// into a useState — that would be a setState inside an effect.
-function usePrefersDark() {
-  return useSyncExternalStore(
-    subscribeToColorScheme,
-    () => window.matchMedia(DARK_SCHEME).matches,
-    () => false,
-  );
-}
-
 // Leaflet writes the route colour to an SVG presentation attribute, so it has
 // to be a literal value — var(--momiji) never resolves there, and react-leaflet
 // drops pathOptions.className, ruling out styling it from the stylesheet.
 // Reading the token keeps globals.css the only place the palette is defined.
-function usePaletteColor(variable, prefersDark) {
+function usePaletteColor(variable) {
   return useMemo(
     () =>
       getComputedStyle(document.documentElement)
         .getPropertyValue(variable)
         .trim(),
-    // Re-read on theme change: the variable resolves to a different value.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [variable, prefersDark],
+    [variable],
   );
 }
 
@@ -141,8 +118,7 @@ export default function RouteMap({ stops: allStops }) {
     () => allStops.filter((stop) => !stop.optional),
     [allStops]
   );
-  const prefersDark = usePrefersDark();
-  const routeColor = usePaletteColor("--momiji", prefersDark);
+  const routeColor = usePaletteColor("--momiji");
   const positions = useMemo(
     () => stops.map((stop) => [stop.lat, stop.lng]),
     [stops]
@@ -177,11 +153,8 @@ export default function RouteMap({ stops: allStops }) {
         style={{ height: "100%", width: "100%" }}
       >
         <TileLayer
-          // Leaflet caches the URL template on mount; the key forces a fresh
-          // layer when the system theme flips mid-session.
-          key={prefersDark ? "dark" : "light"}
           attribution={TILE_ATTRIBUTION}
-          url={prefersDark ? TILE_URL.dark : TILE_URL.light}
+          url={TILE_URL}
           subdomains="abcd"
           maxZoom={20}
         />
