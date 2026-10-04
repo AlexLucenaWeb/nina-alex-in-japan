@@ -1,14 +1,14 @@
+import DayMapEmbed from "@/components/DayMapEmbed";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day11Stops } from "@/data/day11-stops";
 
-// TODO: add My Maps mid — the "The route" section and its DayMapEmbed go here,
-// between the intro and the Food section, the same as Days 3, 8 and 9.
-// Nothing is rendered until the map exists: a placeholder mid only produces an
-// iframe that fails to load. The stop order changed to Kibune → Kurama, so the
-// map has to be a new one (MID_PENDIENTE_DAY11), not the old Kurama-first route.
+// Same as Days 3, 8 and 9: this day's route lives in a Google My Maps map
+// instead of the Leaflet component, so it can be edited from Google Maps
+// without touching the stop data in the repo.
+const MY_MAPS_ID = "1Cgsu9Pi-tnyYAvaJJYKWXfjKP2XW4LY";
 
 const GOOD_TO_KNOW = [
   "Route direction is Kibune → Kurama on purpose: the steep root-step section is climbed, not descended, which is safer if the ground is damp.",
@@ -51,6 +51,23 @@ export default function KuramaKibuneItinerary({ food }) {
           and the momiji tunnel comes at dusk on the way back.
         </p>
       </div>
+
+      <section aria-label="Route map" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">The route</h2>
+
+        <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+          <DayMapEmbed mid={MY_MAPS_ID} />
+        </div>
+
+        <a
+          href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start text-sm text-momiji hover:underline"
+        >
+          Open in Google Maps
+        </a>
+      </section>
 
       {food}
 
