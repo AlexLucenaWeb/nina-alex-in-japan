@@ -356,20 +356,32 @@ export const foodByDay = {
     meals: [
       {
         time: "13:15",
-        place: "Kibunesou or Kibune Kiraku, Kibune village",
+        place: "Yōshūji, Kurama",
         type: "Lunch",
         reserve: false,
-        note: "Traditional Kyoto kaiseki at one, seafood and wagyu set menus at the other, both in the village at the end of the crossing. The kawadoko terraces built out over the river come down at the end of summer, so in November you eat indoors. Walk-in, but get there early in high season.",
+        note: "Shōjin ryōri — vegetarian Buddhist cuisine — set meals, soba and yuba, a few steps from Kurama-dera's Niōmon gate, right where the walk down ends. Walk-in, and it fills up on weekends.",
+      },
+      {
+        time: "13:15",
+        place: "Kibune's main street",
+        type: "Lunch, the backup",
+        reserve: false,
+        note: "Kibunesou or Kibune Kiraku, along the road up to the shrine — the option if the day goes the other way round, as on the rainy-day plan. The kawadoko river terraces are summer-only; in November you eat indoors.",
       },
       {
         time: "18:00",
         place: "Central Kyoto",
         type: "Dinner",
         reserve: false,
-        note: "The Kirara train drops you back in the city with the evening still open, and nothing about it needs planning — eat wherever you land coming off the Eizan line.",
+        note: "Back in the city after the momiji tunnel, with nothing to book — eat wherever you land coming off the Eizan line.",
       },
     ],
     dishes: [
+      {
+        name: "Shōjin ryōri",
+        jp: "精進料理",
+        desc: "The vegetarian cooking of Buddhist temples: tofu, seasonal vegetables and mountain greens, no meat or fish. The obvious thing to eat at the foot of Kurama-dera.",
+      },
       {
         name: "Yuba",
         jp: "湯葉",
@@ -380,14 +392,9 @@ export const foodByDay = {
         jp: "そば",
         desc: "Buckwheat noodles from the mountains north of Kyoto, where the cold and the water suit them. The obvious thing to eat coming off the trail.",
       },
-      {
-        name: "Seasonal sweets",
-        jp: "季節の和菓子",
-        desc: "Kibune's teahouses change their wagashi with the season — in November that means chestnut, persimmon and maple-leaf shapes, with matcha.",
-      },
     ],
     reservations:
-      "Kibunesou and Kibune Kiraku are both walk-in, but Kibune fills up through the autumn — arrive early or be ready to wait. One thing worth knowing: Hirobun's nagashi somen, the noodles you catch as they come down a bamboo pipe, is a summer-only affair; in November they serve a seasonal set menu instead. The Eizan Kirara train needs no reservation either — just tap in with an IC card.",
+      "Nothing today needs booking. Yōshūji is walk-in but fills up on Saturdays, so aim to be there around 13:15. The Eizan train needs no reservation either — just tap in with an IC card.",
   },
 };
 

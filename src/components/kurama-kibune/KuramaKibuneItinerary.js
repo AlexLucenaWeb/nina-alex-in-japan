@@ -1,3 +1,5 @@
+import BulletList from "@/components/BulletList";
+import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day11Stops } from "@/data/day11-stops";
@@ -5,7 +7,29 @@ import { day11Stops } from "@/data/day11-stops";
 // TODO: add My Maps mid — the "The route" section and its DayMapEmbed go here,
 // between the intro and the Food section, the same as Days 3, 8 and 9.
 // Nothing is rendered until the map exists: a placeholder mid only produces an
-// iframe that fails to load.
+// iframe that fails to load. The stop order changed to Kibune → Kurama, so the
+// map has to be a new one (MID_PENDIENTE_DAY11), not the old Kurama-first route.
+
+const GOOD_TO_KNOW = [
+  "Route direction is Kibune → Kurama on purpose: the steep root-step section is climbed, not descended, which is safer if the ground is damp.",
+  "The trail goes through Kurama-dera's grounds: it can only be walked while the temple is open (9:00–16:15). Start the crossing by 14:00 at the latest.",
+  "Allow 1.5–2 h for the crossing with photos (~6.3 km and 373 m elevation gain for the whole day). Shoes with good grip; keep hands free on the root sections.",
+  "No vending machines on the trail: buy water in Kibune.",
+  "The momiji tunnel illumination dates change every year: confirm 2026 dates before travelling.",
+  "Heavy rain: switch to the rainy-day plan below or swap the day for Ohara (flat, ~1 h by Kyoto Bus). Don't combine Ohara with Kurama/Kibune on the same day.",
+];
+
+const RAIN_PLAN = [
+  { time: "09:00", what: "Eizan Railway from Demachiyanagi straight to Kurama Station (end of the line, ~30 min)." },
+  { time: "09:40", what: "Niōmon gate → Kurama funicular up (about 2 min; small fare on top of the temple entry, runs until ~16:00)." },
+  { time: "10:00", what: "Kurama-dera main hall: a few flights of stone steps from the top station; views over the valley." },
+  { time: "11:00", what: "Funicular back down." },
+  { time: "11:30", what: "Lunch at Yōshūji." },
+  { time: "13:00", what: "Kurama Onsen." },
+  { time: "15:15", what: "Train one stop to Kibuneguchi → Kyoto Bus 33 to Kibune." },
+  { time: "15:45", what: "Kifune-jinja; stay until dusk for the lantern-lit stairs." },
+  { time: "~17:00", what: "Bus + train back through the illuminated momiji tunnel. On Saturday expect queues at Kibuneguchi at this hour." },
+];
 
 export default function KuramaKibuneItinerary({ food }) {
   return (
@@ -15,15 +39,16 @@ export default function KuramaKibuneItinerary({ food }) {
           <span className="font-semibold text-momiji">
             One mountain, crossed on foot:
           </span>{" "}
-          the Eizan line up to Kurama, the climb past Yuki-jinja to the temple,
-          and then the ridge trail — cedar roots, forest halls — down into the
-          Kibune valley on the other side. The walking is the day.
+          the Eizan line up to Kibune and its water shrine first thing, then
+          the ridge trail — cedar roots, forest halls — over to Kurama-dera and
+          down into Kurama on the other side. Lunch, an onsen, and the train
+          home from the end of the line.
         </p>
         <p className="mt-2">
-          It has to happen in the morning: the trail runs through Kurama-dera&apos;s
-          grounds and closes at 16:15. Everything lit up comes at the end on
-          purpose — the Kifune lanterns and the momiji tunnel are worth waiting
-          for the dark, and the trail isn&apos;t.
+          The direction is the point: the steep stretch of root steps is
+          climbed, not descended. The trail runs through Kurama-dera&apos;s
+          grounds and closes at 16:15, so the mountain happens in the morning,
+          and the momiji tunnel comes at dusk on the way back.
         </p>
       </div>
 
@@ -53,91 +78,27 @@ export default function KuramaKibuneItinerary({ food }) {
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
         <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <BulletList items={GOOD_TO_KNOW} />
+      </section>
 
-        <div className="rounded-2xl border-2 border-ochre/50 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-ochre">
-            The trail closes at 16:15
-          </h3>
-          <p className="mt-2">
-            The crossing runs through Kurama-dera&apos;s grounds — the ¥500
-            temple entry covers it — and the Kinone-michi section shuts at
-            16:15. That is what fixes the shape of the day: the mountain in the
-            morning, everything else after it. There is no afternoon version of
-            this route.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-ochre/50 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-ochre">
-            Do the crossing in daylight
-          </h3>
-          <p className="mt-2">
-            The trail has no lighting at all, which is the other half of the
-            same rule: walk it in the middle of the day, and save the
-            illuminated parts — the Kifune lanterns, the momiji tunnel — for
-            the end.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            Kurama first, on purpose
-          </h3>
-          <p className="mt-2">
-            About 1h–1h15 over forest trail and stone steps. Going in this
-            direction puts you up the gentler side and down into Kibune, rather
-            than the other way round. Moderate rather than hard, but it is a
-            mountain crossing: comfortable walking shoes are required, not
-            advisable.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            Getting down to the station
-          </h3>
-          <p className="mt-2">
-            Kifune-jinja to Kibuneguchi Station is 25–30 minutes on foot along
-            the stream, downhill the whole way, or a short ride on Kyoto Bus
-            33 if the legs have had enough by then.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-momiji">
-            Confirm the 2026 illumination dates
-          </h3>
-          <p className="mt-2">
-            The Eizan Railway momiji tunnel illumination and the Kifune Momiji
-            Lantern festival both run roughly from early to late November, but
-            the exact dates are set year by year. Check them before travelling
-            — they are the reason this day ends after dark.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            The Kirara train needs no booking
-          </h3>
-          <p className="mt-2">
-            No reservation, no seat to buy: tap in with an IC card (ICOCA,
-            Suica or Pasmo) and board. The panorama carriages have seats facing
-            the windows, and the driver dims the lights for the 250 m of lit
-            maples between Ichihara and Ninose.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            Kurama Onsen, at a price
-          </h3>
-          <p className="mt-2">
-            An open-air rotenburo near Kurama station, looking into the
-            mountains. It only fits if you drop or shorten something else —
-            the trail has to be done before it closes, so the onsen competes
-            with the mountain rather than following it.
-          </p>
-        </div>
+      <section aria-label="If it has rained" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">If it has rained</h2>
+        <p className="text-sm leading-relaxed text-ink/80">
+          Wet cedar roots and fallen maple leaves make the trail slippery. If it
+          rained the day before or that morning, skip the mountain crossing: go
+          straight to Kurama, use the funicular for the climb and visit Kibune
+          afterwards by train and bus.
+        </p>
+        <DataTable columns={["Time", "What"]}>
+          {RAIN_PLAN.map((row) => (
+            <tr key={row.time} className="border-b border-line/50 last:border-0">
+              <td className="whitespace-nowrap px-4 py-3 font-medium text-momiji">
+                {row.time}
+              </td>
+              <td className="px-4 py-3 text-ink/80">{row.what}</td>
+            </tr>
+          ))}
+        </DataTable>
       </section>
     </JapanRouteDayShell>
   );
