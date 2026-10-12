@@ -396,6 +396,105 @@ export const foodByDay = {
     reservations:
       "Nothing today needs booking. Yōshūji is walk-in but fills up on Saturdays, so aim to be there around 13:15. The Eizan train needs no reservation either — just tap in with an IC card.",
   },
+  12: {
+    dishesTitle: "What to eat in Kanazawa",
+    meals: [
+      {
+        time: "12:35",
+        place: "Hirai Ichibakan or Kaisendon Yutaka Suisan, Omicho",
+        type: "Lunch",
+        reserve: false,
+        note: "Kaisendon at Omicho. Hirai Ichibakan is on the 2nd floor and calmer (Sun 10:30–17:00); Kaisendon Yutaka Suisan opens early and closes late (Sun 7:00–18:00).",
+      },
+      {
+        time: "12:35",
+        place: "Ippukuya, Ippuku Yokocho",
+        type: "Lunch, the other option",
+        reserve: false,
+        note: "Oden, daytime only (until 17:00). Try the kani-men: a crab shell stuffed with crab meat and fish cakes, soaked in oden broth.",
+      },
+      {
+        time: "15:00",
+        place: "Hakuichi, Higashi Chaya",
+        type: "Street snack",
+        reserve: false,
+        note: "Soft serve wrapped in a whole sheet of gold leaf (~¥900) — Kanazawa makes almost all of Japan's gold leaf.",
+      },
+      {
+        time: "20:00",
+        place: "Katamachi",
+        type: "Dinner",
+        reserve: false,
+        note: "~15 min walk from Kenroku-en. Akadama Honten for Kanazawa oden (Sun 16:00–22:00, cash only), or Chuo Mishokugai, a retro alley of tiny izakayas — on Sundays only 18:00–21:00, so arrive by ~20:00; very small counters and mixed reviews with tourists. Fallback near the hotel: the restaurants in the Omicho Ichibakan building stay open in the evening.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Kaisendon",
+        jp: "海鮮丼",
+        desc: "A bowl of rice topped with raw seafood. Omicho's speciality, and November is the start of crab season.",
+      },
+      {
+        name: "Kanazawa oden",
+        jp: "金沢おでん",
+        desc: "Ingredients simmered in a light dashi, eaten year-round here rather than only in winter.",
+      },
+      {
+        name: "Kani-men",
+        jp: "カニ面",
+        desc: "Kanazawa's signature oden: a crab shell stuffed with crab meat and fish cakes, soaked in the broth.",
+      },
+    ],
+    reservations:
+      "Nothing booked. Some small oden counters don't seat foreigners — have a backup in mind. Akadama Honten is cash only, and Chuo Mishokugai closes at 21:00 on Sundays.",
+  },
+  13: {
+    dishesTitle: "Crab season in Kanazawa",
+    meals: [
+      {
+        time: "11:30",
+        place: "Gyokusen-an, Gyokusen-inmaru Garden",
+        type: "Matcha",
+        reserve: false,
+        note: "Matcha with a seasonal sweet, overlooking the garden. Arrive before 12:00 — the tea service stops for lunch.",
+      },
+      {
+        time: "12:30",
+        place: "Omicho Market",
+        type: "Lunch, grazing",
+        reserve: false,
+        note: "Most stalls are open on Mondays. Noto wagyu skewer at Takumi, oysters at Kawaki Shoten or Shimada, croquettes at Diamond, and the kani-men at Ippukuya.",
+      },
+      {
+        time: "Evening",
+        place: "Sushi Hachimaru or Kourin Sushi",
+        type: "Dinner · Sushi night",
+        reserve: true,
+        note: "Sushi Hachimaru: omakase with local fish, foreigner-friendly with English cards, higher budget — Mon 18:00–22:00, reservation only (Tabelog). Kourin Sushi: family-run, very good value, English spoken, near Omicho — Mon 17:30–21:30, reserve. Walk-in fallback: Maimon Sushi or Sushi Kuine at Kanazawa Station — expect queues on a holiday.",
+      },
+      {
+        time: "Evening",
+        place: "Daimyo Chaya or Koufuku",
+        type: "Dinner · Crab night",
+        reserve: true,
+        note: "Daimyo Chaya: crab kaiseki (Kano crab cooked many ways) and nodoguro, English menu, higher budget — Mon 17:00–22:00, reserve. Koufuku: seafood restaurant in the Omicho Ichibakan building, crab and nodoguro hitsumabushi, casual, mixed reviews — Mon 17:00–22:00.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Kōbako-gani",
+        jp: "香箱ガニ",
+        desc: "The female snow crab, with its roe. Only in season from November to the end of December — ask for it by name, whichever dinner you pick.",
+      },
+      {
+        name: "Kani-men",
+        jp: "カニ面",
+        desc: "Oden of a crab shell stuffed with crab meat and fish cakes, soaked in the broth. Ippukuya at Omicho.",
+      },
+    ],
+    reservations:
+      "Dinner is two options, decided on the day: a sushi night or a crab night. Either way, book ahead — it's a public holiday. Myoryuji also needs a reservation, by phone.",
+  },
 };
 
 export function hasFoodSection(day) {

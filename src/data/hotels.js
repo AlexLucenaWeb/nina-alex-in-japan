@@ -17,7 +17,8 @@
  * say so. It falls back to "Official website".
  *
  * `linkedDays` are the day pages that lead here — the check-in day of each
- * stay, which is what puts the "Tonight: …" link on src/app/day/[day]/page.js.
+ * stay, plus any later night of it that should point back too — which is what
+ * puts the "Tonight: …" link on src/app/day/[day]/page.js.
  *
  * This site is public, so nothing private lives here: no confirmation numbers,
  * door codes or PINs. Those stay in email.
@@ -101,7 +102,7 @@ export const HOTELS = [
     checkIn: { date: "2026-11-22", time: "15:00" },
     checkOut: { date: "2026-11-25", time: "11:00" },
     nights: 3,
-    linkedDays: [12],
+    linkedDays: [12, 13],
     photo: "/photos/hotel-kanazawa-four-points-flex.webp",
     photoSource:
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYqoCuUkPtg-YaAtuWTSHm_-VVhmIIp_smJBKHcOHoh-d5k6jBfc38d-zLH3-RihsjmB0UsoQV_acBTWeALpYhZw8OkeAzmnHP13azEKNQR8LyAPsC-U4OodtIU2SxdZyDeDECqlt_rBZ2=s1360-w1360-h1020-rw",

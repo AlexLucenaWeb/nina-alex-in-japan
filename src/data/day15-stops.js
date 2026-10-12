@@ -1,0 +1,55 @@
+export const day15Stops = [
+  {
+    n: 1,
+    time: "9:07",
+    name: "Kanazawa Station",
+    jp: "金沢駅",
+    lat: 36.5780443,
+    lng: 136.6481714,
+    hours: "Kagayaki dep. 9:07",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJBYa7A0Iz-F8R6qe7HgH2XV0",
+    photo: "/photos/day15-1-kanazawa-station.webp",
+    photoSource: "https://ikw-media-prod.s3.ap-northeast-1.amazonaws.com/media/e3KtF1wkX5ZukfQZIM7cN__en-US__img_spot_065_02.jpg",
+    desc: "Big luggage goes ahead to Tokyo by takkyubin — travel light with a day pack. Hokuriku Shinkansen Kagayaki to Ōmiya (buy the ticket only to Ōmiya, reserved seat; paper ticket, not Suica). Grab an ekiben for the ride."
+  },
+  {
+    n: 2,
+    time: "~11:10",
+    name: "ecute Ōmiya",
+    jp: "エキュート大宮",
+    lat: 35.9059177,
+    lng: 139.6241838,
+    hours: "8:00–22:00",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJ0SRnLkLBGGARfpm6HiRm_Dg",
+    photo: "/photos/day15-2-ecute-omiya.webp",
+    photoSource: "https://www.jred.co.jp/projects/img/p140-slide1-pic01.jpg",
+    desc: "Food hall inside the ticket gates — pick up bento and sweets for later. Then the Shōnan-Shinjuku Line bound for Odawara (小田原). Check the destination: some trains go to Zushi/Kamakura instead. Ride in the Green Car (pay the supplement with Suica, ~1h45)."
+  },
+  {
+    n: 3,
+    time: "~13:15",
+    name: "Odawara Station",
+    jp: "小田原駅",
+    lat: 35.2564449,
+    lng: 139.1553932,
+    hours: "—",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJuWAWN1akGWARzf3qZtZIduw",
+    photo: "/photos/day15-3-odawara-station.webp",
+    photoSource: "https://c8.alamy.com/comp/3BHX87Y/odawara-station-platform-and-the-hakone-tozan-line-train-station-in-odawara-japan-3BHX87Y.jpg",
+    photoFocusY: 0,
+    desc: "Buy the 2-day Hakone Free Pass (covers today's bus and tomorrow's loop). Take bus J03 to Kami-Gōra-Iriguchi — it runs infrequently, so check the next departure. Backup: Hakone Tozan Railway to Gōra Station (also covered by the pass)."
+  },
+  {
+    n: 4,
+    time: "14:03",
+    name: "Kami-Gōra-Iriguchi",
+    jp: "上強羅入口",
+    lat: 35.247336,
+    lng: 139.035689,
+    hours: "—",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJh04R8FOfGWARpaP6v-OQ4Vw",
+    photo: "/photos/day15-4-kami-gora-iriguchi.webp",
+    photoSource: "https://upload.wikimedia.org/wikipedia/commons/2/28/Gora_Station_-_Kanagawa_-_2025_June_29_various_01.jpg",
+    desc: "End of today's route. The rest of the day is free time in Gōra."
+  },
+];

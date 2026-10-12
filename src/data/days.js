@@ -166,6 +166,45 @@ const overrides = {
       "Board the train home at Kurama, the end of the line, rather than at Kibuneguchi — the Saturday queues build up there at dusk.",
     ],
   },
+  12: {
+    title: "Kyoto → Kanazawa",
+    date: "November 22",
+    location: "Kyoto → Kanazawa",
+    summary:
+      "Thunderbird + Hokuriku Shinkansen · Higashi Chaya · castle & Kenroku-en light-up. The Thunderbird up Lake Biwa and the shinkansen from Tsuruga put us in Kanazawa by noon: bags at the hotel, crab-season lunch at Omicho, the teahouses of Higashi Chaya and Kazuemachi before dark, then the castle park and Kenroku-en lit up for autumn.",
+    recommendations: [
+      "Buy drinks and snacks at Kyoto Station before boarding: the Thunderbird has no onboard sales.",
+      "Sit on the right-hand side of the Thunderbird for the views over Lake Biwa.",
+      "Be at Higashi Chaya by mid-afternoon: it's dark around 16:40 and most shops close at 17:30.",
+      "The castle and Kenroku-en light-ups are free and run 18:00–21:00 (last entry 20:45). Walk there via Oyama Shrine: the Light-up Bus only runs on Saturdays and special dates.",
+    ],
+  },
+  13: {
+    title: "Kanazawa",
+    date: "November 23 (public holiday)",
+    location: "Kanazawa",
+    summary:
+      "Kenroku-en · Omicho · samurai & ninja. A full day in Kanazawa on foot: Kenroku-en in the morning, the castle park and matcha over the Gyokusen-inmaru garden, grazing lunch at Omicho, then the samurai house at Nagamachi, the quiet geisha street of Nishi Chaya and the trap doors of the ninja temple.",
+    recommendations: [
+      "Book Myoryuji by phone before the trip — it's reservation only, and a holiday.",
+      "Book dinner ahead too, whichever night you pick: sushi or crab.",
+      "Reach Gyokusen-an before 12:00 — the tea service stops for lunch.",
+      "Carry cash for Nomura-ke.",
+    ],
+  },
+  15: {
+    title: "Kanazawa → Gōra",
+    date: "November 25",
+    location: "Kanazawa → Gōra, Hakone (in transit)",
+    summary:
+      "Travel day from the Sea of Japan to the Hakone hills: the Kagayaki shinkansen to Ōmiya, the Shōnan-Shinjuku Line in the Green Car down to Odawara, and bus J03 up to Gōra. Big luggage goes ahead to Tokyo, so it's a day-pack day. About 5 hours of transit, and the afternoon free in Gōra.",
+    recommendations: [
+      "Send the big luggage to Tokyo by takkyubin the day before, so the morning is just a day pack and the 9:07 train.",
+      "Buy the shinkansen ticket only as far as Ōmiya, with a reserved seat — it's a paper ticket, not Suica.",
+      "At Ōmiya, check the Shōnan-Shinjuku train is bound for Odawara (小田原): some go to Zushi/Kamakura instead.",
+      "Buy the 2-day Hakone Free Pass at Odawara — it covers today's bus and tomorrow's loop. Bus J03 runs infrequently; the Hakone Tozan Railway to Gōra is the backup, also on the pass.",
+    ],
+  },
 };
 
 export const days = Array.from({ length: TRIP_LENGTH }, (_, i) => {
