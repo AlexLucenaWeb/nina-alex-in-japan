@@ -17,6 +17,7 @@ import KyotoArrivalItinerary from "@/components/kyoto-arrival/KyotoArrivalItiner
 import UniversalStudiosItinerary from "@/components/universal-studios/UniversalStudiosItinerary";
 import KanazawaArrivalItinerary from "@/components/kanazawa-arrival/KanazawaArrivalItinerary";
 import KanazawaCityItinerary from "@/components/kanazawa-city/KanazawaCityItinerary";
+import ShirakawaGoItinerary from "@/components/shirakawa-go/ShirakawaGoItinerary";
 import KanazawaGoraItinerary from "@/components/kanazawa-gora/KanazawaGoraItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
@@ -48,6 +49,7 @@ const DAY_CONTENT = {
   11: (props) => <KuramaKibuneItinerary {...props} />,
   12: (props) => <KanazawaArrivalItinerary {...props} />,
   13: (props) => <KanazawaCityItinerary {...props} />,
+  14: (props) => <ShirakawaGoItinerary {...props} />,
   15: (props) => <KanazawaGoraItinerary {...props} />,
 };
 

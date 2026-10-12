@@ -495,6 +495,51 @@ export const foodByDay = {
     reservations:
       "Dinner is two options, decided on the day: a sushi night or a crab night. Either way, book ahead — it's a public holiday. Myoryuji also needs a reservation, by phone.",
   },
+  14: {
+    dishesTitle: "What to eat in Shirakawa-go",
+    meals: [
+      {
+        time: "12:15",
+        place: "Shirakawago Kaido (main street)",
+        type: "Lunch, street food",
+        reserve: false,
+        note: "Graze rather than sit down: gohei-mochi, Hida beef croquettes or skewers, mitarashi dango.",
+      },
+      {
+        time: "15:10",
+        place: "Back across Deai-bashi",
+        type: "Afternoon treat",
+        reserve: false,
+        note: "Coffee and the village's famous pudding, plus gassho-shaped sweets to take home as souvenirs.",
+      },
+      {
+        time: "18:00",
+        place: "Around Omicho, Kanazawa",
+        type: "Dinner",
+        reserve: false,
+        note: "Keep it light and early — tomorrow starts with the 9:07 Kagayaki.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Gohei-mochi",
+        jp: "五平餅",
+        desc: "Pounded rice on a skewer, grilled and brushed with sweet miso.",
+      },
+      {
+        name: "Hida beef",
+        jp: "飛騨牛",
+        desc: "The region's wagyu, sold on the main street as croquettes or grilled skewers.",
+      },
+      {
+        name: "Mitarashi dango",
+        jp: "みたらし団子",
+        desc: "Grilled rice dumplings on a skewer, in a sweet-and-salty soy glaze.",
+      },
+    ],
+    reservations:
+      "No meals to book. Carry cash — many village stalls don't take cards.",
+  },
 };
 
 export function hasFoodSection(day) {

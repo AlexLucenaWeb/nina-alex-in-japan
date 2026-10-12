@@ -51,6 +51,7 @@ const SOURCES = [
   { file: "src/data/day11-stops.js", day: 11 },
   { file: "src/data/day12-stops.js", day: 12 },
   { file: "src/data/day13-stops.js", day: 13 },
+  { file: "src/data/day14-stops.js", day: 14 },
   { file: "src/data/day15-stops.js", day: 15 },
   // The hotels belong to a block of days rather than to one, and the pending
   // ones to no day at all, so they are keyed by their own id.

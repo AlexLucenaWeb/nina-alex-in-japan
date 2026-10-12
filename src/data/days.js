@@ -192,6 +192,19 @@ const overrides = {
       "Carry cash for Nomura-ke.",
     ],
   },
+  14: {
+    title: "Shirakawa-go",
+    date: "November 24",
+    location: "Shirakawa-go (from Kanazawa)",
+    summary:
+      "Gassho village day trip from Kanazawa. The highway bus to Ogimachi, the largest thatched-roof village of Shirakawa-go: the postcard view from Shiroyama, the inside of Wada House, a quiet temple and shrine, and the open-air museum across the suspension bridge. Back in Kanazawa at 17:20 for an early night.",
+    recommendations: [
+      "Reserve both bus legs on Japan Bus Online before the trip — each one is a separate ticket.",
+      "Bring cash: the viewpoint shuttle and many village shops don't take cards.",
+      "Dress for cold and wet — by late November the leaves are down and the first snow is possible.",
+      "Pack for tomorrow tonight: Day 15 leaves Kanazawa on the 9:07 Kagayaki.",
+    ],
+  },
   15: {
     title: "Kanazawa → Gōra",
     date: "November 25",
