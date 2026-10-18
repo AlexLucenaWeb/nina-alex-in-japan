@@ -8,7 +8,7 @@
  * Bump VERSION on any change here — old caches are dropped on activate.
  */
 
-const VERSION = "v5";
+const VERSION = "v6";
 const DOCUMENTS = `documents-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
 const CURRENT_CACHES = [DOCUMENTS, ASSETS];
@@ -22,6 +22,7 @@ const PRECACHE_URLS = [
   "/",
   "/preparation",
   "/hotels",
+  "/trains",
   OFFLINE_URL,
   "/manifest.webmanifest",
   ...Array.from({ length: TRIP_LENGTH }, (_, i) => `/day/${i + 1}`),

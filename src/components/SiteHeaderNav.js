@@ -13,11 +13,12 @@ const LINK_CLASS = `${BASE_CLASS} text-ink/60 hover:text-momiji`;
 // stylesheet, not the order they appear in the class attribute.
 const ACTIVE_CLASS = `${BASE_CLASS} text-momiji`;
 
-// The two standalone pages, kept short: on a day page they sit next to the
-// day stepper, and five items in one row already fill a phone header.
+// The standalone pages, kept short: on a day page they sit next to the day
+// stepper, and the header already wraps to a second row on a phone.
 const SECTIONS = [
   { href: "/preparation", label: "Prep" },
   { href: "/hotels", label: "Hotels" },
+  { href: "/trains", label: "Trains" },
 ];
 
 export default function SiteHeaderNav() {

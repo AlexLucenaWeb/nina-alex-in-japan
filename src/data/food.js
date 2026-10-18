@@ -540,6 +540,46 @@ export const foodByDay = {
     reservations:
       "No meals to book. Carry cash — many village stalls don't take cards.",
   },
+  16: {
+    dishesTitle: "What to eat in Hakone",
+    meals: [
+      {
+        time: "11:00",
+        place: "Kurotamago-kan, Ōwakudani",
+        type: "Snack · black eggs",
+        reserve: false,
+        note: "Kuro-tamago boiled in the volcanic springs, sold in packs. Cash only.",
+      },
+      {
+        time: "13:15",
+        place: "Shinshō Soba, Moto-Hakone",
+        type: "Lunch · tempura soba",
+        reserve: false,
+        note: "Next to the pier: tempura soba with huge prawns, and upstairs seating with lake views. Tsuchiya and Ashinoko Tea House near the shrine are closed on Thursdays, so this is the pick.",
+      },
+      {
+        time: "16:35",
+        place: "Hakone-Yumoto shopping street",
+        type: "Souvenirs",
+        reserve: false,
+        note: "Hakone roll and Hakone pudding to take to Tokyo.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Kuro-tamago",
+        jp: "黒たまご",
+        desc: "Eggs boiled in Ōwakudani's sulphur springs until the shells turn black. Legend says each one adds 7 years to your life.",
+      },
+      {
+        name: "Tempura soba",
+        jp: "天ぷらそば",
+        desc: "Buckwheat noodles in hot broth topped with tempura prawns — today's lunch.",
+      },
+    ],
+    reservations:
+      "No meals to book. Bring cash for the black eggs at Ōwakudani.",
+  },
 };
 
 export function hasFoodSection(day) {

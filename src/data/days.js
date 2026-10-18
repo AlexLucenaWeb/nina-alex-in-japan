@@ -3,7 +3,7 @@ export const TRIP_LENGTH = 21;
 const overrides = {
   1: {
     title: "Flight to Tokyo",
-    date: "November 11",
+    date: "Wednesday, 11 November",
     location: "Madrid → Doha → Tokyo (in transit)",
     summary:
       "Travel day: two long-haul flights via Doha to reach Japan. No sightseeing today — just the journey from Madrid to Narita, landing the morning of Day 2.",
@@ -18,21 +18,21 @@ const overrides = {
   },
   2: {
     title: "Arrival in Osaka",
-    date: "November 12",
+    date: "Thursday, 12 November",
     location: "Tokyo (NRT) → Shin-Osaka (in transit)",
     summary:
       "Landing at Narita and heading straight for Osaka: immigration with the Visit Japan Web QR, the Narita Express to Tokyo Station, then the Nozomi Shinkansen down to Shin-Osaka. Full airport process, train details, and a pre-flight checklist below.",
   },
   3: {
     title: "Osaka on Foot: South & Minami",
-    date: "November 13",
+    date: "Friday, 13 November",
     location: "Osaka",
     summary:
       "Osaka from south to north, on foot: the old temple at Shitenno-ji, kushikatsu under the Tsutenkaku tower in Shinsekai, then across into Minami for a quiet shrine, the Kuromon Ichiba food market, Shinsaibashi-suji and the lantern alley at Hozenji — finishing in Dotonbori as the neon comes on. See the interactive map and stop-by-stop itinerary below.",
   },
   4: {
     title: "Himeji & Kobe",
-    date: "November 14",
+    date: "Saturday, 14 November",
     location: "Himeji & Kobe (from Osaka)",
     summary:
       "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner.",
@@ -48,7 +48,7 @@ const overrides = {
   },
   5: {
     title: "Osaka Kita: Castle, River & Umeda",
-    date: "November 15",
+    date: "Sunday, 15 November",
     location: "Osaka",
     summary:
       "The other half of Osaka: a long morning at the castle and its park, the Ōkawa river by boat as far as OAP and a walk across to the red brick of Nakanoshima, the 173 m open-air observatory at Umeda with lunch underneath it, then back south for the shrine, Japan's longest shopping arcade and Magic: The Gathering to finish. The day the Osaka Amazing Pass earns its keep.",
@@ -63,7 +63,7 @@ const overrides = {
   },
   6: {
     title: "Universal Studios Japan",
-    date: "November 16",
+    date: "Monday, 16 November",
     location: "Universal Studios Japan, Osaka",
     summary:
       "A full day inside USJ: Super Nintendo World first thing, Hogsmeade and the Forbidden Journey late morning, dinosaurs after lunch, and the Minion Park and Hollywood end of the park as the light goes. Dinner at CityWalk on the way out.",
@@ -77,7 +77,7 @@ const overrides = {
   },
   7: {
     title: "Arrival in Kyoto",
-    date: "November 17",
+    date: "Tuesday, 17 November",
     location: "Osaka → Kyoto",
     summary:
       "Moving base from Osaka to Kyoto, home for the next five nights. Bags at the hotel by 10:00, then the Golden Pavilion, the maples of Tōfuku-ji, and Fushimi Inari's torii climbed to sunset.",
@@ -91,7 +91,7 @@ const overrides = {
   },
   8: {
     title: "Day Trip to Nara",
-    date: "November 18",
+    date: "Wednesday, 18 November",
     location: "Nara (from Kyoto)",
     summary:
       "The Aoniyoshi sightseeing train out of Kyoto, then everything on foot inside Nara Park: the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, sunset at the Ukimidō pavilion, and Kōfuku-ji and Sarusawa Pond at dusk on the way out. Deer throughout. Dinner in Naramachi before the train back.",
@@ -113,7 +113,7 @@ const overrides = {
   },
   9: {
     title: "Higashiyama & Gion",
-    date: "November 19",
+    date: "Thursday, 19 November",
     location: "Kyoto",
     summary:
       "An early Kiyomizu-dera before the crowds, then into kimono for a tea ceremony at Maikoya — and the rest of the day spent in it, on foot through Sannenzaka and Ninenzaka, the Yasaka Pagoda, Kodai-ji and Yasaka Jinja, ending in Gion at dusk. See the interactive map and stop-by-stop itinerary below.",
@@ -137,7 +137,7 @@ const overrides = {
   },
   10: {
     title: "Arashiyama",
-    date: "November 20",
+    date: "Friday, 20 November",
     location: "Arashiyama & Sagano, Kyoto",
     summary:
       "The bamboo grove at 8:00, before the crowds. Then up into Sagano's quiet gardens at Ōkōchi Sansō and Jōjakkō-ji, back down to Tenryū-ji, soba overlooking the river, and the maples over Togetsukyō Bridge.",
@@ -152,7 +152,7 @@ const overrides = {
   },
   11: {
     title: "Kurama & Kibune",
-    date: "November 21",
+    date: "Saturday, 21 November",
     location: "Kurama & Kibune, Kyoto",
     summary:
       "Out of the city and into the mountains north of Kyoto: the Eizan line up to Kibune and its water shrine first thing, then the ridge trail — the forest hall at Sōjō-ga-tani, the cedar roots of Kinone-michi — over to Kurama-dera and down into Kurama. Shōjin lunch, an onsen, and the train home at dusk through the Eizan railway's illuminated momiji tunnel.",
@@ -168,7 +168,7 @@ const overrides = {
   },
   12: {
     title: "Kyoto → Kanazawa",
-    date: "November 22",
+    date: "Sunday, 22 November",
     location: "Kyoto → Kanazawa",
     summary:
       "Thunderbird + Hokuriku Shinkansen · Higashi Chaya · castle & Kenroku-en light-up. The Thunderbird up Lake Biwa and the shinkansen from Tsuruga put us in Kanazawa by noon: bags at the hotel, crab-season lunch at Omicho, the teahouses of Higashi Chaya and Kazuemachi before dark, then the castle park and Kenroku-en lit up for autumn.",
@@ -181,7 +181,7 @@ const overrides = {
   },
   13: {
     title: "Kanazawa",
-    date: "November 23 (public holiday)",
+    date: "Monday, 23 November (public holiday)",
     location: "Kanazawa",
     summary:
       "Kenroku-en · Omicho · samurai & ninja. A full day in Kanazawa on foot: Kenroku-en in the morning, the castle park and matcha over the Gyokusen-inmaru garden, grazing lunch at Omicho, then the samurai house at Nagamachi, the quiet geisha street of Nishi Chaya and the trap doors of the ninja temple.",
@@ -194,7 +194,7 @@ const overrides = {
   },
   14: {
     title: "Shirakawa-go",
-    date: "November 24",
+    date: "Tuesday, 24 November",
     location: "Shirakawa-go (from Kanazawa)",
     summary:
       "Gassho village day trip from Kanazawa. The highway bus to Ogimachi, the largest thatched-roof village of Shirakawa-go: the postcard view from Shiroyama, the inside of Wada House, a quiet temple and shrine, and the open-air museum across the suspension bridge. Back in Kanazawa at 17:20 for an early night.",
@@ -207,7 +207,7 @@ const overrides = {
   },
   15: {
     title: "Kanazawa → Gōra",
-    date: "November 25",
+    date: "Wednesday, 25 November",
     location: "Kanazawa → Gōra, Hakone (in transit)",
     summary:
       "Travel day from the Sea of Japan to the Hakone hills: the Kagayaki shinkansen to Ōmiya, the Shōnan-Shinjuku Line in the Green Car down to Odawara, and bus J03 up to Gōra. Big luggage goes ahead to Tokyo, so it's a day-pack day. About 5 hours of transit, and the afternoon free in Gōra.",
@@ -216,6 +216,24 @@ const overrides = {
       "Buy the shinkansen ticket only as far as Ōmiya, with a reserved seat — it's a paper ticket, not Suica.",
       "At Ōmiya, check the Shōnan-Shinjuku train is bound for Odawara (小田原): some go to Zushi/Kamakura instead.",
       "Buy the 2-day Hakone Free Pass at Odawara — it covers today's bus and tomorrow's loop. Bus J03 runs infrequently; the Hakone Tozan Railway to Gōra is the backup, also on the pass.",
+    ],
+  },
+  16: {
+    title: "Hakone Loop → Tokyo",
+    date: "Thursday, 26 November",
+    location: "Gōra → Lake Ashi → Tokyo",
+    summary:
+      "Gōra Park momiji, cable car and ropeway over Ōwakudani, pirate ship across Lake Ashi, Hakone Shrine, then Romancecar to Shinjuku.",
+    recommendations: [
+      "Mount Fuji: clouds usually roll in after midday, so prioritise the view at Ōwakudani over the black-egg queue.",
+      "Dress in layers: Ōwakudani is ~1,000 m up and cold and windy in late November, even if Gōra is mild.",
+      "Bring a power bank: the digital Freepass lives on your phone — no battery, no ticket.",
+      "Carry cash: black eggs and several small stalls are cash only.",
+      "Torii from the boat: approaching Moto-Hakone, the pirate ship passes the lake torii — stand on the port (left) deck, camera ready. Good backup if the photo queue at the shrine is too long.",
+      "Leave a buffer: the bus from Moto-Hakone to Yumoto can be slow in autumn; book the Romancecar 45–60 min after your expected arrival.",
+      "Check hakonenavi.jp for ropeway and ship status before leaving in the morning.",
+      "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
+      "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",
     ],
   },
 };

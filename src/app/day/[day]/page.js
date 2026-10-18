@@ -19,6 +19,7 @@ import KanazawaArrivalItinerary from "@/components/kanazawa-arrival/KanazawaArri
 import KanazawaCityItinerary from "@/components/kanazawa-city/KanazawaCityItinerary";
 import ShirakawaGoItinerary from "@/components/shirakawa-go/ShirakawaGoItinerary";
 import KanazawaGoraItinerary from "@/components/kanazawa-gora/KanazawaGoraItinerary";
+import HakoneLoopItinerary from "@/components/hakone-loop/HakoneLoopItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
@@ -51,6 +52,7 @@ const DAY_CONTENT = {
   13: (props) => <KanazawaCityItinerary {...props} />,
   14: (props) => <ShirakawaGoItinerary {...props} />,
   15: (props) => <KanazawaGoraItinerary {...props} />,
+  16: (props) => <HakoneLoopItinerary {...props} />,
 };
 
 export function generateStaticParams() {
