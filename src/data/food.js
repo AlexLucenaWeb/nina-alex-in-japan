@@ -175,6 +175,111 @@ export const foodByDay = {
       "Nothing today needs booking. Carry cash: Kinkaku-ji only takes cash, and so do many of the stalls on the Fushimi Inari approach.",
   },
   8: {
+    dishesTitle: "What to eat in Higashiyama & Gion",
+    meals: [
+      {
+        time: "14:00",
+        place: "Omen Kodai-ji, Higashiyama-ku",
+        type: "Lunch",
+        reserve: false,
+        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji along Nene-no-michi street — a couple of minutes from the temple gate. One practical note: udon in a rented kimono is a splash risk, so ask for an apron or an extra napkin before you start.",
+      },
+      {
+        time: "18:30",
+        place: "Nishin Soba Matsuba, Gionmachi Minamigawa",
+        type: "Dinner",
+        reserve: false,
+        note: "Two minutes from Hanamikoji-dori. A historic soba restaurant founded in the 19th century and the creators of nishin soba — buckwheat noodles with sweet simmered herring, Kyoto's classic winter dish. Casual, and walk-in friendly.",
+      },
+      {
+        time: "18:30",
+        place: "Gion Karyo, Gionmachi Minamigawa",
+        type: "Dinner, the special-occasion option",
+        reserve: true,
+        note: "Kaiseki ryori in a machiya house, on a seasonal tasting menu. More formal than Matsuba, and it needs booking ahead if you want this instead.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Kaiseki ryori",
+        jp: "懐石料理",
+        desc: "Kyoto's haute cuisine: a procession of small seasonal dishes born in Zen temples and the tea ceremony. Gion is one of the best places in the city to try it.",
+      },
+      {
+        name: "Yudofu",
+        jp: "湯豆腐",
+        desc: "Simmered tofu in a light kombu broth. Temple vegetarian cooking, especially associated with the area's Zen temples.",
+      },
+      {
+        name: "Nishin soba",
+        jp: "にしんそば",
+        desc: "Buckwheat noodles topped with a whole piece of sweet simmered herring. Invented in Kyoto in the 19th century and a cold-weather classic — Matsuba, right in Gion, is the historic specialty restaurant.",
+      },
+      {
+        name: "Obanzai",
+        jp: "おばんざい",
+        desc: "Kyoto home cooking: small seasonal vegetable and tofu dishes, found in the casual izakaya around Gion and Pontocho.",
+      },
+      {
+        name: "Matcha sweets",
+        jp: "抹茶スイーツ",
+        desc: "Kyoto is matcha country — parfaits, soft-serve and dango at teahouses like Tsujiri Gion, on the way between Yasaka Jinja and Hanamikoji-dori.",
+      },
+      {
+        name: "Yatsuhashi",
+        jp: "八ツ橋",
+        desc: "Kyoto's iconic cinnamon mochi sweet, sold all over Higashiyama. A souvenir, and a snack while walking Sannenzaka and Ninenzaka.",
+      },
+    ],
+    reservations:
+      "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:00 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
+  },
+  9: {
+    dishesTitle: "What to eat in Arashiyama",
+    meals: [
+      {
+        time: "12:00",
+        place: "Arashiyama Yoshimura",
+        type: "Lunch",
+        reserve: false,
+        note: "Soba and tempura on the riverbank, with Togetsukyō Bridge and Mt Arashiyama framed in the windows. Ask for the second floor, which has the best view. Opens at 11:00 and the queue builds fast — get there by 12:00.",
+      },
+      {
+        time: "13:00",
+        place: "Arashiyama high street",
+        type: "Street snack",
+        reserve: false,
+        note: "The road between Tenryū-ji and the bridge is lined with snack stalls: matcha soft serve, dango, croquettes, yuba.",
+      },
+      {
+        time: "19:00",
+        place: "Pontochō (optional)",
+        type: "Dinner",
+        reserve: false,
+        note: "If you go out again after resting: the narrow alley of restaurants between Kiyamachi and the Kamo River, lantern-lit at night. Some places are tourist traps — check the menu and prices posted at the door before going in. If you stay in, eat near the hotel.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Yudōfu",
+        jp: "湯豆腐",
+        desc: "Tofu simmered in kelp broth, the classic dish of Arashiyama and Sagano, where temple cooking and good water go together.",
+      },
+      {
+        name: "Soba",
+        jp: "そば",
+        desc: "Buckwheat noodles, hot or cold. With tempura at Yoshimura, looking at the river.",
+      },
+      {
+        name: "Matcha sweets",
+        jp: "抹茶スイーツ",
+        desc: "Soft serve, parfaits and dango — Kyoto's green tea in every form along the high street.",
+      },
+    ],
+    reservations:
+      "Nothing today needs booking unless you add the Sagano train. Yoshimura is walk-in: arrive early.",
+  },
+  10: {
     dishesTitle: "What to eat in Nara",
     meals: [
       {
@@ -244,112 +349,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "One thing does need booking, and it is not the food: the Aoniyoshi is the train out of Kyoto, at ¥1,490 per person. Seats go on sale at 10:30 Japan time exactly one month before — for this trip that is 18 October, which is 03:30 in Madrid — and they sell out in November. The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
-  },
-  9: {
-    dishesTitle: "What to eat in Higashiyama & Gion",
-    meals: [
-      {
-        time: "13:30",
-        place: "Omen Kodai-ji, Higashiyama-ku",
-        type: "Lunch",
-        reserve: false,
-        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji along Nene-no-michi street — a couple of minutes from the temple gate. One practical note: udon in a rented kimono is a splash risk, so ask for an apron or an extra napkin before you start.",
-      },
-      {
-        time: "18:30",
-        place: "Nishin Soba Matsuba, Gionmachi Minamigawa",
-        type: "Dinner",
-        reserve: false,
-        note: "Two minutes from Hanamikoji-dori. A historic soba restaurant founded in the 19th century and the creators of nishin soba — buckwheat noodles with sweet simmered herring, Kyoto's classic winter dish. Casual, and walk-in friendly.",
-      },
-      {
-        time: "18:30",
-        place: "Gion Karyo, Gionmachi Minamigawa",
-        type: "Dinner, the special-occasion option",
-        reserve: true,
-        note: "Kaiseki ryori in a machiya house, on a seasonal tasting menu. More formal than Matsuba, and it needs booking ahead if you want this instead.",
-      },
-    ],
-    dishes: [
-      {
-        name: "Kaiseki ryori",
-        jp: "懐石料理",
-        desc: "Kyoto's haute cuisine: a procession of small seasonal dishes born in Zen temples and the tea ceremony. Gion is one of the best places in the city to try it.",
-      },
-      {
-        name: "Yudofu",
-        jp: "湯豆腐",
-        desc: "Simmered tofu in a light kombu broth. Temple vegetarian cooking, especially associated with the area's Zen temples.",
-      },
-      {
-        name: "Nishin soba",
-        jp: "にしんそば",
-        desc: "Buckwheat noodles topped with a whole piece of sweet simmered herring. Invented in Kyoto in the 19th century and a cold-weather classic — Matsuba, right in Gion, is the historic specialty restaurant.",
-      },
-      {
-        name: "Obanzai",
-        jp: "おばんざい",
-        desc: "Kyoto home cooking: small seasonal vegetable and tofu dishes, found in the casual izakaya around Gion and Pontocho.",
-      },
-      {
-        name: "Matcha sweets",
-        jp: "抹茶スイーツ",
-        desc: "Kyoto is matcha country — parfaits, soft-serve and dango at teahouses like Tsujiri Gion, on the way between Yasaka Jinja and Hanamikoji-dori.",
-      },
-      {
-        name: "Yatsuhashi",
-        jp: "八ツ橋",
-        desc: "Kyoto's iconic cinnamon mochi sweet, sold all over Higashiyama. A souvenir, and a snack while walking Sannenzaka and Ninenzaka.",
-      },
-    ],
-    reservations:
-      "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:30 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
-  },
-  10: {
-    dishesTitle: "What to eat in Arashiyama",
-    meals: [
-      {
-        time: "12:00",
-        place: "Arashiyama Yoshimura",
-        type: "Lunch",
-        reserve: false,
-        note: "Soba and tempura on the riverbank, with Togetsukyō Bridge and Mt Arashiyama framed in the windows. Ask for the second floor, which has the best view. Opens at 11:00 and the queue builds fast — get there by 12:00.",
-      },
-      {
-        time: "13:00",
-        place: "Arashiyama high street",
-        type: "Street snack",
-        reserve: false,
-        note: "The road between Tenryū-ji and the bridge is lined with snack stalls: matcha soft serve, dango, croquettes, yuba.",
-      },
-      {
-        time: "19:00",
-        place: "Pontochō (optional)",
-        type: "Dinner",
-        reserve: false,
-        note: "If you go out again after resting: the narrow alley of restaurants between Kiyamachi and the Kamo River, lantern-lit at night. Some places are tourist traps — check the menu and prices posted at the door before going in. If you stay in, eat near the hotel.",
-      },
-    ],
-    dishes: [
-      {
-        name: "Yudōfu",
-        jp: "湯豆腐",
-        desc: "Tofu simmered in kelp broth, the classic dish of Arashiyama and Sagano, where temple cooking and good water go together.",
-      },
-      {
-        name: "Soba",
-        jp: "そば",
-        desc: "Buckwheat noodles, hot or cold. With tempura at Yoshimura, looking at the river.",
-      },
-      {
-        name: "Matcha sweets",
-        jp: "抹茶スイーツ",
-        desc: "Soft serve, parfaits and dango — Kyoto's green tea in every form along the high street.",
-      },
-    ],
-    reservations:
-      "Nothing today needs booking unless you add the Sagano train. Yoshimura is walk-in: arrive early.",
+      "Nothing to book: the one reservation of the day is the Aoniyoshi train out of Kyoto, and that is already bought. The food is all walk-in — Nakatanidō and the kakinoha-zushi shops are counters you eat at standing up, and Naramachi's restaurants take you as you come. Worth knowing: most of Nara shuts early, so aim to be sitting down for dinner by 19:00 rather than 21:00, and carry cash — the smaller places often take nothing else.",
   },
   11: {
     dishesTitle: "What to eat in Kurama & Kibune",
@@ -544,21 +544,21 @@ export const foodByDay = {
     dishesTitle: "What to eat in Hakone",
     meals: [
       {
-        time: "11:00",
+        time: "10:30",
         place: "Kurotamago-kan, Ōwakudani",
         type: "Snack · black eggs",
         reserve: false,
         note: "Kuro-tamago boiled in the volcanic springs, sold in packs. Cash only.",
       },
       {
-        time: "13:15",
+        time: "13:00",
         place: "Shinshō Soba, Moto-Hakone",
         type: "Lunch · tempura soba",
         reserve: false,
         note: "Next to the pier: tempura soba with huge prawns, and upstairs seating with lake views. Tsuchiya and Ashinoko Tea House near the shrine are closed on Thursdays, so this is the pick.",
       },
       {
-        time: "16:35",
+        time: "16:30",
         place: "Hakone-Yumoto shopping street",
         type: "Souvenirs",
         reserve: false,

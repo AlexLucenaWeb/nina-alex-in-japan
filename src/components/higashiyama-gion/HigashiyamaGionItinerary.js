@@ -1,9 +1,9 @@
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
-import { STOPS } from "@/data/day9-stops";
+import { STOPS } from "@/data/day8-stops";
 
-// Same as Days 3 and 8: this day's route lives in a Google My Maps map instead
+// Same as Day 3: this day's route lives in a Google My Maps map instead
 // of the Leaflet component, so it can be edited from Google Maps without
 // touching the stop data in the repo.
 const MY_MAPS_ID = "1e9r1tAG6eYuex1dlQx0meW39IhRJUXM";
@@ -14,10 +14,16 @@ export default function HigashiyamaGionItinerary({ food }) {
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
-            Everything is done on foot:
+            The day starts at Maikoya at 9:00:
           </span>{" "}
-          short walks between stops, no trains and no buses. Only two things on
-          the day are fixed:{" "}
+          into kimono for the tea ceremony, then up Matsubara-dori to
+          Kiyomizu-dera in it, and from there all downhill through Sannenzaka
+          and Ninenzaka to Gion — the route flows in one direction.
+        </p>
+        <p className="mt-2">
+          Everything is done on foot: short walks between stops, no trains and
+          no buses. Besides the 9:00 booking, two things on the day are
+          fixed:{" "}
           <span className="font-semibold">Kennin-ji</span>, which closes at
           16:30, and getting the kimono back to{" "}
           <span className="font-semibold">Maikoya</span> — be there at 17:45,

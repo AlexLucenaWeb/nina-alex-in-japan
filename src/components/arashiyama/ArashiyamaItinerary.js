@@ -1,9 +1,9 @@
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
-import { day10Stops } from "@/data/day10-stops";
+import { day9Stops } from "@/data/day9-stops";
 
-// Same as Days 3, 8 and 9: this day's route lives in a Google My Maps map
+// Same as Days 3 and 8: this day's route lives in a Google My Maps map
 // instead of the Leaflet component, so it can be edited from Google Maps
 // without touching the stop data in the repo.
 const MY_MAPS_ID = "1UcddyqIGpQ24rgqWgO6gIm0xEL1Ouko";
@@ -53,9 +53,9 @@ export default function ArashiyamaItinerary({ food }) {
         <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
 
         <ol className="relative flex flex-col">
-          {day10Stops.map((stop, index) => (
+          {day9Stops.map((stop, index) => (
             <li key={stop.n} className="relative pb-10 pl-14 last:pb-0">
-              {index < day10Stops.length - 1 && (
+              {index < day9Stops.length - 1 && (
                 <span
                   aria-hidden="true"
                   className="stop-connector absolute bottom-0 left-5 top-10 -translate-x-1/2"

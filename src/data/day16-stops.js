@@ -1,7 +1,7 @@
 export const day16Stops = [
   {
     n: 1,
-    time: "09:45",
+    time: "09:00",
     name: "Hakone Gōra Park",
     jp: "箱根強羅公園",
     lat: 35.2486604,
@@ -10,11 +10,11 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone%20G%C5%8Dra%20Park&query_place_id=ChIJVVVltv-hGWARRGEjZVZEtqs",
     photo: "/photos/day16-1-hakone-gora-park.webp",
     photoSource: "https://www.hakonenavi.jp/international/en/wp-content/uploads/sites/2/2019/01/1_20171113-%E7%AE%B1%E6%A0%B9%E5%BC%B7%E7%BE%85%E5%85%AC%E5%9C%92-%E7%B4%85%E8%91%89-122916-980x640.jpg",
-    desc: "Check out in Gōra first (by ~9:30). A 1914 French-style garden on the hillside with a fountain, rose garden, greenhouse and Hakuun-dō tea house (matcha with garden view). Late November is usually its momiji peak — the best autumn colour of the day. Free entry with the Hakone Freepass. Enter at the bottom, walk up and exit at Kōen-kami station."
+    desc: "Check out in Gōra by ~9:00 and arrive as the park opens. A 1914 French-style garden on the hillside with a fountain, rose garden, greenhouse and Hakuun-dō tea house (matcha with garden view). Late November is usually its momiji peak — the best autumn colour of the day. Free entry with the Hakone Freepass. Enter at the bottom, walk up and exit at Kōen-kami station."
   },
   {
     n: 2,
-    time: "10:30",
+    time: "10:15",
     name: "Kōen-kami Station (Hakone Tozan Cable Car)",
     jp: "公園上駅",
     lat: 35.2490439,
@@ -27,7 +27,7 @@ export const day16Stops = [
   },
   {
     n: 3,
-    time: "10:45",
+    time: "10:20",
     name: "Sōunzan Station (Hakone Ropeway)",
     jp: "早雲山駅",
     lat: 35.2466626,
@@ -36,11 +36,11 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=S%C5%8Dunzan%20Station&query_place_id=ChIJ37_fkVOfGWARrgUfyeWfYNE",
     photo: "/photos/day16-3-sounzan-station-hakone-ropeway.webp",
     photoSource: "https://img.poibank.com/aiPYECHhYV_s_M6xgCn6o1epyaw=/W3siZm9ybWF0IjoianBnIn0seyJrZXkiOiJzdWdnZXN0aW9uLzI3NDY2NzM3LzE2MTQ5ODk1OC8xNzg4ODU1MDM3ODE0In0seyJyZXNpemUiOnsid2lkdGgiOiIxNDY2In19XQ==",
-    desc: "Transfer in the same building from the funicular to the Hakone Ropeway. First section: Sōunzan → Ōwakudani (~10 min), gliding over the steaming crater."
+    desc: "Transfer in the same building from the funicular to the Hakone Ropeway. First section: Sōunzan → Ōwakudani (~10 min), gliding over the steaming crater. Going early beats the ropeway queues, which can reach 45 min in autumn from mid-morning."
   },
   {
     n: 4,
-    time: "11:00",
+    time: "10:30",
     name: "Ōwakudani",
     jp: "大涌谷",
     lat: 35.2429781,
@@ -49,11 +49,11 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=%C5%8Cwakudani&query_place_id=ChIJ15_HHo-fGWARM8GIZNQ6SdA",
     photo: "/photos/day16-4-owakudani.webp",
     photoSource: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=400%2Cheight=265%2Cdpr=2/tour_img/da6652e8ba0f3417e8cc343528d64cacb86707c024a1285731695d896b267c0d.jpeg",
-    desc: "Active volcanic valley with sulphur vents. Mount Fuji views are best before noon. Try the kuro-tamago black eggs at Kurotamago-kan (cash only, sold in packs) — legend says each one adds 7 years to your life. Then the second ropeway section to Tōgendai (~15–20 min, mandatory gondola change here)."
+    desc: "Active volcanic valley with sulphur vents. Mount Fuji views are best before noon. Try the kuro-tamago black eggs at Kurotamago-kan (cash only, sold in packs) — legend says each one adds 7 years to your life. About an hour is plenty (until ~11:45). Then the second ropeway section to Tōgendai (~15–20 min, mandatory gondola change here)."
   },
   {
     n: 5,
-    time: "12:30",
+    time: "~12:15",
     name: "Tōgendai Port (Pirate Ship)",
     jp: "桃源台港",
     lat: 35.2374411,
@@ -62,11 +62,11 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=T%C5%8Dgendai%20Port&query_place_id=ChIJ8SlLRtqeGWARECxZAZQ_Ido",
     photo: "/photos/day16-5-togendai-port-pirate-ship.webp",
     photoSource: "https://res.klook.com/image/upload/w_1200,h_750,c_fill,q_85/activities/gmpnooswv3xwwjqh0sjp.jpg",
-    desc: "Hakone Sightseeing Cruise across Lake Ashi to Moto-Hakone (~40 min). Covered by the Freepass; first-class upgrade costs a few hundred yen extra and gives a quieter upper deck."
+    desc: "Hakone Sightseeing Cruise across Lake Ashi to Moto-Hakone (~40 min). Covered by the Freepass; first-class upgrade costs a few hundred yen extra and gives a quieter upper deck. No reservation needed: ships leave roughly every 30–40 min and the Freepass is valid on any of them — just take the next one."
   },
   {
     n: 6,
-    time: "13:15",
+    time: "13:00",
     name: "Shinshō Soba",
     jp: "深生そば",
     lat: 35.2012156,
@@ -79,7 +79,7 @@ export const day16Stops = [
   },
   {
     n: 7,
-    time: "14:15",
+    time: "14:00",
     name: "Hakone Shrine",
     jp: "箱根神社",
     lat: 35.2048263,
@@ -92,7 +92,7 @@ export const day16Stops = [
   },
   {
     n: 8,
-    time: "14:45",
+    time: "14:30",
     name: "Heiwa-no-Torii",
     jp: "平和の鳥居",
     lat: 35.202783,
@@ -101,7 +101,7 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=Heiwa-no-Torii&query_place_id=ChIJqwXxBoqYGWAROtwVhyhQS28",
     photo: "/photos/day16-8-heiwa-no-torii.webp",
     photoSource: "https://www.hakonenavi.jp/international/en/wp-content/uploads/sites/2/2019/01/1_%E7%AE%B1%E6%A0%B9%E7%A5%9E%E7%A4%BEDSC07845-980x640.jpg",
-    desc: "The red torii standing in Lake Ashi. There's a queue for the classic photo (each group gets ~3 min); expect 30–60 min, usually less on a weekday. If it's too long, take it from the side."
+    desc: "The red torii standing in Lake Ashi. There's a queue for the classic photo (each group gets ~3 min); expect 30–60 min, usually less on a weekday. If it's too long, take it from the side. Shrine + torii are budgeted until ~15:30 to absorb the photo queue."
   },
   {
     n: 9,
@@ -114,11 +114,11 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=Old%20T%C5%8Dkaid%C5%8D%20Cedar%20Avenue&query_place_id=ChIJMVyclmSYGWARjhNR0fySWLo",
     photo: "/photos/day16-9-old-tokaido-cedar-avenue.webp",
     photoSource: "https://cdn.prod.rexby.com/image/54cea571a1324bb5be6581f7426631b1?format=webp&width=1080&height=1350&quality=80",
-    desc: "Short walk under centuries-old cedars on the old Edo–Kyoto highway, just past the pier. Then the Hakone Tozan bus from Moto-Hakone-kō to Hakone-Yumoto (~40 min, Freepass)."
+    desc: "Optional — only if you're on time; otherwise skip it and head to the bus. Short walk under centuries-old cedars on the old Edo–Kyoto highway, just past the pier. Then the Hakone Tozan bus from Moto-Hakone-kō to Hakone-Yumoto at ~15:45 (~40 min, Freepass)."
   },
   {
     n: 10,
-    time: "16:35",
+    time: "16:30",
     name: "Hakone-Yumoto Station",
     jp: "箱根湯本駅",
     lat: 35.2332816,
@@ -126,11 +126,11 @@ export const day16Stops = [
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone-Yumoto%20Station&query_place_id=ChIJcX9RE3WjGWARooaTIj-NpZs",
     photo: null,
-    desc: "Pick up luggage if you used the carry service. Quick stroll on the shopping street for souvenirs. Romancecar to Shinjuku (~85 min) — reserve seats in advance on EMot."
+    desc: "Pick up luggage if you used the carry service. Quick stroll on the shopping street for souvenirs. Romancecar around 17:30 to Shinjuku (~85 min) — reserve seats in advance on EMot."
   },
   {
     n: 11,
-    time: "~18:30",
+    time: "~19:00",
     name: "Shinjuku Station",
     jp: "新宿駅",
     lat: 35.6896,

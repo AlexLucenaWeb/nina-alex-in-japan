@@ -90,37 +90,15 @@ const overrides = {
     ],
   },
   8: {
-    title: "Day Trip to Nara",
-    date: "Wednesday, 18 November",
-    location: "Nara (from Kyoto)",
-    summary:
-      "The Aoniyoshi sightseeing train out of Kyoto, then everything on foot inside Nara Park: the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, sunset at the Ukimidō pavilion, and Kōfuku-ji and Sarusawa Pond at dusk on the way out. Deer throughout. Dinner in Naramachi before the train back.",
-    recommendations: [
-      {
-        text: "The train out is settled: the Aoniyoshi sightseeing train, Kyoto 10:55 → Kintetsu-Nara 11:29. ¥1,490 per person in twin seats, and no service on Thursdays — Nov 18 is a Wednesday, so it runs. Seats go on sale at 10:30 Japan time exactly one month before, which is 18 October at 03:30 Madrid time. Book it then: it sells out in November.",
-        link: {
-          href: "https://www.ticket.kintetsu.co.jp/vs/en/e-ticket/",
-          label: "Book on Kintetsu (English) →",
-        },
-      },
-      "Take your passport: it's what gets you into Yoshikien for free. Isuien next door is ¥1,200, and both close at 16:30 — the earliest closing time of the day.",
-      "A day almost entirely outdoors — comfortable shoes, and layers for the morning.",
-      "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
-      "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
-      "Sunset is around 17:00 in November, and the route is built around it: Ukimidō at 16:45 puts you at the pond just as the light goes.",
-      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
-    ],
-  },
-  9: {
     title: "Higashiyama & Gion",
-    date: "Thursday, 19 November",
+    date: "Wednesday, 18 November",
     location: "Kyoto",
     summary:
-      "An early Kiyomizu-dera before the crowds, then into kimono for a tea ceremony at Maikoya — and the rest of the day spent in it, on foot through Sannenzaka and Ninenzaka, the Yasaka Pagoda, Kodai-ji and Yasaka Jinja, ending in Gion at dusk. See the interactive map and stop-by-stop itinerary below.",
+      "Into kimono at Maikoya at 9:00 for a tea ceremony, then up to Kiyomizu-dera in it — and the rest of the day spent in it, downhill through Sannenzaka and Ninenzaka, the Yasaka Pagoda, Kodai-ji and Yasaka Jinja, ending in Gion at dusk. The route flows in one direction: up Matsubara-dori to Kiyomizu, then all downhill. See the interactive map and stop-by-stop itinerary below.",
     recommendations: [
-      "Kiyomizu-dera opens at 6:00. Getting there for 8:00 beats most of the crowds, gets you the best light, and still leaves time to walk down to Maikoya for 9:30.",
+      "Kiyomizu-dera comes after the ceremony, in kimono, so expect crowds mid-morning in momiji season. If you want it empty, go at opening (6:00) in your own clothes before 9:00.",
       {
-        text: "Kimono and tea ceremony booked at Maikoya Gion Kiyomizu, 9:30. You don't have to kneel in seiza — bamboo chairs can be requested in the booking comments. The kimono goes back at 17:45, and the deadline is 18:00. Changes or cancellations: cs@maikoya.com.",
+        text: "Booked — Maikoya Gion Kiyomizu, 18 Nov, 9:00, 2 adults. Keep the confirmation email at hand. Return the kimono by 18:00.",
         link: {
           href: "https://mai-ko.com/tour/kimono-tea-ceremony-gion-kiyomizu-at-the-registered-cultural-property/",
           label: "Booking details →",
@@ -135,9 +113,9 @@ const overrides = {
       "For the best chance of spotting a maiko or geiko, be on Hanamikoji-dori around dusk (17:00–18:00).",
     ],
   },
-  10: {
+  9: {
     title: "Arashiyama",
-    date: "Friday, 20 November",
+    date: "Thursday, 19 November",
     location: "Arashiyama & Sagano, Kyoto",
     summary:
       "The bamboo grove at 8:00, before the crowds. Then up into Sagano's quiet gardens at Ōkōchi Sansō and Jōjakkō-ji, back down to Tenryū-ji, soba overlooking the river, and the maples over Togetsukyō Bridge.",
@@ -148,6 +126,28 @@ const overrides = {
       "Get to Yoshimura for lunch by 12:00 and ask for the second floor.",
       "Photograph Togetsukyō from the far bank, looking back towards the mountain.",
       "The Monkey Park is a 20–30 minute climb up steps. Worth it for the view and the macaques, but it's the first thing to drop if you're tired.",
+    ],
+  },
+  10: {
+    title: "Day Trip to Nara",
+    date: "Friday, 20 November",
+    location: "Nara (from Kyoto)",
+    summary:
+      "The Aoniyoshi sightseeing train out of Kyoto, then everything on foot inside Nara Park: the Great Buddha at Tōdai-ji, the view from Nigatsu-dō, a long lunch, the Isuien and Yoshikien gardens, the lantern shrine at Kasuga Taisha, sunset at the Ukimidō pavilion, and Kōfuku-ji and Sarusawa Pond at dusk on the way out. Deer throughout. Dinner in Naramachi before the train back.",
+    recommendations: [
+      {
+        text: "The train out is booked: Ltd. Exp. Aoniyoshi, train no. 9007, Kintetsu Kyoto 10:55 → Kintetsu-Nara 11:30, twin seats. If staff ask, show the live Kintetsu e-ticket page on the phone — screenshots are not accepted — and go through the gates with the IC card.",
+        link: {
+          href: "https://www.ticket.kintetsu.co.jp/vs/en/e-ticket/",
+          label: "Kintetsu e-ticket page →",
+        },
+      },
+      "Take your passport: it's what gets you into Yoshikien for free. Isuien next door is ¥1,200, and both close at 16:30 — the earliest closing time of the day.",
+      "A day almost entirely outdoors — comfortable shoes, and layers for the morning.",
+      "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
+      "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
+      "Sunset is around 17:00 in November, and the route is built around it: Ukimidō at 16:45 puts you at the pond just as the light goes.",
+      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
     ],
   },
   11: {
@@ -230,7 +230,7 @@ const overrides = {
       "Bring a power bank: the digital Freepass lives on your phone — no battery, no ticket.",
       "Carry cash: black eggs and several small stalls are cash only.",
       "Torii from the boat: approaching Moto-Hakone, the pirate ship passes the lake torii — stand on the port (left) deck, camera ready. Good backup if the photo queue at the shrine is too long.",
-      "Leave a buffer: the bus from Moto-Hakone to Yumoto can be slow in autumn; book the Romancecar 45–60 min after your expected arrival.",
+      "Built-in buffers: ~1 h covers ropeway and torii queues. The ropeway runs until 16:15 on weekdays and the last ship leaves around 16:00, so even with delays the loop can be completed.",
       "Check hakonenavi.jp for ropeway and ship status before leaving in the morning.",
       "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
       "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",

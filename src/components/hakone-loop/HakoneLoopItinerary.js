@@ -11,7 +11,7 @@ import { day16Stops } from "@/data/day16-stops";
 const TICKETS = [
   "Hakone Freepass, 2-day version from Odawara (¥6,000 per person, digital on EMot): buy it on Day 15 so it also covers the bus up to Gōra. Each of us needs it on our own iPhone with our own EMot account.",
   "Covers: cable car, ropeway, pirate ship, Hakone Tozan bus, Gōra Park entry. Not covered: Romancecar seat fee.",
-  "Romancecar Hakone-Yumoto → Shinjuku: reserve on EMot; autumn afternoons fill up and large-luggage space is limited.",
+  "Romancecar Hakone-Yumoto → Shinjuku: reserve the ~17:30 departure on EMot (leaves a buffer for the bus); autumn afternoons fill up and large-luggage space is limited.",
 ];
 
 const LUGGAGE = [
@@ -38,8 +38,8 @@ export default function HakoneLoopItinerary({ food }) {
           Shrine with its torii in the water.
         </p>
         <p className="mt-2">
-          Check-out in Gōra by ~9:30, then down to Hakone-Yumoto for the
-          Romancecar to Shinjuku — in Tokyo around 18:30.
+          Check-out in Gōra by ~9:00, then down to Hakone-Yumoto for the
+          Romancecar to Shinjuku — in Tokyo around 19:00.
         </p>
       </div>
 

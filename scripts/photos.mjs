@@ -41,13 +41,13 @@ const DEFAULT_FOCUS_Y = 0.5;
 // single day.
 const SOURCES = [
   { file: "src/data/osaka-minami-stops.js", day: 3 },
-  { file: "src/data/nara-stops.js", day: 8 },
   { file: "src/data/himeji-kobe-stops.js", day: 4 },
   { file: "src/data/osaka-kita-stops.js", day: 5 },
   { file: "src/data/universal-studios-stops.js", day: 6 },
   { file: "src/data/day7-stops.js", day: 7 },
+  { file: "src/data/day8-stops.js", day: 8 },
   { file: "src/data/day9-stops.js", day: 9 },
-  { file: "src/data/day10-stops.js", day: 10 },
+  { file: "src/data/nara-stops.js", day: 10 },
   { file: "src/data/day11-stops.js", day: 11 },
   { file: "src/data/day12-stops.js", day: 12 },
   { file: "src/data/day13-stops.js", day: 13 },

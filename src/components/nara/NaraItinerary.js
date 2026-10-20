@@ -17,7 +17,7 @@ export default function NaraItinerary({ food }) {
             Everything is done on foot:
           </span>{" "}
           the whole day fits inside Nara Park and the streets around it, no
-          trains and no buses once you arrive. The Aoniyoshi gets in at 11:29,
+          trains and no buses once you arrive. The Aoniyoshi gets in at 11:30,
           so it starts late morning: the Great Buddha first, a long lunch,
           gardens and the lantern shrine through the afternoon, and the light
           going gold over the pond by the end.
