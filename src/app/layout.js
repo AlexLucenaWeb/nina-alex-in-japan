@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BackToTop from "@/components/BackToTop";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import SiteHeaderNav from "@/components/SiteHeaderNav";
 import { shipporiMincho, zenKakuGothicNew } from "@/lib/fonts";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <main className="flex flex-1 flex-col">{children}</main>
+        <BackToTop />
         <ServiceWorkerRegistrar />
       </body>
     </html>
