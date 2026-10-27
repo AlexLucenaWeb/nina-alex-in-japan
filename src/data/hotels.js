@@ -144,20 +144,20 @@ export const HOTELS = [
       "Check-out day (Dec 1): flight from Narita at 16:55 and we want to be at the airport by 13:25. Ask the front desk to keep the luggage after the 10:00 check-out if needed.",
     ],
   },
+  // Booked, but a surprise for Nina: no name, address, photo or hint of what
+  // kind of place it is — only that it exists and the dates. The real details
+  // stay in email.
   {
-    id: "hakone-ryokan-tbd",
-    status: "pending",
+    id: "hakone-surprise",
+    status: "booked",
     city: "Hakone",
-    name: null,
-    checkIn: { date: null, time: null },
-    checkOut: { date: null, time: null },
+    name: "A surprise",
+    checkIn: { date: "2026-11-25", time: null },
+    checkOut: { date: "2026-11-26", time: null },
     nights: 1,
-    linkedDays: [],
+    linkedDays: [15],
     photo: null,
-    notes: [
-      "Ryokan with private in-room onsen",
-      "Date within the Tokyo block, still to decide",
-    ],
+    notes: ["Booked — where we're staying is a surprise until we get there."],
   },
 ];
 
