@@ -138,6 +138,18 @@ export const day16Stops = [
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Shinjuku%20Station",
     photo: null,
-    desc: "Arrival in Tokyo."
+    desc: "Romancecar arrival. Follow signs to the Tokyo Metro Marunouchi Line (red, M) and take a train towards Ikebukuro/Tokyo — 4 stops, ~8 min, no transfer, IC card."
+  },
+  {
+    n: 12,
+    time: "~19:30",
+    name: "Hotel SUI Akasaka by ABEST",
+    jp: "ホテル粋 赤坂 by ABEST",
+    lat: 35.6703844,
+    lng: 139.7378975,
+    hours: "24h reception",
+    maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
+    photo: null,
+    desc: "Our Tokyo base for the next 5 nights. From Akasaka-mitsuke Station (Marunouchi Line) it's a ~10 min walk south; Akasaka Station (Chiyoda Line) is ~4 min away and will be our everyday station. Check in, drop the bags and grab a relaxed dinner in the Akasaka side streets, which are full of small izakayas and ramen shops."
   },
 ];

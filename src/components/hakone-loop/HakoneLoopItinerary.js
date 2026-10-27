@@ -12,11 +12,12 @@ const TICKETS = [
   "Hakone Freepass, 2-day version from Odawara (¥6,000 per person, digital on EMot): buy it on Day 15 so it also covers the bus up to Gōra. Each of us needs it on our own iPhone with our own EMot account.",
   "Covers: cable car, ropeway, pirate ship, Hakone Tozan bus, Gōra Park entry. Not covered: Romancecar seat fee.",
   "Romancecar Hakone-Yumoto → Shinjuku: reserve the ~17:30 departure on EMot (leaves a buffer for the bus); autumn afternoons fill up and large-luggage space is limited.",
+  "Shinjuku → Akasaka-mitsuke on the Marunouchi Line: pay with the IC card (~¥210).",
 ];
 
 const LUGGAGE = [
   "Ask the front desk about the Hakone Carry Service to Hakone-Yumoto Station: drop off by 10:00, pick up at the station 13:30–19:00. Booked at the front desk on the day.",
-  "Plan B: Yamato delivery to the Tokyo hotel (usually next day) — keep a daypack with overnight things.",
+  "Plan B: Yamato delivery to Hotel SUI Akasaka (usually next day) — keep a daypack with overnight things.",
 ];
 
 const PLAN_B = [

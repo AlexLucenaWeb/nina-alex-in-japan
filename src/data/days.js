@@ -223,7 +223,7 @@ const overrides = {
     date: "Thursday, 26 November",
     location: "Gōra → Lake Ashi → Tokyo",
     summary:
-      "Gōra Park momiji, cable car and ropeway over Ōwakudani, pirate ship across Lake Ashi, Hakone Shrine, then Romancecar to Shinjuku.",
+      "Gōra Park momiji, cable car and ropeway over Ōwakudani, pirate ship across Lake Ashi, Hakone Shrine, then Romancecar to Shinjuku and on to the hotel in Akasaka (Tokyo).",
     recommendations: [
       "Mount Fuji: clouds usually roll in after midday, so prioritise the view at Ōwakudani over the black-egg queue.",
       "Dress in layers: Ōwakudani is ~1,000 m up and cold and windy in late November, even if Gōra is mild.",
@@ -234,6 +234,7 @@ const overrides = {
       "Check hakonenavi.jp for ropeway and ship status before leaving in the morning.",
       "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
       "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",
+      "Arriving with suitcases at Shinjuku around 19:00 means evening rush hour. If it's too packed, a taxi from the west exit to the hotel takes ~20 min (≈ ¥3,000–3,500).",
     ],
   },
 };
