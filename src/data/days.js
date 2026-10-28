@@ -238,11 +238,11 @@ const overrides = {
     ],
   },
   17: {
-    title: "Old Tokyo — Asakusa, Yanaka & Rikugien",
+    title: "Old Tokyo & Jewellumination",
     date: "Friday, 27 November",
     location: "Tokyo",
     summary:
-      "Senso-ji before the crowds, Nakamise street snacks, the old-town lanes of Yanaka, Nezu Shrine's torii tunnel, and autumn leaves at Rikugien at golden hour.",
+      "Senso-ji before the crowds, Nakamise street snacks, the old-town lanes of Yanaka, Nezu Shrine's torii tunnel, autumn leaves at Rikugien at golden hour, and an evening among millions of jewel-coloured lights at Yomiuriland.",
     recommendations: [
       "Start early: Senso-ji is calm before 9:00 and packed by 10:30.",
       "Nakamise and Yanaka Ginza shops open around 10:00–11:00, which is why we see the temple first and the shops after.",
@@ -250,6 +250,51 @@ const overrides = {
       "Rikugien's last entry is 16:30. Don't linger in Yanaka.",
       "Rikugien usually has a night autumn light-up from late November (in 2025: Nov 28 – Dec 9, 18:00–20:30, advance tickets required). If the 2026 dates are announced and include Sun Nov 29, it's an easy add-on that evening: Namboku Line direct from the hotel area.",
       "On a clear day, Fujimizaka slope near Nishi-Nippori station is one of the few spots in central Tokyo with a view of Mt Fuji — a 5 min detour from Yanaka Ginza.",
+      "Yomiuriland's Jewellumination runs from late October to early April, usually 16:00–20:30, but it has irregular closed days and changing hours. Check the official calendar for Nov 27 before going.",
+      "Buy a night/admission-only ticket if you're only there for the lights (no rides needed).",
+      "It's a long day (8:00 to ~22:00). If you're tired after Rikugien, skip Yomiuriland and go straight back to the hotel (Namboku Line direct from Komagome to Tameike-sanno, ~20 min).",
+    ],
+  },
+  18: {
+    title: "Harajuku, Shibuya & Shinjuku Nights",
+    date: "Saturday, 28 November",
+    location: "Tokyo",
+    summary:
+      "Meiji Jingu's forest at opening time, the golden ginkgo avenue, Harajuku and Omotesando, sunset from Shibuya Sky, then cats and yakitori in Shinjuku.",
+    recommendations: [
+      "Saturday = crowds. Meiji Jingu early is calm; Takeshita Street and the ginkgo avenue will be busy by midday.",
+      "Meiji Jingu closes at 16:10 in November — that's why it's first.",
+      "Shibuya Sky: book the official web ticket in advance; sunset slots sell out. If the weather is bad (rain or strong wind), the rooftop can close.",
+      "Bring a warm layer for the open-air rooftop at sunset.",
+      "Omoide Yokocho counters are tiny (often 6–10 seats). Two people usually find a spot after a short walk around.",
+    ],
+  },
+  19: {
+    title: "Shiba, Ginza & Akihabara",
+    date: "Sunday, 29 November",
+    location: "Tokyo",
+    summary:
+      "Zojoji with Tokyo Tower behind it, matcha in the middle of Hamarikyu's pond, then Sunday car-free streets in Ginza and Akihabara, ending under the golden lights of Marunouchi.",
+    recommendations: [
+      "Ginza's car-free avenue runs on weekend and holiday afternoons (12:00–17:00 Oct–Mar) and is cancelled in bad weather.",
+      "Akihabara's car-free street is Sundays only (13:00–17:00 Oct–Mar), so this is the one day to see it.",
+      "Hamarikyu's last entry is 16:30.",
+      "The Marunouchi illumination usually starts in mid-November (16:00–23:00 in 2025); check the dates closer to the trip.",
+      "Optional: if the Rikugien night autumn light-up has started (in 2025 it began Nov 28; advance tickets required), you can swap Akihabara for Rikugien at night — Namboku Line from Komagome goes straight back to Tameike-sanno near the hotel.",
+    ],
+  },
+  20: {
+    title: "Tsukiji, Harry Potter & Hareruya",
+    date: "Monday, 30 November",
+    location: "Tokyo",
+    summary:
+      "A seafood breakfast at Tsukiji Outer Market, a few hours inside the real sets of the Harry Potter films, Magic cards at Hareruya, then a quiet last night in Tokyo to pack.",
+    recommendations: [
+      "Harry Potter tickets are timed and must be bought online in advance (non-refundable). Aim for a 10:30–11:00 entry so Tsukiji fits before.",
+      "Tsukiji Outer Market is closed on Sundays, holidays and some Wednesdays — Monday Nov 30 is a normal trading day, but check the official calendar.",
+      "Many Tsukiji stalls are cash only, and eating while walking is discouraged — eat at the stall.",
+      "Leave room in your suitcase for Harry Potter and Hareruya shopping.",
+      "Tomorrow: flight from Narita at 16:55, be at the airport by 13:25. Pack tonight.",
     ],
   },
 };

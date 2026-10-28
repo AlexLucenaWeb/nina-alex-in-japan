@@ -612,11 +612,11 @@ export const foodByDay = {
         note: "Matcha and a sweet at the teahouse by the pond, if there is time before closing.",
       },
       {
-        time: "Evening",
-        place: "Around Akasaka",
+        time: "~18:30",
+        place: "Yomiuriland",
         type: "Dinner",
         reserve: false,
-        note: "Back near the hotel: izakaya, yakitori and ramen around Akasaka and Akasaka-mitsuke stations.",
+        note: "Food stands and cafés inside the park, plus warm drinks for the cold evening.",
       },
     ],
     dishes: [
@@ -653,6 +653,196 @@ export const foodByDay = {
     ],
     reservations:
       "No meals to book. Kamachiku is walk-in only, so arrive early to keep the queue short.",
+  },
+  18: {
+    dishesTitle: "What to eat in Harajuku & Shinjuku",
+    meals: [
+      {
+        time: "~07:45",
+        place: "Konbini near the hotel",
+        type: "Breakfast",
+        reserve: false,
+        note: "Onigiri, sandwiches and coffee from a convenience store before the early start.",
+      },
+      {
+        time: "10:00",
+        place: "Takeshita Street",
+        type: "Sweets",
+        reserve: false,
+        note: "A Harajuku crepe and whatever sweets catch your eye on the way down the street.",
+      },
+      {
+        time: "11:45",
+        place: "Harajuku Gyoza Lou",
+        type: "Lunch · gyoza",
+        reserve: false,
+        note: "Pan-fried and steamed gyoza, with or without garlic, plus cucumber with miso on the side. Cash only; the line moves fast.",
+      },
+      {
+        time: "13:15",
+        place: "Ginkgo Festival, Jingu Gaien",
+        type: "Food stalls",
+        reserve: false,
+        note: "Stalls with regional specialties from all over Japan, with tables and chairs under the ginkgo trees.",
+      },
+      {
+        time: "~16:30",
+        place: "Shibuya Sky rooftop",
+        type: "Sunset drink",
+        reserve: true,
+        note: "The café-bar on the rooftop level, for a drink as the sun goes down. Needs the Shibuya Sky ticket.",
+      },
+      {
+        time: "19:15",
+        place: "Omoide Yokocho, Shinjuku",
+        type: "Dinner · yakitori",
+        reserve: false,
+        note: "Yakitori, motsu-ni and a cold beer at the tiny counters. Many charge a small seating fee (otoshi), and cash is handy.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Harajuku crepe",
+        jp: "クレープ",
+        desc: "Thin crepes rolled into a cone and stuffed with cream, fruit, ice cream or cheesecake. Harajuku's street-food icon.",
+      },
+      {
+        name: "Gyoza",
+        jp: "餃子",
+        desc: "Pork dumplings, pan-fried until crisp on the bottom or steamed — today's lunch.",
+      },
+      {
+        name: "Yakitori",
+        jp: "焼き鳥",
+        desc: "Chicken skewers grilled over charcoal, seasoned with salt (shio) or a sweet soy glaze (tare).",
+      },
+      {
+        name: "Motsu-ni",
+        jp: "もつ煮",
+        desc: "Slow-simmered offal stew in a miso or soy broth, a classic at yokocho counters.",
+      },
+      {
+        name: "Otoshi",
+        jp: "お通し",
+        desc: "Not a dish you order: a small appetiser served on arrival at many izakaya, charged as the seating fee.",
+      },
+    ],
+    reservations:
+      "No meals to book. Shibuya Sky is the one thing to book ahead — the sunset drink needs its timed ticket. Bring cash for Gyoza Lou and Omoide Yokocho.",
+  },
+  19: {
+    dishesTitle: "What to eat in Ginza & Marunouchi",
+    meals: [
+      {
+        time: "~09:00",
+        place: "Konbini or café near the hotel",
+        type: "Breakfast",
+        reserve: false,
+        note: "A relaxed start: grab something at a convenience store or sit down at a café in Akasaka before walking to Zojoji.",
+      },
+      {
+        time: "11:30",
+        place: "Nakajima Tea House, Hamarikyu",
+        type: "Matcha & wagashi",
+        reserve: false,
+        note: "Matcha with a seasonal sweet on the island in the middle of the pond. Shoes off at the entrance.",
+      },
+      {
+        time: "~12:30",
+        place: "Shimbashi",
+        type: "Lunch · ramen, soba or teishoku",
+        reserve: false,
+        note: "The classic salaryman district right next to Hamarikyu, full of ramen, soba and teishoku set-meal places — many are open on Sundays.",
+      },
+      {
+        time: "13:15",
+        place: "Ginza depachika",
+        type: "Sweets & snacks",
+        reserve: false,
+        note: "The basement food halls of Mitsukoshi or Matsuya: beautifully wrapped sweets, snacks and samples.",
+      },
+      {
+        time: "~18:30",
+        place: "Tokyo Station & Marunouchi",
+        type: "Dinner",
+        reserve: false,
+        note: "Tokyo Ramen Street in the station basement, or the restaurants in KITTE and the Marunouchi Building.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Wagashi",
+        jp: "和菓子",
+        desc: "Traditional sweets made from rice flour and bean paste, shaped to the season — served with the matcha at the tea house.",
+      },
+      {
+        name: "Teishoku",
+        jp: "定食",
+        desc: "A set meal: a main dish with rice, miso soup and pickles. The everyday lunch of Shimbashi.",
+      },
+      {
+        name: "Tsukemen",
+        jp: "つけ麺",
+        desc: "Thick noodles dipped into a rich, concentrated broth served on the side — a Tokyo Ramen Street speciality.",
+      },
+    ],
+    reservations:
+      "No meals to book. Tokyo Ramen Street has queues at dinner time, but they move quickly.",
+  },
+  20: {
+    dishesTitle: "What to eat at Tsukiji",
+    meals: [
+      {
+        time: "08:00",
+        place: "Tsukiji Outer Market",
+        type: "Breakfast · market grazing",
+        reserve: false,
+        note: "Stall to stall: tamagoyaki, grilled scallops, seafood skewers, a small sashimi or sushi bowl and a strawberry daifuku. Cash recommended.",
+      },
+      {
+        time: "~13:00",
+        place: "Studio Tour Tokyo",
+        type: "Lunch · inside the tour",
+        reserve: false,
+        note: "The Food Hall, and Butterbeer at the Backlot Café.",
+      },
+      {
+        time: "~19:00",
+        place: "Around Akasaka",
+        type: "Dinner",
+        reserve: false,
+        note: "Something simple near the hotel before packing.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Tamagoyaki",
+        jp: "玉子焼き",
+        desc: "Sweet rolled omelette, sold hot on a stick at the Tsukiji stalls.",
+      },
+      {
+        name: "Grilled scallops",
+        jp: "焼きホタテ",
+        desc: "Whole scallops grilled in the shell with butter and soy.",
+      },
+      {
+        name: "Kaisendon",
+        jp: "海鮮丼",
+        desc: "A bowl of rice topped with raw seafood — tuna, salmon, salmon roe, sea urchin.",
+      },
+      {
+        name: "Ichigo daifuku",
+        jp: "いちご大福",
+        desc: "A whole strawberry wrapped in red bean paste and soft mochi.",
+      },
+      {
+        name: "Butterbeer",
+        jp: "バタービール",
+        desc: "The non-alcoholic butterscotch drink from the films, with a foam top.",
+      },
+    ],
+    reservations:
+      "No meals to book — the Studio Tour ticket is the one thing to buy ahead, and lunch is inside it. Bring cash for Tsukiji.",
   },
 };
 

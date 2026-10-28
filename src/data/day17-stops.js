@@ -69,6 +69,18 @@ export const day17Stops = [
     hours: "9:00–17:00 (last entry 16:30), ¥300",
     maps: "https://www.google.com/maps/search/?api=1&query=Rikugien%20Gardens&query_place_id=ChIJYUQ-972NGGAR5W_2E0N3SHY",
     photo: null,
-    desc: "Walk 10 min to Todaimae, Namboku Line 2 stops to Komagome (~5 min), then 7 min walk to the main gate. A classic Edo-period strolling garden and one of the best momiji spots in Tokyo, with peak colour usually in late November. Arrive by 16:00 at the latest: sunset is around 16:30. Matcha and a sweet at the teahouse by the pond if there is time. Back to the hotel: Namboku Line direct from Komagome to Tameike-sanno (~20 min)."
+    desc: "Walk 10 min to Todaimae, Namboku Line 2 stops to Komagome (~5 min), then 7 min walk to the main gate. A classic Edo-period strolling garden and one of the best momiji spots in Tokyo, with peak colour usually in late November. Arrive by 16:00 at the latest: sunset is around 16:30. Matcha and a sweet at the teahouse by the pond if there is time. Then head to Yomiuriland: JR Yamanote from Komagome to Shinjuku (~15 min)."
+  },
+  {
+    n: 7,
+    time: "18:15",
+    name: "Yomiuriland Jewellumination",
+    jp: "よみうりランド ジュエルミネーション",
+    lat: 35.6322518,
+    lng: 139.5174469,
+    hours: "Illumination usually 16:00–20:30 (hours vary; irregular closed days)",
+    maps: "https://www.google.com/maps/search/?api=1&query=Yomiuriland%20Jewellumination&query_place_id=ChIJ9_FxdIj6GGARU_kzX6Xrguc",
+    photo: null,
+    desc: "From Shinjuku, Keio Line to Chofu and change to the Keio Sagamihara Line for Keio-yomiuri-land (~35–40 min total), then the Sky Shuttle gondola up to the park (5–10 min; the view of the lit-up park from the cabin is part of the fun). One of the biggest illuminations in the Kanto area, designed by lighting designer Motoko Ishii: millions of LEDs in gemstone colours across the whole park, plus fountain shows set to music. Dinner at the park's food stands. Allow 2–2.5 hours. Back to the hotel: Keio Line to Shinjuku, then Marunouchi Line to Kokkai-gijidomae (~1 h 10 min total)."
   },
 ];

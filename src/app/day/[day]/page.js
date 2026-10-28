@@ -21,6 +21,9 @@ import ShirakawaGoItinerary from "@/components/shirakawa-go/ShirakawaGoItinerary
 import KanazawaGoraItinerary from "@/components/kanazawa-gora/KanazawaGoraItinerary";
 import HakoneLoopItinerary from "@/components/hakone-loop/HakoneLoopItinerary";
 import OldTokyoItinerary from "@/components/old-tokyo/OldTokyoItinerary";
+import HarajukuShibuyaItinerary from "@/components/harajuku-shibuya/HarajukuShibuyaItinerary";
+import ShibaGinzaItinerary from "@/components/shiba-ginza/ShibaGinzaItinerary";
+import HarryPotterDayItinerary from "@/components/harry-potter-day/HarryPotterDayItinerary";
 import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
@@ -55,6 +58,9 @@ const DAY_CONTENT = {
   15: (props) => <KanazawaGoraItinerary {...props} />,
   16: (props) => <HakoneLoopItinerary {...props} />,
   17: (props) => <OldTokyoItinerary {...props} />,
+  18: (props) => <HarajukuShibuyaItinerary {...props} />,
+  19: (props) => <ShibaGinzaItinerary {...props} />,
+  20: (props) => <HarryPotterDayItinerary {...props} />,
 };
 
 export function generateStaticParams() {

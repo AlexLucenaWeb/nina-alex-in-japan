@@ -10,7 +10,10 @@ const TRANSPORT = [
   { leg: "Asakusa → Nippori", line: "Ginza Line to Ueno + JR Yamanote to Nippori", time: "~15 min" },
   { leg: "Yanaka Ginza → Kamachiku → Nezu Shrine", line: "Walk", time: "~25 min" },
   { leg: "Nezu → Komagome", line: "Walk to Todaimae + Namboku Line", time: "~20 min" },
-  { leg: "Komagome → Hotel", line: "Tokyo Metro Namboku Line (direct to Tameike-sanno)", time: "~20 min" },
+  { leg: "Komagome → Shinjuku", line: "JR Yamanote Line", time: "~15 min" },
+  { leg: "Shinjuku → Keio-yomiuri-land", line: "Keio Line + Keio Sagamihara Line (change at Chofu)", time: "~35–40 min" },
+  { leg: "Station → Yomiuriland", line: "Sky Shuttle gondola", time: "~5–10 min" },
+  { leg: "Yomiuriland → Hotel", line: "Gondola + Keio Line to Shinjuku + Marunouchi Line to Kokkai-gijidomae", time: "~1 h 10 min" },
 ];
 
 export default function OldTokyoItinerary({ food }) {
@@ -19,15 +22,17 @@ export default function OldTokyoItinerary({ food }) {
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
-            The old side of Tokyo, north to south and back:
+            The old side of Tokyo, then a night of lights:
           </span>{" "}
           Senso-ji before the crowds, street snacks on Nakamise, the
-          wooden-house lanes of Yanaka, Nezu Shrine&apos;s torii tunnel and
-          the momiji at Rikugien as the light goes.
+          wooden-house lanes of Yanaka, Nezu Shrine&apos;s torii tunnel, the
+          momiji at Rikugien as the light goes, and the Jewellumination at
+          Yomiuriland after dark.
         </p>
         <p className="mt-2">
           Out of the hotel by ~8:00 so the temple comes before the shops open,
-          and at Rikugien by 16:00 for the last of the daylight.
+          at Rikugien by 16:00 for the last of the daylight, and back at the
+          hotel around 22:00.
         </p>
       </div>
 
