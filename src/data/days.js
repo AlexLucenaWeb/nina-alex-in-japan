@@ -297,6 +297,20 @@ const overrides = {
       "Tomorrow: flight from Narita at 16:55, be at the airport by 13:25. Pack tonight.",
     ],
   },
+  21: {
+    title: "Narita-san & Flight Home",
+    date: "Tuesday, 1 December",
+    location: "Tokyo → Narita (in transit)",
+    summary:
+      "One last temple morning: Naritasan Shinsho-ji and its autumn park, grilled eel on Narita's old shopping street, then a 10-minute hop to the airport for the 16:55 flight home.",
+    recommendations: [
+      "Bring 100-yen coins for the Keisei-Narita lockers (coins only, no change machine).",
+      "Kawatoyo dine-in queues can reach 2–5 hours. The takeaway bento is the realistic option on a flight day.",
+      "Leave Narita town by 13:00 at the latest to be at the airport by 13:25.",
+      "The temple involves a lot of stairs: wear comfortable shoes.",
+      "Plan B (if you'd rather stay in Tokyo): Imperial Palace East Gardens (open Tue, 9:00–18:00; closed Mondays and Fridays), a short walk from Tokyo Station. Leave the hotel with luggage ~11:15 and take the Narita Express from Tokyo Station around 12:00 (~1 h to the airport).",
+    ],
+  },
 };
 
 export const days = Array.from({ length: TRIP_LENGTH }, (_, i) => {

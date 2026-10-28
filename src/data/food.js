@@ -27,7 +27,7 @@
 // local food ("What to eat in Minami") instead of the generic heading.
 
 export const FOOD_FIRST_DAY = 2;
-export const FOOD_LAST_DAY = 20;
+export const FOOD_LAST_DAY = 21;
 
 export const foodByDay = {
   3: {
@@ -843,6 +843,48 @@ export const foodByDay = {
     ],
     reservations:
       "No meals to book — the Studio Tour ticket is the one thing to buy ahead, and lunch is inside it. Bring cash for Tsukiji.",
+  },
+  21: {
+    dishesTitle: "What to eat in Narita",
+    meals: [
+      {
+        time: "~08:30",
+        place: "Konbini or café near the hotel",
+        type: "Breakfast",
+        reserve: false,
+        note: "Something quick before checking out.",
+      },
+      {
+        time: "10:40",
+        place: "Narita Omotesando",
+        type: "Street snacks",
+        reserve: false,
+        note: "Eel restaurants and traditional sweet shops all along the street down to the temple. Order the unagi bento at Kawatoyo on the way down.",
+      },
+      {
+        time: "11:45",
+        place: "Kawatoyo bento in Naritasan Park",
+        type: "Lunch · unagi",
+        reserve: false,
+        note: "Takeaway unagi bento from Kawatoyo (over 100 years old), eaten in the park. Dine-in waits are often hours long.",
+      },
+      {
+        time: "After security",
+        place: "Narita Airport",
+        type: "Snacks & souvenirs",
+        reserve: false,
+        note: "Last-minute snacks and souvenirs before the flight.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Unagi",
+        jp: "うなぎ",
+        desc: "Freshwater eel grilled over charcoal and glazed with a sweet soy tare, served on rice. Narita's speciality — today's lunch.",
+      },
+    ],
+    reservations:
+      "No meals to book. Order the Kawatoyo takeaway on the way down so it's ready on the way back.",
   },
 };
 
