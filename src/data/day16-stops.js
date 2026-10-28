@@ -126,7 +126,7 @@ export const day16Stops = [
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone-Yumoto%20Station&query_place_id=ChIJcX9RE3WjGWARooaTIj-NpZs",
     photo: null,
-    desc: "Pick up luggage if you used the carry service. Quick stroll on the shopping street for souvenirs. Romancecar around 17:30 to Shinjuku (~85 min) — reserve seats in advance on EMot."
+    desc: "Pick up luggage if you used the carry service. Quick stroll on the shopping street for souvenirs. Romancecar around 17:30 to Shinjuku (seat on EMot)."
   },
   {
     n: 11,
@@ -138,7 +138,7 @@ export const day16Stops = [
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Shinjuku%20Station",
     photo: null,
-    desc: "Romancecar arrival. Follow signs to the Tokyo Metro Marunouchi Line (red, M) and take a train towards Ikebukuro/Tokyo — 4 stops, ~8 min, no transfer, IC card."
+    desc: "Pay the Odawara → Shinjuku fare difference at the fare adjustment machine before the gates. Follow signs to the Tokyo Metro Marunouchi Line (red, M) and take a train towards Ikebukuro/Tokyo — 4 stops, ~8 min, no transfer, IC card."
   },
   {
     n: 12,

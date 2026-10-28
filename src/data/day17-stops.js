@@ -1,0 +1,74 @@
+export const day17Stops = [
+  {
+    n: 1,
+    time: "08:30",
+    name: "Kaminarimon & Senso-ji",
+    jp: "雷門・浅草寺",
+    lat: 35.7111163,
+    lng: 139.7963656,
+    hours: "Grounds open 24h (main hall 6:00–17:00)",
+    maps: "https://www.google.com/maps/search/?api=1&query=Kaminarimon%20%26%20Senso-ji&query_place_id=ChIJ0YwG28aOGGARvRKAXIBWqNk",
+    photo: null,
+    desc: "Leave the hotel ~8:00: walk 7 min to Tameike-sanno, Ginza Line direct to Asakusa (~20 min). Arrive before the tour groups for photos of the giant red lantern and the main hall with almost no one around. Tokyo's oldest temple (founded 628)."
+  },
+  {
+    n: 2,
+    time: "10:00",
+    name: "Nakamise-dori",
+    jp: "仲見世通り",
+    lat: 35.7118413,
+    lng: 139.7964542,
+    hours: "Shops ~10:00–17:00",
+    maps: "https://www.google.com/maps/search/?api=1&query=Nakamise-dori&query_place_id=ChIJPd37MMGOGGARvJ2hfxoiNVE",
+    photo: null,
+    desc: "The 250 m shopping street leading to Senso-ji. Most stalls open around 10:00, so walk it on the way out: ningyo-yaki, kibi dango, age-manju, senbei and souvenirs. Eating while walking is frowned upon — eat at the stall."
+  },
+  {
+    n: 3,
+    time: "11:30",
+    name: "Yuyake Dandan & Yanaka Ginza",
+    jp: "夕やけだんだん・谷中銀座",
+    lat: 35.7276466,
+    lng: 139.7670864,
+    hours: "Shops mostly ~11:00–18:00",
+    maps: "https://www.google.com/maps/search/?api=1&query=Yuyake%20Dandan%20%26%20Yanaka%20Ginza&query_place_id=ChIJrw6t4tONGGARm4SASOVzzLc",
+    photo: null,
+    desc: "Asakusa → Ueno (Ginza Line, 5 min) → Nippori (JR Yamanote, 4 min), then 5 min walk. The \"sunset steps\" lead down into Yanaka Ginza, a retro shopping street that survived the war: croquettes, menchi-katsu, taiyaki and lots of cat-themed shops. Yanaka is one of the few areas with old wooden houses and small temples."
+  },
+  {
+    n: 4,
+    time: "13:00",
+    name: "Lunch: Nezu Kamachiku",
+    jp: "根津 釜竹",
+    lat: 35.7180829,
+    lng: 139.7669646,
+    hours: "Lunch 11:30–14:30",
+    maps: "https://www.google.com/maps/search/?api=1&query=Nezu%20Kamachiku&query_place_id=ChIJcRRPoS6MGGARe-LEXkndq_s",
+    photo: null,
+    desc: "~20 min walk from Yanaka Ginza through the back streets of Yanesen. Handmade udon in a converted Meiji-era stone warehouse with a garden view. Expect a queue at lunch; it moves fairly quickly. Portions are big."
+  },
+  {
+    n: 5,
+    time: "14:15",
+    name: "Nezu Shrine",
+    jp: "根津神社",
+    lat: 35.7201366,
+    lng: 139.7607695,
+    hours: "5:00–18:00",
+    maps: "https://www.google.com/maps/search/?api=1&query=Nezu%20Shrine&query_place_id=ChIJ-X4hzjKMGGARDSsGeHOACgw",
+    photo: null,
+    desc: "5 min walk from Kamachiku. One of Tokyo's oldest shrines, with a tunnel of small red torii gates along the hillside (a mini Fushimi Inari) and a koi pond. Much calmer than the big-name shrines."
+  },
+  {
+    n: 6,
+    time: "15:30",
+    name: "Rikugien Gardens",
+    jp: "六義園",
+    lat: 35.7331005,
+    lng: 139.7457335,
+    hours: "9:00–17:00 (last entry 16:30), ¥300",
+    maps: "https://www.google.com/maps/search/?api=1&query=Rikugien%20Gardens&query_place_id=ChIJYUQ-972NGGAR5W_2E0N3SHY",
+    photo: null,
+    desc: "Walk 10 min to Todaimae, Namboku Line 2 stops to Komagome (~5 min), then 7 min walk to the main gate. A classic Edo-period strolling garden and one of the best momiji spots in Tokyo, with peak colour usually in late November. Arrive by 16:00 at the latest: sunset is around 16:30. Matcha and a sweet at the teahouse by the pond if there is time. Back to the hotel: Namboku Line direct from Komagome to Tameike-sanno (~20 min)."
+  },
+];

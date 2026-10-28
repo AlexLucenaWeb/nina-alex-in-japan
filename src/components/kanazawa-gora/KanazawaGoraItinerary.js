@@ -8,7 +8,7 @@ import { day15Stops } from "@/data/day15-stops";
 const TICKETS = [
   { leg: "Kanazawa → Ōmiya", ticket: "Hokuriku Shinkansen Kagayaki, reserved seat — paper ticket, not Suica." },
   { leg: "Ōmiya → Odawara", ticket: "Shōnan-Shinjuku Line on Suica, plus the Green Car supplement." },
-  { leg: "Odawara → Gōra", ticket: "2-day Hakone Free Pass, bought at Odawara. Covers bus J03 and the Tozan Railway backup." },
+  { leg: "Odawara → Gōra", ticket: "2-day Hakone Freepass, already on EMot (each on our own iPhone) — no need to queue at the Odawara ticket office; go straight to the bus to Gōra and show the pass to the driver. Covers bus J03 and the Tozan Railway backup." },
 ];
 
 export default function KanazawaGoraItinerary({ food }) {

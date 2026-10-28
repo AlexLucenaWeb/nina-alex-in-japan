@@ -37,7 +37,7 @@ export const day15Stops = [
     photo: "/photos/day15-3-odawara-station.webp",
     photoSource: "https://c8.alamy.com/comp/3BHX87Y/odawara-station-platform-and-the-hakone-tozan-line-train-station-in-odawara-japan-3BHX87Y.jpg",
     photoFocusY: 0,
-    desc: "Buy the 2-day Hakone Free Pass (covers today's bus and tomorrow's loop). Take bus J03 to Kami-Gōra-Iriguchi — it runs infrequently, so check the next departure. Backup: Hakone Tozan Railway to Gōra Station (also covered by the pass)."
+    desc: "Freepass already on EMot (each on our own iPhone) — no need to queue at the Odawara ticket office; go straight to the bus to Gōra and show the pass to the driver. Take bus J03 to Kami-Gōra-Iriguchi — it runs infrequently, so check the next departure. Backup: Hakone Tozan Railway to Gōra Station (also covered by the pass)."
   },
   {
     n: 4,

@@ -9,9 +9,17 @@ import { day16Stops } from "@/data/day16-stops";
 // The Gōra hotel is a surprise, so it is never named on this page — only
 // "check-out in Gōra".
 const TICKETS = [
-  "Hakone Freepass, 2-day version from Odawara (¥6,000 per person, digital on EMot): buy it on Day 15 so it also covers the bus up to Gōra. Each of us needs it on our own iPhone with our own EMot account.",
-  "Covers: cable car, ropeway, pirate ship, Hakone Tozan bus, Gōra Park entry. Not covered: Romancecar seat fee.",
-  "Romancecar Hakone-Yumoto → Shinjuku: reserve the ~17:30 departure on EMot (leaves a buffer for the bus); autumn afternoons fill up and large-luggage space is limited.",
+  {
+    text: "Everything is on EMot Online Tickets, each of us on our own iPhone: the 2-day Hakone Freepass (Odawara version, valid Nov 25–26) and the Romancecar seat.",
+    link: {
+      href: "https://emot-tickets.jp",
+      label: "EMot Online Tickets →",
+    },
+  },
+  "Freepass: show the animated pass screen at the manned gates, on the cable car, ropeway, pirate ship and buses. Screenshots don't work — keep the phone charged and bring the power bank.",
+  "Covers: Gōra Park entry, cable car, ropeway, pirate ship, Hakone Tozan bus and the train Hakone-Yumoto → Odawara. Not covered: the Romancecar seat surcharge (bought separately on EMot).",
+  "Romancecar Hakone-Yumoto → Shinjuku, departure around 17:30. The EMot ticket is only the seat surcharge; seats in the last row of a car, next to the luggage space.",
+  "Odawara → Shinjuku is not covered by our Freepass (¥910 per person). Enter at Hakone-Yumoto with the Freepass and, at Shinjuku, pay the difference at the fare adjustment machine (精算機) or the window next to it before the gates. Don't tap the iPhone IC card at the exit gate — we didn't enter with it.",
   "Shinjuku → Akasaka-mitsuke on the Marunouchi Line: pay with the IC card (~¥210).",
 ];
 

@@ -215,7 +215,7 @@ const overrides = {
       "Send the big luggage to Tokyo by takkyubin the day before, so the morning is just a day pack and the 9:07 train.",
       "Buy the shinkansen ticket only as far as Ōmiya, with a reserved seat — it's a paper ticket, not Suica.",
       "At Ōmiya, check the Shōnan-Shinjuku train is bound for Odawara (小田原): some go to Zushi/Kamakura instead.",
-      "Buy the 2-day Hakone Free Pass at Odawara — it covers today's bus and tomorrow's loop. Bus J03 runs infrequently; the Hakone Tozan Railway to Gōra is the backup, also on the pass.",
+      "Freepass already on EMot (each on our own iPhone) — no need to queue at the Odawara ticket office; go straight to the bus to Gōra and show the pass to the driver. It covers today's bus and tomorrow's loop. Bus J03 runs infrequently; the Hakone Tozan Railway to Gōra is the backup, also on the pass.",
     ],
   },
   16: {
@@ -235,6 +235,21 @@ const overrides = {
       "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
       "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",
       "Arriving with suitcases at Shinjuku around 19:00 means evening rush hour. If it's too packed, a taxi from the west exit to the hotel takes ~20 min (≈ ¥3,000–3,500).",
+    ],
+  },
+  17: {
+    title: "Old Tokyo — Asakusa, Yanaka & Rikugien",
+    date: "Friday, 27 November",
+    location: "Tokyo",
+    summary:
+      "Senso-ji before the crowds, Nakamise street snacks, the old-town lanes of Yanaka, Nezu Shrine's torii tunnel, and autumn leaves at Rikugien at golden hour.",
+    recommendations: [
+      "Start early: Senso-ji is calm before 9:00 and packed by 10:30.",
+      "Nakamise and Yanaka Ginza shops open around 10:00–11:00, which is why we see the temple first and the shops after.",
+      "Kamachiku lunch closes at 14:30 — if the queue is too long, grab extra snacks in Yanaka Ginza instead.",
+      "Rikugien's last entry is 16:30. Don't linger in Yanaka.",
+      "Rikugien usually has a night autumn light-up from late November (in 2025: Nov 28 – Dec 9, 18:00–20:30, advance tickets required). If the 2026 dates are announced and include Sun Nov 29, it's an easy add-on that evening: Namboku Line direct from the hotel area.",
+      "On a clear day, Fujimizaka slope near Nishi-Nippori station is one of the few spots in central Tokyo with a view of Mt Fuji — a 5 min detour from Yanaka Ginza.",
     ],
   },
 };

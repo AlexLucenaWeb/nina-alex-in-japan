@@ -580,6 +580,80 @@ export const foodByDay = {
     reservations:
       "No meals to book. Bring cash for the black eggs at Ōwakudani.",
   },
+  17: {
+    dishesTitle: "What to eat in Old Tokyo",
+    meals: [
+      {
+        time: "10:00",
+        place: "Nakamise-dori, Asakusa",
+        type: "Street snacks",
+        reserve: false,
+        note: "Ningyo-yaki, kibi dango and age-manju from the stalls on the way out of Senso-ji. Eat at the stall, not while walking.",
+      },
+      {
+        time: "11:30",
+        place: "Yanaka Ginza",
+        type: "Street snacks",
+        reserve: false,
+        note: "Menchi-katsu and croquettes from the butcher shops, and a taiyaki.",
+      },
+      {
+        time: "13:00",
+        place: "Nezu Kamachiku",
+        type: "Lunch · handmade udon",
+        reserve: false,
+        note: "Handmade udon in a Meiji-era stone warehouse — try the kamaage udon or the duck udon. Expect a queue; lunch closes at 14:30.",
+      },
+      {
+        time: "~16:00",
+        place: "Rikugien teahouse",
+        type: "Matcha & wagashi",
+        reserve: false,
+        note: "Matcha and a sweet at the teahouse by the pond, if there is time before closing.",
+      },
+      {
+        time: "Evening",
+        place: "Around Akasaka",
+        type: "Dinner",
+        reserve: false,
+        note: "Back near the hotel: izakaya, yakitori and ramen around Akasaka and Akasaka-mitsuke stations.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Ningyo-yaki",
+        jp: "人形焼",
+        desc: "Small sponge cakes filled with red bean paste, baked in shaped moulds. Asakusa's classic.",
+      },
+      {
+        name: "Kibi dango",
+        jp: "きびだんご",
+        desc: "Soft millet dumplings on a skewer, dusted with kinako (roasted soybean flour).",
+      },
+      {
+        name: "Age-manju",
+        jp: "揚げまんじゅう",
+        desc: "Red bean buns fried in a light batter, best eaten hot.",
+      },
+      {
+        name: "Menchi-katsu",
+        jp: "メンチカツ",
+        desc: "A breaded, deep-fried minced meat patty — Yanaka Ginza's butcher shops are known for them.",
+      },
+      {
+        name: "Taiyaki",
+        jp: "たい焼き",
+        desc: "Fish-shaped waffle filled with red bean paste.",
+      },
+      {
+        name: "Kamaage udon",
+        jp: "釜揚げうどん",
+        desc: "Udon served straight from the pot in its hot cooking water, dipped in a warm broth — today's lunch.",
+      },
+    ],
+    reservations:
+      "No meals to book. Kamachiku is walk-in only, so arrive early to keep the queue short.",
+  },
 };
 
 export function hasFoodSection(day) {
