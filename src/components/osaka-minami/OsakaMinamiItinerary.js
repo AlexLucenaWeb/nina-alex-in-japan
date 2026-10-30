@@ -28,8 +28,8 @@ export default function OsakaMinamiItinerary({ food }) {
           </span>{" "}
           (the whole reason the route goes through there), and{" "}
           <span className="font-semibold">Dotonbori has to be at night</span> —
-          you arrive for sunset around 17:00 and sit down to dinner at
-          18:30–19:00, not before.
+          you arrive at 16:30, ahead of sunset (~16:55), and sit down to
+          dinner at 18:30–19:00, not before.
         </p>
         <p className="mt-2">
           Feeling like electronics or anime shopping? Den Den Town sits right

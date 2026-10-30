@@ -30,6 +30,12 @@ const overrides = {
     location: "Osaka",
     summary:
       "Osaka from south to north, on foot: the old temple at Shitenno-ji, kushikatsu under the Tsutenkaku tower in Shinsekai, then across into Minami for a quiet shrine, the Kuromon Ichiba food market, Shinsaibashi-suji and the lantern alley at Hozenji — finishing in Dotonbori as the neon comes on. See the interactive map and stop-by-stop itinerary below.",
+    recommendations: [
+      "Bring cash — many Kuromon stalls and some kushikatsu counters are cash only; carry small yen notes and coins.",
+      "Glico Man photo — the best shot is from Ebisubashi bridge after dark, with the sign reflected in the canal. For calmer photos, walk down to the Tombori River Walk along the water.",
+      "Hozenji Yokocho at dusk — with the lanterns lit it's the prettiest corner of the area, a quiet contrast to the noise of Dotonbori.",
+      "Tax-free shopping (new from Nov 1, 2026) — you now pay the tax at the till and get it refunded at customs when leaving Japan. Bring your passport when shopping, keep the receipts, and don't use or open tax-free items until you're home.",
+    ],
   },
   4: {
     title: "Himeji & Kobe",

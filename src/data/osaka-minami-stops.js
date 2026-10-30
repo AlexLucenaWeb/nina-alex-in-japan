@@ -20,7 +20,7 @@ export const OSAKA_MINAMI_STOPS = [
     photo: "/photos/day3-1-shitenno-ji.webp",
     photoSource:
       "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm4s4QT0hhGqzhXzsFUJklTB-l6BOi46c9LuKy4G7UuIUK1YIJxlho5sHIybg5GERysxLW4W9qcpVBjZKhGhJUb7v9aGswvXGxipN6KifSZTM44ZMxUL2BHTaRiDgBYmzldhjA=w408-h544-k-no",
-    desc: "One of the oldest Buddhist temples in Japan, founded in 593 by Prince Shōtoku. A five-storey pagoda and a wide, quiet compound — the calm way to start the day, before any of the noise.",
+    desc: "From the hotel: ~25–30 min on foot (~2 km east), or the Midosuji Line from Dobutsuen-mae to Tennoji (1 stop) and a short walk. One of the oldest Buddhist temples in Japan, founded in 593 by Prince Shōtoku. A five-storey pagoda and a wide, quiet compound — the calm way to start the day, before any of the noise.",
   },
   {
     n: 2,
@@ -29,12 +29,12 @@ export const OSAKA_MINAMI_STOPS = [
     jp: "新世界・通天閣",
     lat: 34.6524992,
     lng: 135.5063058,
-    hours: "streets always open · tower 9:00–21:45",
+    hours: "streets always open · tower (optional) 9:00–21:45, ¥1,500",
     maps: "https://maps.google.com/?cid=16558556426972448087",
     photo: "/photos/day3-2-shinsekai-tsutenkaku.webp",
     photoSource:
       "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkzVX60DM-0oaeMjVOmQ4dJqTQZ1HDMvx4qet0yXkfd9t2MhkKHs9ewPs5TKBjiUf4q3s4flit719ZbH1yYCikfpt0As-5yBhBvX2KG2izWlGrzlih_SVHvdAlzwzu9SCqp4AD0=w408-h544-k-no",
-    desc: "A retro-futurist quarter frozen somewhere in the 1950s: neon, coloured lanterns and the Tsutenkaku tower standing over all of it. This is the home of kushikatsu, and it's where lunch happens — Daruma or Yaekatsu. About 15 minutes on foot from Shitenno-ji.",
+    desc: "A retro-futurist quarter frozen somewhere in the 1950s: neon, coloured lanterns and the Tsutenkaku tower standing over all of it. This is the home of kushikatsu, and it's where lunch happens — Daruma or Yaekatsu. About 15 minutes on foot from Shitenno-ji. Going up Tsutenkaku is optional: ¥1,500 per adult covers the main observatory and the outdoor deck, and it's more about the retro Shinsekai atmosphere than the view.",
   },
   {
     n: 3,
@@ -104,6 +104,6 @@ export const OSAKA_MINAMI_STOPS = [
     photo: "/photos/day3-7-dotonbori-glico-man-ebisubashi.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjCY53QWURl1ytVTeePp7rm_v3BVSmOYuNOV9jscM3C6xYicPcwBIQiCMIrp9w6qgy2X1ynhll8qIcI-qqnsd2CT53ZSNPe4f_oOEYQhk4L547991moVLxGuazXd1wK_l4ZWAiWSzwnL-xvxow=s1200-w800-h600",
-    desc: "Osaka's grand finale and icon: the Glico Man reflected in the canal, the Ebisubashi bridge, giant crabs and a sea of neon. You arrive for sunset around 17:00, walk and photograph it while the neon comes on, and sit down to dinner at 18:30–19:00.",
+    desc: "Osaka's grand finale and icon: the Glico Man reflected in the canal, the Ebisubashi bridge, giant crabs and a sea of neon. You arrive at 16:30, ahead of sunset (~16:55), walk and photograph it while the neon comes on, and sit down to dinner at 18:30–19:00.",
   },
 ];
