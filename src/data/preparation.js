@@ -23,15 +23,14 @@ export const PREPARATION_CHECKLIST = [
   {
     category: "SIM & connectivity",
     items: [
-      "Buy an eSIM for Japan (e.g. Airalo, Ubigi) and install it before you fly so it's ready to activate on arrival.",
-      "Alternatively, reserve a pocket WiFi or physical SIM for pickup at Narita.",
-      "Download offline maps for Tokyo and Kyoto in case you're without signal.",
+      "eSIM: Ubigi, Japan plan 25 GB / 30 days (already chosen). Install it before you fly so it's ready to activate on arrival.",
+      "Download offline maps for Osaka, Kyoto, Kanazawa, Hakone and Tokyo in case you're without signal, and star the itinerary stops.",
     ],
   },
   {
     category: "Apps to install",
     items: [
-      "Google Maps — download the offline maps for Tokyo and Kyoto.",
+      "Google Maps — download the offline maps for Osaka, Kyoto, Kanazawa, Hakone and Tokyo, and star the itinerary stops.",
       "Google Translate — download the Japanese offline pack and try the camera translation feature.",
       "Visit Japan Web — for the immigration and customs QR code.",
       "Revolut — for card management and currency exchange.",

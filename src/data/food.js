@@ -30,6 +30,17 @@ export const FOOD_FIRST_DAY = 2;
 export const FOOD_LAST_DAY = 21;
 
 export const foodByDay = {
+  2: {
+    meals: [
+      {
+        time: "16:00",
+        place: "Ekiben on the Nozomi",
+        type: "Dinner · ekiben",
+        reserve: false,
+        note: "Buy at Ekibenya Matsuri in Tokyo Station (Central Passage, inside the JR East gates), which sells hundreds of station bento from all over Japan, ~¥1,000–2,000 each. Eating on the shinkansen is normal and part of the experience. Backup: the bento shops inside the Tokaido Shinkansen area.",
+      },
+    ],
+  },
   3: {
     dishesTitle: "What to eat in the South & Minami",
     meals: [

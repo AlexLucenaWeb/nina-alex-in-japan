@@ -4,7 +4,6 @@ import {
   DAY2_TIMELINE,
   DAY2_AIRPORT_PROCESS,
   DAY2_TRAINS,
-  DAY2_TRANSPORT_COST_NOTE,
   DAY2_TIPS,
   DAY2_HOTEL,
 } from "@/data/day2-arrival";
@@ -43,7 +42,17 @@ export default function ArrivalOsakaItinerary({ food }) {
               >
                 {item.time}
               </span>
-              <span className="text-ink/80">{item.event}</span>
+              <div className="flex flex-col gap-2 text-ink/80">
+                <span>{item.event}</span>
+                {item.steps && (
+                  <ol className="flex list-decimal flex-col gap-1 pl-5">
+                    {item.steps.map((step) => (
+                      <li key={step}>{step}</li>
+                    ))}
+                  </ol>
+                )}
+                {item.note && <span className="text-ink/60">{item.note}</span>}
+              </div>
             </li>
           ))}
         </ol>
@@ -69,8 +78,8 @@ export default function ArrivalOsakaItinerary({ food }) {
       <section className="flex flex-col gap-3">
         <SectionHeading>The two trains: NRT → Shin-Osaka</SectionHeading>
         <DataTable
-          columns={["Leg", "Train", "Duration", "Price/person", "Arrival"]}
-          minWidth={640}
+          columns={["Leg", "Train", "Duration", "Cost"]}
+          minWidth={560}
         >
           {DAY2_TRAINS.map((row, index) => (
             <tr key={index} className="border-b border-line/50 last:border-0">
@@ -78,11 +87,9 @@ export default function ArrivalOsakaItinerary({ food }) {
               <td className="px-4 py-3 text-ink/80">{row.train}</td>
               <td className="px-4 py-3 text-momiji">{row.duration}</td>
               <td className="px-4 py-3 text-ink/80">{row.price}</td>
-              <td className="px-4 py-3 text-ink/70">{row.arrival}</td>
             </tr>
           ))}
         </DataTable>
-        <p className="text-sm text-ink/60">{DAY2_TRANSPORT_COST_NOTE}</p>
       </section>
 
       <section className="flex flex-col gap-3">

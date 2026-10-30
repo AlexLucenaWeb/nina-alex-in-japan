@@ -1,34 +1,53 @@
+// `steps` are the sub-steps of one timeline entry, in order — Tokyo Station is
+// four separate things to do in a short window. `note` is a fallback shown
+// under them.
 export const DAY2_TIMELINE = [
-  { time: "11:55", event: "Landing at NRT (Doha–Tokyo flight)" },
-  { time: "11:55–12:15", event: "Deplane and walk to immigration" },
+  { time: "11:55", event: "Land at Narita Terminal 2 (QR808)" },
   {
-    time: "12:15–12:35",
+    time: "~12:00–13:15",
     event:
-      "Immigration (Visit Japan Web QR) — can stretch to 13:15 at peak times",
-  },
-  { time: "12:35–12:55", event: "Baggage claim" },
-  { time: "12:55–13:05", event: "Customs (Visit Japan Web QR)" },
-  { time: "~13:15–13:30", event: "Out into the arrivals hall" },
-  {
-    time: "13:30–13:50",
-    event: "Buy N'EX ticket / top up Suica with Revolut",
-  },
-  { time: "~14:00", event: "Depart on the Narita Express to Tokyo Station" },
-  { time: "~14:55–15:10", event: "Arrive at Tokyo Station" },
-  { time: "15:10–15:25", event: "Walk to the Tokaido Shinkansen platform" },
-  {
-    time: "~15:30",
-    event: "Depart on the Nozomi Shinkansen to Shin-Osaka",
+      "Immigration, baggage claim and customs — each of us shows our own Visit Japan Web QR. At peak times this can stretch to ~13:45.",
   },
   {
-    time: "~18:00",
-    event: "Arrive in Shin-Osaka (realistic window: 17:30–18:30)",
+    time: "Arrivals hall",
+    event:
+      "Turn on Ubigi eSIM data and withdraw yen at a 7-Eleven (Seven Bank) ATM.",
+  },
+  {
+    time: "Basement B1",
+    event:
+      "Follow \"Railways → JR\" (not Keisei) to Narita Airport Terminal 2·3 Station. Buy Narita Express (N'EX) tickets to Tokyo at the JR ticket office or the red reserved-seat machines (English available): ordinary car, 2 adults, pay by card.",
+  },
+  {
+    time: "N'EX to Tokyo",
+    event:
+      "Take the first convenient train: any N'EX arriving at Tokyo before ~15:30 works, i.e. leaving Narita by ~14:30. Trains run roughly every 30 min, ~55–60 min ride. Tokyo is the first stop and the whole train goes there. Keep the tickets — you need them to exit.",
+  },
+  {
+    time: "~15:00–15:30",
+    event:
+      "Tokyo Station. The N'EX arrives at the deep underground platforms; allow 15–20 min with luggage.",
+    steps: [
+      "Buy ekiben for dinner at Ekibenya Matsuri (Central Passage, inside the JR East ticket gates).",
+      "Exit through the JR gate, inserting the N'EX ticket.",
+      "At the Tokaido Shinkansen entrance, collect the Nozomi tickets at a JR Central ticket machine with the smartEX pickup code + password.",
+      "Enter the Shinkansen gates with the paper tickets and take the \"seat information\" slip/tickets back.",
+    ],
+    note: "Running late (N'EX arriving after ~15:15)? Skip Ekibenya Matsuri and buy bento at the shops inside the Shinkansen area.",
+  },
+  {
+    time: "16:00",
+    event: "Nozomi 267 to Shin-Osaka (seats D/E). Ekiben dinner on board.",
     highlight: true,
   },
   {
-    time: "18:00–18:25",
+    time: "18:30",
     event:
-      "Shin-Osaka → Hotel Arashi Nippombashi 1 (Midosuji Line to Dobutsuen-mae, then Ebisucho)",
+      "Arrive at Shin-Osaka. Midosuji Line to Dobutsuen-mae, then one stop on the Sakaisuji Line to Ebisucho (or ~10 min walk).",
+  },
+  {
+    time: "~19:00",
+    event: "Check in at Hotel Arashi Nippombashi 1.",
   },
 ];
 
@@ -58,40 +77,38 @@ export const DAY2_AIRPORT_PROCESS = [
 
 export const DAY2_TRAINS = [
   {
-    leg: "Narita Airport → Tokyo Station",
+    leg: "Narita → Tokyo",
     train: "Narita Express (N'EX), reserved seat",
-    duration: "~55–70 min",
-    price: "¥3,070/person",
-    arrival: "Tokyo Station",
+    duration: "~55–60 min",
+    price: "¥3,140/person (JR East fare, March 2026)",
   },
   {
-    leg: "Transfer on foot",
-    train: "—",
-    duration: "~10–15 min",
+    leg: "Tokyo platform transfer",
+    train: "On foot",
+    duration: "~15–20 min",
     price: "—",
-    arrival: "Tokaido Shinkansen platform",
   },
   {
-    leg: "Tokyo Station → Shin-Osaka",
-    train: "Shinkansen Nozomi, reserved seat",
+    leg: "Tokyo → Shin-Osaka",
+    train: "Nozomi 267 (16:00 → 18:30), seats D/E",
     duration: "~2h30",
-    price: "¥14,720/person",
-    arrival: "Shin-Osaka",
+    price: "Booked (smartEX)",
+  },
+  {
+    leg: "Shin-Osaka → Ebisucho",
+    train: "Osaka Metro (Midosuji + Sakaisuji)",
+    duration: "~25 min door to door",
+    price: "IC card",
   },
 ];
 
-export const DAY2_TRANSPORT_COST_NOTE =
-  "Total transport cost: ~¥17,790/person (~€97) → ~¥35,580 for both (~€194), at an approximate rate of ¥183/€ (double-check on the day). Prices verified against official JR East / JR Central 2026 fare tables — JR East revised fares in March 2026, so expect the machine/counter price to differ by a few hundred yen either way.";
-
 export const DAY2_TIPS = [
-  "Capture the Visit Japan Web QR codes before landing (immigration and customs, for each traveler): screenshot them or save them offline in case there's no wifi right after landing.",
-  "Have mobile data active the moment you land: set up an eSIM or pick up a pocket wifi before the trip so you have signal from minute one.",
-  "Suica in Apple Wallet: activate and top it up with Revolut ideally before leaving Madrid, or right after landing (Apple Wallet lets you top up without a physical machine).",
-  "Buy train tickets at the JR office/machines in Narita, paying with Revolut. The Nozomi can also be booked ahead via the smartEX app, but foreign cards sometimes fail 3D Secure there — the ticket counter doesn't have that problem.",
-  "Oversized luggage (over 160 cm height + width + length combined): reserve the large-luggage seat on the Nozomi. It's free, but you have to ask for it explicitly.",
-  "You arrive at SHIN-OSAKA, not Osaka Station — they're different stations. From Shin-Osaka the Midosuji subway line runs straight down to Dobutsuen-mae, the stop for the hotel, in about 16 minutes without changing trains.",
-  "No rush: we land with the whole afternoon still ahead, so a slow immigration line doesn't put the rest of the day at risk.",
-  "Seat E (right-hand side) on the Nozomi = Mt. Fuji views about 40–50 min after leaving Tokyo, weather permitting. Request it when booking.",
+  "Save the smartEX pickup code + password offline before the trip — you need them to print the Nozomi tickets.",
+  "If immigration runs long and you won't make the 16:00, change to a later Nozomi in smartEX BEFORE 16:00 (free with the standard smartEX fare).",
+  "Each of you has your own Visit Japan Web QR — have screenshots ready offline.",
+  "Suica in Apple Wallet (Express Transit on) is for local transport: Osaka Metro, buses, konbini. It is NOT used for the Nozomi.",
+  "If the Suica top-up fails in Apple Wallet, top up with cash at any station machine or 7-Eleven.",
+  "Mt. Fuji: seat E (right side) passes Fuji ~40–50 min after leaving Tokyo (~16:45). Sunset in mid-November is ~16:30, so at best you'll see its silhouette against the dusk sky, and only on a clear day.",
 ];
 
 // Where we sleep for the Osaka half of the trip: nights 2 to 6, checking out

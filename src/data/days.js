@@ -6,14 +6,15 @@ const overrides = {
     date: "Wednesday, 11 November",
     location: "Madrid → Doha → Tokyo (in transit)",
     summary:
-      "Travel day: two long-haul flights via Doha to reach Japan. No sightseeing today — just the journey from Madrid to Narita, landing the morning of Day 2.",
+      "Travel day: a taxi to Barajas before dawn, then two long-haul Qatar Airways flights via Doha to reach Japan. No sightseeing today — just the journey from Madrid to Narita. Arrival at Narita is around midday on Day 2 (Nov 12).",
     recommendations: [
-      "Check in online and pick seats in advance — long-haul widebodies like the 787-9 and 777-300 fill up fast.",
-      "Get to Madrid–Barajas Terminal 4S at least 2.5–3 hours before the 8:05 departure.",
-      "The 3h10 layover in Doha is comfortable — enough time for a walk around Hamad International, but keep an eye on the boarding time for the connection.",
-      "Try to sleep on the Doha–Tokyo leg to start adjusting to Japan time before landing.",
-      "Set your watch to Japan time (UTC+9) once you board the second flight.",
-      "Keep any Japan arrival documents (customs form, Visit Japan Web QR, etc.) in your carry-on for a smooth arrival at Narita.",
+      "Online check-in opens 48 hours before departure: Monday Nov 9 at 8:05 (Madrid time). Pick seats then if not chosen already.",
+      "Be at T4S by 5:00 (taxi booked in advance).",
+      "At the desk, confirm checked bags go straight through to Narita. Carry a change of clothes and essentials in hand luggage in case a bag is delayed.",
+      "Install the Ubigi eSIM before leaving; activate it after landing at Narita so you have data straight away.",
+      "Visit Japan Web: each of you has your own account and your own QR. Screenshot both QR codes before boarding as an offline backup.",
+      "In Doha there's time to stretch your legs, but keep an eye on QR808's boarding time.",
+      "Try to sleep on the Doha–Tokyo leg (it departs at 1:50 a.m. Japan time) and switch your watch to Japan time (UTC+9) when you board.",
     ],
   },
   2: {
@@ -21,7 +22,7 @@ const overrides = {
     date: "Thursday, 12 November",
     location: "Tokyo (NRT) → Shin-Osaka (in transit)",
     summary:
-      "Landing at Narita and heading straight for Osaka: immigration with the Visit Japan Web QR, the Narita Express to Tokyo Station, then the Nozomi Shinkansen down to Shin-Osaka. Full airport process, train details, and a pre-flight checklist below.",
+      "Land at Narita T2 at 11:55, N'EX to Tokyo Station, Nozomi 267 at 16:00 to Shin-Osaka (18:30), hotel ~19:00.",
   },
   3: {
     title: "Osaka on Foot: South & Minami",
