@@ -1,3 +1,4 @@
+import DataTable from "@/components/DataTable";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -8,18 +9,30 @@ import { OSAKA_KITA_STOPS } from "@/data/osaka-kita-stops";
 // without touching the stop data in the repo.
 const MY_MAPS_ID = "12hCMy2AWKi0KCxbBwTQ4fwouzRqWSSo";
 
+const TRANSPORT = [
+  { leg: "Hotel → Osaka Castle", line: "Sakaisuji Line (Ebisucho → Sakaisuji-Hommachi) + Chuo Line to Tanimachi 4-chome", time: "~20–25 min" },
+  { leg: "Castle → OAP", line: "Aqua-liner (12:00), covered by the pass", time: "~40 min" },
+  { leg: "OAP → Nakanoshima", line: "Walk along the river", time: "~20 min" },
+  { leg: "Nakanoshima → Umeda Sky Building", line: "Walk, or Midosuji Line (Yodoyabashi → Umeda) + ~10 min walk", time: "~30 min" },
+  { leg: "Umeda → Osaka Tenmangu", line: "Tanimachi Line (Higashi-Umeda → Minami-morimachi, 2 stops) + short walk", time: "~15 min" },
+  { leg: "Tenjinbashisuji → Lucua", line: "Tanimachi Line (Minami-morimachi → Higashi-Umeda) + walk to Osaka Station", time: "~15 min" },
+  { leg: "Lucua → Hareruya (optional)", line: "Walk", time: "a few min" },
+  { leg: "Umeda → Hotel", line: "Midosuji Line to Dobutsuen-mae + Sakaisuji Line 1 stop to Ebisucho (or ~10 min walk)", time: "~25 min" },
+];
+
 export default function OsakaKitaItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
-            East to north, then south to finish:
+            East to north, all on one pass:
           </span>{" "}
           a long morning at the castle, the river as transport across to
-          Nakanoshima, the view and then lunch at Umeda, and back down to
-          Nipponbashi to close the day. Architecture, a boat, a rooftop, a
-          shrine and Magic — the most varied day of the trip.
+          Nakanoshima, the view and then lunch at Umeda, the shrine and the
+          arcade at Tenjinbashi, and the evening back in Umeda. Architecture,
+          a boat, a rooftop, a shrine and characters — the most varied day of
+          the trip.
         </p>
         <p className="mt-2">
           One thing fixes the whole schedule:{" "}
@@ -41,7 +54,7 @@ export default function OsakaKitaItinerary({ food }) {
             Buy this before you start
           </p>
           <h2 className="font-display text-2xl font-semibold">
-            Osaka Amazing Pass · ¥3,300
+            Osaka Amazing Pass · ¥3,500
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-ink/70">
             The one day of the trip where the pass clearly pays for itself. It
@@ -54,7 +67,7 @@ export default function OsakaKitaItinerary({ food }) {
         <ul className="flex flex-col gap-1.5 text-sm leading-relaxed text-ink/80">
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Osaka Castle keep</span>
-            <span className="shrink-0 font-medium">¥600</span>
+            <span className="shrink-0 font-medium">¥1,200</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Aqua-liner river cruise</span>
@@ -65,7 +78,7 @@ export default function OsakaKitaItinerary({ food }) {
               Umeda Sky Building observatory{" "}
               <span className="text-ink/50">(before 15:00 only)</span>
             </span>
-            <span className="shrink-0 font-medium">¥1,500</span>
+            <span className="shrink-0 font-medium">¥2,000</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>Unlimited metro all day</span>
@@ -73,13 +86,13 @@ export default function OsakaKitaItinerary({ food }) {
           </li>
           <li className="flex justify-between gap-4 pt-1 font-semibold text-momiji">
             <span>Saved per person</span>
-            <span className="shrink-0">~¥1,000–1,200</span>
+            <span className="shrink-0">~¥2,000+</span>
           </li>
         </ul>
 
         <p className="text-sm leading-relaxed text-ink/70">
-          Paid separately, today comes to about ¥4,300–4,500 a head, so the
-          ¥3,300 pass is worth it comfortably. After 15:00 the Sky Building
+          Paid separately, today comes to about ¥5,500–5,600 a head, so the
+          ¥3,500 pass is worth it comfortably. After 15:00 the Sky Building
           drops from free to a 10% discount, which is most of the saving gone —
           so the pass and the running order stand or fall together.
         </p>
@@ -126,10 +139,26 @@ export default function OsakaKitaItinerary({ food }) {
         </ol>
       </section>
 
-      <section aria-label="Ending the day" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">
-          Ending the day &amp; good to know
-        </h2>
+      <section aria-label="Transport" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Transport</h2>
+        <DataTable columns={["Leg", "Line", "Time"]}>
+          {TRANSPORT.map((row) => (
+            <tr key={row.leg} className="border-b border-line/50 last:border-0">
+              <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>
+              <td className="px-4 py-3 text-ink/80">{row.line}</td>
+              <td className="whitespace-nowrap px-4 py-3 text-ink/80">
+                {row.time}
+              </td>
+            </tr>
+          ))}
+        </DataTable>
+        <p className="text-sm leading-relaxed text-ink/80">
+          All metro legs are covered by the Amazing Pass.
+        </p>
+      </section>
+
+      <section aria-label="Good to know" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">
@@ -140,50 +169,11 @@ export default function OsakaKitaItinerary({ food }) {
             after about 40 minutes from the castle, which is the prettiest
             stretch of the river and puts us a 20-minute walk from Nakanoshima
             instead of back where we started. Covered by the Amazing Pass either
-            way — and the OAP stop only runs at weekends, which this Saturday
+            way — and the OAP stop only runs at weekends, which this Sunday
             is.
           </p>
         </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            No rush at Hareruya
-          </h3>
-          <p className="mt-2">
-            It stays open until 23:00 on Saturdays, so it is the one stop on
-            this trip with no closing time pressing on it. Arriving at 17:00
-            leaves the whole evening — stay as long as the singles boxes hold
-            out. Take your passports: it is tax-free, and it is the kind of shop
-            where that adds up.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-pine">
-            Dinner is already next door
-          </h3>
-          <p className="mt-2">
-            Walking out of Hareruya puts you in Namba, five minutes from
-            Dotonbori — okonomiyaki at Ajinoya or Fugetsu, same as Day 3. If
-            you would rather have another round of kushikatsu, Shinsekai is two
-            stops down the Sakaisuji Line and open late.
-          </p>
-        </div>
-
-        <div className="rounded-2xl border-2 border-ochre/50 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-ochre">
-            If you did not buy the pass
-          </h3>
-          <p className="mt-2">
-            Paid at the gate, the day comes to roughly ¥4,300–4,500 a head
-            against ¥3,300 for the pass — so it is worth it by a wide margin.
-            If you start the morning without one, buy it before the castle
-            rather than partway through: the castle, the cruise and the
-            observatory are all on it, and the observatory only up to 15:00.
-          </p>
-        </div>
       </section>
-
     </JapanRouteDayShell>
   );
 }

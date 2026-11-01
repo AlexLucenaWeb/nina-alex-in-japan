@@ -58,14 +58,15 @@ const overrides = {
     date: "Sunday, 15 November",
     location: "Osaka",
     summary:
-      "The other half of Osaka: a long morning at the castle and its park, the Ōkawa river by boat as far as OAP and a walk across to the red brick of Nakanoshima, the 173 m open-air observatory at Umeda with lunch underneath it, then back south for the shrine, Japan's longest shopping arcade and Magic: The Gathering to finish. The day the Osaka Amazing Pass earns its keep.",
+      "The other half of Osaka: a long morning at the castle and its park, the Ōkawa river by boat as far as OAP and a walk across to the red brick of Nakanoshima, the 173 m open-air observatory at Umeda with lunch underneath it, then the shrine and Japan's longest shopping arcade, the character stores at Lucua and dinner in Umeda's old alleys. The day the Osaka Amazing Pass earns its keep.",
     recommendations: [
-      "Buy the Amazing Pass the night before. It's digital now, so there's nothing to queue for in the morning — and paying the day separately comes to about ¥4,300–4,500 a head against ¥3,300 for the pass.",
-      "Be up the Umeda Sky Building before 15:00. After that the pass gives 10% off instead of free entry, which is most of the day's saving gone in one stop — which is why the observatory comes at 14:00 and lunch after it.",
-      "The castle gets 2h30 rather than a quick look. The keep is a concrete reconstruction with a museum inside; the park, the moats and the walls are free and are the better part anyway.",
-      "Take the 12:00 Aqua-liner and get off at OAP — not the full 55-minute loop. It sails on the hour, so missing it costs a full hour, and the OAP stop only runs at weekends.",
-      "Tenjinbashisuji runs 2.6 km — nobody walks all of it. Drop in at the Tenmangu end and come out at whichever metro stop you've had enough at.",
-      "Take your passports: Hareruya is tax-free, and it's the kind of shop where that adds up.",
+      "Buy the Amazing Pass (¥3,500) the night before.",
+      "Take the 12:00 Aqua-liner and get off at OAP (weekend-only stop).",
+      "Reach Umeda Sky Building before 15:00 (free with the pass only until then).",
+      "Grab a konbini snack in the morning — lunch is late (14:45).",
+      "Osaka Tenmangu closes at 17:00 — go there before Lucua.",
+      "Walk only a stretch of Tenjinbashisuji.",
+      "Bring your passport for tax-free shopping (refund at customs when leaving Japan).",
     ],
   },
   6: {
@@ -73,9 +74,10 @@ const overrides = {
     date: "Monday, 16 November",
     location: "Universal Studios Japan, Osaka",
     summary:
-      "A full day inside USJ: Super Nintendo World first thing, Hogsmeade and the Forbidden Journey late morning, dinosaurs after lunch, and the Minion Park and Hollywood end of the park as the light goes. Dinner at CityWalk on the way out.",
+      "A full day inside USJ: Super Nintendo World first thing, Hogsmeade late morning, JAWS and WaterWorld after lunch while Alex takes the big coasters on the single rider lines, and the Minion Park and Hollywood end of the park as the light goes. Dinner at CityWalk on the way out.",
     recommendations: [
-      "Express Pass is the alternative to the 07:30 queue: it's expensive, sells out online well before the date, and the versions that include Super Nintendo World are the first to go. Decide which side of that trade-off you're on before booking anything.",
+      "Register the Studio Pass in the USJ app before the day.",
+      "Request the Super Nintendo World Area Timed Entry Ticket the moment you enter the park.",
       "A day almost entirely on your feet and outdoors, with long stretches queuing without moving — comfortable shoes, and a warm layer for standing still in November.",
       "The app shows live waiting times for every ride. Checking it before walking across the park is the difference between three big attractions in an afternoon and one.",
       "Lockers by the entrance are worth the coins: the water rides in Jurassic Park mean carrying a wet coat around otherwise.",

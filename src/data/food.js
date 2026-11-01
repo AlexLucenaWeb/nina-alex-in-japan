@@ -124,6 +124,20 @@ export const foodByDay = {
   5: {
     meals: [
       {
+        time: "~08:30",
+        place: "Konbini near the hotel",
+        type: "Morning snack",
+        reserve: false,
+        note: "Onigiri, sandwiches or pastries from a 7-Eleven, Lawson or FamilyMart before leaving — eat them in the castle park or on the Aqua-liner. Lunch is late today.",
+      },
+      {
+        time: "~11:15",
+        place: "MIRAIZA OSAKA-JO & the castle park",
+        type: "Snack",
+        reserve: false,
+        note: "The red-brick building next to the castle tower has cafés, and there are food stalls in the park: takoyaki, ice cream, hot drinks.",
+      },
+      {
         time: "14:45",
         place: "Takimi Koji, under the Umeda Sky Building",
         type: "Lunch",
@@ -131,15 +145,49 @@ export const foodByDay = {
         note: "A food alley in the basement dressed as a 1920s street — okonomiyaki, yakitori, katsu, bento. All walk-in, and you come straight down to it from the observatory upstairs. Closed Thursdays, which this day isn't.",
       },
       {
-        time: "19:00",
-        place: "Dotonbori",
+        time: "~19:00",
+        place: "Umeda",
         type: "Dinner",
         reserve: false,
-        note: "Hareruya leaves you in Namba, five minutes from the canal, so dinner is whenever you're done there. Okonomiyaki at Ajinoya or Fugetsu, or two stops down the Sakaisuji Line for another round of kushikatsu in Shinsekai.",
+        note: "Shin-Umeda Shokudogai, the old-school alley of bars and eateries under the Hankyu tracks — kushikatsu, oden, yakitori, okonomiyaki, very local. Or Ohatsu Tenjin Ura-sando, the lantern-lit lane of small izakayas behind Ohatsu Tenjin shrine, with a great atmosphere at night.",
       },
     ],
     reservations:
-      "Nothing to book today. The only thing worth knowing is that lunch is late on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so the observatory goes first at 14:00 and you eat afterwards, at 14:45, in the basement of the same building. Dinner has no such constraint: Hareruya is open until 23:00 on Saturdays, so the evening runs as long as you want it to.",
+      "Nothing to book today. The only thing worth knowing is that lunch is late on purpose — the Amazing Pass stops covering the Umeda Sky Building at 15:00, so the observatory goes first at 14:00 and you eat afterwards, at 14:45, in the basement of the same building.",
+  },
+  6: {
+    meals: [
+      {
+        time: "Your Nintendo slot",
+        place: "Kinopio's Cafe, Super Nintendo World",
+        type: "Optional",
+        reserve: true,
+        note: "Needs a separate smartphone reservation in the USJ app — it is not included in the area entry ticket.",
+      },
+      {
+        time: "~11:00",
+        place: "Three Broomsticks, Hogsmeade",
+        type: "Butterbeer",
+        reserve: false,
+        note: "Butterbeer while you're in the Wizarding World.",
+      },
+      {
+        time: "~13:00",
+        place: "Hogsmeade or Amity Village",
+        type: "Lunch",
+        reserve: false,
+        note: "Lunch inside the park, in whichever of the two areas you're in.",
+      },
+      {
+        time: "~19:00",
+        place: "Universal CityWalk Osaka",
+        type: "Dinner",
+        reserve: false,
+        note: "Restaurants until ~22:00, including the Osaka Takoyaki Museum. A two-minute walk to the platform afterwards.",
+      },
+    ],
+    reservations:
+      "Only Kinopio's Cafe needs booking, in the USJ app, and it's optional. Everything else is walk-in.",
   },
   7: {
     meals: [
