@@ -16,10 +16,10 @@ export default function KyotoArrivalItinerary({ food }) {
           <span className="font-semibold text-momiji">
             Moving day, but not a lost one.
           </span>{" "}
-          An early check-out in Osaka, bags dropped at the hotel in Kyoto by
-          10:00, and from 10:30 three of the city&apos;s essentials: the Golden
-          Pavilion in the north, the maple valley at Tōfuku-ji, and the torii of
-          Fushimi Inari climbed up to sunset.
+          Check-out in Osaka and out of the door at ~08:40, bags dropped at
+          the hotel in Kyoto by 10:00, and from 10:30 three of the city&apos;s
+          essentials: the Golden Pavilion in the north, the maple valley at
+          Tōfuku-ji, and the torii of Fushimi Inari climbed up to sunset.
         </p>
         <p className="mt-2">
           The day crosses the city from north to south, so the order matters:
@@ -78,10 +78,13 @@ export default function KyotoArrivalItinerary({ food }) {
             Getting from Osaka
           </h3>
           <p className="mt-2">
-            Midōsuji Line from Namba to Umeda, JR Special Rapid from Osaka to
-            Kyoto (about 30 min), then one stop on the Karasuma Line to Gojō.
-            Leave around 9:00, after the worst of the rush hour. At Gojō, only
-            Exit 6 has a lift — use it with the suitcases.
+            Check out of Hotel Arashi Nippombashi 1 and leave at ~08:40 — allow
+            70–80 min door to door with luggage. Walk to Dobutsuen-mae (or take
+            the Sakaisuji Line one stop from Ebisucho), then the Midosuji Line
+            direct to Umeda. Walk to JR Osaka Station for the JR Special Rapid
+            to Kyoto (~30 min), then one stop on the Karasuma Line to Gojō —
+            only Exit 6 has a lift. Bags at M&apos;s Hotel Gojo Odawara by
+            ~10:00, sightseeing from 10:30.
           </p>
         </div>
 
@@ -112,26 +115,13 @@ export default function KyotoArrivalItinerary({ food }) {
           </p>
         </div>
 
-        <div className="rounded-2xl border-2 border-ochre/50 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
-          <h3 className="font-display text-lg font-semibold text-ochre">
-            Tōfuku-ji is the pinch point
-          </h3>
-          <p className="mt-2">
-            The bridge closes at 16:00 and entry stops a little earlier. If
-            you&apos;re still in the north at 13:30, drop it and go straight to
-            Fushimi Inari — Tōfuku-ji is better on an early morning anyway, and
-            can move to another day.
-          </p>
-        </div>
-
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">
-            Fushimi Inari after dark
+            Getting home from Fushimi Inari
           </h3>
           <p className="mt-2">
-            The main paths are lit, but carry a charged phone for the darker
-            stretches. Coming home: JR Nara Line from Inari to Kyoto (5 min),
-            then the Karasuma Line to Gojō.
+            JR Nara Line from Inari to Kyoto (5 min), then the Karasuma Line to
+            Gojō.
           </p>
         </div>
       </section>

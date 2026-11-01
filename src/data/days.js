@@ -89,13 +89,14 @@ const overrides = {
     date: "Tuesday, 17 November",
     location: "Osaka → Kyoto",
     summary:
-      "Moving base from Osaka to Kyoto, home for the next five nights. Bags at the hotel by 10:00, then the Golden Pavilion, the maples of Tōfuku-ji, and Fushimi Inari's torii climbed to sunset.",
+      "Moving base from Osaka to Kyoto, home for the next five nights. Out of the Osaka hotel at ~08:40, bags at the Kyoto hotel by 10:00, then the Golden Pavilion, the maples of Tōfuku-ji, and Fushimi Inari's torii climbed to sunset.",
     recommendations: [
-      "Taxi to Kinkaku-ji: about 25 minutes from Gojō, and with two of you it's worth it — the autumn buses to the north-west are standing-room only.",
-      "Kinkaku-ji is cash only: have ¥1,000 ready for the two of you.",
-      "Be inside Tōfuku-ji before 15:00. It's the only stop today with a closing time that matters.",
-      "At Fushimi Inari, walk straight through the crowded first torii on the way up. Photograph them on the way down, when they're lit and empty.",
-      "Sunset is around 16:50 in November — Yotsutsuji faces west, so time the climb to be there for it.",
+      "Take a taxi to Kinkaku-ji (~25 min from Gojō) — worth it split between two; autumn buses to the northwest are packed.",
+      "Bring cash: ¥1,000 for two Kinkaku-ji entries; many Fushimi Inari stalls are cash only too.",
+      "Tōfuku-ji is the pinch point: be inside before 15:00. If you're still in the north at 13:30, skip it and go straight to Fushimi Inari — it can move to another day.",
+      "Walk straight through the crowded first torii going up; photograph them on the way down, when they're lit and emptier.",
+      "Time the Yotsutsuji climb (~40–45 min) to reach the west-facing viewpoint for sunset (~16:50).",
+      "Some stretches of the mountain path are dark — carry a charged phone.",
     ],
   },
   8: {
