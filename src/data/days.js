@@ -106,7 +106,7 @@ const overrides = {
     summary:
       "Into kimono at Maikoya at 9:00 for a tea ceremony, then up to Kiyomizu-dera in it — and the rest of the day spent in it, downhill through Sannenzaka and Ninenzaka, the Yasaka Pagoda, Kodai-ji and Yasaka Jinja, ending in Gion at dusk. The route flows in one direction: up Matsubara-dori to Kiyomizu, then all downhill. See the interactive map and stop-by-stop itinerary below.",
     recommendations: [
-      "Kiyomizu-dera comes after the ceremony, in kimono, so expect crowds mid-morning in momiji season. If you want it empty, go at opening (6:00) in your own clothes before 9:00.",
+      "Take a taxi to Maikoya and arrive ~08:45.",
       {
         text: "Booked — Maikoya Gion Kiyomizu, 18 Nov, 9:00, 2 adults. Keep the confirmation email at hand. Return the kimono by 18:00.",
         link: {
@@ -116,10 +116,10 @@ const overrides = {
       },
       "In kimono and geta you walk slower than usual — budget extra time on the slopes of Sannenzaka and Ninenzaka.",
       "Carry cash — many small shops on Sannenzaka and Ninenzaka, and some temple entry fees, don't take cards.",
-      "Kennin-ji closes at 16:30, earlier than the other stops — plan to reach it by mid-afternoon.",
+      "Kennin-ji's last entry is 16:00 (it closes at 16:30), earlier than the other stops — plan to reach it by mid-afternoon.",
       "The walks between stops are short, but the lanes are steep and stone-paved — which is worth remembering when you are doing them in geta.",
       "Respect the no-photo signs in residential areas like Ishibei-koji and in Gion's private alleys — fines apply.",
-      "Visiting in November? Kōdai-ji and Kiyomizu-dera reopen at night for the autumn illuminations — worth a return visit after dark.",
+      "Kōdai-ji's autumn illumination is on tonight (from dusk, ~¥600) — an optional return after the kimono or dinner. Kiyomizu-dera's night viewing only starts on Nov 21.",
       "For the best chance of spotting a maiko or geiko, be on Hanamikoji-dori around dusk (17:00–18:00).",
     ],
   },

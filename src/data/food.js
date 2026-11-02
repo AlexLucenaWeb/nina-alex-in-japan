@@ -237,11 +237,18 @@ export const foodByDay = {
     dishesTitle: "What to eat in Higashiyama & Gion",
     meals: [
       {
-        time: "14:00",
-        place: "Omen Kodai-ji, Higashiyama-ku",
-        type: "Lunch",
+        time: "~12:00",
+        place: "Sannenzaka & Ninenzaka",
+        type: "Snack",
         reserve: false,
-        note: "Artisanal udon with fresh vegetables and tempura, right by Kodai-ji along Nene-no-michi street — a couple of minutes from the temple gate. One practical note: udon in a rented kimono is a splash risk, so ask for an apron or an extra napkin before you start.",
+        note: "Yatsuhashi, dango or a matcha sweet from the shops on the slopes — lunch isn't until 14:00.",
+      },
+      {
+        time: "14:00",
+        place: "Hisago, Gion Shimogawara",
+        type: "Lunch · oyakodon",
+        reserve: false,
+        note: "Soba and rice bowls since 1930, ~3 min from Kodai-ji. Famous for its oyakodon (~¥1,100) with a soft, runny egg, and handmade soba. Expect a short queue that moves fast. Closed Mondays and Fridays — open today. Ask for a napkin to protect the kimono.",
       },
       {
         time: "18:30",
@@ -259,6 +266,11 @@ export const foodByDay = {
       },
     ],
     dishes: [
+      {
+        name: "Oyakodon",
+        jp: "親子丼",
+        desc: "Chicken and egg simmered in a sweet dashi and served over rice — today's lunch at Hisago.",
+      },
       {
         name: "Kaiseki ryori",
         jp: "懐石料理",
@@ -291,7 +303,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:00 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Omen Kodai-ji, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
+      "The booking this day depends on is not a meal: the kimono and tea ceremony at Maikoya Gion Kiyomizu, the 9:00 session for the two of you. Beyond that, only Gion Karyo needs reserving, and only if you choose the kaiseki option — book a few days ahead for that. Everything else is walk-in: Hisago, Nishin Soba Matsuba and the teahouses. Carry cash — several small shops and traditional restaurants in this area don't take cards.",
   },
   9: {
     dishesTitle: "What to eat in Arashiyama",
@@ -336,7 +348,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "Nothing today needs booking unless you add the Sagano train. Yoshimura is walk-in: arrive early.",
+      "Nothing today needs booking unless you add the Sagano train or NAKED at Nijo Castle in the evening. Yoshimura is walk-in: arrive early.",
   },
   10: {
     dishesTitle: "What to eat in Nara",

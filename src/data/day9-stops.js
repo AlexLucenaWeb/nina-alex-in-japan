@@ -19,11 +19,11 @@ export const day9Stops = [
     jp: "大河内山荘",
     lat: 35.0167147,
     lng: 135.6699227,
-    hours: "9:00–16:30 · ¥1,000, matcha and a sweet included",
+    hours: "9:00–16:30 · ¥1,000",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJGTfQ9gSqAWARvzp3lzOgjk8",
     photo: "/photos/day9-2-okochi-sanso.webp",
     photoSource: "https://www.travelcaffeine.com/wp-content/uploads/2018/02/okochi-sanso-villa-garden-arashiyama-kyoto-japan-240.jpg",
-    desc: "The former villa of a silent-film star, right at the top of the bamboo path. A hillside garden of maples, moss and stone lanterns with views over Kyoto and the Hozu gorge — and a fraction of the crowd from the grove below. The ticket includes matcha and a sweet at the teahouse."
+    desc: "The former villa of a silent-film star, right at the top of the bamboo path. A hillside garden of maples, moss and stone lanterns with views over Kyoto and the Hozu gorge — and a fraction of the crowd from the grove below. Matcha and a sweet are served on weekends and holidays only — on a Thursday, expect garden entry only."
   },
   {
     n: 3,
@@ -32,7 +32,7 @@ export const day9Stops = [
     jp: "常寂光寺",
     lat: 35.0198102,
     lng: 135.6686405,
-    hours: "9:00–16:30",
+    hours: "9:00–16:30 · check price at the gate",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJHw9S2xqqAWARqO_fgtu1Nz4",
     photo: "/photos/day9-3-jojakko-ji.webp",
     photoSource: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=400%2Cheight=265%2Cdpr=2/tour_img/ef5a6946b08c8029b0b658aaadecbdcb9cf56691b6916f711a1f6c4a66663ffb.png",
@@ -45,7 +45,7 @@ export const day9Stops = [
     jp: "天龍寺",
     lat: 35.0158379,
     lng: 135.6737654,
-    hours: "8:30–17:00 · garden ¥500, buildings extra",
+    hours: "8:30–17:00 · garden ¥500 · garden + buildings ¥800 (+¥300)",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJk54PuAGqAWARwEgz_9o-nM0",
     photo: "/photos/day9-4-tenryu-ji.webp",
     photoSource: "https://www.japan-guide.com/g18/3913_top.jpg",
@@ -76,19 +76,5 @@ export const day9Stops = [
     photo: "/photos/day9-6-iwatayama-monkey-park.webp",
     photoSource: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/df/b8/2d/singe-d-iwatayama.jpg?w=900&h=500&s=1",
     desc: "A 20–30 minute climb up the hill across the bridge, to a clearing where Japanese macaques roam free and there's a wide view over Kyoto. At the top you can feed them from inside a hut: here the people are in the cage. Optional — skip it if the legs are done."
-  },
-  {
-    n: "Extra",
-    optional: true,
-    time: "17:00",
-    name: "Evening extra: Eikandō light-up & Pontochō",
-    jp: "永観堂・先斗町",
-    lat: 35.0148543,
-    lng: 135.7941588,
-    hours: "Eikandō night visit 17:30–21:00 (last entry 20:30) · ¥1,000 · Nov 20–Dec 6",
-    maps: "https://www.google.com/maps/place/?q=place_id:ChIJF42zshgJAWARVK2wk6AFlxw",
-    photo: "/photos/day9-extra-evening-extra-eikando-light-up-pontocho.webp",
-    photoSource: "https://cdn.jeepe.jp/uploads/public_image/image/4935/small_425c85b3-7201-46dc-9da4-53c95f361f72.jpg",
-    desc: "Only if there's energy left after a rest at the hotel. Tonight is the first night of Eikandō's autumn illumination: some 3,000 maples lit up around the Hōjō pond, at the southern end of the Philosopher's Path. The path itself isn't lit, so at night this is the way to see the area. A queue forms before the 17:30 opening — get there 30–45 minutes early, or after 19:30 when the first wave has gone through. No tripods. Then dinner in Pontochō, the lantern-lit alley of restaurants along the Kamo River: from Keage, take the Tōzai Line to Sanjō Keihan (about 10 min) and walk five minutes. Either half works on its own: skip Eikandō and go straight to Pontochō for dinner, or the other way round."
   }
 ];

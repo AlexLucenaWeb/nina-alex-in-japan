@@ -16,16 +16,17 @@ export default function HigashiyamaGionItinerary({ food }) {
           <span className="font-semibold text-momiji">
             The day starts at Maikoya at 9:00:
           </span>{" "}
-          into kimono for the tea ceremony, then up Matsubara-dori to
+          a ~10 min taxi from the hotel to be there by ~08:45, then into
+          kimono for the tea ceremony, then up Matsubara-dori to
           Kiyomizu-dera in it, and from there all downhill through Sannenzaka
           and Ninenzaka to Gion — the route flows in one direction.
         </p>
         <p className="mt-2">
-          Everything is done on foot: short walks between stops, no trains and
-          no buses. Besides the 9:00 booking, two things on the day are
-          fixed:{" "}
-          <span className="font-semibold">Kennin-ji</span>, which closes at
-          16:30, and getting the kimono back to{" "}
+          After the taxi, everything is done on foot: short walks between
+          stops, no trains and no buses. Besides the 9:00 booking, two things
+          on the day are fixed:{" "}
+          <span className="font-semibold">Kennin-ji</span>, whose last entry is
+          16:00, and getting the kimono back to{" "}
           <span className="font-semibold">Maikoya</span> — be there at 17:45,
           the deadline is 18:00.
         </p>
@@ -76,9 +77,11 @@ export default function HigashiyamaGionItinerary({ food }) {
           Autumn illuminations (November)
         </h2>
         <p className="mt-2">
-          In November, Kōdai-ji and Kiyomizu-dera reopen at night for the
-          autumn illuminations. If you&apos;re still around at dusk, it&apos;s
-          worth going back to either one to see the maples lit up.
+          Tonight only Kōdai-ji&apos;s autumn illumination applies: it reopens
+          from dusk (~¥600) with the maples and the bamboo grove lit up. It&apos;s
+          optional — after returning the kimono, or after dinner.
+          Kiyomizu-dera&apos;s night viewing runs Nov 21–30 in 2026, so it
+          isn&apos;t on yet.
         </p>
       </div>
     </JapanRouteDayShell>
