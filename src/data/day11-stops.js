@@ -71,7 +71,7 @@ export const day11Stops = [
     jp: "鞍馬寺",
     lat: 35.1181404,
     lng: 135.7708892,
-    hours: "9:00–16:00",
+    hours: "9:00–16:15",
     maps: "https://maps.google.com/?cid=5776719002510306868",
     photo: "/photos/day11-6-kurama-dera.webp",
     photoSource: "https://live.staticflickr.com/65535/53646801429_e7615cee13_b.jpg",
@@ -110,11 +110,11 @@ export const day11Stops = [
     jp: "くらま温泉",
     lat: 35.119211,
     lng: 135.7765613,
-    hours: "11:00–19:00 (check before going)",
+    hours: "10:00–21:00, last entry ~20:20 · irregular closing days — check kurama-spa.com",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJw7KtiW6mAWARuJlq1RoAhlY",
     photo: "/photos/day11-9-kurama-onsen.webp",
     photoSource: "https://www.japan-experience.com/sites/default/files/styles/scale_crop_760x556/public/legacy/japan_experience/1368606190275.jpg.webp?h=20888878&itok=p8Smukox",
-    desc: "Hot spring with an open-air bath in the mountains, about a 10-min walk up Kurama Kaidō from the station. Reopened fully renovated in November 2024 and accepts tattoos. The perfect end after the hike."
+    desc: "Hot spring with an open-air bath in the mountains, about a 10-min walk up Kurama Kaidō from the station. Reopened fully renovated in November 2024 and accepts tattoos. The perfect end after the hike. Open-air bath ¥1,600 on weekends (¥1,400 weekdays); indoor + open-air + sauna ¥2,200 on weekends (¥2,000 weekdays)."
   },
   {
     n: 10,
@@ -128,5 +128,18 @@ export const day11Stops = [
     photo: "/photos/day11-10-kurama-station-eizan-momiji-tunnel.webp",
     photoSource: "https://live.staticflickr.com/65535/53645583222_88e70884bd_b.jpg",
     desc: "Kurama is the end of the line, so you board here before the Saturday queues build up at Kibuneguchi. Between Ninose and Ichihara the train slows down through the illuminated maple tunnel. Photo with the giant tengu mask outside the station. Back at Demachiyanagi around 17:30. Pay with IC card (Suica / ICOCA)."
+  },
+  {
+    n: 11,
+    optional: true,
+    time: "~18:15",
+    name: "Eikandō night illumination",
+    jp: "永観堂",
+    lat: 35.0148543,
+    lng: 135.7941588,
+    hours: "17:30–21:00, last entry 20:30 · ¥1,000, cash · Nov 20–Dec 6, 2026",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJF42zshgJAWARVK2wk6AFlxw",
+    photo: null,
+    desc: "Only if you still have energy after the mountain. From Demachiyanagi (~17:30): Keihan to Sanjō, Tōzai Line to Keage, then ~15 min walk — or a taxi, ~15–20 min. Maples lit around the Hōjō pond; Saturday queues are long, so expect a wait. The night ticket is separate from daytime entry. Dinner afterwards around Okazaki / Sanjō."
   }
 ];

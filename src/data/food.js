@@ -444,7 +444,7 @@ export const foodByDay = {
         place: "Central Kyoto",
         type: "Dinner",
         reserve: false,
-        note: "Back in the city after the momiji tunnel, with nothing to book — eat wherever you land coming off the Eizan line.",
+        note: "Back in the city after the momiji tunnel — eat wherever you land coming off the Eizan line. If you do Eikandō, eat afterwards around Okazaki or Sanjō.",
       },
     ],
     dishes: [

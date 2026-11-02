@@ -152,12 +152,9 @@ const overrides = {
           label: "Kintetsu e-ticket page →",
         },
       },
-      "Take your passport: it's what gets you into Yoshikien for free. Isuien next door is ¥1,200, and both close at 16:30 — the earliest closing time of the day.",
       "A day almost entirely outdoors — comfortable shoes, and layers for the morning.",
       "Between Tōdai-ji, Nigatsu-dō and Kasuga Taisha there's 20–25 minutes of walking through the park each time; budget the walking, not just the visits.",
-      "The deer are wild animals: feed them the crackers straight away, and keep maps, tickets and food out of reach.",
-      "Sunset is around 17:00 in November, and the route is built around it: Ukimidō at 16:45 puts you at the pond just as the light goes.",
-      "Come back into Kintetsu-Nara rather than JR Nara: it's a short walk from the park, and the regular Kintetsu train back to Kyoto is cheap and frequent.",
+      "Sunset is around 16:50 on 20 November, and the route is built around it: Ukimidō at 16:45 puts you at the pond just as the light goes.",
     ],
   },
   11: {
@@ -168,12 +165,10 @@ const overrides = {
       "Out of the city and into the mountains north of Kyoto: the Eizan line up to Kibune and its water shrine first thing, then the ridge trail — the forest hall at Sōjō-ga-tani, the cedar roots of Kinone-michi — over to Kurama-dera and down into Kurama. Shōjin lunch, an onsen, and the train home at dusk through the Eizan railway's illuminated momiji tunnel.",
     recommendations: [
       "Leave Demachiyanagi around 8:30: it's a Saturday, and Kibune fills up fast once the morning trains start arriving.",
-      "Walk it Kibune → Kurama, as planned: the steepest stretch of root steps is climbed rather than descended, which is the safer way if the ground is damp.",
-      "The whole day hangs on one closing time: the crossing runs through Kurama-dera's grounds and shuts at 16:15. Start it by 14:00 at the latest. The entry fee is paid at the West Gate, in cash.",
-      "Buy water in Kibune before the climb — there are no vending machines on the trail.",
-      "If it rained the day before or that morning, skip the crossing and follow the rainy-day plan on this page.",
-      "Confirm the 2026 dates for the Eizan momiji tunnel illumination before travelling: they're set year by year.",
       "Board the train home at Kurama, the end of the line, rather than at Kibuneguchi — the Saturday queues build up there at dusk.",
+      "At Kifune-jinja, buy a mizu-ura fortune slip and lay it flat on the water — the text appears.",
+      "Kurama Onsen is the perfect end to the hike; weekend prices apply on a Saturday.",
+      "Eikandō's night illumination is an option tonight — only if your legs agree.",
     ],
   },
   12: {
@@ -183,10 +178,9 @@ const overrides = {
     summary:
       "Thunderbird + Hokuriku Shinkansen · Higashi Chaya · castle & Kenroku-en light-up. The Thunderbird up Lake Biwa and the shinkansen from Tsuruga put us in Kanazawa by noon: bags at the hotel, crab-season lunch at Omicho, the teahouses of Higashi Chaya and Kazuemachi before dark, then the castle park and Kenroku-en lit up for autumn.",
     recommendations: [
-      "Buy drinks and snacks at Kyoto Station before boarding: the Thunderbird has no onboard sales.",
-      "Sit on the right-hand side of the Thunderbird for the views over Lake Biwa.",
-      "Be at Higashi Chaya by mid-afternoon: it's dark around 16:40 and most shops close at 17:30.",
-      "The castle and Kenroku-en light-ups are free and run 18:00–21:00 (last entry 20:45). Walk there via Oyama Shrine: the Light-up Bus only runs on Saturdays and special dates.",
+      "Photo at the Tsuzumi-mon drum gate outside Kanazawa Station's East Exit — look for the water clock fountain that spells out the time.",
+      "Gold-leaf soft serve at Hakuichi in Higashi Chaya (~¥900): Kanazawa makes almost all of Japan's gold leaf.",
+      "If you like sake, Higashiyama Shuraku in Higashi Chaya pours ~120 local labels.",
     ],
   },
   13: {

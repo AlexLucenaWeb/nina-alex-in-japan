@@ -11,8 +11,9 @@ import { day11Stops } from "@/data/day11-stops";
 const MY_MAPS_ID = "1Cgsu9Pi-tnyYAvaJJYKWXfjKP2XW4LY";
 
 const GOOD_TO_KNOW = [
+  "Getting there: leave M's Hotel Gojo Odawara at ~8:05. Walk ~10 min to Keihan Kiyomizu-Gojō, Keihan Main Line to Demachiyanagi (~12 min), then the Eizan Railway to Kibuneguchi and Kyoto Bus 33 to Kibune. IC card all the way.",
   "Route direction is Kibune → Kurama on purpose: the steep root-step section is climbed, not descended, which is safer if the ground is damp.",
-  "The trail goes through Kurama-dera's grounds: it can only be walked while the temple is open (9:00–16:15). Start the crossing by 14:00 at the latest.",
+  "The trail goes through Kurama-dera's grounds: it can only be walked while the temple is open (9:00–16:15). Start the crossing by 14:00 at the latest. The temple entry fee is paid at the West Gate, in cash.",
   "Allow 1.5–2 h for the crossing with photos (~6.3 km and 373 m elevation gain for the whole day). Shoes with good grip; keep hands free on the root sections.",
   "No vending machines on the trail: buy water in Kibune.",
   "The momiji tunnel illumination dates change every year: confirm 2026 dates before travelling.",

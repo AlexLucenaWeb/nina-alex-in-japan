@@ -15,7 +15,7 @@ export const NARA_STOPS = [
     jp: "東大寺",
     lat: 34.6888653,
     lng: 135.839818,
-    hours: "7:30–17:30 · ¥800",
+    hours: "8:00–17:00 (Nov–Mar) · ¥800",
     maps: "https://maps.google.com/?cid=2132977154054323495",
     photo: "/photos/day10-1-todai-ji-great-buddha.webp",
     photoSource:
@@ -72,12 +72,12 @@ export const NARA_STOPS = [
     jp: "春日大社",
     lat: 34.6815454,
     lng: 135.8484719,
-    hours: "7:00–17:00 · inner area ~¥500",
+    hours: "grounds 7:00–17:00 · inner area 9:00–16:00, ¥500",
     maps: "https://maps.google.com/?cid=5519134420388517270",
     photo: "/photos/day10-5-kasuga-taisha.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjDVO3rIVipITn2L0Fu2n7GTd6oagBLtiVy84xMMojid3TaXG3HbTYaqTd6AjB4yvpyEqUmXwfj4Y8IumDy7ImOmkdPv1ZV7WEAkf9h1bOJJiXmXIOpblfOkuMcUiEVtlUj9vd7_5gXaDe6w1JGdNHMM1Q=s1200-w800-h600",
-    desc: "The Shrine of the Lanterns, a UNESCO World Heritage Site. The approach runs through a sacred forest lined with thousands of stone lanterns, with bronze ones hanging along the shrine buildings and deer moving between the trees.",
+    desc: "The Shrine of the Lanterns, a UNESCO World Heritage Site. The approach runs through a sacred forest lined with thousands of stone lanterns, with bronze ones hanging along the shrine buildings and deer moving between the trees. The inner area — where the bronze lanterns hang — closes at 16:00. If the gardens run long and you miss it, the stone-lantern approach through the forest is free and still the highlight.",
   },
   {
     n: 6,
@@ -91,7 +91,7 @@ export const NARA_STOPS = [
     photo: "/photos/day10-6-ukimido-pavilion.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAawTi13sZWk1KjvF9HK-IZpEUMAGKpbHTliyAi7i9j1JyG1rAwxGxztFg2RRRJhDXAbS5f447Z-ze0kpdkf8Ok_48CH62iNvwx0Mfdzykz9LfhxNWAPfXXdjvwcYGwm76Cy67RB0BPJQPc_7o3fsUeWg=s1200-w800-h600",
-    desc: "A hexagonal wooden pavilion that looks like it is floating on Sagi Pond. Coming here after Kasuga Taisha puts you at the water right on sunset — around 17:00 in November — with the momiji reflected in it. The best moment of the day.",
+    desc: "A hexagonal wooden pavilion that looks like it is floating on Sagi Pond. Coming here after Kasuga Taisha puts you at the water right on sunset — around 16:50 on 20 November — with the momiji reflected in it. The best moment of the day.",
   },
   {
     n: 7,

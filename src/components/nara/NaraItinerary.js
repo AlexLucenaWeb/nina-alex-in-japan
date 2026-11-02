@@ -69,10 +69,26 @@ export default function NaraItinerary({ food }) {
         </ol>
       </section>
 
-      <section aria-label="Getting back" className="flex flex-col gap-3">
+      <section
+        aria-label="Getting there, back & good to know"
+        className="flex flex-col gap-3"
+      >
         <h2 className="font-display text-2xl font-semibold">
-          Getting back &amp; good to know
+          Getting there, back &amp; good to know
         </h2>
+
+        <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
+          <h3 className="font-display text-lg font-semibold text-pine">
+            The way there
+          </h3>
+          <p className="mt-2">
+            Leave M&apos;s Hotel Gojo Odawara at ~10:25. Karasuma Line from
+            Gojō to Kyoto (one stop), then walk to the Kintetsu platforms
+            inside Kyoto Station for the 10:55 Aoniyoshi. Show the live
+            Kintetsu e-ticket page if asked and go through the gates with the
+            IC card.
+          </p>
+        </div>
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">
@@ -107,7 +123,9 @@ export default function NaraItinerary({ food }) {
             Yoshikien is free for foreign visitors, but only if you can show a
             passport at the desk — no passport, no free entry. Isuien next door
             is ¥1,200 and worth it. Both close at 16:30, earlier than everything
-            else on the route, so don&apos;t let lunch run long.
+            else on the route, so don&apos;t let lunch run long. Kasuga
+            Taisha&apos;s inner area closes even earlier for what you&apos;ll
+            see there, at 16:00 — keep the afternoon moving.
           </p>
         </div>
 

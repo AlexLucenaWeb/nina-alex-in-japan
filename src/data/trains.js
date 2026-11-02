@@ -257,11 +257,12 @@ export const TRAINS = [
     arrival: {
       city: "Tsuruga",
       station: "Tsuruga Station",
-      time: null,
+      time: "11:02",
       mapsQuery: "Tsuruga Station",
     },
-    status: "to-book",
-    note: "JR-West Online. Sales open Oct 22, 10:00 JST. Saturday of a long weekend — book at opening.",
+    status: "booked",
+    seats: "Car 5 · Seats 9C, 9D (Lake Biwa side)",
+    note: "Booked on JR-WEST ONLINE TRAIN RESERVATION (regular fare). Basic fare Kyoto City Zone → Kanazawa, valid Nov 22–24. Collect at a JR West machine at Kyoto Station: reservation number + 4-digit PIN + payment card.",
   },
   {
     id: "day12-tsurugi-14",
@@ -272,7 +273,7 @@ export const TRAINS = [
     departure: {
       city: "Tsuruga",
       station: "Tsuruga Station",
-      time: null,
+      time: "11:17",
       mapsQuery: "Tsuruga Station",
     },
     arrival: {
@@ -281,15 +282,15 @@ export const TRAINS = [
       time: "12:02",
       mapsQuery: "Kanazawa Station",
     },
-    status: "to-book",
-    note: "Booked together with Thunderbird 13.",
+    status: "booked",
+    note: "Booked together with Thunderbird 13 (JR-WEST ONLINE).",
   },
   {
     id: "day15-kagayaki",
     day: 15,
     date: "2026-11-25",
     type: "Shinkansen",
-    name: "Kagayaki",
+    name: "Kagayaki 506",
     departure: {
       city: "Kanazawa",
       station: "Kanazawa Station",
@@ -297,13 +298,14 @@ export const TRAINS = [
       mapsQuery: "Kanazawa Station",
     },
     arrival: {
-      city: "Transfer station",
-      station: "TBD",
-      time: null,
-      mapsQuery: null,
+      city: "Ōmiya",
+      station: "Ōmiya Station",
+      time: "11:11",
+      mapsQuery: "Omiya Station Saitama",
     },
-    status: "to-book",
-    note: "Sales open Oct 25, 10:00 JST. Then Shōnan-Shinjuku Line towards Hakone — transfer details TBD.",
+    status: "booked",
+    seats: "Car 9 · Seats 3A, 3B (Tateyama mountains side)",
+    note: "Booked on JR-WEST ONLINE TRAIN RESERVATION (regular fare). No oversized-luggage space. Collect the tickets on arrival in Kanazawa on Day 12 at a JR West machine: reservation number + 4-digit PIN + payment card. At Ōmiya, change to the JR Shōnan-Shinjuku Line towards Hakone.",
   },
 ];
 

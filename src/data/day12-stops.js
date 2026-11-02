@@ -10,7 +10,7 @@ export const day12Stops = [
     maps: "https://www.google.com/maps/search/Kyoto+Station/@34.985849,135.7587667,17z",
     photo: "/photos/day12-1-kyoto-station.webp",
     photoSource: "https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2024/02/kyoto-station.jpg",
-    desc: "Check out of M's Hotel Gojo Odawara at ~9:30 and take the subway one stop (Gojō → Kyōto, Karasuma Line) or a short taxi. Board Limited Express Thunderbird 13 to Tsuruga. All seats are reserved and there are no onboard sales, so buy drinks and snacks in the station. Sit on the right for Lake Biwa views."
+    desc: "Check out of M's Hotel Gojo Odawara at ~9:20 and take the subway one stop (Gojō → Kyōto, Karasuma Line) or a short taxi. Collect the tickets at a JR West machine first (see Good to know). Board Limited Express Thunderbird 13 to Tsuruga. All seats are reserved and there are no onboard sales, so buy drinks and snacks in the station. Your seats (car 5, 9C & 9D) are on the Lake Biwa side."
   },
   {
     n: 2,
@@ -36,7 +36,7 @@ export const day12Stops = [
     maps: "https://www.google.com/maps/search/Tsuzumi-mon+Gate/@36.5778025,136.6491445,17z",
     photo: "/photos/day12-3-tsuzumi-mon-gate.webp",
     photoSource: "https://muza-chan.net/aj/poze-weblog3/tsuzumimon-gate-kanazawa-station.jpg",
-    desc: "Arrive in Kanazawa at 12:02. Photo at the giant wooden drum gate outside the East Exit, and look for the water clock fountain that spells out the time with jets of water."
+    desc: "Arrive in Kanazawa at 12:02. Before leaving the station, collect the Day 15 Kagayaki tickets at a JR West machine (see Good to know). Photo at the giant wooden drum gate outside the East Exit, and look for the water clock fountain that spells out the time with jets of water."
   },
   {
     n: 4,

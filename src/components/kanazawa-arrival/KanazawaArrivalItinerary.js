@@ -5,14 +5,15 @@ import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell"
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day12Stops } from "@/data/day12-stops";
 
-// Same as Days 3, 7, 8 and 9 once it exists: the route will live in a Google
-// My Maps map. Until there is one the map section is left out entirely —
-// DayMapEmbed has no empty state, and an iframe with no `mid` is a blank box.
-const MY_MAPS_ID = null;
+// Same as Days 3, 7, 8 and 9: this day's route lives in a Google My Maps map
+// instead of the Leaflet component, so it can be edited from Google Maps
+// without touching the stop data in the repo. Set it to null to hide the map
+// section — DayMapEmbed has no empty state.
+const MY_MAPS_ID = "1alodWM4d0v2rPVRTsCdFjT9cXpuqfWY";
 
 const CONNECTIONS = [
   {
-    thunderbird: "13 (planned)",
+    thunderbird: "13 (booked)",
     kyotoDep: "10:09",
     tsurugaArr: "11:02",
     tsurugi: "14",
@@ -41,6 +42,10 @@ const CONNECTIONS = [
 ];
 
 const GOOD_TO_KNOW = [
+  "Collect the tickets before boarding, at a JR West (JR西日本) reserved-ticket machine — the ones marked 'e5489' / 予約したきっぷの受取 — in the JR concourse at Kyoto Station. Don't use the JR Central (JR東海) machines in the Tokaido Shinkansen area: they can't issue JR-WEST ONLINE bookings. Switch to English → 'Pick up reserved tickets' → insert the physical card used to pay (Revolut Metal) → enter the reservation number and the 4-digit PIN → check it shows Thunderbird 13 (car 5, 9C & 9D) and Tsurugi 14 for 2 adults → print. Allow ~10 min; be at the station by ~9:40.",
+  "You'll get several tickets each (basic fare + limited express tickets). Split them into one set per person and insert all of them together at every gate — at Kyoto, and again when changing to the shinkansen at Tsuruga. The gate keeps them at Kanazawa; ask staff for a stamp ('souvenir, please') if you want to keep them.",
+  "If the machine fails: go to the JR ticket office (Midori-no-madoguchi, みどりの窓口) with passports, the payment card and the booking email. Keep the reservation number, PIN and confirmation email saved offline on the phone.",
+  "On arrival at Kanazawa Station, collect the tickets for Day 15 (Wed Nov 25): Kagayaki 506, Kanazawa 09:07 → Ōmiya 11:11, car 9, seats 3A & 3B. Use a JR West reserved-ticket machine ('e5489' / 予約したきっぷの受取) in the station, same as in Kyoto: English → 'Pick up reserved tickets' → insert the payment card (Revolut Metal) → reservation number + 4-digit PIN → check Kagayaki 506 for 2 adults → print. Doing it today saves a rush on the morning of the 25th.",
   "Nov 23 is a public holiday (Labour Thanksgiving Day): the 22nd is a busy holiday weekend — expect crowds and queues.",
   "Omicho on a Sunday: many stalls closed, restaurants open. Browse the market properly on Day 13 or 14.",
   "Shima's hours vary between sources (9:00–18:00 vs 9:30–17:30) — plan to arrive before 17:00.",
@@ -48,6 +53,7 @@ const GOOD_TO_KNOW = [
   "Hokutetsu buses (including the Loop Bus) don't accept Suica/ICOCA: tap a contactless card or Apple Pay on boarding and on getting off.",
   "Thunderbird has no onboard food or drink sales.",
   "It gets dark around 16:40 — do Higashi Chaya in the early afternoon.",
+  "Castle park and Kenroku-en light-up tonight: free, 18:00–21:00 (last entry 20:45).",
 ];
 
 export default function KanazawaArrivalItinerary({ food }) {
@@ -101,6 +107,12 @@ export default function KanazawaArrivalItinerary({ food }) {
             <span className="font-semibold text-momiji">Tsurugi 14</span>{" "}
             Tsuruga 11:17 → Kanazawa 12:02
           </p>
+          <p className="mt-2">
+            <span className="font-semibold text-pine">Booked:</span>{" "}
+            Thunderbird 13, car 5, seats 9C &amp; 9D (the Lake Biwa side).
+            Tsurugi 14 booked together with it. Basic fare Kyoto City Zone →
+            Kanazawa, valid Nov 22–24.
+          </p>
           <p className="mt-2 text-ink/60">
             The fast Tsurugi, stopping only at Fukui. No luggage space
             reservation needed on this route.
@@ -140,9 +152,10 @@ export default function KanazawaArrivalItinerary({ food }) {
           ))}
         </DataTable>
         <p className="text-sm leading-relaxed text-ink/80">
-          If you miss your train, change the reservation at the ticket office
-          before boarding another train — it&apos;s a holiday weekend and seats
-          sell out. Check the change rules of the Hokuriku One-way Ticket.
+          If you miss your train: the tickets were bought as regular fares on
+          JR-WEST ONLINE TRAIN RESERVATION — change the reservation at a JR
+          ticket office or machine before boarding another train. It&apos;s a
+          holiday weekend and seats sell out.
         </p>
       </section>
 
