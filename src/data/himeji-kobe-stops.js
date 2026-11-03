@@ -89,7 +89,17 @@ export const HIMEJI_KOBE_STOPS = [
     photo: "/photos/day4-7-meriken-park.webp",
     photoSource:
       "https://lh3.googleusercontent.com/place-photos/AG9NLjAkFzT_9x4XEeNRC9Y-88xbExYqfCIaS6zXK1YE7wEborhbRIhW7C6vuyYIy-D5yQgidBJKC2mwrFH21-JDKcQaKATFfhws7S1Rnt0H-PoWWPSTsrdFpLbKyKTQ2yp8X_S0u_59NN8SFVQCJQ=s4800-w800-h600",
-    desc: "A waterfront park on Kobe's harbour, home to the red hyperboloid Kobe Port Tower, the net-like Maritime Museum, the 'BE KOBE' photo sign and the 1995 earthquake memorial. Lovely at dusk (~17:00 in November) when the port lights come on — a good place to end the day before Kobe beef for dinner.",
+    desc: "A waterfront park on Kobe's harbour, home to the red hyperboloid Kobe Port Tower, the net-like Maritime Museum, the 'BE KOBE' photo sign and the 1995 earthquake memorial. Lovely at dusk (~17:00 in November) when the port lights come on — a good place to end the day before dinner at Daichi.",
+  },
+  {
+    n: 8,
+    time: "18:15",
+    name: "Kobe Beef Daichi",
+    jp: "神戸牛 大地",
+    hours: "10:00–21:30 · booked 18:15 (2 people)",
+    maps: "https://www.google.com/maps/place/?q=place_id:ChIJzVWsVPyOAGARRBCkHN9fJFQ",
+    photo: null,
+    desc: "Dinner, booked: the 9-dish Autumn menu at Kobe Beef Daichi, a teppanyaki counter in Motomachi right by Nankinmachi where the chef cooks A5 Kobe beef in front of you. About a 10–15 min walk from Meriken Park, so there's time to linger at the harbour after sunset before heading over.",
   },
 ];
 
@@ -111,11 +121,11 @@ export const HIMEJI_KOBE_TRAINS = [
     note: "Straight on to the Kitano district",
   },
   {
-    leg: "Kobe (Sannomiya) → Osaka",
-    train: "JR Special Rapid",
-    duration: "~21 min",
+    leg: "Kobe (Sannomiya) → Namba",
+    train: "Hanshin Rapid Express (Hanshin Kobe-Sannomiya)",
+    duration: "~45 min",
     price: "~¥420",
-    note: "Runs late into the evening",
+    note: "Direct to Osaka-Namba, no change — a short walk to the hotel. Pay with Suica.",
   },
 ];
 

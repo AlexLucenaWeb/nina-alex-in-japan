@@ -137,8 +137,8 @@ export default function HimejiKobeItinerary({ food }) {
           <p className="mt-2">
             Sunset is around 17:00 in November and the route reaches Meriken
             Park at 16:45 — the port lights come on while you&apos;re there.
-            Kobe beef for dinner afterwards is the obvious close to the day;
-            the good places take bookings, so make one before you travel.
+            Then it&apos;s a 10–15 minute walk to Kobe Beef Daichi for the
+            18:15 booking — the 9-dish Autumn menu to close the day.
           </p>
         </div>
       </section>

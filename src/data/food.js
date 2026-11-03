@@ -121,6 +121,33 @@ export const foodByDay = {
     reservations:
       "No bookings needed today — kushikatsu counters, market stalls and okonomiyaki griddles are all walk-in. Two caveats, one at each end of the day: Kushikatsu Daruma's Shinsekai branches queue out of the door from about 12:00, which is why lunch is at 11:30; and the famous Dotonbori okonomiyaki spots (Ajinoya) fill up at peak dinner, roughly 19:30–20:30. Sitting down at 18:30 lands you ahead of both.",
   },
+  4: {
+    meals: [
+      {
+        time: "12:30",
+        place: "Miyuki-dori",
+        type: "Quick lunch",
+        reserve: false,
+        note: "Himeji oden in soy-ginger broth or anago-don on the way back to the station. Keep it light.",
+      },
+      {
+        time: "15:50",
+        place: "Nankinmachi",
+        type: "Street-food snacks",
+        reserve: false,
+        note: "Butaman, Kobe-beef croquettes, skewers — a snack, not a meal. Save room for dinner.",
+      },
+      {
+        time: "18:15",
+        place: "Kobe Beef Daichi",
+        type: "Kobe beef teppanyaki · Autumn menu (9 dishes)",
+        reserve: true,
+        note: "Booked for 2 at 18:15 via Tabelog. Chef cooks at the counter.",
+      },
+    ],
+    reservations:
+      "Dinner at Kobe Beef Daichi is booked for 18:15 (2 people, Autumn menu, 9 dishes). Arrive a few minutes early.",
+  },
   5: {
     meals: [
       {

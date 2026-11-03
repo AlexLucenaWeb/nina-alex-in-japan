@@ -42,15 +42,12 @@ const overrides = {
     date: "Saturday, 14 November",
     location: "Himeji & Kobe (from Osaka)",
     summary:
-      "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner.",
+      "A day trip out of Osaka to two cities: the White Heron castle in Himeji in the morning — the finest original castle left in Japan — and the port city of Kobe in the afternoon, from the Western merchant houses of Kitano down to Chinatown and the harbour at dusk. Kobe beef for dinner at Daichi.",
     recommendations: [
       "Leave Osaka around 08:00. The castle opens at 9:00, and arriving with it is the difference between walking in and queuing for tickets.",
-      "Buy the combined castle + Koko-en ticket (¥2,600) at the castle gate rather than paying for each separately. Under-18s get into the castle free.",
       "Budget roughly ¥8,000 per person for the day including trains and entry — Kobe beef for dinner is on top of that.",
       "The castle keep is steep, with narrow wooden stairs and no shoes allowed inside: easy shoes to take off and put back on save a lot of fumbling.",
-      "Book Kobe beef for dinner before you travel. The places worth going to fill up, weeknight or not.",
-      "Nankinmachi is at its liveliest at weekends — but it's street food either way, so keep lunch on Miyuki-dori light.",
-      "Sunset is around 17:00 in November and the route reaches Meriken Park at 16:45, which is when the port lights come on. Don't rush that last stretch.",
+      "Going home, take the Hanshin line from Hanshin Kobe-Sannomiya, not JR: the Rapid Express runs straight through to Osaka-Namba without a change. Check you're on the Hanshin side of the station, not JR Sannomiya.",
     ],
   },
   5: {
