@@ -21,7 +21,8 @@ export const day14Stops = [
     lng: 136.9013325,
     hours: "15-min stop · museum free",
     maps: "https://www.google.com/maps/search/Michi-no-Eki+Shirakawago/@36.2790158,136.9013325,17z",
-    photo: null,
+    photo: "/photos/day14-2-michi-no-eki-shirakawago.webp",
+    photoSource: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_NyRZbNzJhCJLNcsqUHeQ01M2cUwPApvM_0qMNCSt6Zp46tt2NJEX-b0R&s=10",
     desc: "First stop, about 15 minutes. The small gassho museum here (free) shows how the thatched roofs are built — worth a look before the village. Toilets and souvenirs."
   },
   {
@@ -72,7 +73,8 @@ export const day14Stops = [
     lng: 136.90504,
     hours: "Shops ~9:00–17:00",
     maps: "https://www.google.com/maps/search/Shirakawago+Ogimachi/@36.2565543,136.90504,17z",
-    photo: null,
+    photo: "/photos/day14-6-ogimachi-main-street-lunch.webp",
+    photoSource: "https://ak-d.tripcdn.com/images/1mi3u224x9ay16vosC2D3.jpg",
     desc: "Wander the main street (gohei-mochi or a Hida beef croquette if you're peckish), then the tour's included lunch — a Hida set meal; the guide gives the time and place. Be back at the bus on time (around 12:30)."
   },
   {
@@ -98,7 +100,8 @@ export const day14Stops = [
     lng: 136.9354778,
     hours: "About 1 hour · free",
     maps: "https://www.google.com/maps/search/Ainokura+Gassho-zukuri+Village/@36.4260061,136.9354778,17z",
-    photo: null,
+    photo: "/photos/day14-8-gokayama-ainokura.webp",
+    photoSource: "https://www.japan-guide.com/g17/5955_top.jpg",
     desc: "The second UNESCO village, much smaller and quieter than Ogimachi — about 20 gassho houses among rice terraces. One hour of free walking; climb the path to the viewpoint above the village for the view over the roofs."
   },
   {

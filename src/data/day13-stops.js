@@ -73,7 +73,9 @@ export const day13Stops = [
     lng: 136.6663081,
     hours: "Workshop 13:00–14:00 (booked) · from ¥1,430",
     maps: "https://www.google.com/maps/search/Kinpakuya+Sakuda/@36.5738331,136.6663081,17z",
-    photo: null,
+    photo: "/photos/day13-6-kinpakuya-sakuda-gold-leaf-workshop.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnX21RDMFnGdz2v-GcV25JsmeKMu2CIbDgAHzem6rfq01L-SztgZ0OzORU&s=10",
     desc: "Hokutetsu bus from Musashigatsuji to Hashiba-cho (~5 min, then ~5 min walk), or ~20 min on foot. Kanazawa makes almost all of Japan's gold leaf: pick an item on the spot (chopsticks, small box, mirror…), mask a pattern and lay the gold leaf yourselves. About 60 minutes and you take it home the same day. You get a 10% shop coupon — and don't miss the restroom lined with gold and platinum leaf."
   },
   {
@@ -85,7 +87,9 @@ export const day13Stops = [
     lng: 136.6510146,
     hours: "Streets open 24h · Nomura-ke 8:30–16:30, last entry 16:00, ¥550 cash",
     maps: "https://www.google.com/maps/search/Nagamachi+Samurai+District/@36.5637517,136.6510146,17z",
-    photo: null,
+    photo: "/photos/day13-7-nagamachi-samurai-district.webp",
+    photoSource:
+      "https://res-2.cloudinary.com/dbm1qiew0/image/upload/q_auto/v1/blog-images/210620251909_image7.jpg",
     desc: "Bus from Hashiba-cho to Korinbo (~10 min, then ~5 min walk). Stroll the earthen-walled lanes and the Onosho canal — in late November the walls get their komo straw mats for winter. Nomura-ke samurai house and its small garden are optional (30–45 min); mochi at Murakami if you're peckish."
   },
   {
@@ -97,7 +101,9 @@ export const day13Stops = [
     lng: 136.6501369,
     hours: "Café Mon 10:00–16:00 (closed Tue)",
     maps: "https://www.google.com/maps/search/Hoshoji+Cafe+Kanazawa/@36.5555658,136.6501369,17z",
-    photo: null,
+    photo: "/photos/day13-8-teramachi-hosho-ji-cafe.webp",
+    photoSource:
+      "https://ak-d.tripcdn.com/images/1mi3t224x99z8d1lmE99B.jpg",
     desc: "~15–20 min walk across the Sai River. Kanazawa's largest temple district, with around 70 temples in quiet back lanes. Sit down at Hosho-ji Café, inside a working temple: tatami rooms, Kaga tea and sweets, cards accepted. It closes at 16:00. Alternative: Yusura, a former teahouse in Nishi Chaya."
   },
   {
