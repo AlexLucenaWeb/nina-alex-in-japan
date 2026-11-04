@@ -10,24 +10,27 @@ import { day14Stops } from "@/data/day14-stops";
 // state, and an iframe with no `mid` is a blank box.
 const MY_MAPS_ID = null;
 
-const BUSES = [
-  {
-    leg: "Kanazawa Stn West Exit (stop 4) → Shirakawa-go Bus Terminal",
-    dep: "09:10",
-    arr: "10:35",
-  },
-  {
-    leg: "Shirakawa-go Bus Terminal → Kanazawa Stn West Exit",
-    dep: "15:55",
-    arr: "17:20",
-  },
+const TOUR = [
+  { time: "07:50", what: "Meet at Kanazawa Station, West Exit group bus stop" },
+  { time: "08:00", what: "Bus leaves Kanazawa" },
+  { time: "~09:15", what: "Michi-no-Eki Shirakawago (15 min)" },
+  { time: "~09:40", what: "Shirakawa-go (Ogimachi): about 2h50 free, lunch included" },
+  { time: "~13:15", what: "Gokayama Ainokura: about 1 hour free" },
+  { time: "~15:45", what: "Back at Kanazawa Station" },
+];
+
+const TOUR_NOTES = [
+  "Booked on Viator for 2 adults — the booking is in the Viator app. English-speaking staff on the bus, who hand out walking maps.",
+  "Included: the bus and lunch. Not included: Wada House (¥400), the viewpoint shuttle (¥300 each way) and Minka-en (¥800).",
+  "Times inside the villages are approximate: the guide gives the meeting time back at the bus — set a phone alarm.",
 ];
 
 const GOOD_TO_KNOW = [
-  "What to bring: yen in cash (the viewpoint shuttle is cash only and many village shops are too); warm layers, a rain jacket and shoes that can handle water — it can be cold and the first snow is possible; bus e-tickets on the phone, with a screenshot as backup.",
-  "Pace: the whole village is walkable and flat except the climb to the viewpoint.",
+  "What to bring: yen in cash (the shuttle, the houses and many shops are cash only); warm layers, a rain jacket and shoes that can handle water — it can be cold, and the first snow is possible.",
+  "Meeting point: Kanazawa Port (West) Exit, Group Bus Stop — right of the taxi stand, Hyatt Centric side. Not the rotary side and not the East Exit. Be there by 07:50.",
+  "Free cancellation until 08:00 on Mon Nov 23 (24 h before). The tour needs good weather: if it's cancelled for weather you get another date or a full refund.",
   "Autumn leaves: Shirakawa-go peaks late Oct–early Nov, so by Nov 24 most leaves are down. Kanazawa (Days 12–13) was the momiji part of this stretch.",
-  "Check a few days before: Minka-en winter hours and fee, and whether the viewpoint shuttle is running.",
+  "Before leaving this morning: ask the Four Points front desk when to send the big suitcases by takkyubin to HOTEL SUI AKASAKA — delivery date Nov 26 (our check-in day).",
   "Tonight: pack for tomorrow — Day 15 leaves Kanazawa on the 9:07 Kagayaki.",
 ];
 
@@ -37,16 +40,16 @@ export default function ShirakawaGoItinerary({ food }) {
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
         <p>
           <span className="font-semibold text-momiji">
-            A relaxed day trip to Ogimachi,
+            A guided bus day trip from Kanazawa
           </span>{" "}
-          the largest gassho-zukuri village of Shirakawa-go (UNESCO World
-          Heritage).
+          to two UNESCO gassho villages: Ogimachi in Shirakawa-go, and the
+          quieter Ainokura in Gokayama.
         </p>
         <p className="mt-2">
           Late November is past the autumn-leaf peak here (Oct–early Nov), so
           expect bare trees, cold air and maybe the first snow — atmospheric
-          rather than colourful. Back in Kanazawa at 17:20 for a quiet evening
-          before tomorrow&apos;s 9:07 Kagayaki.
+          rather than colourful. Back in Kanazawa around 15:45 for a quiet
+          evening before tomorrow&apos;s 9:07 Kagayaki.
         </p>
       </div>
 
@@ -69,33 +72,20 @@ export default function ShirakawaGoItinerary({ food }) {
         </section>
       )}
 
-      <section aria-label="Getting there" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Getting there</h2>
+      <section aria-label="The tour" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">The tour</h2>
 
-        <DataTable
-          columns={["Leg", "Bus", "Dep.", "Arr.", "Fare"]}
-          minWidth="640px"
-        >
-          {BUSES.map((row) => (
-            <tr key={row.dep} className="border-b border-line/50 last:border-0">
-              <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>
-              <td className="px-4 py-3 text-ink/80">
-                Nohi / Hokutetsu highway bus
+        <DataTable columns={["Time", "What"]}>
+          {TOUR.map((row) => (
+            <tr key={row.time} className="border-b border-line/50 last:border-0">
+              <td className="whitespace-nowrap px-4 py-3 font-medium text-momiji">
+                {row.time}
               </td>
-              <td className="px-4 py-3 text-ink/80">{row.dep}</td>
-              <td className="px-4 py-3 text-ink/80">{row.arr}</td>
-              <td className="whitespace-nowrap px-4 py-3 text-ink/80">
-                ¥2,800 pp
-              </td>
+              <td className="px-4 py-3 text-ink/80">{row.what}</td>
             </tr>
           ))}
         </DataTable>
-        <BulletList
-          items={[
-            "Seat reservation required; each leg is a separate ticket (Japan Bus Online). Show the e-tickets on the phone.",
-            "Backups if a bus is full: outbound 8:40 or 9:40; return 15:10.",
-          ]}
-        />
+        <BulletList items={TOUR_NOTES} />
       </section>
 
       {food}

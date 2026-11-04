@@ -590,18 +590,18 @@ export const foodByDay = {
     dishesTitle: "What to eat in Shirakawa-go",
     meals: [
       {
-        time: "12:15",
-        place: "Shirakawago Kaido (main street)",
-        type: "Lunch, street food",
+        time: "~11:15",
+        place: "Ogimachi main street",
+        type: "Snack",
         reserve: false,
-        note: "Graze rather than sit down: gohei-mochi, Hida beef croquettes or skewers, mitarashi dango.",
+        note: "Gohei-mochi or a Hida beef croquette between the viewpoint and lunch.",
       },
       {
-        time: "15:10",
-        place: "Back across Deai-bashi",
-        type: "Afternoon treat",
+        time: "Midday",
+        place: "Shirakawa-go (with the tour)",
+        type: "Lunch · Hida set meal",
         reserve: false,
-        note: "Coffee and the village's famous pudding, plus gassho-shaped sweets to take home as souvenirs.",
+        note: "Included in the tour: a Japanese set meal with Hida dishes and mountain produce. The guide gives the time and place.",
       },
       {
         time: "18:00",
@@ -629,7 +629,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "No meals to book. Carry cash — many village stalls don't take cards.",
+      "Lunch is included in the tour. Carry cash for snacks — many village stalls don't take cards.",
   },
   16: {
     dishesTitle: "What to eat in Hakone",

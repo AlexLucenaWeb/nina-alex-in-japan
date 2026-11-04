@@ -195,14 +195,13 @@ const overrides = {
   14: {
     title: "Shirakawa-go",
     date: "Tuesday, 24 November",
-    location: "Shirakawa-go (from Kanazawa)",
+    location: "Shirakawa-go & Gokayama (bus tour from Kanazawa)",
     summary:
-      "Gassho village day trip from Kanazawa. The highway bus to Ogimachi, the largest thatched-roof village of Shirakawa-go: the postcard view from Shiroyama, the inside of Wada House, a quiet temple and shrine, and the open-air museum across the suspension bridge. Back in Kanazawa at 17:20 for an early night.",
+      "Shirakawa-go & Gokayama bus tour from Kanazawa. A guided day trip, with lunch included, to two UNESCO gassho villages: Ogimachi in Shirakawa-go — the postcard view from Shiroyama and the inside of Wada House — and the smaller, quieter Ainokura in Gokayama. Back in Kanazawa around 15:45.",
     recommendations: [
-      "Reserve both bus legs on Japan Bus Online before the trip — each one is a separate ticket.",
-      "Bring cash: the viewpoint shuttle and many village shops don't take cards.",
-      "Dress for cold and wet — by late November the leaves are down and the first snow is possible.",
-      "Pack for tomorrow tonight: Day 15 leaves Kanazawa on the 9:07 Kagayaki.",
+      "Go straight to the viewpoint shuttle when you arrive — the queue grows as more tour buses come in.",
+      "In Ainokura, take the short path up to the viewpoint above the village.",
+      "Pick up a gassho-shaped sweet as a souvenir — they travel well.",
     ],
   },
   15: {
