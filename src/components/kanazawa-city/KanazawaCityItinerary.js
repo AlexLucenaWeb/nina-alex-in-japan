@@ -4,10 +4,10 @@ import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell"
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day13Stops } from "@/data/day13-stops";
 
-// Same as Day 12: the route will live in a Google My Maps map. Until there is
-// one the map section is left out entirely — DayMapEmbed has no empty state,
-// and an iframe with no `mid` is a blank box.
-const MY_MAPS_ID = null;
+// Same as Day 12: this day's route lives in a Google My Maps map, so it can be
+// edited from Google Maps without touching the stop data in the repo. Set it
+// to null to hide the map section — DayMapEmbed has no empty state.
+const MY_MAPS_ID = "1Y6eyAQykyiBXSCFjNXkCVRdsfYylSf0";
 
 const GOOD_TO_KNOW = [
   "Nov 23 is a public holiday (Labour Thanksgiving Day): expect crowds everywhere, and only about half of Omicho's stalls open.",
