@@ -5,10 +5,10 @@ import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell"
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day14Stops } from "@/data/day14-stops";
 
-// Same as Days 12 and 13: the route will live in a Google My Maps map. Until
-// there is one the map section is left out entirely — DayMapEmbed has no empty
-// state, and an iframe with no `mid` is a blank box.
-const MY_MAPS_ID = null;
+// Same as Days 12 and 13: this day's route lives in a Google My Maps map, so it
+// can be edited from Google Maps without touching the stop data in the repo.
+// Set it to null to hide the map section — DayMapEmbed has no empty state.
+const MY_MAPS_ID = "1T3e-vInnrCIrLXUCNVik_BD0njTmi9A";
 
 const TOUR = [
   { time: "07:50", what: "Meet at Kanazawa Station, West Exit group bus stop" },
