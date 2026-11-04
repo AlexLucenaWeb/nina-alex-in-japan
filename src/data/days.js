@@ -185,12 +185,11 @@ const overrides = {
     date: "Monday, 23 November (public holiday)",
     location: "Kanazawa",
     summary:
-      "Kenroku-en · Omicho · samurai & ninja. A full day in Kanazawa on foot: Kenroku-en in the morning, the castle park and matcha over the Gyokusen-inmaru garden, grazing lunch at Omicho, then the samurai house at Nagamachi, the quiet geisha street of Nishi Chaya and the trap doors of the ninja temple.",
+      "Kenroku-en · gold leaf · samurai lanes. A full day in Kanazawa: Kenroku-en in the morning, the castle park and matcha over the Gyokusen-inmaru garden, a quick lunch at Omicho, a gold leaf workshop, then the samurai lanes of Nagamachi, a temple café in Teramachi and the geisha street of Nishi Chaya at dusk.",
     recommendations: [
-      "Book Myoryuji by phone before the trip — it's reservation only, and a holiday.",
-      "Book dinner ahead too, whichever night you pick: sushi or crab.",
-      "Reach Gyokusen-an before 12:00 — the tea service stops for lunch.",
-      "Carry cash for Nomura-ke.",
+      "Use the 10% coupon from the workshop if you want gold leaf souvenirs.",
+      "Ishiura's torii are small but photogenic — go early, before the tour groups.",
+      "Ask for kōbako-gani at the izakaya: the female snow crab is only in season from November to December.",
     ],
   },
   14: {

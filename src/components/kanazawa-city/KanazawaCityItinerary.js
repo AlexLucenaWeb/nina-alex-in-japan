@@ -10,10 +10,13 @@ import { day13Stops } from "@/data/day13-stops";
 const MY_MAPS_ID = null;
 
 const GOOD_TO_KNOW = [
-  "Nov 23 is a public holiday (Labour Thanksgiving Day): expect crowds; book dinner and Myoryuji ahead.",
-  "Myoryuji requires a phone reservation: +81 76-241-0888 (up to one month ahead; English-speaking staff available).",
-  "Nomura-ke is cash only.",
+  "Nov 23 is a public holiday (Labour Thanksgiving Day): expect crowds everywhere, and only about half of Omicho's stalls open.",
+  "Gold leaf workshop booked at Kinpakuya Sakuda main store (1-3-27 Higashiyama), 13:00–14:00. Arrive 5 minutes early. Phone +81 76-251-6777.",
+  "Reach Gyokusen-an before 12:00 — the tea service stops 12:00–13:00.",
+  "Hosho-ji Café closes at 16:00.",
+  "Nomura-ke is cash only, if you go in.",
   "Hokutetsu buses don't accept Suica/ICOCA — tap a contactless card or Apple Pay on boarding and on getting off.",
+  "Dinner isn't booked: the small izakaya in Katamachi and Chuo Mishokugai are walk-in, but they fill fast on a holiday — be there by ~17:30.",
   "Sunset is around 16:40.",
   "Tomorrow is the day trip — early night.",
 ];
@@ -30,9 +33,10 @@ export default function KanazawaCityItinerary({ food }) {
           the Gyokusen-inmaru garden, then grazing lunch at Omicho.
         </p>
         <p className="mt-2">
-          The afternoon heads south-west: the samurai lanes of Nagamachi, the
-          quiet street of Nishi Chaya, and the ninja temple to finish — the one
-          stop today that has to be booked.
+          After lunch, a gold leaf workshop near Higashi Chaya — the one
+          booking of the day — then the samurai lanes of Nagamachi, a tea
+          break in a Teramachi temple and the quiet geisha street of Nishi
+          Chaya at dusk.
         </p>
       </div>
 

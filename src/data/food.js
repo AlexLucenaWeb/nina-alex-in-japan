@@ -557,32 +557,25 @@ export const foodByDay = {
         note: "Matcha with a seasonal sweet, overlooking the garden. Arrive before 12:00 — the tea service stops for lunch.",
       },
       {
-        time: "12:30",
+        time: "12:05",
         place: "Omicho Market",
         type: "Lunch, grazing",
         reserve: false,
-        note: "Most stalls are open on Mondays. Noto wagyu skewer at Takumi, oysters at Kawaki Shoten or Shimada, croquettes at Diamond, and the kani-men at Ippukuya.",
+        note: "Quick grazing lunch (~35 min) — on a holiday about half the stalls are open. Noto wagyu skewer at Takumi, oysters at Kawaki Shoten or Shimada, croquettes at Diamond, and the kani-men at Ippukuya.",
       },
       {
-        time: "Evening",
-        place: "Sushi Hachimaru or Kourin Sushi",
-        type: "Dinner · Sushi night",
-        reserve: true,
-        note: "Sushi Hachimaru: omakase with local fish, foreigner-friendly with English cards, higher budget — Mon 18:00–22:00, reservation only (Tabelog). Kourin Sushi: family-run, very good value, English spoken, near Omicho — Mon 17:30–21:30, reserve. Walk-in fallback: Maimon Sushi or Sushi Kuine at Kanazawa Station — expect queues on a holiday.",
-      },
-      {
-        time: "Evening",
-        place: "Daimyo Chaya or Koufuku",
-        type: "Dinner · Crab night",
-        reserve: true,
-        note: "Daimyo Chaya: crab kaiseki (Kano crab cooked many ways) and nodoguro, English menu, higher budget — Mon 17:00–22:00, reserve. Koufuku: seafood restaurant in the Omicho Ichibakan building, crab and nodoguro hitsumabushi, casual, mixed reviews — Mon 17:00–22:00.",
+        time: "~17:30",
+        place: "Katamachi & Chuo Mishokugai",
+        type: "Dinner · Izakaya",
+        reserve: false,
+        note: "Walk-in at one of the small izakaya in the alleys of Katamachi and Chuo Mishokugai, 10 minutes from Nishi Chaya. Arrive early — the counters fill fast on a holiday. Look for oden, nodoguro and kōbako-gani. Fallback: kaiten sushi at Kanazawa Station (Morimori Sushi at Forus, Maimon Sushi in Hyakubangai Anto) — no reservations, expect queues.",
       },
     ],
     dishes: [
       {
         name: "Kōbako-gani",
         jp: "香箱ガニ",
-        desc: "The female snow crab, with its roe. Only in season from November to the end of December — ask for it by name, whichever dinner you pick.",
+        desc: "The female snow crab, with its roe. Only in season from November to the end of December — ask for it by name at the izakaya.",
       },
       {
         name: "Kani-men",
@@ -591,7 +584,7 @@ export const foodByDay = {
       },
     ],
     reservations:
-      "Dinner is two options, decided on the day: a sushi night or a crab night. Either way, book ahead — it's a public holiday. Myoryuji also needs a reservation, by phone.",
+      "Only the gold leaf workshop is booked (13:00). Dinner is walk-in at a Katamachi izakaya — go early.",
   },
   14: {
     dishesTitle: "What to eat in Shirakawa-go",

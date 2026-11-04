@@ -47,7 +47,7 @@ const GOOD_TO_KNOW = [
   "If the machine fails: go to the JR ticket office (Midori-no-madoguchi, みどりの窓口) with passports, the payment card and the booking email. Keep the reservation number, PIN and confirmation email saved offline on the phone.",
   "On arrival at Kanazawa Station, collect the tickets for Day 15 (Wed Nov 25): Kagayaki 506, Kanazawa 09:07 → Ōmiya 11:11, car 9, seats 3A & 3B. Use a JR West reserved-ticket machine ('e5489' / 予約したきっぷの受取) in the station, same as in Kyoto: English → 'Pick up reserved tickets' → insert the payment card (Revolut Metal) → reservation number + 4-digit PIN → check Kagayaki 506 for 2 adults → print. Doing it today saves a rush on the morning of the 25th.",
   "Nov 23 is a public holiday (Labour Thanksgiving Day): the 22nd is a busy holiday weekend — expect crowds and queues.",
-  "Omicho on a Sunday: many stalls closed, restaurants open. Browse the market properly on Day 13 or 14.",
+  "Omicho on a Sunday: many stalls closed, restaurants open. Tomorrow is a holiday too (about half the stalls open), so make today's lunch count.",
   "Shima's hours vary between sources (9:00–18:00 vs 9:30–17:30) — plan to arrive before 17:00.",
   "The Kanazawa Light-up Bus only runs on Saturdays and special dates, so walk to the castle instead (5 min from the hotel via Oyama Shrine).",
   "Hokutetsu buses (including the Loop Bus) don't accept Suica/ICOCA: tap a contactless card or Apple Pay on boarding and on getting off.",
