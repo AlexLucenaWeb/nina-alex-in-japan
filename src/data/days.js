@@ -267,11 +267,9 @@ const overrides = {
     summary:
       "Zojoji with Tokyo Tower behind it, matcha in the middle of Hamarikyu's pond, then Sunday car-free streets in Ginza and Akihabara, ending under the golden lights of Marunouchi.",
     recommendations: [
-      "Ginza's car-free avenue runs on weekend and holiday afternoons (12:00–17:00 Oct–Mar) and is cancelled in bad weather.",
-      "Akihabara's car-free street is Sundays only (13:00–17:00 Oct–Mar), so this is the one day to see it.",
-      "Hamarikyu's last entry is 16:30.",
-      "The Marunouchi illumination usually starts in mid-November (16:00–23:00 in 2025); check the dates closer to the trip.",
-      "Optional: if the Rikugien night autumn light-up has started (in 2025 it began Nov 28; advance tickets required), you can swap Akihabara for Rikugien at night — Namboku Line from Komagome goes straight back to Tameike-sanno near the hotel.",
+      "A relaxed start: no need to set an alarm — Zojoji is best mid-morning with Tokyo Tower in the light.",
+      "Bring a little cash for the matcha at Nakajima Tea House.",
+      "Optional evening swap: if the Rikugien night autumn light-up is on (in 2025 it ran Nov 28 – Dec 9, 18:00–20:30, advance tickets required), you can go there instead of Marunouchi — Namboku Line from Komagome goes straight back to Tameike-sanno near the hotel.",
     ],
   },
   20: {

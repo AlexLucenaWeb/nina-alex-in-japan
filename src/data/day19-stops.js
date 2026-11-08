@@ -69,6 +69,6 @@ export const day19Stops = [
     hours: "Illumination usually 16:00–23:00 from mid-November",
     maps: "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20%26%20Marunouchi%20Illumination&query_place_id=ChIJE9qjZ0-LGGARQiAs8hULJsg",
     photo: null,
-    desc: "JR Yamanote Line from Akihabara to Tokyo (2 stops, ~4 min). The restored red-brick Marunouchi station building (1914) lit up at night, then a stroll down Marunouchi Naka-dori, whose ~1.2 km of street trees are covered in champagne-gold lights. Dinner in the station or Marunouchi area. Back to the hotel: Marunouchi Line from Tokyo direct to Kokkai-gijidomae (~6 min), Tameike-sanno exit, 7 min walk."
+    desc: "JR Yamanote Line from Akihabara to Tokyo (2 stops, ~4 min). The restored red-brick Marunouchi station building (1914) lit up at night, then a stroll down Marunouchi Naka-dori, whose ~1.2 km of street trees are covered in champagne-gold lights. In 2025 the avenue leading out of the station (Gyoko-dori) was also lit up from Nov 28, with a Christmas market and food trucks on Naka-dori — check if the 2026 edition does the same. Dinner in the station or Marunouchi area. Back to the hotel: Marunouchi Line from Tokyo direct to Kokkai-gijidomae (~6 min), Tameike-sanno exit, 7 min walk."
   },
 ];

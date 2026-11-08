@@ -1,10 +1,16 @@
+import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
+import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day19Stops } from "@/data/day19-stops";
 
-// No route map yet: the My Maps map for the day comes later, and until then
-// the section is left out rather than shown empty.
+// Same as Days 13, 14, 16, 17 and 18: this day's route lives in a Google My
+// Maps map, so it can be edited from Google Maps without touching the stop data
+// in the repo. Set it to null to hide the map section — DayMapEmbed has no
+// empty state.
+const MY_MAPS_ID = "1se5ctglA2BUSULcSUnOziuYY-e9m8iI";
+
 const TRANSPORT = [
   { leg: "Hotel → Zojoji", line: "Walk via Toranomon & Azabudai (or taxi ~10 min)", time: "~30 min" },
   { leg: "Zojoji → Hamarikyu", line: "Walk via Hamamatsucho", time: "~25 min" },
@@ -12,6 +18,12 @@ const TRANSPORT = [
   { leg: "Ginza → Akihabara", line: "Tokyo Metro Ginza Line (Ginza → Suehirocho)", time: "~10 min" },
   { leg: "Akihabara → Tokyo Station", line: "JR Yamanote Line", time: "~4 min" },
   { leg: "Tokyo → Hotel", line: "Tokyo Metro Marunouchi Line to Kokkai-gijidomae + 7 min walk", time: "~15 min" },
+];
+
+const GOOD_TO_KNOW = [
+  "Ginza's car-free avenue runs on weekend and holiday afternoons (12:00–17:00, Oct–Mar); Akihabara's only on Sundays (13:00–17:00, Oct–Mar). Both are cancelled in rain or strong wind — the shops stay open, the streets just have traffic again.",
+  "Be in Akihabara before 17:00, when its street reopens to cars.",
+  "Marunouchi illumination: the 2026 dates aren't announced yet (in 2025: Nov 13 – Feb 15, 16:00–23:00). Check closer to the trip.",
 ];
 
 export default function ShibaGinzaItinerary({ food }) {
@@ -31,6 +43,25 @@ export default function ShibaGinzaItinerary({ food }) {
           and Akihabara before its street reopens at 17:00.
         </p>
       </div>
+
+      {MY_MAPS_ID && (
+        <section aria-label="Route map" className="flex flex-col gap-3">
+          <h2 className="font-display text-2xl font-semibold">The route</h2>
+
+          <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+            <DayMapEmbed mid={MY_MAPS_ID} />
+          </div>
+
+          <a
+            href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start text-sm text-momiji hover:underline"
+          >
+            Open in Google Maps
+          </a>
+        </section>
+      )}
 
       {food}
 
@@ -72,6 +103,11 @@ export default function ShibaGinzaItinerary({ food }) {
         <p className="text-sm leading-relaxed text-ink/80">
           All on the IC card, except the optional taxi.
         </p>
+      </section>
+
+      <section aria-label="Good to know" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>
   );
