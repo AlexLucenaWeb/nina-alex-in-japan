@@ -1,11 +1,15 @@
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
+import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day17Stops } from "@/data/day17-stops";
 
-// No route map yet: the My Maps map for the day comes later, and until then
-// the section is left out rather than shown empty.
+// Same as Days 13, 14 and 16: this day's route lives in a Google My Maps map,
+// so it can be edited from Google Maps without touching the stop data in the
+// repo. Set it to null to hide the map section — DayMapEmbed has no empty state.
+const MY_MAPS_ID = "1qos6cySEC1jhlvfyvSivXMX6ewAn_fw";
+
 const TRANSPORT = [
   { leg: "Hotel → Asakusa", line: "Tokyo Metro Ginza Line (Tameike-sanno → Asakusa)", time: "~20 min" },
   { leg: "Asakusa → Nippori", line: "Ginza Line to Ueno + JR Yamanote to Nippori", time: "~15 min" },
@@ -42,6 +46,25 @@ export default function OldTokyoItinerary({ food }) {
           rest. Yomiuriland&apos;s lights are an optional evening trip.
         </p>
       </div>
+
+      {MY_MAPS_ID && (
+        <section aria-label="Route map" className="flex flex-col gap-3">
+          <h2 className="font-display text-2xl font-semibold">The route</h2>
+
+          <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+            <DayMapEmbed mid={MY_MAPS_ID} />
+          </div>
+
+          <a
+            href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start text-sm text-momiji hover:underline"
+          >
+            Open in Google Maps
+          </a>
+        </section>
+      )}
 
       {food}
 
