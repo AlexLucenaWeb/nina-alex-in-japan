@@ -1,13 +1,17 @@
 import BulletList from "@/components/BulletList";
+import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day16Stops } from "@/data/day16-stops";
 
-// No route map yet: the My Maps map for the loop comes later, and until then
-// the section is left out rather than shown empty.
+// Same as Days 13 and 14: this day's route lives in a Google My Maps map, so it
+// can be edited from Google Maps without touching the stop data in the repo.
+// Set it to null to hide the map section — DayMapEmbed has no empty state.
 //
 // The Gōra hotel is a surprise, so it is never named on this page — only
 // "check-out in Gōra".
+const MY_MAPS_ID = "1SS_yaVXTxE9WGhvUeIM3DlI7IDuI134";
+
 const TICKETS = [
   {
     text: "Everything is on EMot Online Tickets, each of us on our own iPhone: the 2-day Hakone Freepass (Odawara version, valid Nov 25–26 — to be bought on Nov 22) and the Romancecar seat (booked).",
@@ -51,6 +55,25 @@ export default function HakoneLoopItinerary({ food }) {
           17:46 Romancecar to Shinjuku — at the hotel in Akasaka around 20:00.
         </p>
       </div>
+
+      {MY_MAPS_ID && (
+        <section aria-label="Route map" className="flex flex-col gap-3">
+          <h2 className="font-display text-2xl font-semibold">The route</h2>
+
+          <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+            <DayMapEmbed mid={MY_MAPS_ID} />
+          </div>
+
+          <a
+            href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start text-sm text-momiji hover:underline"
+          >
+            Open in Google Maps
+          </a>
+        </section>
+      )}
 
       {food}
 
