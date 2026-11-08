@@ -307,6 +307,28 @@ export const TRAINS = [
     seats: "Car 9 · Seats 3A, 3B (Tateyama mountains side)",
     note: "Booked on JR-WEST ONLINE TRAIN RESERVATION (regular fare). No oversized-luggage space. Collect the tickets on arrival in Kanazawa on Day 12 at a JR West machine: reservation number + 4-digit PIN + payment card. At Ōmiya, change to the JR Shōnan-Shinjuku Line towards Hakone.",
   },
+  {
+    id: "day16-romancecar",
+    day: 16,
+    date: "2026-11-26",
+    type: "Limited Express",
+    name: "Romancecar Hakone 18",
+    departure: {
+      city: "Hakone",
+      station: "Hakone-Yumoto Station",
+      time: "17:46",
+      mapsQuery: "Hakone-Yumoto Station",
+    },
+    arrival: {
+      city: "Tokyo",
+      station: "Shinjuku Station",
+      time: "19:26",
+      mapsQuery: "Shinjuku Station",
+    },
+    status: "booked",
+    seats: "Car 1 · Seats 3A, 3B (standard)",
+    note: "Seat surcharge on EMot Online Tickets. The Freepass covers Hakone-Yumoto → Odawara; pay the Odawara → Shinjuku fare difference at the fare adjustment machine in Shinjuku.",
+  },
 ];
 
 export const TRAIN_STATUS = {

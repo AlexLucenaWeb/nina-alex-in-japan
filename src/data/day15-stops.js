@@ -10,7 +10,7 @@ export const day15Stops = [
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJBYa7A0Iz-F8R6qe7HgH2XV0",
     photo: "/photos/day15-1-kanazawa-station.webp",
     photoSource: "https://ikw-media-prod.s3.ap-northeast-1.amazonaws.com/media/e3KtF1wkX5ZukfQZIM7cN__en-US__img_spot_065_02.jpg",
-    desc: "Big luggage goes ahead to Tokyo by takkyubin — travel light with a day pack. Hokuriku Shinkansen Kagayaki to Ōmiya (buy the ticket only to Ōmiya, reserved seat; paper ticket, not Suica). Grab an ekiben for the ride."
+    desc: "Big luggage goes ahead to Tokyo by takkyubin — travel light with day packs (and maybe one small suitcase). Hokuriku Shinkansen Kagayaki to Ōmiya (buy the ticket only to Ōmiya, reserved seat; paper ticket, not Suica). Grab an ekiben for the ride."
   },
   {
     n: 2,

@@ -209,9 +209,9 @@ const overrides = {
     date: "Wednesday, 25 November",
     location: "Kanazawa → Gōra, Hakone (in transit)",
     summary:
-      "Travel day from the Sea of Japan to the Hakone hills: the Kagayaki shinkansen to Ōmiya, the Shōnan-Shinjuku Line in the Green Car down to Odawara, and bus J03 up to Gōra. Big luggage goes ahead to Tokyo, so it's a day-pack day. About 5 hours of transit, and the afternoon free in Gōra.",
+      "Travel day from the Sea of Japan to the Hakone hills: the Kagayaki shinkansen to Ōmiya, the Shōnan-Shinjuku Line in the Green Car down to Odawara, and bus J03 up to Gōra. Big luggage goes ahead to Tokyo, so it's day packs (and maybe one small suitcase). About 5 hours of transit, and the afternoon free in Gōra.",
     recommendations: [
-      "Send the big luggage to Tokyo by takkyubin the day before, so the morning is just a day pack and the 9:07 train.",
+      "Send the big luggage to Tokyo by takkyubin the day before, so the morning is just day packs (and maybe one small suitcase) and the 9:07 train.",
       "Buy the shinkansen ticket only as far as Ōmiya, with a reserved seat — it's a paper ticket, not Suica.",
       "At Ōmiya, check the Shōnan-Shinjuku train is bound for Odawara (小田原): some go to Zushi/Kamakura instead.",
       "Freepass already on EMot (each on our own iPhone) — no need to queue at the Odawara ticket office; go straight to the bus to Gōra and show the pass to the driver. It covers today's bus and tomorrow's loop. Bus J03 runs infrequently; the Hakone Tozan Railway to Gōra is the backup, also on the pass.",
@@ -222,18 +222,15 @@ const overrides = {
     date: "Thursday, 26 November",
     location: "Gōra → Lake Ashi → Tokyo",
     summary:
-      "Gōra Park momiji, cable car and ropeway over Ōwakudani, pirate ship across Lake Ashi, Hakone Shrine, then Romancecar to Shinjuku and on to the hotel in Akasaka (Tokyo).",
+      "Gōra Park momiji, cable car and ropeway over Ōwakudani, pirate ship across Lake Ashi, Hakone Shrine, then the 17:46 Romancecar to Shinjuku and on to the hotel in Akasaka (Tokyo).",
     recommendations: [
       "Mount Fuji: clouds usually roll in after midday, so prioritise the view at Ōwakudani over the black-egg queue.",
       "Dress in layers: Ōwakudani is ~1,000 m up and cold and windy in late November, even if Gōra is mild.",
-      "Bring a power bank: the digital Freepass lives on your phone — no battery, no ticket.",
       "Carry cash: black eggs and several small stalls are cash only.",
-      "Torii from the boat: approaching Moto-Hakone, the pirate ship passes the lake torii — stand on the port (left) deck, camera ready. Good backup if the photo queue at the shrine is too long.",
-      "Built-in buffers: ~1 h covers ropeway and torii queues. The ropeway runs until 16:15 on weekdays and the last ship leaves around 16:00, so even with delays the loop can be completed.",
-      "Check hakonenavi.jp for ropeway and ship status before leaving in the morning.",
+      "Built-in buffers: ~1 h covers ropeway and torii queues. In November the ropeway runs until 17:00 and the last ship leaves around 16:00, so even with delays the loop can be completed.",
       "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
       "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",
-      "Arriving with suitcases at Shinjuku around 19:00 means evening rush hour. If it's too packed, a taxi from the west exit to the hotel takes ~20 min (≈ ¥3,000–3,500).",
+      "Shinjuku at 19:26 is still busy. If it's too packed, a taxi from the west exit to the hotel takes ~20 min (≈ ¥3,000–3,500).",
     ],
   },
   17: {

@@ -24,8 +24,8 @@ export default function KanazawaGoraItinerary({ food }) {
           Hakone hills to Gōra.
         </p>
         <p className="mt-2">
-          Big luggage goes ahead to Tokyo, so the whole day is done with a day
-          pack. Around 5 hours of transit, at the bus stop by 14:00.
+          Big luggage goes ahead to Tokyo, so the whole day is done with day
+          packs (and maybe one small suitcase). Around 5 hours of transit, at the bus stop by 14:00.
         </p>
       </div>
 

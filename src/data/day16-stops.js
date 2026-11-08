@@ -10,7 +10,7 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone%20G%C5%8Dra%20Park&query_place_id=ChIJVVVltv-hGWARRGEjZVZEtqs",
     photo: "/photos/day16-1-hakone-gora-park.webp",
     photoSource: "https://www.hakonenavi.jp/international/en/wp-content/uploads/sites/2/2019/01/1_20171113-%E7%AE%B1%E6%A0%B9%E5%BC%B7%E7%BE%85%E5%85%AC%E5%9C%92-%E7%B4%85%E8%91%89-122916-980x640.jpg",
-    desc: "Check out in Gōra by ~9:00 and arrive as the park opens. A 1914 French-style garden on the hillside with a fountain, rose garden, greenhouse and Hakuun-dō tea house (matcha with garden view). Late November is usually its momiji peak — the best autumn colour of the day. Free entry with the Hakone Freepass. Enter at the bottom, walk up and exit at Kōen-kami station."
+    desc: "Check out at ~8:45 and take the cable car two stops down from Naka-Gōra to Kōen-shimo. A 1914 French-style garden on the hillside with a fountain, rose garden, greenhouse and Hakuun-dō tea house (matcha with garden view). Late November is usually its momiji peak — the best autumn colour of the day. Free entry with the Hakone Freepass. Enter at the bottom, walk up and exit at Kōen-kami station."
   },
   {
     n: 2,
@@ -32,7 +32,7 @@ export const day16Stops = [
     jp: "早雲山駅",
     lat: 35.2466626,
     lng: 139.0355416,
-    hours: "Weekdays 9:00–16:15",
+    hours: "9:00–17:00 (Feb–Nov)",
     maps: "https://www.google.com/maps/search/?api=1&query=S%C5%8Dunzan%20Station&query_place_id=ChIJ37_fkVOfGWARrgUfyeWfYNE",
     photo: "/photos/day16-3-sounzan-station-hakone-ropeway.webp",
     photoSource: "https://img.poibank.com/aiPYECHhYV_s_M6xgCn6o1epyaw=/W3siZm9ybWF0IjoianBnIn0seyJrZXkiOiJzdWdnZXN0aW9uLzI3NDY2NzM3LzE2MTQ5ODk1OC8xNzg4ODU1MDM3ODE0In0seyJyZXNpemUiOnsid2lkdGgiOiIxNDY2In19XQ==",
@@ -114,7 +114,7 @@ export const day16Stops = [
     maps: "https://www.google.com/maps/search/?api=1&query=Old%20T%C5%8Dkaid%C5%8D%20Cedar%20Avenue&query_place_id=ChIJMVyclmSYGWARjhNR0fySWLo",
     photo: "/photos/day16-9-old-tokaido-cedar-avenue.webp",
     photoSource: "https://cdn.prod.rexby.com/image/54cea571a1324bb5be6581f7426631b1?format=webp&width=1080&height=1350&quality=80",
-    desc: "Optional — only if you're on time; otherwise skip it and head to the bus. Short walk under centuries-old cedars on the old Edo–Kyoto highway, just past the pier. Then the Hakone Tozan bus from Moto-Hakone-kō to Hakone-Yumoto at ~15:45 (~40 min, Freepass)."
+    desc: "Optional — only if you're on time; otherwise skip it and head to the bus. Short walk under centuries-old cedars on the old Edo–Kyoto highway, just past the pier. Then the Hakone Tozan bus from Moto-Hakone-kō to Hakone-Yumoto (~40 min, Freepass). Izuhakone buses also leave from here and the Freepass is NOT valid on them — check it says Hakone Tozan (箱根登山バス)."
   },
   {
     n: 10,
@@ -126,11 +126,11 @@ export const day16Stops = [
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone-Yumoto%20Station&query_place_id=ChIJcX9RE3WjGWARooaTIj-NpZs",
     photo: null,
-    desc: "Pick up luggage if you used the carry service. Quick stroll on the shopping street for souvenirs. Romancecar around 17:30 to Shinjuku (seat on EMot)."
+    desc: "If you sent a suitcase with the carry service, pick it up here. Stroll the shopping street for souvenirs (Hakone roll, pudding). Romancecar Hakone 18 at 17:46 — car 1, seats 3A & 3B (seat ticket on EMot)."
   },
   {
     n: 11,
-    time: "~19:00",
+    time: "19:26",
     name: "Shinjuku Station",
     jp: "新宿駅",
     lat: 35.6896,
@@ -142,7 +142,7 @@ export const day16Stops = [
   },
   {
     n: 12,
-    time: "~19:30",
+    time: "~20:00",
     name: "Hotel SUI Akasaka by ABEST",
     jp: "ホテル粋 赤坂 by ABEST",
     lat: 35.6703844,
@@ -150,6 +150,6 @@ export const day16Stops = [
     hours: "24h reception",
     maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
     photo: null,
-    desc: "Our Tokyo base for the next 5 nights. From Akasaka-mitsuke Station (Marunouchi Line) it's a ~10 min walk south; Akasaka Station (Chiyoda Line) is ~4 min away and will be our everyday station. Check in, drop the bags and grab a relaxed dinner in the Akasaka side streets, which are full of small izakayas and ramen shops."
+    desc: "Our suitcases sent from Kanazawa should be waiting at the front desk. Our Tokyo base for the next 5 nights. From Akasaka-mitsuke Station (Marunouchi Line) it's a ~10 min walk south; Akasaka Station (Chiyoda Line) is ~4 min away and will be our everyday station. Check in, drop the bags and grab a relaxed dinner in the Akasaka side streets, which are full of small izakayas and ramen shops."
   },
 ];

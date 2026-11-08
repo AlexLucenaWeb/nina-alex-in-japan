@@ -10,7 +10,7 @@ import { day16Stops } from "@/data/day16-stops";
 // "check-out in Gōra".
 const TICKETS = [
   {
-    text: "Everything is on EMot Online Tickets, each of us on our own iPhone: the 2-day Hakone Freepass (Odawara version, valid Nov 25–26) and the Romancecar seat.",
+    text: "Everything is on EMot Online Tickets, each of us on our own iPhone: the 2-day Hakone Freepass (Odawara version, valid Nov 25–26 — to be bought on Nov 22) and the Romancecar seat (booked).",
     link: {
       href: "https://emot-tickets.jp",
       label: "EMot Online Tickets →",
@@ -18,14 +18,14 @@ const TICKETS = [
   },
   "Freepass: show the animated pass screen at the manned gates, on the cable car, ropeway, pirate ship and buses. Screenshots don't work — keep the phone charged and bring the power bank.",
   "Covers: Gōra Park entry, cable car, ropeway, pirate ship, Hakone Tozan bus and the train Hakone-Yumoto → Odawara. Not covered: the Romancecar seat surcharge (bought separately on EMot).",
-  "Romancecar Hakone-Yumoto → Shinjuku, departure around 17:30. The EMot ticket is only the seat surcharge; seats in the last row of a car, next to the luggage space.",
+  "Romancecar Hakone 18: Hakone-Yumoto 17:46 → Shinjuku 19:26, car 1, seats 3A & 3B (booked). The EMot ticket is only the seat surcharge.",
   "Odawara → Shinjuku is not covered by our Freepass (¥910 per person). Enter at Hakone-Yumoto with the Freepass and, at Shinjuku, pay the difference at the fare adjustment machine (精算機) or the window next to it before the gates. Don't tap the iPhone IC card at the exit gate — we didn't enter with it.",
   "Shinjuku → Akasaka-mitsuke on the Marunouchi Line: pay with the IC card (~¥210).",
 ];
 
 const LUGGAGE = [
-  "Ask the front desk about the Hakone Carry Service to Hakone-Yumoto Station: drop off by 10:00, pick up at the station 13:30–19:00. Booked at the front desk on the day.",
-  "Plan B: Yamato delivery to Hotel SUI Akasaka (usually next day) — keep a daypack with overnight things.",
+  "Only if we bring a small suitcase to Hakone (with day packs only, skip this): ask the front desk about the Hakone Carry Service to Hakone-Yumoto Station — drop off by 10:00, pick up at the station 13:30–19:00.",
+  "The big suitcases were sent from Kanazawa by takkyubin and arrive at Hotel SUI Akasaka today.",
 ];
 
 const PLAN_B = [
@@ -47,8 +47,8 @@ export default function HakoneLoopItinerary({ food }) {
           Shrine with its torii in the water.
         </p>
         <p className="mt-2">
-          Check-out in Gōra by ~9:00, then down to Hakone-Yumoto for the
-          Romancecar to Shinjuku — in Tokyo around 19:00.
+          Check-out in Gōra by ~8:45, then down to Hakone-Yumoto for the
+          17:46 Romancecar to Shinjuku — at the hotel in Akasaka around 20:00.
         </p>
       </div>
 

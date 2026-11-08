@@ -649,7 +649,7 @@ export const foodByDay = {
         note: "Next to the pier: tempura soba with huge prawns, and upstairs seating with lake views. Tsuchiya and Ashinoko Tea House near the shrine are closed on Thursdays, so this is the pick.",
       },
       {
-        time: "16:30",
+        time: "~16:30",
         place: "Hakone-Yumoto shopping street",
         type: "Souvenirs",
         reserve: false,
