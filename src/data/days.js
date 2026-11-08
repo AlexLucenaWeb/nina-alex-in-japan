@@ -227,6 +227,7 @@ const overrides = {
       "Mount Fuji: clouds usually roll in after midday, so prioritise the view at Ōwakudani over the black-egg queue.",
       "Dress in layers: Ōwakudani is ~1,000 m up and cold and windy in late November, even if Gōra is mild.",
       "Carry cash: black eggs and several small stalls are cash only.",
+      "Torii from the boat: approaching Moto-Hakone, the pirate ship passes the lake torii — stand on the port (left) deck, camera ready. Good backup if the photo queue at the shrine is too long.",
       "Built-in buffers: ~1 h covers ropeway and torii queues. In November the ropeway runs until 17:00 and the last ship leaves around 16:00, so even with delays the loop can be completed.",
       "If time allows, have matcha at Hakuun-dō tea house in Gōra Park.",
       "Comfortable shoes: stone steps at the shrine and uneven ground on the cedar avenue.",
