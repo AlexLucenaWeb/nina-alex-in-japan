@@ -1,3 +1,4 @@
+import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -10,10 +11,16 @@ const TRANSPORT = [
   { leg: "Asakusa → Nippori", line: "Ginza Line to Ueno + JR Yamanote to Nippori", time: "~15 min" },
   { leg: "Yanaka Ginza → Kamachiku → Nezu Shrine", line: "Walk", time: "~25 min" },
   { leg: "Nezu → Komagome", line: "Walk to Todaimae + Namboku Line", time: "~20 min" },
-  { leg: "Komagome → Shinjuku", line: "JR Yamanote Line", time: "~15 min" },
-  { leg: "Shinjuku → Keio-yomiuri-land", line: "Keio Line + Keio Sagamihara Line (change at Chofu)", time: "~35–40 min" },
-  { leg: "Station → Yomiuriland", line: "Sky Shuttle gondola", time: "~5–10 min" },
-  { leg: "Yomiuriland → Hotel", line: "Gondola + Keio Line to Shinjuku + Marunouchi Line to Kokkai-gijidomae", time: "~1 h 10 min" },
+  { leg: "Komagome → Hotel", line: "Namboku Line direct (Komagome → Tameike-sanno)", time: "~20 min" },
+  { leg: "Hotel → Yomiuriland (optional)", line: "Marunouchi Line to Shinjuku + Keio Line (change at Chofu) + Sky Shuttle gondola", time: "~1 h" },
+  { leg: "Yomiuriland → Hotel (optional)", line: "Gondola + Keio Line to Shinjuku + Marunouchi Line to Kokkai-gijidomae", time: "~1 h 10 min" },
+];
+
+const GOOD_TO_KNOW = [
+  "Kamachiku: last order 14:00, closed on Mondays, and there's usually a queue — arrive by 12:30. If the queue is too long, eat more snacks in Yanaka Ginza instead.",
+  "Rikugien: last entry 16:30, sunset ~16:30 — don't linger in Yanaka.",
+  "Long day: rest at the hotel after Rikugien before deciding on the evening.",
+  "Yomiuriland (optional): check the official calendar for Nov 27 before going (irregular closed days). Admission ¥1,800 is enough; the gondola is paid separately.",
 ];
 
 export default function OldTokyoItinerary({ food }) {
@@ -31,8 +38,8 @@ export default function OldTokyoItinerary({ food }) {
         </p>
         <p className="mt-2">
           Out of the hotel by ~8:00 so the temple comes before the shops open,
-          at Rikugien by 16:00 for the last of the daylight, and back at the
-          hotel around 22:00.
+          at Rikugien in the late-afternoon light, then back to the hotel to
+          rest. Yomiuriland&apos;s lights are an optional evening trip.
         </p>
       </div>
 
@@ -74,8 +81,13 @@ export default function OldTokyoItinerary({ food }) {
           ))}
         </DataTable>
         <p className="text-sm leading-relaxed text-ink/80">
-          All on the IC card.
+          All on the IC card, except the Yomiuriland gondola.
         </p>
+      </section>
+
+      <section aria-label="Good to know" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>
   );

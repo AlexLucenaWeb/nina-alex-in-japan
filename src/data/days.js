@@ -239,17 +239,12 @@ const overrides = {
     date: "Friday, 27 November",
     location: "Tokyo",
     summary:
-      "Senso-ji before the crowds, Nakamise street snacks, the old-town lanes of Yanaka, Nezu Shrine's torii tunnel, autumn leaves at Rikugien at golden hour, and an evening among millions of jewel-coloured lights at Yomiuriland.",
+      "Senso-ji before the crowds, Nakamise street snacks, the old-town lanes of Yanaka, Nezu Shrine's torii tunnel and autumn leaves at Rikugien, then a rest at the hotel and, optionally, an evening among millions of jewel-coloured lights at Yomiuriland.",
     recommendations: [
       "Start early: Senso-ji is calm before 9:00 and packed by 10:30.",
       "Nakamise and Yanaka Ginza shops open around 10:00–11:00, which is why we see the temple first and the shops after.",
-      "Kamachiku lunch closes at 14:30 — if the queue is too long, grab extra snacks in Yanaka Ginza instead.",
-      "Rikugien's last entry is 16:30. Don't linger in Yanaka.",
-      "Rikugien usually has a night autumn light-up from late November (in 2025: Nov 28 – Dec 9, 18:00–20:30, advance tickets required). If the 2026 dates are announced and include Sun Nov 29, it's an easy add-on that evening: Namboku Line direct from the hotel area.",
       "On a clear day, Fujimizaka slope near Nishi-Nippori station is one of the few spots in central Tokyo with a view of Mt Fuji — a 5 min detour from Yanaka Ginza.",
-      "Yomiuriland's Jewellumination runs from late October to early April, usually 16:00–20:30, but it has irregular closed days and changing hours. Check the official calendar for Nov 27 before going.",
-      "Buy a night/admission-only ticket if you're only there for the lights (no rides needed).",
-      "It's a long day (8:00 to ~22:00). If you're tired after Rikugien, skip Yomiuriland and go straight back to the hotel (Namboku Line direct from Komagome to Tameike-sanno, ~20 min).",
+      "Rikugien usually has a night autumn light-up from late November (in 2025: Nov 28 – Dec 9, 18:00–20:30, advance tickets required). If the 2026 dates include Sun Nov 29, it's an easy add-on that evening: Namboku Line direct from the hotel area.",
     ],
   },
   18: {

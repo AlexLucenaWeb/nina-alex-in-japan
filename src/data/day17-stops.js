@@ -6,7 +6,7 @@ export const day17Stops = [
     jp: "雷門・浅草寺",
     lat: 35.7111163,
     lng: 139.7963656,
-    hours: "Grounds open 24h (main hall 6:00–17:00)",
+    hours: "Grounds open 24h (main hall 6:30–17:00, Oct–Mar)",
     maps: "https://www.google.com/maps/search/?api=1&query=Kaminarimon%20%26%20Senso-ji&query_place_id=ChIJ0YwG28aOGGARvRKAXIBWqNk",
     photo: null,
     desc: "Leave the hotel ~8:00: walk 7 min to Tameike-sanno, Ginza Line direct to Asakusa (~20 min). Arrive before the tour groups for photos of the giant red lantern and the main hall with almost no one around. Tokyo's oldest temple (founded 628)."
@@ -25,7 +25,7 @@ export const day17Stops = [
   },
   {
     n: 3,
-    time: "11:30",
+    time: "11:15",
     name: "Yuyake Dandan & Yanaka Ginza",
     jp: "夕やけだんだん・谷中銀座",
     lat: 35.7276466,
@@ -37,19 +37,19 @@ export const day17Stops = [
   },
   {
     n: 4,
-    time: "13:00",
+    time: "12:30",
     name: "Lunch: Nezu Kamachiku",
     jp: "根津 釜竹",
     lat: 35.7180829,
     lng: 139.7669646,
-    hours: "Lunch 11:30–14:30",
+    hours: "Lunch 11:30–14:30 (last order 14:00) · closed Mon",
     maps: "https://www.google.com/maps/search/?api=1&query=Nezu%20Kamachiku&query_place_id=ChIJcRRPoS6MGGARe-LEXkndq_s",
     photo: null,
-    desc: "~20 min walk from Yanaka Ginza through the back streets of Yanesen. Handmade udon in a converted Meiji-era stone warehouse with a garden view. Expect a queue at lunch; it moves fairly quickly. Portions are big."
+    desc: "~20 min walk from Yanaka Ginza through the back streets of Yanesen. Handmade udon in a converted Meiji-era stone warehouse with a garden view. Expect a queue (it can be 30–40 min) — that's why we come at 12:30, well before the 14:00 last order. Portions are big."
   },
   {
     n: 5,
-    time: "14:15",
+    time: "14:00",
     name: "Nezu Shrine",
     jp: "根津神社",
     lat: 35.7201366,
@@ -61,7 +61,7 @@ export const day17Stops = [
   },
   {
     n: 6,
-    time: "15:30",
+    time: "15:15",
     name: "Rikugien Gardens",
     jp: "六義園",
     lat: 35.7331005,
@@ -69,18 +69,33 @@ export const day17Stops = [
     hours: "9:00–17:00 (last entry 16:30), ¥300",
     maps: "https://www.google.com/maps/search/?api=1&query=Rikugien%20Gardens&query_place_id=ChIJYUQ-972NGGAR5W_2E0N3SHY",
     photo: null,
-    desc: "Walk 10 min to Todaimae, Namboku Line 2 stops to Komagome (~5 min), then 7 min walk to the main gate. A classic Edo-period strolling garden and one of the best momiji spots in Tokyo, with peak colour usually in late November. Arrive by 16:00 at the latest: sunset is around 16:30. Matcha and a sweet at the teahouse by the pond if there is time. Then head to Yomiuriland: JR Yamanote from Komagome to Shinjuku (~15 min)."
+    desc: "Walk 10 min to Todaimae, Namboku Line 2 stops to Komagome (~5 min), then 7 min walk to the main gate. A classic Edo-period strolling garden and one of the best momiji spots in Tokyo, with peak colour usually in late November. Arrive by 16:00 at the latest: sunset is around 16:30. Matcha and a sweet at the teahouse by the pond if there is time. Then back to the hotel: Namboku Line direct from Komagome to Tameike-sanno (~20 min)."
   },
   {
     n: 7,
-    time: "18:15",
+    time: "~17:15",
+    name: "Hotel SUI Akasaka · rest",
+    jp: "ホテル粋 赤坂",
+    lat: 35.6703844,
+    lng: 139.7378975,
+    hours: "—",
+    maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
+    // Same photo as its card on /hotels: no photoSource, so `npm run photos`
+    // doesn't download a second copy as day17-7.
+    photo: "/photos/hotel-tokyo-sui-akasaka.webp",
+    desc: "Back at the hotel to rest, shower and warm up before the evening. Decide here whether you feel like Yomiuriland, the lights in Roppongi, or a quiet dinner in Akasaka."
+  },
+  {
+    n: 8,
+    optional: true,
+    time: "~19:00",
     name: "Yomiuriland Jewellumination",
     jp: "よみうりランド ジュエルミネーション",
     lat: 35.6322518,
     lng: 139.5174469,
-    hours: "Illumination usually 16:00–20:30 (hours vary; irregular closed days)",
+    hours: "Lights 16:00–20:30 (check the calendar for closed days) · ¥1,800 + gondola",
     maps: "https://www.google.com/maps/search/?api=1&query=Yomiuriland%20Jewellumination&query_place_id=ChIJ9_FxdIj6GGARU_kzX6Xrguc",
     photo: null,
-    desc: "From Shinjuku, Keio Line to Chofu and change to the Keio Sagamihara Line for Keio-yomiuri-land (~35–40 min total), then the Sky Shuttle gondola up to the park (5–10 min; the view of the lit-up park from the cabin is part of the fun). One of the biggest illuminations in the Kanto area, designed by lighting designer Motoko Ishii: millions of LEDs in gemstone colours across the whole park, plus fountain shows set to music. Dinner at the park's food stands. Allow 2–2.5 hours. Back to the hotel: Keio Line to Shinjuku, then Marunouchi Line to Kokkai-gijidomae (~1 h 10 min total)."
+    desc: "Optional — ~1 hour from the hotel: Marunouchi Line from Kokkai-gijidomae to Shinjuku, Keio Line to Chofu and the Keio Sagamihara Line to Keio-yomiuri-land, then the Sky Shuttle gondola up to the park (extra fare; the view of the lit-up park from the cabin is part of the fun). One of the biggest illuminations around Tokyo, designed by Motoko Ishii: millions of LEDs in gemstone colours and fountain shows set to music. The admission ticket (¥1,800) is all you need — no rides. Dinner at the park's food stands. The park closes at 20:30; back at the hotel around 21:45. Lighter alternative, 10 min from the hotel: the Keyakizaka illumination at Roppongi Hills (free, from 17:00), with Tokyo Tower at the end of the avenue, and dinner in Roppongi."
   },
 ];
