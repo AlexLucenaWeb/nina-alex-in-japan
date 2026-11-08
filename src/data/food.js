@@ -784,7 +784,7 @@ export const foodByDay = {
         note: "The café-bar on the rooftop level, for a drink as the sun goes down. Needs the Shibuya Sky ticket.",
       },
       {
-        time: "19:15",
+        time: "~20:15",
         place: "Omoide Yokocho, Shinjuku",
         type: "Dinner · yakitori",
         reserve: false,

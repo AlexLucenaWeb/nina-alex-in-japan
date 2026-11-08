@@ -81,11 +81,25 @@ export const day18Stops = [
     hours: "10:00–22:30",
     maps: "https://www.google.com/maps/search/?api=1&query=Shibuya%20Sky&query_place_id=ChIJ4Rr2JWiLGGARcyRSHuZ-9G8",
     photo: null,
-    desc: "Open-air rooftop 229 m above the crossing, on top of Shibuya Scramble Square. Timed tickets booked in advance (entry slot ~15:20–15:40). Sunset is around 16:30, so you get daylight views (Mt Fuji on a clear day), golden hour and the city lights coming on in one visit. Once inside there is no time limit. Bags go in lockers before the rooftop; hats must be removed because of the wind."
+    desc: "Open-air rooftop 229 m above the crossing, on top of Shibuya Scramble Square. Timed tickets booked in advance (entry slot ~15:20–15:40). Sunset is around 16:30, so you get daylight views (Mt Fuji on a clear day), golden hour and the city lights coming on in one visit. Once inside there is no time limit. Bags go in lockers before the rooftop; hats must be removed because of the wind. Stay until ~17:30, then back to the hotel to rest."
   },
   {
     n: 8,
-    time: "18:00",
+    time: "~17:50",
+    name: "Hotel SUI Akasaka · rest",
+    jp: "ホテル粋 赤坂",
+    lat: 35.6703844,
+    lng: 139.7378975,
+    hours: "—",
+    maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
+    // Same photo as its card on /hotels: no photoSource, so `npm run photos`
+    // doesn't download a second copy as day18-8.
+    photo: "/photos/hotel-tokyo-sui-akasaka.webp",
+    desc: "Ginza Line from Shibuya to Tameike-sanno (~12 min), then 7 min walk. Rest and warm up before the evening; leave again at ~18:45."
+  },
+  {
+    n: 9,
+    time: "~19:15",
     name: "Cat Café MOCHA Lounge Shinjuku",
     jp: "猫カフェ MOCHA ラウンジ 新宿",
     lat: 35.690681,
@@ -93,11 +107,11 @@ export const day18Stops = [
     hours: "10:00–21:00",
     maps: "https://www.google.com/maps/search/?api=1&query=Cat%20Caf%C3%A9%20MOCHA%20Lounge%20Shinjuku&query_place_id=ChIJ__9v_9qMGGAROLP3q0g0RLM",
     photo: null,
-    desc: "JR Yamanote Line from Shibuya to Shinjuku (2 stops, ~7 min), then 5 min walk. A large, comfortable cat lounge on the 6th floor with dozens of well-cared-for cats, self-service drinks and lockers. Pricing is by time: check the clock when you enter and when you leave."
+    desc: "Marunouchi Line from Kokkai-gijidomae to Shinjuku (~17 min), then 5 min walk. A large, comfortable cat lounge on the 6th floor with dozens of well-cared-for cats, self-service drinks and lockers. Pricing is by time: check the clock when you enter and when you leave. Last entry is usually 30 minutes before closing."
   },
   {
-    n: 9,
-    time: "19:15",
+    n: 10,
+    time: "~20:15",
     name: "Omoide Yokocho",
     jp: "思い出横丁",
     lat: 35.6927037,

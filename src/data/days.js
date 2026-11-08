@@ -252,12 +252,11 @@ const overrides = {
     date: "Saturday, 28 November",
     location: "Tokyo",
     summary:
-      "Meiji Jingu's forest at opening time, the golden ginkgo avenue, Harajuku and Omotesando, sunset from Shibuya Sky, then cats and yakitori in Shinjuku.",
+      "Meiji Jingu's forest at opening time, Harajuku and Omotesando, the golden ginkgo avenue, sunset from Shibuya Sky, a rest at the hotel, then cats and yakitori in Shinjuku.",
     recommendations: [
       "Saturday = crowds. Meiji Jingu early is calm; Takeshita Street and the ginkgo avenue will be busy by midday.",
-      "Meiji Jingu closes at 16:10 in November — that's why it's first.",
-      "Shibuya Sky: book the official web ticket in advance; sunset slots sell out. If the weather is bad (rain or strong wind), the rooftop can close.",
       "Bring a warm layer for the open-air rooftop at sunset.",
+      "At the cat café, the cats' dinner time (around 19:00) is the liveliest moment.",
       "Omoide Yokocho counters are tiny (often 6–10 seats). Two people usually find a spot after a short walk around.",
     ],
   },
