@@ -10,7 +10,10 @@ export default function StopCard({ stop }) {
         stop.optional ? " border-dashed" : ""
       }`}
     >
-      <StopPhoto src={stop.photo} label={label} />
+      {/* `photo: false` means the stop has no picture on purpose (a station
+          on the way home, say) and the card starts straight with the text;
+          `null` is a photo still to find, so it keeps the placeholder. */}
+      {stop.photo !== false && <StopPhoto src={stop.photo} label={label} />}
 
       <div className="flex flex-col gap-2 p-4">
         <div className="flex items-center justify-between gap-3">

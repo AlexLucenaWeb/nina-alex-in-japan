@@ -125,7 +125,7 @@ export const day16Stops = [
     lng: 139.1035878,
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Hakone-Yumoto%20Station&query_place_id=ChIJcX9RE3WjGWARooaTIj-NpZs",
-    photo: null,
+    photo: false,
     desc: "If you sent a suitcase with the carry service, pick it up here. Stroll the shopping street for souvenirs (Hakone roll, pudding). Romancecar Hakone 18 at 17:46 — car 1, seats 3A & 3B (seat ticket on EMot)."
   },
   {
@@ -137,7 +137,7 @@ export const day16Stops = [
     lng: 139.7006,
     hours: "Station",
     maps: "https://www.google.com/maps/search/?api=1&query=Shinjuku%20Station",
-    photo: null,
+    photo: false,
     desc: "Pay the Odawara → Shinjuku fare difference at the fare adjustment machine before the gates. Follow signs to the Tokyo Metro Marunouchi Line (red, M) and take a train towards Ikebukuro/Tokyo — 4 stops, ~8 min, no transfer, IC card."
   },
   {
@@ -149,7 +149,9 @@ export const day16Stops = [
     lng: 139.7378975,
     hours: "24h reception",
     maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
-    photo: null,
+    // Same photo as its card on /hotels: no photoSource, so `npm run photos`
+    // doesn't download a second copy as day16-12.
+    photo: "/photos/hotel-tokyo-sui-akasaka.webp",
     desc: "Our suitcases sent from Kanazawa should be waiting at the front desk. Our Tokyo base for the next 5 nights. From Akasaka-mitsuke Station (Marunouchi Line) it's a ~10 min walk south; Akasaka Station (Chiyoda Line) is ~4 min away and will be our everyday station. Check in, drop the bags and grab a relaxed dinner in the Akasaka side streets, which are full of small izakayas and ramen shops."
   },
 ];
