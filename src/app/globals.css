@@ -104,6 +104,15 @@ body {
 }
 
 /*
+ * The header is sticky, so a jump to an anchor (/hotels#tokyo-…) would land
+ * the target underneath it. This keeps the anchor clear of the header's height
+ * on a phone, where it's tallest.
+ */
+html {
+  scroll-padding-top: 7rem;
+}
+
+/*
  * English / Spanish: every translated piece of text ships in both languages
  * (see src/components/L.js), and this hides the one that isn't active.
  * `data-lang="es"` is set on <html> before first paint by the inline script in

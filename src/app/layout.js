@@ -47,11 +47,12 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
         className="flex min-h-full flex-col bg-paper font-sans text-ink"
       >
-        {/* Just the nav: "All days" already links home. The extra top padding
+        {/* Just the nav: "All days" already links home. Sticky, so the day
+            arrows are always at hand on a long day page. The extra top padding
             on phones keeps the links clear of the blur iOS Safari lays over
             the top edge of the page, where taps were landing badly. */}
-        <header className="border-b border-line bg-paper">
-          <div className="mx-auto flex w-full max-w-5xl items-center justify-end px-6 pb-4 pt-8 sm:pt-4">
+        <header className="sticky top-0 z-40 border-b border-line bg-paper">
+          <div className="mx-auto flex w-full max-w-5xl px-6 pb-3 pt-8 sm:pt-4">
             <SiteHeaderNav />
           </div>
         </header>
