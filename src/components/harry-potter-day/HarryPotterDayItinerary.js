@@ -1,6 +1,7 @@
 import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
+import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
 import { day20Stops as STOPS_EN } from "@/data/day20-stops";
@@ -9,8 +10,12 @@ import { enText, withSpanish, withSpanishByStop } from "@/lib/i18n";
 
 const day20Stops = withSpanishByStop(STOPS_EN, DAY20_STOPS_ES);
 
-// No route map yet: the My Maps map for the day comes later, and until then
-// the section is left out rather than shown empty.
+// Same as Days 13, 14 and 16–19: this day's route lives in a Google My Maps
+// map, so it can be edited from Google Maps without touching the stop data in
+// the repo. Set it to null to hide the map section — DayMapEmbed has no empty
+// state.
+const MY_MAPS_ID = "1fmod3schfVgSHkzEIbVXxRgaPYgchHE";
+
 const TRANSPORT_EN = [
   { leg: "Hotel → Tsukiji", line: "Chiyoda Line to Hibiya + Hibiya Line to Tsukiji", time: "~20 min" },
   { leg: "Tsukiji-shijo → Toshimaen", line: "Toei Oedo Line (direct, bound for Hikarigaoka)", time: "~40–45 min" },
@@ -92,6 +97,27 @@ export default function HarryPotterDayItinerary({ food }) {
           }
         />
       </div>
+
+      {MY_MAPS_ID && (
+        <section aria-label="Route map" className="flex flex-col gap-3">
+          <h2 className="font-display text-2xl font-semibold">
+            <L en="The route" es="La ruta" />
+          </h2>
+
+          <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
+            <DayMapEmbed mid={MY_MAPS_ID} />
+          </div>
+
+          <a
+            href={`https://www.google.com/maps/d/viewer?mid=${MY_MAPS_ID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start text-sm text-momiji hover:underline"
+          >
+            <L en="Open in Google Maps" es="Abrir en Google Maps" />
+          </a>
+        </section>
+      )}
 
       {food}
 
