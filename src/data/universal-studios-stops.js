@@ -100,7 +100,9 @@ export const UNIVERSAL_STUDIOS_STOPS = [
     lng: 135.430500,
     hours: "show times in the app",
     maps: "https://maps.google.com/?q=JAWS+Universal+Studios+Japan",
-    photo: null,
+    photo: "/photos/day6-4-amity-village-waterworld.webp",
+    photoSource:
+      "https://japanforkids.jp/wp-content/uploads/2026/05/jfk_photo_universal-studios-japan_gm_1772514113-1024x768.jpg",
     desc: "Together: JAWS, a boat ride with live narration (you may get splashed), and the WaterWorld stunt show. Check the show times in the app and build the afternoon around them.",
   },
   {

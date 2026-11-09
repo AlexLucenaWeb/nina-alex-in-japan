@@ -123,7 +123,9 @@ export const OSAKA_KITA_STOPS = [
     lng: 135.4988507,
     hours: "10:00–23:00",
     maps: "https://www.google.com/maps/search/?api=1&query=Hareruya%20Tournament%20Center%20Osaka%2C%201-11-4%20Umeda%2C%20Kita-ku%2C%20Osaka",
-    photo: null,
+    photo: "/photos/day5-8-hareruya-tournament-center-osaka.webp",
+    photoSource:
+      "https://images.akihabara-cardmap.com/shops/a127efda-c290-4fb6-8ca3-9e00a88ba745/ChIJ2w8GD8uNGGAR_5PysntyJYs/g/0-1793556333.jpg",
     optional: true,
     desc: "2F Osaka Ekimae Daiyon Building, 1-11-4 Umeda — a few minutes' walk from Osaka/Umeda stations. A Magic: The Gathering specialist: singles, boosters and accessories. The main Hareruya visit is in Tokyo (Takadanobaba, Day 20), so this one is only if you feel like it. Bring your passport for tax-free."
   },
@@ -136,7 +138,9 @@ export const OSAKA_KITA_STOPS = [
     lng: 135.5008394,
     hours: "evenings",
     maps: "https://www.google.com/maps/search/?api=1&query=Ohatsu%20Tenjin%20Ura-sando",
-    photo: null,
+    photo: "/photos/day5-9-dinner-in-umeda.webp",
+    photoSource:
+      "https://media.timeout.com/images/106266109/750/562/image.jpg",
     desc: "Dinner stays in Umeda rather than going back to Dotonbori, which Day 3 already covers: Shin-Umeda Shokudogai under the Hankyu tracks, or the lantern-lit izakaya lane of Ohatsu Tenjin Ura-sando (see Food). Back to the hotel: Midosuji Line from Umeda to Dobutsuen-mae, then one stop on the Sakaisuji Line to Ebisucho (or ~10 min walk)."
   },
 ];

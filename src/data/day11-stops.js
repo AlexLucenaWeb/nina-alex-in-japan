@@ -139,7 +139,9 @@ export const day11Stops = [
     lng: 135.7941588,
     hours: "17:30–21:00, last entry 20:30 · ¥1,000, cash · Nov 20–Dec 6, 2026",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJF42zshgJAWARVK2wk6AFlxw",
-    photo: null,
+    photo: "/photos/day11-11-eikando-night-illumination.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXb0tHebQcAbyFKkLhGFYsvhN8cx9E6Aq5ISU9aAPKb8ADlzDJecUEvrRI&s=10",
     desc: "Only if you still have energy after the mountain. From Demachiyanagi (~17:30): Keihan to Sanjō, Tōzai Line to Keage, then ~15 min walk — or a taxi, ~15–20 min. Maples lit around the Hōjō pond; Saturday queues are long, so expect a wait. The night ticket is separate from daytime entry. Dinner afterwards around Okazaki / Sanjō."
   }
 ];

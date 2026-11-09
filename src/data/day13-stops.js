@@ -21,7 +21,9 @@ export const day13Stops = [
     lng: 136.659799,
     hours: "Grounds open · office ~9:00–17:00 · free",
     maps: "https://www.google.com/maps/search/Ishiura+Shrine/@36.5611709,136.659799,17z",
-    photo: null,
+    photo: "/photos/day13-2-ishiura-shrine.webp",
+    photoSource:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/2f/3f/0e/caption.jpg?w=1100&h=1100&s=1",
     optional: true,
     desc: "Optional, ~15 minutes. Across the road from Kenroku-en's Mayumizaka gate, next to the 21st Century Museum: Kanazawa's oldest shrine, with a tunnel of 101 red torii. Skip it if Kenroku-en runs long — Gyokusen-an has to be before 12:00."
   },

@@ -8,7 +8,9 @@ export const day20Stops = [
     lng: 139.7702515,
     hours: "Most shops ~5:00/9:00–14:00; closed Sundays, holidays and some Wednesdays",
     maps: "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Outer%20Market&query_place_id=ChIJW2cLzSGLGGARXAKXv6EkbqI",
-    photo: null,
+    photo: "/photos/day20-1-tsukiji-outer-market.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnM10Nh_PfKjjlXtcTD6oyWZNhvYxv1-sI0EQJ4fDjTD2RQukBDqV6iCU&s=10",
     desc: "Leave the hotel ~7:30: Chiyoda Line to Hibiya, change to the Hibiya Line to Tsukiji (~20 min). The market moved its wholesale side to Toyosu in 2018, but the 400+ shops and food stalls of the Outer Market are still here. Graze your way through breakfast: tamagoyaki on a stick, grilled scallops and seafood skewers, a small sashimi or sushi bowl, strawberry daifuku. Mondays are calmer than weekends. Bring cash."
   },
   {
@@ -20,7 +22,9 @@ export const day20Stops = [
     lng: 139.6460909,
     hours: "Hours vary by date — check the official calendar · timed ticket (to be booked)",
     maps: "https://www.google.com/maps/search/?api=1&query=Studio%20Tour%20Tokyo%20%E2%80%93%20The%20Making%20of%20Harry%20Potter&query_place_id=ChIJZzjXkvLtGGARm2YFfi26zoU",
-    photo: null,
+    photo: "/photos/day20-2-studio-tour-tokyo-the-making-of-harry-potter.webp",
+    photoSource:
+      "https://res.cloudinary.com/jnto/image/upload/w_750,h_503,fl_lossy,f_auto/v1701764333/tokyo/Tokyo_s2023_ID1_18",
     desc: "From Tsukiji-shijo Station, Toei Oedo Line direct to Toshimaen (~40–45 min; take a train bound for Hikarigaoka). Toshimaen Station is decorated with Harry Potter motifs, and the studio is right next to it. Walk through real film sets, props and costumes: the Great Hall, Diagon Alley, the Ministry of Magic (Tokyo exclusive), Platform 9¾ with the Hogwarts Express, the Forbidden Forest and Gringotts. Allow at least 4 hours. We're there during Harry Potter: Magical Winter (Nov 13, 2026 – Jan 11, 2027), when the sets get their seasonal winter decorations. Lunch inside, including Butterbeer at the Backlot Café. The shop is the biggest Harry Potter shop in the world. Lockers available at the entrance."
   },
   {
@@ -32,7 +36,11 @@ export const day20Stops = [
     lng: 139.7012289,
     hours: "9:00–23:00",
     maps: "https://www.google.com/maps/search/?api=1&query=Hareruya%20Tournament%20Center&query_place_id=ChIJV072iDeNGGARHWXbvXN9Jzw",
-    photo: null,
+    // Not the Takadanobaba store itself: the storefront of Hareruya Sannomiya
+    // (Kobe), standing in for the brand until there is a photo of this one.
+    photo: "/photos/day20-3-hareruya-tournament-center.webp",
+    photoSource:
+      "https://files.hareruyamtg.com/img/usr/store_menu/img_2203_sannnomiya.jpg",
     desc: "Seibu Toshima Line from Toshimaen to Nerima, Seibu Ikebukuro Line to Ikebukuro, then JR Yamanote 2 stops to Takadanobaba (~30 min). On the 2nd floor of the Takadanobaba OC Building. Japan's flagship Magic: The Gathering store: huge single-card stock with showcases of rare cards, sorted bulk shelves, exclusive promos and a large tournament hall. Many staff speak English. Fun detail: Takadanobaba Station plays the Astro Boy theme as the departure melody."
   },
   {

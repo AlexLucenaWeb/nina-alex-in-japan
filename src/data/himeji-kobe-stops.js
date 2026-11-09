@@ -98,7 +98,9 @@ export const HIMEJI_KOBE_STOPS = [
     jp: "神戸牛 大地",
     hours: "10:00–21:30 · booked 18:15 (2 people)",
     maps: "https://www.google.com/maps/place/?q=place_id:ChIJzVWsVPyOAGARRBCkHN9fJFQ",
-    photo: null,
+    photo: "/photos/day4-8-kobe-beef-daichi.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXw6mIv7BSNEsUAtAejpZ43PaWVNoY76dWQKJD8XTE7Li003rb3nDfKQLb&s=10",
     desc: "Dinner, booked: the 9-dish Autumn menu at Kobe Beef Daichi, a teppanyaki counter in Motomachi right by Nankinmachi where the chef cooks A5 Kobe beef in front of you. About a 10–15 min walk from Meriken Park, so there's time to linger at the harbour after sunset before heading over.",
   },
 ];

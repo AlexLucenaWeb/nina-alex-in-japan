@@ -8,7 +8,9 @@ export const day19Stops = [
     lng: 139.7482928,
     hours: "Main hall 9:00–17:00, grounds free",
     maps: "https://www.google.com/maps/search/?api=1&query=Zojoji%20Temple&query_place_id=ChIJC2xnkb6LGGARJL0d222opIg",
-    photo: null,
+    photo: "/photos/day19-1-zojoji-temple.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDfFnVKQliS2M_grhxnta6ojmdyuu6k0wqSvmMNOgLQ&s=10",
     desc: "A relaxed start: ~30 min walk from the hotel past Toranomon and Azabudai Hills, or a ~10 min taxi. Family temple of the Tokugawa shoguns. The red Sangedatsumon gate (1622) is the oldest wooden structure in central Tokyo. The classic photo: the main hall with Tokyo Tower rising right behind it. Don't miss the rows of small jizo statues with red caps and pinwheels."
   },
   {
@@ -20,7 +22,9 @@ export const day19Stops = [
     lng: 139.7634091,
     hours: "9:00–17:00 (last entry 16:30), ¥300",
     maps: "https://www.google.com/maps/search/?api=1&query=Hamarikyu%20Gardens&query_place_id=ChIJwfegutyLGGARGjiY-L2eSps",
-    photo: null,
+    photo: "/photos/day19-2-hamarikyu-gardens.webp",
+    photoSource:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEa1gOurWUJznpkTT9xfux3X1-quJBXhmVJcC2y-rW9dVc3kzAtktRuVJ8&s=10",
     desc: "~25 min walk from Zojoji via Hamamatsucho. A former shogun's garden on Tokyo Bay, with the city's only remaining Edo-period seawater pond (its level rises and falls with the tide) and a 300-year-old pine. Skyscrapers of Shiodome rise right behind the trees."
   },
   {
@@ -32,7 +36,9 @@ export const day19Stops = [
     lng: 139.7622596,
     hours: "9:00–16:30",
     maps: "https://www.google.com/maps/search/?api=1&query=Nakajima%20Tea%20House&query_place_id=ChIJUcOFGduLGGARniNz4kITzzE",
-    photo: null,
+    photo: "/photos/day19-3-nakajima-tea-house.webp",
+    photoSource:
+      "https://thumbs.dreamstime.com/b/tokyo-japan-april-tourists-enjoying-japanese-green-tea-nakajima-no-ochaya-teahouse-shiori-ike-pond-hama-riky-238281205.jpg",
     desc: "Inside Hamarikyu, on a small island in the middle of the pond, reached by long wooden bridges. Matcha with a seasonal wagashi sweet on tatami or on the open veranda over the water. Shoes off at the entrance."
   },
   {
@@ -44,7 +50,9 @@ export const day19Stops = [
     lng: 139.7650504,
     hours: "Car-free Sat/Sun/holidays 12:00–17:00 (Oct–Mar)",
     maps: "https://www.google.com/maps/search/?api=1&query=Ginza%20Chuo-dori%20%28car-free%29&query_place_id=ChIJDcZ1YZiLGGAR8j1tcFitQ8k",
-    photo: null,
+    photo: "/photos/day19-4-ginza-chuo-dori-car-free.webp",
+    photoSource:
+      "https://media.istockphoto.com/id/1197293265/photo/pedestrians-on-chuo-dori-in-ginza-tokyo.jpg?s=612x612&w=0&k=20&c=WMTXbKHcY6fZN3vPdKEWHAQl9motnEtIvAzZtJz-E_I=",
     desc: "~10 min walk from Shimbashi after lunch. On weekend afternoons the 1.1 km main avenue becomes a pedestrian street with parasols and chairs in the road. Start at the Seiko House clock tower (1932) at the 4-chome crossing. Window-shopping: Ginza Six, Mitsukoshi, Itoya stationery. Cancelled in bad weather."
   },
   {
@@ -56,7 +64,9 @@ export const day19Stops = [
     lng: 139.7713799,
     hours: "Car-free Sundays only 13:00–17:00 (Oct–Mar)",
     maps: "https://www.google.com/maps/search/?api=1&query=Akihabara%20Chuo-dori%20%28car-free%29&query_place_id=ChIJZzSYoB2MGGARfBcicn7sx28",
-    photo: null,
+    photo: "/photos/day19-5-akihabara-chuo-dori-car-free.webp",
+    photoSource:
+      "https://media01.stockfood.com/largepreviews/NDI4NTc2Nzk4/13825058-Street-scene-at-Chuo-Dori-street-Akihabara-Tokyo-Japan.jpg",
     desc: "Ginza Line from Ginza to Suehirocho (~10 min). On Sunday afternoons the main street of Electric Town closes to cars. Anime and figure shops, retro games, multi-floor arcades, and the neon lights coming on at dusk around 16:30."
   },
   {
@@ -68,7 +78,9 @@ export const day19Stops = [
     lng: 139.7659944,
     hours: "Illumination usually 16:00–23:00 from mid-November",
     maps: "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20%26%20Marunouchi%20Illumination&query_place_id=ChIJE9qjZ0-LGGARQiAs8hULJsg",
-    photo: null,
+    photo: "/photos/day19-6-tokyo-station-marunouchi-illumination.webp",
+    photoSource:
+      "https://res-2.cloudinary.com/dbm1qiew0/image/upload/q_auto/v1/blog-images/Marunouchi-Illumination-2025%40image1--3-b.png",
     desc: "JR Yamanote Line from Akihabara to Tokyo (2 stops, ~4 min). The restored red-brick Marunouchi station building (1914) lit up at night, then a stroll down Marunouchi Naka-dori, whose ~1.2 km of street trees are covered in champagne-gold lights. In 2025 the avenue leading out of the station (Gyoko-dori) was also lit up from Nov 28, with a Christmas market and food trucks on Naka-dori — check if the 2026 edition does the same. Dinner in the station or Marunouchi area. Back to the hotel: Marunouchi Line from Tokyo direct to Kokkai-gijidomae (~6 min), Tameike-sanno exit, 7 min walk."
   },
 ];
