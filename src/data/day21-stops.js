@@ -8,7 +8,9 @@ export const day21Stops = [
     lng: 139.7379,
     hours: "Check-out by 10:00",
     maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
-    photo: null,
+    // Same photo as its card on /hotels: no photoSource, so `npm run photos`
+    // doesn't download a second copy as day21-1.
+    photo: "/photos/hotel-tokyo-sui-akasaka.webp",
     desc: "Check out with all luggage. Chiyoda Line from Akasaka to Nishi-Nippori (~22 min), JR Yamanote 1 stop to Nippori, then the Keisei Main Line (Limited Express) to Keisei-Narita (~60 min). Leaving at 9:00 avoids the worst of the morning rush with suitcases; a taxi to Nippori is an easier alternative."
   },
   {
@@ -30,10 +32,10 @@ export const day21Stops = [
     jp: "成田山表参道・川豊",
     lat: 35.783388,
     lng: 140.316726,
-    hours: "Kawatoyo 10:00–17:00",
+    hours: "Kawatoyo 10:00–17:00 · cash or PayPay only",
     maps: "https://www.google.com/maps/search/?api=1&query=Omotesando%20%26%20Kawatoyo&query_place_id=ChIJF92A2g-LImARpgZ6h_V8mdM",
     photo: null,
-    desc: "The ~800 m old shopping street from the station down to the temple, lined with traditional shops, sweets and eel restaurants (you can watch the chefs prepare the eel out front). Kawatoyo has been grilling unagi for over 100 years. Dine-in waits can be 2–5 hours, so order a takeaway unagi bento on the way down (about 20 min wait) and pick it up on the way back, or eat it in the park."
+    desc: "The ~800 m old shopping street from the station down to the temple, lined with traditional shops, sweets and eel restaurants (you can watch the chefs prepare the eel out front). Kawatoyo has been grilling unagi for over 100 years. Dine-in waits can be 2–5 hours, so order a takeaway unagi bento on the way down (about 20 min wait) and pick it up on the way back, or eat it in the park. Kawatoyo doesn't take cards — bring cash (~¥3,000–4,000 per person)."
   },
   {
     n: 4,
@@ -62,13 +64,13 @@ export const day21Stops = [
   {
     n: 6,
     time: "13:00",
-    name: "Narita Airport",
-    jp: "成田国際空港",
+    name: "Narita Airport Terminal 2",
+    jp: "成田空港 第2ターミナル",
     lat: 35.770178,
     lng: 140.3843215,
     hours: "Flight 16:55",
     maps: "https://www.google.com/maps/search/?api=1&query=Narita%20Airport&query_place_id=ChIJVze90XnzImARoRp3YqEpbtU",
     photo: null,
-    desc: "Walk back up Omotesando (~15 min, uphill), collect the luggage, then Keisei Line from Keisei-Narita to the airport (~10 min, ¥280; check whether your terminal is Narita Airport (T1) or Airport Terminal 2·3). Be at the airport by 13:25 at the latest. Flight home at 16:55."
+    desc: "Walk back up Omotesando (~15 min, uphill), collect the luggage, then the Keisei Line from Keisei-Narita to Airport Terminal 2·3 (空港第2ビル) — Qatar Airways flies from Terminal 2 (~10 min). Be at the airport by 13:25 at the latest. Before checking the suitcases, do the tax refund at the customs kiosk (see Good to know). Flight home at 16:55."
   },
 ];

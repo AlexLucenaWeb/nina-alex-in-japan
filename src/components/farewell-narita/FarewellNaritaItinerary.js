@@ -1,3 +1,4 @@
+import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -9,7 +10,16 @@ const TRANSPORT = [
   { leg: "Hotel → Nishi-Nippori", line: "Tokyo Metro Chiyoda Line (Akasaka → Nishi-Nippori)", time: "~22 min" },
   { leg: "Nishi-Nippori → Nippori", line: "JR Yamanote Line (1 stop)", time: "~2 min" },
   { leg: "Nippori → Keisei-Narita", line: "Keisei Main Line, Limited Express", time: "~60 min" },
-  { leg: "Keisei-Narita → Narita Airport", line: "Keisei Line", time: "~10 min" },
+  { leg: "Keisei-Narita → Airport Terminal 2·3", line: "Keisei Line (get off at 空港第2ビル, not at Narita Airport T1)", time: "~10 min" },
+];
+
+const GOOD_TO_KNOW = [
+  "Our flight (Qatar Airways) leaves from Terminal 2: the station is Airport Terminal 2·3 (空港第2ビル).",
+  "Tax refund (new system since Nov 1, 2026): before checking the suitcases, go to a customs tax refund kiosk in the departure lobby and scan your passport (or use Visit Japan Web on the dedicated airport Wi-Fi). Have ALL tax-free purchases at hand, including what's in the suitcase — customs may ask to see them. Items used or eaten in Japan don't qualify.",
+  "The refund is paid by each shop (card, app, bank) or as yen cash at the Self Tax Refund points in the airport — depending on what you chose when buying. Keep the receipts.",
+  "Kawatoyo is cash or PayPay only.",
+  "Bring 100-yen coins for the Keisei-Narita lockers.",
+  "Leave Narita town by 13:00 at the latest.",
 ];
 
 export default function FarewellNaritaItinerary({ food }) {
@@ -72,6 +82,11 @@ export default function FarewellNaritaItinerary({ food }) {
           All on the IC card, including the Keisei Limited Express (no seat
           reservation needed).
         </p>
+      </section>
+
+      <section aria-label="Good to know" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>
   );
