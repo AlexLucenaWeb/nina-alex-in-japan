@@ -1,3 +1,4 @@
+import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -10,6 +11,13 @@ const TRANSPORT = [
   { leg: "Tsukiji-shijo → Toshimaen", line: "Toei Oedo Line (direct, bound for Hikarigaoka)", time: "~40–45 min" },
   { leg: "Toshimaen → Takadanobaba", line: "Seibu Toshima + Seibu Ikebukuro Line to Ikebukuro, JR Yamanote to Takadanobaba", time: "~30 min" },
   { leg: "Takadanobaba → Hotel", line: "Tozai Line to Iidabashi + Namboku Line to Tameike-sanno", time: "~30 min" },
+];
+
+const GOOD_TO_KNOW = [
+  "Harry Potter Studio Tour: timed tickets, online only and non-refundable. Book a 10:30–11:00 entry so Tsukiji fits before. Adult tickets ¥6,600–¥7,300 depending on the date.",
+  "Tsukiji Outer Market closes on Sundays, holidays and some Wednesdays — Monday Nov 30 should be a normal trading day, but check the official calendar.",
+  "Bring cash for Tsukiji: many stalls don't take cards.",
+  "Tomorrow: flight from Narita at 16:55 — be at the airport by 13:25. Pack tonight.",
 ];
 
 export default function HarryPotterDayItinerary({ food }) {
@@ -70,6 +78,11 @@ export default function HarryPotterDayItinerary({ food }) {
         <p className="text-sm leading-relaxed text-ink/80">
           All on the IC card.
         </p>
+      </section>
+
+      <section aria-label="Good to know" className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>
   );

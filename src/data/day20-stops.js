@@ -18,10 +18,10 @@ export const day20Stops = [
     jp: "ワーナー ブラザース スタジオツアー東京 – メイキング・オブ・ハリー・ポッター",
     lat: 35.745183,
     lng: 139.6460909,
-    hours: "Mon 8:30–19:00; timed tickets booked in advance",
+    hours: "Hours vary by date — check the official calendar · timed ticket (to be booked)",
     maps: "https://www.google.com/maps/search/?api=1&query=Studio%20Tour%20Tokyo%20%E2%80%93%20The%20Making%20of%20Harry%20Potter&query_place_id=ChIJZzjXkvLtGGARm2YFfi26zoU",
     photo: null,
-    desc: "From Tsukiji-shijo Station, Toei Oedo Line direct to Toshimaen (~40–45 min; take a train bound for Hikarigaoka). Toshimaen Station is decorated with Harry Potter motifs, and the studio is right next to it. Walk through real film sets, props and costumes: the Great Hall, Diagon Alley, the Ministry of Magic (Tokyo exclusive), Platform 9¾ with the Hogwarts Express, the Forbidden Forest and Gringotts. Allow at least 4 hours. Lunch inside, including Butterbeer at the Backlot Café. The shop is the biggest Harry Potter shop in the world. Lockers available at the entrance."
+    desc: "From Tsukiji-shijo Station, Toei Oedo Line direct to Toshimaen (~40–45 min; take a train bound for Hikarigaoka). Toshimaen Station is decorated with Harry Potter motifs, and the studio is right next to it. Walk through real film sets, props and costumes: the Great Hall, Diagon Alley, the Ministry of Magic (Tokyo exclusive), Platform 9¾ with the Hogwarts Express, the Forbidden Forest and Gringotts. Allow at least 4 hours. We're there during Harry Potter: Magical Winter (Nov 13, 2026 – Jan 11, 2027), when the sets get their seasonal winter decorations. Lunch inside, including Butterbeer at the Backlot Café. The shop is the biggest Harry Potter shop in the world. Lockers available at the entrance."
   },
   {
     n: 3,
@@ -37,7 +37,7 @@ export const day20Stops = [
   },
   {
     n: 4,
-    time: "18:00",
+    time: "~18:30",
     name: "Back to the hotel",
     jp: "ホテル",
     lat: 35.670423,

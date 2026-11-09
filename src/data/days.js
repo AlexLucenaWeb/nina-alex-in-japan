@@ -279,11 +279,9 @@ const overrides = {
     summary:
       "A seafood breakfast at Tsukiji Outer Market, a few hours inside the real sets of the Harry Potter films, Magic cards at Hareruya, then a quiet last night in Tokyo to pack.",
     recommendations: [
-      "Harry Potter tickets are timed and must be bought online in advance (non-refundable). Aim for a 10:30–11:00 entry so Tsukiji fits before.",
-      "Tsukiji Outer Market is closed on Sundays, holidays and some Wednesdays — Monday Nov 30 is a normal trading day, but check the official calendar.",
-      "Many Tsukiji stalls are cash only, and eating while walking is discouraged — eat at the stall.",
+      "Eat at the stall in Tsukiji — eating while walking is frowned upon.",
       "Leave room in your suitcase for Harry Potter and Hareruya shopping.",
-      "Tomorrow: flight from Narita at 16:55, be at the airport by 13:25. Pack tonight.",
+      "Fun detail: Takadanobaba Station plays the Astro Boy theme as its departure melody.",
     ],
   },
   21: {
