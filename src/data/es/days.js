@@ -223,4 +223,66 @@ export const DAYS_ES = {
       "A las 19:26 Shinjuku sigue llena de gente. Si está demasiado abarrotado, un taxi desde la salida oeste hasta el hotel tarda ~20 min (≈ ¥3,000–3,500).",
     ],
   },
+  17: {
+    title: "El Tokio antiguo y la Jewellumination",
+    date: "Viernes, 27 de noviembre",
+    location: "Tokio",
+    summary:
+      "Senso-ji antes que la gente, picoteo en Nakamise, las callejuelas del barrio antiguo de Yanaka, el túnel de torii del santuario Nezu y las hojas de otoño de Rikugien; después, descanso en el hotel y, si apetece, una noche entre millones de luces de colores de piedras preciosas en Yomiuriland.",
+    recommendations: [
+      "Empezad pronto: Senso-ji está tranquilo antes de las 9:00 y lleno a las 10:30.",
+      "Las tiendas de Nakamise y Yanaka Ginza abren hacia las 10:00–11:00: por eso vemos primero el templo y después las tiendas.",
+      "En un día despejado, la cuesta Fujimizaka, cerca de la estación de Nishi-Nippori, es de los pocos sitios del centro de Tokio desde los que se ve el monte Fuji: un desvío de 5 min desde Yanaka Ginza.",
+      "Rikugien suele tener iluminación nocturna de otoño desde finales de noviembre (en 2025: del 28 de noviembre al 9 de diciembre, 18:00–20:30, con entrada anticipada). Si las fechas de 2026 incluyen el domingo 29, es un añadido fácil esa noche: Namboku Line directa desde la zona del hotel.",
+    ],
+  },
+  18: {
+    title: "Harajuku, Shibuya y noche en Shinjuku",
+    date: "Sábado, 28 de noviembre",
+    location: "Tokio",
+    summary:
+      "El bosque de Meiji Jingu a primera hora, Harajuku y Omotesando, la avenida dorada de ginkgos, el atardecer desde Shibuya Sky, un descanso en el hotel y después gatos y yakitori en Shinjuku.",
+    recommendations: [
+      "Sábado = gente. Meiji Jingu temprano está tranquilo; la calle Takeshita y la avenida de ginkgos estarán llenas a mediodía.",
+      "Llevad una capa de abrigo para la azotea al aire libre al atardecer.",
+      "En el café de gatos, la hora de la cena de los gatos (hacia las 19:00) es el momento más animado.",
+      "Las barras de Omoide Yokocho son diminutas (muchas veces de 6–10 sitios). Dos personas suelen encontrar hueco dando una vuelta.",
+    ],
+  },
+  19: {
+    title: "Shiba, Ginza y Akihabara",
+    date: "Domingo, 29 de noviembre",
+    location: "Tokio",
+    summary:
+      "Zojoji con la Torre de Tokio detrás, matcha en medio del estanque de Hamarikyu, las calles sin coches del domingo en Ginza y Akihabara, y para terminar las luces doradas de Marunouchi.",
+    recommendations: [
+      "Un comienzo tranquilo: no hace falta poner despertador; Zojoji es mejor a media mañana, con la Torre de Tokio iluminada por el sol.",
+      "Llevad algo de efectivo para el matcha de la casa de té Nakajima.",
+      "Cambio opcional por la noche: si la iluminación nocturna de otoño de Rikugien ya ha empezado (en 2025 fue del 28 de noviembre al 9 de diciembre, 18:00–20:30, con entrada anticipada), podéis ir allí en vez de a Marunouchi; la Namboku Line desde Komagome va directa a Tameike-sanno, cerca del hotel.",
+    ],
+  },
+  20: {
+    title: "Tsukiji, Harry Potter y Hareruya",
+    date: "Lunes, 30 de noviembre",
+    location: "Tokio",
+    summary:
+      "Un desayuno de marisco en el mercado exterior de Tsukiji, unas horas dentro de los decorados reales de las películas de Harry Potter, cartas de Magic en Hareruya y una última noche tranquila en Tokio para hacer las maletas.",
+    recommendations: [
+      "En Tsukiji, comed en el puesto: comer andando está mal visto.",
+      "Dejad sitio en la maleta para las compras de Harry Potter y Hareruya.",
+      "Curiosidad: la estación de Takadanobaba pone la sintonía de Astro Boy como melodía de salida.",
+    ],
+  },
+  21: {
+    title: "Narita-san y vuelo a casa",
+    date: "Martes, 1 de diciembre",
+    location: "Tokio → Narita (en tránsito)",
+    summary:
+      "Una última mañana de templos: Naritasan Shinsho-ji y su parque otoñal, anguila a la brasa en la antigua calle comercial de Narita y un salto de 10 minutos al aeropuerto para el vuelo de vuelta de las 16:55.",
+    recommendations: [
+      "Para comer dentro de Kawatoyo, la cola puede llegar a 2–5 horas. El bento para llevar es la opción realista en un día de vuelo.",
+      "El templo tiene muchas escaleras: llevad calzado cómodo.",
+      "Plan B (si preferís quedaros en Tokio): los Jardines del Este del Palacio Imperial (abren el martes; nov–feb 9:00–16:00, última entrada 15:30; cierran lunes y viernes), a un paseo de la estación de Tokio. Salid del hotel con el equipaje hacia las 11:15 y coged el Narita Express desde la estación de Tokio hacia las 12:00 (~1 h hasta el aeropuerto).",
+    ],
+  },
 };

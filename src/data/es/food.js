@@ -451,4 +451,220 @@ export const FOOD_ES = {
     reservations:
       "No hay comidas que reservar. Llevad efectivo para los huevos negros de Ōwakudani.",
   },
+  17: {
+    dishesTitle: "Qué comer en el Tokio antiguo",
+    meals: [
+      {
+        type: "Para picar",
+        note: "Ningyo-yaki, kibi dango y age-manju de los puestos a la salida de Senso-ji. Se come en el puesto, no andando.",
+      },
+      {
+        type: "Para picar",
+        note: "Menchi-katsu y croquetas de las carnicerías, y un taiyaki.",
+      },
+      {
+        type: "Comida · udon hecho a mano",
+        note: "Udon hecho a mano en un almacén de piedra de la era Meiji: probad el kamaage udon o el udon de pato. Suele haber cola; última comanda a las 14:00.",
+      },
+      {
+        place: "Casa de té de Rikugien",
+        type: "Matcha y wagashi",
+        note: "Matcha y un dulce en la casa de té del estanque, si da tiempo antes del cierre.",
+      },
+      {
+        place: "Yomiuriland (opcional) o Roppongi / Akasaka",
+        type: "Cena",
+        note: "Si vamos a Yomiuriland, puestos de comida y bebidas calientes dentro del parque; si no, cena en Roppongi después de las luces, o una tranquila en Akasaka.",
+      },
+    ],
+    dishes: [
+      {
+        desc: "Bizcochitos rellenos de pasta de judía roja, hechos en moldes con formas. El clásico de Asakusa.",
+      },
+      {
+        desc: "Bolitas blandas de mijo en una brocheta, espolvoreadas con kinako (harina de soja tostada).",
+      },
+      {
+        desc: "Bollos de judía roja fritos en un rebozado ligero, mejor calientes.",
+      },
+      {
+        desc: "Una hamburguesa de carne picada empanada y frita: las carnicerías de Yanaka Ginza son famosas por ellas.",
+      },
+      {
+        desc: "Gofre con forma de pez relleno de pasta de judía roja.",
+      },
+      {
+        desc: "Udon servido directamente de la olla en su agua de cocción caliente, para mojar en un caldo templado: la comida de hoy.",
+      },
+    ],
+    reservations:
+      "No hay comidas que reservar. Kamachiku es solo sin reserva, así que llegad pronto para que la cola sea corta.",
+  },
+  18: {
+    dishesTitle: "Qué comer en Harajuku y Shinjuku",
+    meals: [
+      {
+        place: "Konbini cerca del hotel",
+        type: "Desayuno",
+        note: "Onigiri, sándwiches y café de una tienda de conveniencia antes de salir temprano.",
+      },
+      {
+        place: "Calle Takeshita",
+        type: "Dulces",
+        note: "Un crepe de Harajuku y los dulces que os llamen la atención bajando la calle.",
+      },
+      {
+        type: "Comida · gyoza",
+        note: "Gyoza a la plancha y al vapor, con o sin ajo, y pepino con miso de acompañamiento. Solo efectivo; la cola avanza rápido.",
+      },
+      {
+        place: "Festival del Ginkgo, Jingu Gaien",
+        type: "Puestos de comida",
+        note: "Puestos con especialidades regionales de todo Japón, con mesas y sillas bajo los ginkgos.",
+      },
+      {
+        place: "Azotea de Shibuya Sky",
+        type: "Algo de beber al atardecer",
+        note: "El café-bar de la azotea, para tomar algo mientras se pone el sol. Hace falta la entrada de Shibuya Sky.",
+      },
+      {
+        type: "Cena · yakitori",
+        note: "Yakitori, motsu-ni y una cerveza fría en las barras diminutas. Muchas cobran una pequeña tarifa por sentarse (otoshi), y conviene llevar efectivo.",
+      },
+    ],
+    dishes: [
+      {
+        name: "Crepe de Harajuku",
+        desc: "Crepes finos enrollados en cono y rellenos de nata, fruta, helado o tarta de queso. El icono de la comida callejera de Harajuku.",
+      },
+      {
+        desc: "Empanadillas de cerdo, a la plancha hasta que se doran por abajo, o al vapor: la comida de hoy.",
+      },
+      {
+        desc: "Brochetas de pollo a la brasa de carbón, con sal (shio) o con un glaseado dulce de soja (tare).",
+      },
+      {
+        desc: "Guiso de casquería cocinado a fuego lento en caldo de miso o soja, un clásico de las barras de los yokocho.",
+      },
+      {
+        desc: "No es un plato que se pida: un aperitivo pequeño que sirven al llegar en muchas izakayas y que se cobra como tarifa por sentarse.",
+      },
+    ],
+    reservations:
+      "No hay comidas que reservar. Shibuya Sky es lo único que hay que reservar: la bebida del atardecer necesita su entrada con hora. Llevad efectivo para Gyoza Lou y Omoide Yokocho.",
+  },
+  19: {
+    dishesTitle: "Qué comer en Ginza y Marunouchi",
+    meals: [
+      {
+        place: "Konbini o cafetería cerca del hotel",
+        type: "Desayuno",
+        note: "Un comienzo tranquilo: algo de una tienda de conveniencia o sentados en una cafetería de Akasaka antes de ir andando a Zojoji.",
+      },
+      {
+        place: "Casa de té Nakajima, Hamarikyu",
+        type: "Matcha y wagashi",
+        note: "Matcha con un dulce de temporada en la isla del centro del estanque. Hay que descalzarse en la entrada.",
+      },
+      {
+        type: "Comida · ramen, soba o teishoku",
+        note: "El clásico barrio de oficinistas, justo al lado de Hamarikyu, lleno de locales de ramen, soba y menús teishoku: muchos abren los domingos.",
+      },
+      {
+        place: "Depachika de Ginza",
+        type: "Dulces y aperitivos",
+        note: "Las plantas de comida del sótano de Mitsukoshi o Matsuya: dulces preciosamente envueltos, aperitivos y degustaciones.",
+      },
+      {
+        place: "Estación de Tokio y Marunouchi",
+        type: "Cena",
+        note: "Tokyo Ramen Street, en el sótano de la estación, o los restaurantes de KITTE y del Marunouchi Building.",
+      },
+    ],
+    dishes: [
+      {
+        desc: "Dulces tradicionales de harina de arroz y pasta de judía, con formas de cada estación: los que se sirven con el matcha en la casa de té.",
+      },
+      {
+        desc: "Un menú: un plato principal con arroz, sopa de miso y encurtidos. La comida de todos los días en Shimbashi.",
+      },
+      {
+        desc: "Fideos gruesos para mojar en un caldo intenso y concentrado servido aparte: una especialidad de Tokyo Ramen Street.",
+      },
+    ],
+    reservations:
+      "No hay comidas que reservar. En Tokyo Ramen Street hay colas a la hora de cenar, pero avanzan rápido.",
+  },
+  20: {
+    dishesTitle: "Qué comer en Tsukiji",
+    meals: [
+      {
+        place: "Mercado exterior de Tsukiji",
+        type: "Desayuno · picoteo en el mercado",
+        note: "De puesto en puesto: tamagoyaki, vieiras a la plancha, brochetas de marisco, un bol pequeño de sashimi o sushi y un daifuku de fresa. Mejor con efectivo.",
+      },
+      {
+        type: "Comida · dentro del tour",
+        note: "El Food Hall, y Butterbeer en el Backlot Café.",
+      },
+      {
+        place: "Por Akasaka",
+        type: "Cena",
+        note: "Algo sencillo cerca del hotel antes de hacer las maletas.",
+      },
+    ],
+    dishes: [
+      {
+        desc: "Tortilla enrollada dulce, que en los puestos de Tsukiji se vende caliente en un palito.",
+      },
+      {
+        name: "Vieiras a la plancha",
+        desc: "Vieiras enteras a la plancha en su concha, con mantequilla y soja.",
+      },
+      {
+        desc: "Un bol de arroz con marisco crudo por encima: atún, salmón, huevas de salmón, erizo.",
+      },
+      {
+        desc: "Una fresa entera envuelta en pasta de judía roja y mochi blandito.",
+      },
+      {
+        desc: "La bebida sin alcohol de caramelo de mantequilla de las películas, con espuma por encima.",
+      },
+    ],
+    reservations:
+      "No hay comidas que reservar: la entrada del Studio Tour es lo único que hay que comprar con antelación, y la comida es dentro. Llevad efectivo para Tsukiji.",
+  },
+  21: {
+    dishesTitle: "Qué comer en Narita",
+    meals: [
+      {
+        place: "Konbini o cafetería cerca del hotel",
+        type: "Desayuno",
+        note: "Algo rápido antes del check-out.",
+      },
+      {
+        place: "Omotesando de Narita",
+        type: "Para picar",
+        note: "Restaurantes de anguila y tiendas de dulces tradicionales por toda la calle que baja al templo. Pedid el bento de unagi en Kawatoyo al bajar.",
+      },
+      {
+        place: "Bento de Kawatoyo en el parque de Naritasan",
+        type: "Comida · unagi",
+        note: "Bento de unagi para llevar de Kawatoyo (más de 100 años), para comer en el parque. Para comer dentro, la espera suele ser de horas.",
+      },
+      {
+        time: "Después del control",
+        place: "Aeropuerto de Narita",
+        type: "Aperitivos y recuerdos",
+        note: "Aperitivos y recuerdos de última hora antes del vuelo.",
+      },
+    ],
+    dishes: [
+      {
+        desc: "Anguila de río a la brasa de carbón, glaseada con una salsa tare dulce de soja y servida sobre arroz. La especialidad de Narita: la comida de hoy.",
+      },
+    ],
+    reservations:
+      "No hay comidas que reservar. Pedid el bento de Kawatoyo al bajar para que esté listo a la vuelta.",
+  },
 };
