@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import SiteHeaderNav from "@/components/SiteHeaderNav";
@@ -48,14 +47,11 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
         className="flex min-h-full flex-col bg-paper font-sans text-ink"
       >
+        {/* Just the nav: "All days" already links home. The extra top padding
+            on phones keeps the links clear of the blur iOS Safari lays over
+            the top edge of the page, where taps were landing badly. */}
         <header className="border-b border-line bg-paper">
-          <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-            <Link
-              href="/"
-              className="font-display text-sm font-semibold tracking-tight"
-            >
-              Nina &amp; Alex in Japan
-            </Link>
+          <div className="mx-auto flex w-full max-w-5xl items-center justify-end px-6 pb-4 pt-8 sm:pt-4">
             <SiteHeaderNav />
           </div>
         </header>
