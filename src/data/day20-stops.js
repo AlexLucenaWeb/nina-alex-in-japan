@@ -44,7 +44,9 @@ export const day20Stops = [
     lng: 139.7379,
     hours: "24h reception",
     maps: "https://www.google.com/maps/search/?api=1&query=Hotel%20SUI%20Akasaka%20by%20ABEST&query_place_id=ChIJqdOjOyWLGGARGdbSDyrz6Ms",
-    photo: null,
+    // Same photo as its card on /hotels: no photoSource, so `npm run photos`
+    // doesn't download a second copy as day20-4.
+    photo: "/photos/hotel-tokyo-sui-akasaka.webp",
     desc: "Tokyo Metro Tozai Line from Takadanobaba to Iidabashi, then Namboku Line direct to Tameike-sanno (~30 min). Quiet dinner around Akasaka and pack: tomorrow is the flight home (be at Narita by 13:25)."
   },
 ];
