@@ -1,8 +1,12 @@
+import L from "@/components/L";
+import { enText } from "@/lib/i18n";
 import StopPhoto from "./StopPhoto";
 import StopRouteImage from "./StopRouteImage";
 
 export default function StopCard({ stop }) {
-  const label = stop.jp ? `${stop.name} (${stop.jp})` : stop.name;
+  // The photo's alt text is a plain attribute, so it stays in English.
+  const name = enText(stop.name);
+  const label = stop.jp ? `${name} (${stop.jp})` : name;
 
   return (
     <div
@@ -18,23 +22,28 @@ export default function StopCard({ stop }) {
       <div className="flex flex-col gap-2 p-4">
         <div className="flex items-center justify-between gap-3">
           <span className="font-display text-base font-semibold text-momiji">
-            {stop.time}
+            <L v={stop.time} />
           </span>
           <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs font-medium text-ink/70">
-            {stop.hours}
+            <L v={stop.hours} />
           </span>
         </div>
 
         <h3 className="font-display text-xl font-semibold leading-snug text-ink">
-          {stop.name}
+          <L v={stop.name} />
         </h3>
         {stop.optional && (
           <p className="text-sm font-medium text-momiji">
-            Optional · if you have energy
+            <L
+              en="Optional · if you have energy"
+              es="Opcional · si queda energía"
+            />
           </p>
         )}
         <p className="text-sm text-ink/50">{stop.jp}</p>
-        <p className="text-sm leading-relaxed text-ink/80">{stop.desc}</p>
+        <p className="text-sm leading-relaxed text-ink/80">
+          <L v={stop.desc} />
+        </p>
 
         {stop.routeImage && (
           <StopRouteImage

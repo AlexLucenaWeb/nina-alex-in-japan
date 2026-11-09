@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import L from "@/components/L";
 
 // Kept here rather than on the caller so the iframe and the offline card can
 // never end up different heights — swapping between them must not shift the
@@ -71,10 +72,13 @@ export default function DayMapEmbed({ mid, height = DEFAULT_HEIGHT }) {
         <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-paper px-6 text-center">
           <MapPinIcon />
           <p className="font-display text-lg font-semibold">
-            The map needs a connection
+            <L en="The map needs a connection" es="El mapa necesita conexión" />
           </p>
           <p className="max-w-sm text-sm leading-6 text-ink/60">
-            Get back online to see the route. The itinerary below works offline.
+            <L
+              en="Get back online to see the route. The itinerary below works offline."
+              es="La ruta se verá cuando vuelva la conexión. El itinerario de abajo funciona sin conexión."
+            />
           </p>
         </div>
       )}

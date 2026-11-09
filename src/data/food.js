@@ -1,3 +1,6 @@
+import { withSpanish } from "@/lib/i18n";
+import { FOOD_ES } from "@/data/es/food";
+
 // Food notes per day, rendered by the Food section at the top of each day page.
 //
 // Every day from FOOD_FIRST_DAY to FOOD_LAST_DAY shows the section. Days with
@@ -984,5 +987,6 @@ export function hasFoodSection(day) {
 }
 
 export function getFood(day) {
-  return foodByDay[day] ?? null;
+  const food = foodByDay[day];
+  return food ? withSpanish(food, FOOD_ES[day]) : null;
 }

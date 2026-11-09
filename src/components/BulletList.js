@@ -1,3 +1,6 @@
+import L from "@/components/L";
+import { isBilingual } from "@/lib/i18n";
+
 // An item is either a plain string or `{ text, link: { href, label } }`, which
 // appends an external link after the text — for the bullets that end in "book
 // it here" and would otherwise leave you searching for the site yourself.
@@ -5,8 +8,11 @@ export default function BulletList({ items, icon = "•" }) {
   return (
     <ul className="flex flex-col gap-2">
       {items.map((item, index) => {
-        const text = typeof item === "string" ? item : item.text;
-        const link = typeof item === "string" ? null : item.link;
+        // A translated bullet is an object too (see src/lib/i18n.js), so it
+        // has to be told apart from the `{ text, link }` shape first.
+        const plain = typeof item === "string" || isBilingual(item);
+        const text = plain ? item : item.text;
+        const link = plain ? null : item.link;
 
         return (
           <li
@@ -17,7 +23,7 @@ export default function BulletList({ items, icon = "•" }) {
               {icon}
             </span>
             <span>
-              {text}
+              <L v={text} />
               {link && (
                 <>
                   {" "}
@@ -27,7 +33,7 @@ export default function BulletList({ items, icon = "•" }) {
                     rel="noopener noreferrer"
                     className="font-medium text-momiji underline underline-offset-2"
                   >
-                    {link.label}
+                    <L v={link.label} />
                   </a>
                 </>
               )}

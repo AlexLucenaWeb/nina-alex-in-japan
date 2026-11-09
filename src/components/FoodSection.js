@@ -1,5 +1,7 @@
 import FoodDisclosure from "@/components/FoodDisclosure";
+import L from "@/components/L";
 import { getFood } from "@/data/food";
+import { enText } from "@/lib/i18n";
 
 function Entry({ label, children }) {
   return (
@@ -18,11 +20,11 @@ function Entry({ label, children }) {
 function ReserveBadge({ reserve }) {
   return reserve ? (
     <span className="shrink-0 rounded-full bg-momiji px-3 py-1 text-xs font-semibold text-on-momiji">
-      Book ahead
+      <L en="Book ahead" es="Reservar antes" />
     </span>
   ) : (
     <span className="shrink-0 rounded-full border border-line bg-paper px-3 py-1 text-xs font-medium text-ink/70">
-      Walk-in
+      <L en="Walk-in" es="Sin reserva" />
     </span>
   );
 }
@@ -47,20 +49,24 @@ function Meal({ meal, isLast }) {
               place name below sits directly on top of its own note. */}
           <div className="flex flex-wrap items-baseline gap-x-2">
             <span className="font-display text-base font-semibold text-momiji">
-              {meal.time}
+              <L v={meal.time} />
             </span>
             {meal.type && (
-              <span className="text-sm text-ink/50">{meal.type}</span>
+              <span className="text-sm text-ink/50">
+                <L v={meal.type} />
+              </span>
             )}
           </div>
           <ReserveBadge reserve={meal.reserve} />
         </div>
 
         <h3 className="font-display text-lg font-semibold leading-snug text-ink">
-          {meal.place}
+          <L v={meal.place} />
         </h3>
         {meal.note && (
-          <p className="text-sm leading-6 text-ink/80">{meal.note}</p>
+          <p className="text-sm leading-6 text-ink/80">
+            <L v={meal.note} />
+          </p>
         )}
       </div>
     </li>
@@ -72,12 +78,14 @@ function Dish({ dish }) {
     <li className="rounded-2xl border border-line bg-paper px-4 py-3">
       <div className="flex flex-wrap items-baseline gap-x-2">
         <h3 className="font-display text-base font-semibold text-ink">
-          {dish.name}
+          <L v={dish.name} />
         </h3>
         {dish.jp && <span className="text-sm text-ink/50">{dish.jp}</span>}
       </div>
       {dish.desc && (
-        <p className="mt-1 text-sm leading-6 text-ink/80">{dish.desc}</p>
+        <p className="mt-1 text-sm leading-6 text-ink/80">
+          <L v={dish.desc} />
+        </p>
       )}
     </li>
   );
@@ -96,32 +104,38 @@ export default function FoodSection({ day }) {
   // still shows inside once it's open, so the pill doesn't need to carry it.
   // A day with only one of the two gets a label naming just that one.
   const moreLabel =
-    dishes.length > 0
-      ? food?.reservations
-        ? "What to eat & reservations"
-        : "What to eat"
-      : "Reservations";
+    dishes.length > 0 ? (
+      food?.reservations ? (
+        <L en="What to eat & reservations" es="Qué comer y reservas" />
+      ) : (
+        <L en="What to eat" es="Qué comer" />
+      )
+    ) : (
+      <L en="Reservations" es="Reservas" />
+    );
 
   return (
     <section className="flex flex-col gap-3">
       <h2 className="font-display text-xl font-semibold tracking-tight">
-        Food
+        <L en="Food" es="Comida" />
       </h2>
 
       <div className="flex flex-col gap-5 rounded-2xl border-2 border-line bg-card px-5 py-4">
         {!hasAnything && (
           <p className="text-sm text-ink/50">
-            Nothing planned yet — meals along the route, local dishes, and
-            anything that needs booking go here.
+            <L
+              en="Nothing planned yet — meals along the route, local dishes, and anything that needs booking go here."
+              es="Aún no hay nada planeado: aquí van las comidas de la ruta, los platos locales y lo que haya que reservar."
+            />
           </p>
         )}
 
         {meals.length > 0 && (
-          <Entry label="Along the route">
+          <Entry label={<L en="Along the route" es="Durante la ruta" />}>
             <ol className="relative flex flex-col">
               {meals.map((meal, index) => (
                 <Meal
-                  key={`${meal.time}-${meal.place}`}
+                  key={`${enText(meal.time)}-${enText(meal.place)}`}
                   meal={meal}
                   isLast={index === meals.length - 1}
                 />
@@ -133,19 +147,29 @@ export default function FoodSection({ day }) {
         {(dishes.length > 0 || food?.reservations) && (
           <FoodDisclosure label={moreLabel}>
             {dishes.length > 0 && (
-              <Entry label={food.dishesTitle ?? "What to eat"}>
+              <Entry
+                label={
+                  food.dishesTitle ? (
+                    <L v={food.dishesTitle} />
+                  ) : (
+                    <L en="What to eat" es="Qué comer" />
+                  )
+                }
+              >
                 <ul className="flex flex-col gap-2">
                   {dishes.map((dish) => (
-                    <Dish key={dish.name} dish={dish} />
+                    <Dish key={enText(dish.name)} dish={dish} />
                   ))}
                 </ul>
               </Entry>
             )}
 
             {food?.reservations && (
-              <Entry label="Reservations">
+              <Entry label={<L en="Reservations" es="Reservas" />}>
                 <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
-                  <p>{food.reservations}</p>
+                  <p>
+                    <L v={food.reservations} />
+                  </p>
                 </div>
               </Entry>
             )}

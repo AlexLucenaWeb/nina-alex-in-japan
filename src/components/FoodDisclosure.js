@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import Arrow from "@/components/Arrow";
+import L from "@/components/L";
 
 // The collapsed half of the Food section.
 //
@@ -26,7 +27,7 @@ export default function FoodDisclosure({ label, children }) {
         aria-controls={panelId}
         className="flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-full border border-line bg-paper px-4 py-2.5 text-sm font-medium text-ink/70 transition-colors hover:text-momiji"
       >
-        {open ? "Show less" : label}
+        {open ? <L en="Show less" es="Mostrar menos" /> : label}
         <Arrow
           className={`transition-transform duration-300 ${
             open ? "-rotate-90" : "rotate-90"

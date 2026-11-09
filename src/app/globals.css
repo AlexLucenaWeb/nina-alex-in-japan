@@ -102,3 +102,14 @@ body {
 .leaflet-control-attribution a {
   color: var(--momiji);
 }
+
+/*
+ * English / Spanish: every translated piece of text ships in both languages
+ * (see src/components/L.js), and this hides the one that isn't active.
+ * `data-lang="es"` is set on <html> before first paint by the inline script in
+ * the root layout; with no attribute the page is in English.
+ */
+html:not([data-lang="es"]) [data-lang-only="es"],
+html[data-lang="es"] [data-lang-only="en"] {
+  display: none;
+}

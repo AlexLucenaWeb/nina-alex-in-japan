@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Arrow from "@/components/Arrow";
 import FoodSection from "@/components/FoodSection";
+import L from "@/components/L";
 import PlaceholderPhoto from "@/components/PlaceholderPhoto";
 import BulletList from "@/components/BulletList";
 import HigashiyamaGionItinerary from "@/components/higashiyama-gion/HigashiyamaGionItinerary";
@@ -29,6 +30,7 @@ import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
 import { hasFoodSection } from "@/data/food";
+import { enText } from "@/lib/i18n";
 
 // Each entry renders the full content block for that day number.
 // Days without an entry fall back to the placeholder photo below.
@@ -75,7 +77,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: current
-      ? `${current.title} · Nina & Alex in Japan`
+      ? `${enText(current.title)} · Nina & Alex in Japan`
       : "Day not found",
   };
 }
@@ -107,14 +109,21 @@ export default async function DayPage({ params }) {
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-6 py-10">
           <div className="flex flex-col gap-2">
             <p className="text-sm font-medium text-momiji">
-              Day {current.day} of {TRIP_LENGTH}
+              <L
+                en={`Day ${current.day} of ${TRIP_LENGTH}`}
+                es={`Día ${current.day} de ${TRIP_LENGTH}`}
+              />
             </p>
             <h1 className="font-display text-4xl font-semibold tracking-tight">
-              {current.title}
+              <L v={current.title} />
             </h1>
-            <p className="text-ink/70">{current.location}</p>
+            <p className="text-ink/70">
+              <L v={current.location} />
+            </p>
             {current.date && (
-              <p className="text-sm text-ink/50">{current.date}</p>
+              <p className="text-sm text-ink/50">
+                <L v={current.date} />
+              </p>
             )}
           </div>
         </div>
@@ -124,9 +133,11 @@ export default async function DayPage({ params }) {
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6">
           <div className="rounded-2xl border-2 border-line bg-card px-5 py-4">
             <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-momiji">
-              Summary
+              <L en="Summary" es="Resumen" />
             </p>
-            <p className="text-base leading-7 text-ink/80">{current.summary}</p>
+            <p className="text-base leading-7 text-ink/80">
+              <L v={current.summary} />
+            </p>
           </div>
 
           {hotel && (
@@ -134,7 +145,7 @@ export default async function DayPage({ params }) {
               href={`/hotels#${hotel.id}`}
               className="inline-flex items-center gap-1.5 self-start text-sm font-medium text-momiji transition-colors hover:underline"
             >
-              Tonight: {hotel.name ?? hotel.city}
+              <L en="Tonight:" es="Esta noche:" /> {hotel.name ?? hotel.city}
               <Arrow />
             </Link>
           )}
@@ -152,12 +163,17 @@ export default async function DayPage({ params }) {
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6">
           <section className="flex flex-col gap-3">
             <h2 className="font-display text-xl font-semibold tracking-tight">
-              Recommendations
+              <L en="Recommendations" es="Recomendaciones" />
             </h2>
             {current.recommendations.length > 0 ? (
               <BulletList items={current.recommendations} />
             ) : (
-              <p className="text-sm text-ink/50">Recommendations coming soon.</p>
+              <p className="text-sm text-ink/50">
+                <L
+                  en="Recommendations coming soon."
+                  es="Recomendaciones próximamente."
+                />
+              </p>
             )}
           </section>
         </div>
@@ -170,7 +186,7 @@ export default async function DayPage({ params }) {
                 className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-momiji"
               >
                 <Arrow direction="left" />
-                Day {prev.day}
+                <L en={`Day ${prev.day}`} es={`Día ${prev.day}`} />
               </Link>
             ) : (
               <span />
@@ -180,7 +196,7 @@ export default async function DayPage({ params }) {
                 href={`/day/${next.day}`}
                 className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-momiji"
               >
-                Day {next.day}
+                <L en={`Day ${next.day}`} es={`Día ${next.day}`} />
                 <Arrow />
               </Link>
             ) : (

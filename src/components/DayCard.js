@@ -1,4 +1,5 @@
 import Link from "next/link";
+import L from "@/components/L";
 
 export default function DayCard({ day }) {
   return (
@@ -7,12 +8,14 @@ export default function DayCard({ day }) {
       className="group flex flex-col gap-3 rounded-xl border-2 border-line bg-card p-4 transition-colors hover:border-momiji"
     >
       <span className="text-xs font-medium uppercase tracking-wide text-momiji">
-        Day {day.day}
+        <L en={`Day ${day.day}`} es={`Día ${day.day}`} />
       </span>
       <span className="font-display text-lg font-semibold group-hover:underline">
-        {day.title}
+        <L v={day.title} />
       </span>
-      <span className="text-sm text-ink/60">{day.location}</span>
+      <span className="text-sm text-ink/60">
+        <L v={day.location} />
+      </span>
     </Link>
   );
 }

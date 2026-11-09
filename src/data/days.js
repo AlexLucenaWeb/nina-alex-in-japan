@@ -1,3 +1,6 @@
+import { withSpanish } from "@/lib/i18n";
+import { DAYS_ES } from "@/data/es/days";
+
 export const TRIP_LENGTH = 21;
 
 const overrides = {
@@ -307,7 +310,9 @@ export const days = Array.from({ length: TRIP_LENGTH }, (_, i) => {
     location: "TBD",
     summary: "Itinerary details coming soon.",
     recommendations: [],
-    ...overrides[day],
+    // Spanish text, where there is any, rides along in the same fields — see
+    // src/lib/i18n.js. Nothing here changes for a day with no translation.
+    ...withSpanish(overrides[day], DAYS_ES[day]),
   };
 });
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Arrow from "@/components/Arrow";
 import DayCard from "@/components/DayCard";
+import L from "@/components/L";
 import { days, TRIP_LENGTH } from "@/data/days";
 
 export default function Home() {
@@ -8,13 +9,16 @@ export default function Home() {
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-6 py-20">
       <header className="flex flex-col gap-4 text-center sm:text-left">
         <p className="text-sm font-medium uppercase tracking-widest text-momiji">
-          The trip
+          <L en="The trip" es="El viaje" />
         </p>
         <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
           Nina &amp; Alex in Japan
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-ink/70 sm:mx-0">
-          {TRIP_LENGTH} days across Japan — follow along day by day.
+          <L
+            en={`${TRIP_LENGTH} days across Japan — follow along day by day.`}
+            es={`${TRIP_LENGTH} días por Japón, día a día.`}
+          />
         </p>
       </header>
 
@@ -25,13 +29,16 @@ export default function Home() {
         >
           <div className="flex flex-col gap-1">
             <span className="text-xs font-medium uppercase tracking-wide text-momiji">
-              Before you fly
+              <L en="Before you fly" es="Antes de volar" />
             </span>
             <span className="font-display text-lg font-semibold group-hover:underline">
-              Trip Preparation
+              <L en="Trip Preparation" es="Preparación del viaje" />
             </span>
             <span className="text-sm text-ink/60">
-              Documents, visa, money, SIM card, and apps to sort out first.
+              <L
+                en="Documents, visa, money, SIM card, and apps to sort out first."
+                es="Documentos, visado, dinero, SIM y apps que dejar listos antes."
+              />
             </span>
           </div>
           <Arrow className="shrink-0 text-momiji transition-transform group-hover:translate-x-1" />
@@ -43,13 +50,16 @@ export default function Home() {
         >
           <div className="flex flex-col gap-1">
             <span className="text-xs font-medium uppercase tracking-wide text-momiji">
-              Where we sleep
+              <L en="Where we sleep" es="Dónde dormimos" />
             </span>
             <span className="font-display text-lg font-semibold group-hover:underline">
-              Hotels
+              <L en="Hotels" es="Hoteles" />
             </span>
             <span className="text-sm text-ink/60">
-              Addresses in Japanese, check-in times, and the nearest station.
+              <L
+                en="Addresses in Japanese, check-in times, and the nearest station."
+                es="Direcciones en japonés, horarios de check-in y la estación más cercana."
+              />
             </span>
           </div>
           <Arrow className="shrink-0 text-momiji transition-transform group-hover:translate-x-1" />
