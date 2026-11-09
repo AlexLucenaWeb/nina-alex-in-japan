@@ -42,7 +42,7 @@ export const TRAINS_ES = {
   },
   "day12-thunderbird-13": {
     seats: "Coche 5 · Asientos 9C, 9D (lado del lago Biwa)",
-    note: "Reservado en JR-WEST ONLINE TRAIN RESERVATION (tarifa normal). Tarifa básica Kyoto City Zone → Kanazawa, válida del 22 al 24 de noviembre. Se recoge en una máquina de JR West en la estación de Kyoto: número de reserva + PIN de 4 cifras + tarjeta de pago.",
+    note: "Reservado en JR-WEST ONLINE TRAIN RESERVATION (tarifa normal). Tarifa básica Kyoto City Zone → Kanazawa, válida del 22 al 24 de noviembre. Se recoge en una máquina de JR West en la estación de Kioto: número de reserva + PIN de 4 cifras + tarjeta de pago.",
   },
   "day12-tsurugi-14": {
     note: "Reservado junto con el Thunderbird 13 (JR-WEST ONLINE).",
