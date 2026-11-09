@@ -30,8 +30,9 @@ import { TRIP_LENGTH, days, getDay } from "@/data/days";
 import { getHotelForDay } from "@/data/hotels";
 import { localizeHotel } from "@/data/es/hotels";
 import { DAY1_FLIGHT_LEGS } from "@/data/day1-flight";
+import { DAY1_FLIGHT_LEGS_ES } from "@/data/es/day1-flight";
 import { hasFoodSection } from "@/data/food";
-import { enText } from "@/lib/i18n";
+import { enText, withSpanish } from "@/lib/i18n";
 
 // Each entry renders the full content block for that day number.
 // Days without an entry fall back to the placeholder photo below.
@@ -43,7 +44,7 @@ const DAY_CONTENT = {
   1: ({ food }) => (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6">
       {food}
-      <FlightItinerary legs={DAY1_FLIGHT_LEGS} />
+      <FlightItinerary legs={withSpanish(DAY1_FLIGHT_LEGS, DAY1_FLIGHT_LEGS_ES)} />
     </div>
   ),
   2: (props) => <ArrivalOsakaItinerary {...props} />,

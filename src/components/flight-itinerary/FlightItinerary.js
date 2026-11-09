@@ -28,7 +28,9 @@ export default function FlightItinerary({ legs }) {
             </div>
 
             {leg.note && (
-              <p className="text-sm leading-relaxed text-ink/80">{leg.note}</p>
+              <p className="text-sm leading-relaxed text-ink/80">
+                <L v={leg.note} />
+              </p>
             )}
           </div>
         ) : leg.type === "layover" ? (
@@ -87,7 +89,12 @@ export default function FlightItinerary({ legs }) {
                 {leg.arrival.nextDay && (
                   <span className="text-xs font-medium text-momiji">
                     <L en="+1 day" es="+1 día" />
-                    {leg.arrival.date && ` · ${leg.arrival.date}`}
+                    {leg.arrival.date && (
+                      <>
+                        {" · "}
+                        <L v={leg.arrival.date} />
+                      </>
+                    )}
                   </span>
                 )}
               </div>

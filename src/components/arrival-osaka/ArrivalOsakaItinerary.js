@@ -2,12 +2,26 @@ import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import {
-  DAY2_TIMELINE,
-  DAY2_AIRPORT_PROCESS,
-  DAY2_TRAINS,
-  DAY2_TIPS,
-  DAY2_HOTEL,
+  DAY2_TIMELINE as TIMELINE_EN,
+  DAY2_AIRPORT_PROCESS as AIRPORT_PROCESS_EN,
+  DAY2_TRAINS as TRAINS_EN,
+  DAY2_TIPS as TIPS_EN,
+  DAY2_HOTEL as HOTEL_EN,
 } from "@/data/day2-arrival";
+import {
+  DAY2_TIMELINE_ES,
+  DAY2_AIRPORT_PROCESS_ES,
+  DAY2_TRAINS_ES,
+  DAY2_TIPS_ES,
+  DAY2_HOTEL_ES,
+} from "@/data/es/day2-arrival";
+import { enText, withSpanish } from "@/lib/i18n";
+
+const DAY2_TIMELINE = withSpanish(TIMELINE_EN, DAY2_TIMELINE_ES);
+const DAY2_AIRPORT_PROCESS = withSpanish(AIRPORT_PROCESS_EN, DAY2_AIRPORT_PROCESS_ES);
+const DAY2_TRAINS = withSpanish(TRAINS_EN, DAY2_TRAINS_ES);
+const DAY2_TIPS = withSpanish(TIPS_EN, DAY2_TIPS_ES);
+const DAY2_HOTEL = withSpanish(HOTEL_EN, DAY2_HOTEL_ES);
 
 function SectionHeading({ children }) {
   return (
@@ -43,18 +57,26 @@ export default function ArrivalOsakaItinerary({ food }) {
                   item.highlight ? "font-semibold text-momiji" : "text-momiji"
                 }`}
               >
-                {item.time}
+                <L v={item.time} />
               </span>
               <div className="flex flex-col gap-2 text-ink/80">
-                <span>{item.event}</span>
+                <span>
+                  <L v={item.event} />
+                </span>
                 {item.steps && (
                   <ol className="flex list-decimal flex-col gap-1 pl-5">
                     {item.steps.map((step) => (
-                      <li key={step}>{step}</li>
+                      <li key={enText(step)}>
+                        <L v={step} />
+                      </li>
                     ))}
                   </ol>
                 )}
-                {item.note && <span className="text-ink/60">{item.note}</span>}
+                {item.note && (
+                  <span className="text-ink/60">
+                    <L v={item.note} />
+                  </span>
+                )}
               </div>
             </li>
           ))}
@@ -71,15 +93,21 @@ export default function ArrivalOsakaItinerary({ food }) {
         <DataTable columns={[<L key="Step" en="Step" es="Paso" />, <L key="Duration" en="Duration" es="Duración" />, <L key="Notes" en="Notes" es="Notas" />]} minWidth={560}>
           {DAY2_AIRPORT_PROCESS.map((row, index) => (
             <tr key={index} className="border-b border-line/50 last:border-0">
-              <td className="px-4 py-3 font-medium">{row.step}</td>
+              <td className="px-4 py-3 font-medium">
+                <L v={row.step} />
+              </td>
               <td className="px-4 py-3 text-momiji">{row.duration}</td>
-              <td className="px-4 py-3 text-ink/70">{row.notes}</td>
+              <td className="px-4 py-3 text-ink/70">
+                <L v={row.notes} />
+              </td>
             </tr>
           ))}
         </DataTable>
         <p className="text-sm text-ink/60">
-          Each traveler shows their own Visit Japan Web QR at immigration and
-          customs — it&apos;s noticeably faster than the paper forms.
+          <L
+            en="Each traveler shows their own Visit Japan Web QR at immigration and customs — it's noticeably faster than the paper forms."
+            es="Cada uno enseña su propio QR de Visit Japan Web en inmigración y en aduana: es bastante más rápido que los formularios en papel."
+          />
         </p>
       </section>
 
@@ -101,10 +129,18 @@ export default function ArrivalOsakaItinerary({ food }) {
         >
           {DAY2_TRAINS.map((row, index) => (
             <tr key={index} className="border-b border-line/50 last:border-0">
-              <td className="px-4 py-3 font-medium">{row.leg}</td>
-              <td className="px-4 py-3 text-ink/80">{row.train}</td>
-              <td className="px-4 py-3 text-momiji">{row.duration}</td>
-              <td className="px-4 py-3 text-ink/80">{row.price}</td>
+              <td className="px-4 py-3 font-medium">
+                <L v={row.leg} />
+              </td>
+              <td className="px-4 py-3 text-ink/80">
+                <L v={row.train} />
+              </td>
+              <td className="px-4 py-3 text-momiji">
+                <L v={row.duration} />
+              </td>
+              <td className="px-4 py-3 text-ink/80">
+                <L v={row.price} />
+              </td>
             </tr>
           ))}
         </DataTable>
@@ -140,7 +176,9 @@ export default function ArrivalOsakaItinerary({ food }) {
               <dt className="inline font-medium text-ink">
                 <L en="Nearest station:" es="Estación más cercana:" />{" "}
               </dt>
-              <dd className="inline text-ink/80">{DAY2_HOTEL.station}</dd>
+              <dd className="inline text-ink/80">
+                <L v={DAY2_HOTEL.station} />
+              </dd>
             </div>
             <div>
               <dt className="inline font-medium text-ink">
@@ -149,17 +187,22 @@ export default function ArrivalOsakaItinerary({ food }) {
                   es="Cómo llegar desde Shin-Osaka:"
                 />{" "}
               </dt>
-              <dd className="inline text-ink/80">{DAY2_HOTEL.directions}</dd>
+              <dd className="inline text-ink/80">
+                <L v={DAY2_HOTEL.directions} />
+              </dd>
             </div>
             <div>
               <dt className="inline font-medium text-ink">Check-in: </dt>
               <dd className="inline text-ink/80">
-                {DAY2_HOTEL.checkIn} · check-out {DAY2_HOTEL.checkOut}
+                <L v={DAY2_HOTEL.checkIn} /> · check-out{" "}
+                <L v={DAY2_HOTEL.checkOut} />
               </dd>
             </div>
           </dl>
 
-          <p className="text-ink/70">{DAY2_HOTEL.note}</p>
+          <p className="text-ink/70">
+            <L v={DAY2_HOTEL.note} />
+          </p>
 
           <a
             href={DAY2_HOTEL.maps}

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import L from "@/components/L";
+import { enText } from "@/lib/i18n";
 
 /**
  * A route diagram shown inside a stop card, under the description.
@@ -23,14 +25,14 @@ export default function StopRouteImage({ src, caption }) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
-        alt={caption || "Route map"}
+        alt={enText(caption) || "Route map"}
         loading="lazy"
         onError={() => setFailed(true)}
         className="w-full rounded-xl border border-line bg-paper"
       />
       {caption && (
         <figcaption className="text-xs leading-relaxed text-ink/50">
-          {caption}
+          <L v={caption} />
         </figcaption>
       )}
     </figure>

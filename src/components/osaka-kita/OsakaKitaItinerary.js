@@ -3,14 +3,18 @@ import DataTable from "@/components/DataTable";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
-import { OSAKA_KITA_STOPS } from "@/data/osaka-kita-stops";
+import { OSAKA_KITA_STOPS as STOPS_EN } from "@/data/osaka-kita-stops";
+import { OSAKA_KITA_STOPS_ES } from "@/data/es/osaka-kita-stops";
+import { enText, withSpanish, withSpanishByStop } from "@/lib/i18n";
 
 // Same as Day 3 and Day 4: this day's route lives in a Google My Maps map
 // instead of the Leaflet component, so it can be edited from Google Maps
 // without touching the stop data in the repo.
 const MY_MAPS_ID = "12hCMy2AWKi0KCxbBwTQ4fwouzRqWSSo";
 
-const TRANSPORT = [
+const OSAKA_KITA_STOPS = withSpanishByStop(STOPS_EN, OSAKA_KITA_STOPS_ES);
+
+const TRANSPORT_EN = [
   { leg: "Hotel → Osaka Castle", line: "Sakaisuji Line (Ebisucho → Sakaisuji-Hommachi) + Chuo Line to Tanimachi 4-chome", time: "~20–25 min" },
   { leg: "Castle → OAP", line: "Aqua-liner (12:00), covered by the pass", time: "~40 min" },
   { leg: "OAP → Nakanoshima", line: "Walk along the river", time: "~20 min" },
@@ -21,29 +25,74 @@ const TRANSPORT = [
   { leg: "Umeda → Hotel", line: "Midosuji Line to Dobutsuen-mae + Sakaisuji Line 1 stop to Ebisucho (or ~10 min walk)", time: "~25 min" },
 ];
 
+// Same rows, same order.
+const TRANSPORT_ES = [
+  { leg: "Hotel → Castillo de Osaka", line: "Sakaisuji Line (Ebisucho → Sakaisuji-Hommachi) + Chuo Line hasta Tanimachi 4-chome" },
+  { leg: "Castillo → OAP", line: "Aqua-liner (12:00), incluido en el pase" },
+  { line: "A pie junto al río" },
+  { line: "A pie, o Midosuji Line (Yodoyabashi → Umeda) + ~10 min a pie" },
+  { line: "Tanimachi Line (Higashi-Umeda → Minami-morimachi, 2 paradas) + un paseo corto" },
+  { line: "Tanimachi Line (Minami-morimachi → Higashi-Umeda) + a pie hasta la estación de Osaka" },
+  { leg: "Lucua → Hareruya (opcional)", line: "A pie", time: "unos minutos" },
+  { leg: "Umeda → Hotel", line: "Midosuji Line hasta Dobutsuen-mae + 1 parada en la Sakaisuji Line hasta Ebisucho (o ~10 min a pie)" },
+];
+
+const TRANSPORT = withSpanish(TRANSPORT_EN, TRANSPORT_ES);
+
 export default function OsakaKitaItinerary({ food }) {
   return (
     <JapanRouteDayShell>
       <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-3 text-sm leading-relaxed text-ink/80">
-        <p>
-          <span className="font-semibold text-momiji">
-            East to north, all on one pass:
-          </span>{" "}
-          a long morning at the castle, the river as transport across to
-          Nakanoshima, the view and then lunch at Umeda, the shrine and the
-          arcade at Tenjinbashi, and the evening back in Umeda. Architecture,
-          a boat, a rooftop, a shrine and characters — the most varied day of
-          the trip.
-        </p>
-        <p className="mt-2">
-          One thing fixes the whole schedule:{" "}
-          <span className="font-semibold">
-            the Umeda Sky Building is only free on the pass before 15:00
-          </span>
-          . That is why the observatory is at 14:00 and lunch comes after it, at
-          14:45, in the basement of the same building — it is the one time on
-          this day worth protecting.
-        </p>
+        <L
+          as="div"
+          en={
+            <>
+              <p>
+                <span className="font-semibold text-momiji">
+                  East to north, all on one pass:
+                </span>{" "}
+                a long morning at the castle, the river as transport across to
+                Nakanoshima, the view and then lunch at Umeda, the shrine and
+                the arcade at Tenjinbashi, and the evening back in Umeda.
+                Architecture, a boat, a rooftop, a shrine and characters — the
+                most varied day of the trip.
+              </p>
+              <p className="mt-2">
+                One thing fixes the whole schedule:{" "}
+                <span className="font-semibold">
+                  the Umeda Sky Building is only free on the pass before 15:00
+                </span>
+                . That is why the observatory is at 14:00 and lunch comes after
+                it, at 14:45, in the basement of the same building — it is the
+                one time on this day worth protecting.
+              </p>
+            </>
+          }
+          es={
+            <>
+              <p>
+                <span className="font-semibold text-momiji">
+                  De este a norte, todo con un solo pase:
+                </span>{" "}
+                una mañana larga en el castillo, el río como transporte hasta
+                Nakanoshima, las vistas y después la comida en Umeda, el
+                santuario y la galería comercial de Tenjinbashi, y la noche de
+                vuelta en Umeda. Arquitectura, un barco, una azotea, un
+                santuario y personajes: el día más variado del viaje.
+              </p>
+              <p className="mt-2">
+                Hay una cosa que marca todo el horario:{" "}
+                <span className="font-semibold">
+                  con el pase, el Umeda Sky Building solo es gratis antes de
+                  las 15:00
+                </span>
+                . Por eso el mirador va a las 14:00 y la comida después, a las
+                14:45, en el sótano del mismo edificio: es la única hora del
+                día que hay que respetar.
+              </p>
+            </>
+          }
+        />
       </div>
 
       <section
@@ -52,50 +101,63 @@ export default function OsakaKitaItinerary({ food }) {
       >
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-ochre">
-            Buy this before you start
+            <L en="Buy this before you start" es="Compradlo antes de empezar" />
           </p>
           <h2 className="font-display text-2xl font-semibold">
             Osaka Amazing Pass · ¥3,500
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-ink/70">
-            The one day of the trip where the pass clearly pays for itself. It
-            is a digital pass now — bought online and shown from your phone,
-            not a magnetic card picked up at a metro window — so sort it out
-            the night before rather than at 09:00 on the way to the castle.
+            <L
+              en="The one day of the trip where the pass clearly pays for itself. It is a digital pass now — bought online and shown from your phone, not a magnetic card picked up at a metro window — so sort it out the night before rather than at 09:00 on the way to the castle."
+              es="El único día del viaje en que el pase sale claramente a cuenta. Ahora es digital (se compra online y se enseña en el móvil, no es una tarjeta magnética que se recoge en una ventanilla del metro), así que mejor dejarlo listo la noche antes y no a las 09:00 de camino al castillo."
+            />
           </p>
         </div>
 
         <ul className="flex flex-col gap-1.5 text-sm leading-relaxed text-ink/80">
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
-            <span>Osaka Castle keep</span>
+            <span>
+              <L en="Osaka Castle keep" es="Torre del castillo de Osaka" />
+            </span>
             <span className="shrink-0 font-medium">¥1,200</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
-            <span>Aqua-liner river cruise</span>
+            <span>
+              <L en="Aqua-liner river cruise" es="Crucero por el río Aqua-liner" />
+            </span>
             <span className="shrink-0 font-medium">¥1,700</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
             <span>
-              Umeda Sky Building observatory{" "}
-              <span className="text-ink/50">(before 15:00 only)</span>
+              <L
+                en="Umeda Sky Building observatory"
+                es="Mirador del Umeda Sky Building"
+              />{" "}
+              <span className="text-ink/50">
+                <L en="(before 15:00 only)" es="(solo antes de las 15:00)" />
+              </span>
             </span>
             <span className="shrink-0 font-medium">¥2,000</span>
           </li>
           <li className="flex justify-between gap-4 border-b border-line/60 pb-1.5">
-            <span>Unlimited metro all day</span>
+            <span>
+              <L en="Unlimited metro all day" es="Metro ilimitado todo el día" />
+            </span>
             <span className="shrink-0 font-medium">¥600–700</span>
           </li>
           <li className="flex justify-between gap-4 pt-1 font-semibold text-momiji">
-            <span>Saved per person</span>
+            <span>
+              <L en="Saved per person" es="Ahorro por persona" />
+            </span>
             <span className="shrink-0">~¥2,000+</span>
           </li>
         </ul>
 
         <p className="text-sm leading-relaxed text-ink/70">
-          Paid separately, today comes to about ¥5,500–5,600 a head, so the
-          ¥3,500 pass is worth it comfortably. After 15:00 the Sky Building
-          drops from free to a 10% discount, which is most of the saving gone —
-          so the pass and the running order stand or fall together.
+          <L
+            en="Paid separately, today comes to about ¥5,500–5,600 a head, so the ¥3,500 pass is worth it comfortably. After 15:00 the Sky Building drops from free to a 10% discount, which is most of the saving gone — so the pass and the running order stand or fall together."
+            es="Pagando por separado, hoy sale a unos ¥5,500–5,600 por persona, así que el pase de ¥3,500 compensa de sobra. A partir de las 15:00 el Sky Building pasa de gratis a un 10% de descuento, y con eso se va casi todo el ahorro: el pase y el orden del día van de la mano."
+          />
         </p>
       </section>
 
@@ -156,17 +218,27 @@ export default function OsakaKitaItinerary({ food }) {
           ]}
         >
           {TRANSPORT.map((row) => (
-            <tr key={row.leg} className="border-b border-line/50 last:border-0">
-              <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>
-              <td className="px-4 py-3 text-ink/80">{row.line}</td>
+            <tr
+              key={enText(row.leg)}
+              className="border-b border-line/50 last:border-0"
+            >
+              <td className="px-4 py-3 font-medium text-momiji">
+                <L v={row.leg} />
+              </td>
+              <td className="px-4 py-3 text-ink/80">
+                <L v={row.line} />
+              </td>
               <td className="whitespace-nowrap px-4 py-3 text-ink/80">
-                {row.time}
+                <L v={row.time} />
               </td>
             </tr>
           ))}
         </DataTable>
         <p className="text-sm leading-relaxed text-ink/80">
-          All metro legs are covered by the Amazing Pass.
+          <L
+            en="All metro legs are covered by the Amazing Pass."
+            es="Todos los trayectos en metro están incluidos en el Amazing Pass."
+          />
         </p>
       </section>
 
@@ -177,15 +249,16 @@ export default function OsakaKitaItinerary({ food }) {
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">
-            The cruise is not the full loop
+            <L
+              en="The cruise is not the full loop"
+              es="El crucero no es la vuelta completa"
+            />
           </h3>
           <p className="mt-2">
-            We are not doing the 55-minute round trip. We get off at OAP Pier
-            after about 40 minutes from the castle, which is the prettiest
-            stretch of the river and puts us a 20-minute walk from Nakanoshima
-            instead of back where we started. Covered by the Amazing Pass either
-            way — and the OAP stop only runs at weekends, which this Sunday
-            is.
+            <L
+              en="We are not doing the 55-minute round trip. We get off at OAP Pier after about 40 minutes from the castle, which is the prettiest stretch of the river and puts us a 20-minute walk from Nakanoshima instead of back where we started. Covered by the Amazing Pass either way — and the OAP stop only runs at weekends, which this Sunday is."
+              es="No hacemos la vuelta completa de 55 minutos. Bajamos en OAP Pier a unos 40 minutos del castillo, que es el tramo más bonito del río y nos deja a 20 minutos a pie de Nakanoshima en vez de volver al punto de partida. Incluido en el Amazing Pass en cualquier caso, y la parada de OAP solo funciona los fines de semana, como este domingo."
+            />
           </p>
         </div>
       </section>
