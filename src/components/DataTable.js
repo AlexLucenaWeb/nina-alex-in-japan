@@ -7,8 +7,10 @@ export default function DataTable({ columns, minWidth, children }) {
       >
         <thead>
           <tr className="border-b border-line text-xs font-semibold uppercase tracking-wide text-ink/60">
-            {columns.map((column) => (
-              <th key={column} className="px-4 py-3">
+            {/* Keyed by position: a column can be an <L> element (English and
+                Spanish), not just a string. */}
+            {columns.map((column, index) => (
+              <th key={index} className="px-4 py-3">
                 {column}
               </th>
             ))}

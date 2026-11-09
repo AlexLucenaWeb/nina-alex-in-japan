@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
@@ -26,14 +27,18 @@ export default function UniversalStudiosItinerary({ food }) {
       </div>
 
       <section aria-label="Tickets" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Tickets</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Tickets" es="Entradas" />
+        </h2>
         <BulletList items={UNIVERSAL_STUDIOS_NOTES} />
       </section>
 
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {UNIVERSAL_STUDIOS_STOPS.map((stop, index) => (
@@ -55,18 +60,20 @@ export default function UniversalStudiosItinerary({ food }) {
       </section>
 
       <section aria-label="Who rides what" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Who rides what</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Who rides what" es="Quién se sube a qué" />
+        </h2>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-lg font-semibold text-pine">
-            Together — gentle, no big drops
+            <L en="Together — gentle, no big drops" es="Juntos — suaves, sin grandes caídas" />
           </h3>
           <BulletList items={UNIVERSAL_STUDIOS_RIDES.together} />
         </div>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-lg font-semibold text-momiji">
-            Alex only — Single Rider line
+            <L en="Alex only — Single Rider line" es="Solo Alex — fila de Single Rider" />
           </h3>
           <p className="text-sm leading-relaxed text-ink/70">
             Check in the app that single rider is running that day.
@@ -76,15 +83,23 @@ export default function UniversalStudiosItinerary({ food }) {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-lg font-semibold text-ochre">
-            Skip together
+            <L en="Skip together" es="Mejor saltárselo" />
           </h3>
           <BulletList items={UNIVERSAL_STUDIOS_RIDES.skip} />
         </div>
       </section>
 
       <section aria-label="Transport" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Transport</h2>
-        <DataTable columns={["Leg", "Line", "Time"]}>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Transport" es="Transporte" />
+        </h2>
+        <DataTable
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Line" en="Line" es="Línea" />,
+            <L key="Time" en="Time" es="Tiempo" />,
+          ]}
+        >
           {UNIVERSAL_STUDIOS_TRANSPORT.map((row) => (
             <tr key={row.leg} className="border-b border-line/50 last:border-0">
               <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>

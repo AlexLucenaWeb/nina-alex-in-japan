@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import DataTable from "@/components/DataTable";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
@@ -99,7 +100,9 @@ export default function OsakaKitaItinerary({ food }) {
       </section>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The route</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="The route" es="La ruta" />
+        </h2>
 
         <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
           <DayMapEmbed mid={MY_MAPS_ID} />
@@ -111,14 +114,16 @@ export default function OsakaKitaItinerary({ food }) {
           rel="noopener noreferrer"
           className="self-start text-sm text-momiji hover:underline"
         >
-          Open in Google Maps
+          <L en="Open in Google Maps" es="Abrir en Google Maps" />
         </a>
       </section>
 
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {OSAKA_KITA_STOPS.map((stop, index) => (
@@ -140,8 +145,16 @@ export default function OsakaKitaItinerary({ food }) {
       </section>
 
       <section aria-label="Transport" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Transport</h2>
-        <DataTable columns={["Leg", "Line", "Time"]}>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Transport" es="Transporte" />
+        </h2>
+        <DataTable
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Line" en="Line" es="Línea" />,
+            <L key="Time" en="Time" es="Tiempo" />,
+          ]}
+        >
           {TRANSPORT.map((row) => (
             <tr key={row.leg} className="border-b border-line/50 last:border-0">
               <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>
@@ -158,7 +171,9 @@ export default function OsakaKitaItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">

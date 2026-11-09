@@ -1,3 +1,5 @@
+import L from "@/components/L";
+
 export default function FlightItinerary({ legs }) {
   return (
     <div className="flex flex-col gap-4">
@@ -8,7 +10,9 @@ export default function FlightItinerary({ legs }) {
             className="flex flex-col gap-3 rounded-2xl border-2 border-line bg-card p-5 shadow-sm"
           >
             <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wide text-momiji">
-              <span>Taxi to the airport</span>
+              <span>
+                <L en="Taxi to the airport" es="Taxi al aeropuerto" />
+              </span>
             </div>
 
             <div className="flex flex-col">
@@ -34,7 +38,10 @@ export default function FlightItinerary({ legs }) {
           >
             <span aria-hidden="true">⏱</span>
             <span>
-              {leg.duration} layover in {leg.airport}
+              <L
+                en={`${leg.duration} layover in ${leg.airport}`}
+                es={`Escala de ${leg.duration} en ${leg.airport}`}
+              />
             </span>
           </div>
         ) : (
@@ -46,7 +53,7 @@ export default function FlightItinerary({ legs }) {
               <span>
                 {leg.flightNumber
                   ? `${leg.flightNumber} · ${leg.airline}`
-                  : `Flight ${leg.legNumber}`}
+                  : <L en={`Flight ${leg.legNumber}`} es={`Vuelo ${leg.legNumber}`} />}
               </span>
               <span>{leg.aircraft}</span>
             </div>
@@ -79,7 +86,8 @@ export default function FlightItinerary({ legs }) {
                 </span>
                 {leg.arrival.nextDay && (
                   <span className="text-xs font-medium text-momiji">
-                    +1 day{leg.arrival.date && ` · ${leg.arrival.date}`}
+                    <L en="+1 day" es="+1 día" />
+                    {leg.arrival.date && ` · ${leg.arrival.date}`}
                   </span>
                 )}
               </div>

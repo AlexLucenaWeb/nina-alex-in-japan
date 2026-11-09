@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
@@ -44,7 +45,9 @@ export default function FarewellNaritaItinerary({ food }) {
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day21Stops.map((stop, index) => (
@@ -66,8 +69,16 @@ export default function FarewellNaritaItinerary({ food }) {
       </section>
 
       <section aria-label="Transport" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Transport</h2>
-        <DataTable columns={["Leg", "Line", "Time"]}>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Transport" es="Transporte" />
+        </h2>
+        <DataTable
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Line" en="Line" es="Línea" />,
+            <L key="Time" en="Time" es="Tiempo" />,
+          ]}
+        >
           {TRANSPORT.map((row) => (
             <tr key={row.leg} className="border-b border-line/50 last:border-0">
               <td className="px-4 py-3 font-medium text-momiji">{row.leg}</td>
@@ -85,7 +96,9 @@ export default function FarewellNaritaItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
         <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>

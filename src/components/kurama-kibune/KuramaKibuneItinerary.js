@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
@@ -54,7 +55,9 @@ export default function KuramaKibuneItinerary({ food }) {
       </div>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The route</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="The route" es="La ruta" />
+        </h2>
 
         <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
           <DayMapEmbed mid={MY_MAPS_ID} />
@@ -66,14 +69,16 @@ export default function KuramaKibuneItinerary({ food }) {
           rel="noopener noreferrer"
           className="self-start text-sm text-momiji hover:underline"
         >
-          Open in Google Maps
+          <L en="Open in Google Maps" es="Abrir en Google Maps" />
         </a>
       </section>
 
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day11Stops.map((stop, index) => (
@@ -95,19 +100,28 @@ export default function KuramaKibuneItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
         <BulletList items={GOOD_TO_KNOW} />
       </section>
 
       <section aria-label="If it has rained" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">If it has rained</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="If it has rained" es="Si ha llovido" />
+        </h2>
         <p className="text-sm leading-relaxed text-ink/80">
           Wet cedar roots and fallen maple leaves make the trail slippery. If it
           rained the day before or that morning, skip the mountain crossing: go
           straight to Kurama, use the funicular for the climb and visit Kibune
           afterwards by train and bus.
         </p>
-        <DataTable columns={["Time", "What"]}>
+        <DataTable
+          columns={[
+            <L key="Time" en="Time" es="Hora" />,
+            <L key="What" en="What" es="Qué" />,
+          ]}
+        >
           {RAIN_PLAN.map((row) => (
             <tr key={row.time} className="border-b border-line/50 last:border-0">
               <td className="whitespace-nowrap px-4 py-3 font-medium text-momiji">

@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import DataTable from "@/components/DataTable";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
@@ -31,10 +32,18 @@ export default function HimejiKobeItinerary({ food }) {
       </div>
 
       <section aria-label="Getting there and back" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The trains</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="The trains" es="Los trenes" />
+        </h2>
 
         <DataTable
-          columns={["Leg", "Train", "Duration", "Price/person", "Notes"]}
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Train" en="Train" es="Tren" />,
+            <L key="Duration" en="Duration" es="Duración" />,
+            <L key="Price/person" en="Price/person" es="Precio/persona" />,
+            <L key="Notes" en="Notes" es="Notas" />,
+          ]}
           minWidth={680}
         >
           {HIMEJI_KOBE_TRAINS.map((row) => (
@@ -64,7 +73,9 @@ export default function HimejiKobeItinerary({ food }) {
       </section>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The route</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="The route" es="La ruta" />
+        </h2>
 
         <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
           <DayMapEmbed mid={MY_MAPS_ID} />
@@ -76,14 +87,16 @@ export default function HimejiKobeItinerary({ food }) {
           rel="noopener noreferrer"
           className="self-start text-sm text-momiji hover:underline"
         >
-          Open in Google Maps
+          <L en="Open in Google Maps" es="Abrir en Google Maps" />
         </a>
       </section>
 
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {HIMEJI_KOBE_STOPS.map((stop, index) => (
@@ -105,7 +118,9 @@ export default function HimejiKobeItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">

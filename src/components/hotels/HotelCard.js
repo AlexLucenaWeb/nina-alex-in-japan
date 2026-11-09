@@ -1,7 +1,10 @@
 import BulletList from "@/components/BulletList";
 import CopyAddress from "@/components/hotels/CopyAddress";
 import StopPhoto from "@/components/route-itinerary/StopPhoto";
-import { formatDate, formatField } from "@/data/hotels";
+import L from "@/components/L";
+import { formatField } from "@/data/hotels";
+import { formatDateBi } from "@/lib/dates";
+import { bi, enText } from "@/lib/i18n";
 
 // One row of the details list. Everything below the header is optional, so
 // each row is only rendered once there is something to put in it.
@@ -24,7 +27,9 @@ function Stay({ label, date, time }) {
       <p className="text-xs font-semibold uppercase tracking-wide text-momiji">
         {label}
       </p>
-      <p className="font-display text-base font-semibold">{formatDate(date)}</p>
+      <p className="font-display text-base font-semibold">
+        <L v={formatDateBi(date)} />
+      </p>
       {time && <p className="text-sm text-ink/70">{time}</p>}
     </div>
   );
@@ -41,7 +46,8 @@ export default function HotelCard({ hotel }) {
   const website = formatField(hotel.website);
   // Not every one of these is the hotel's own site — one is a booking listing,
   // and the link should say which before you tap it.
-  const websiteLabel = formatField(hotel.websiteLabel) ?? "Official website";
+  const websiteLabel =
+    formatField(hotel.websiteLabel) ?? bi("Official website", "Web oficial");
   const nearestStation = formatField(hotel.nearestStation);
   const mapsUrl = formatField(hotel.mapsUrl);
   const notes = hotel.notes ?? [];
@@ -57,7 +63,7 @@ export default function HotelCard({ hotel }) {
       className="scroll-mt-6 overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm"
     >
       {hotel.photo && (
-        <StopPhoto src={hotel.photo} label={name ?? hotel.city} />
+        <StopPhoto src={hotel.photo} label={enText(name) ?? hotel.city} />
       )}
 
       <div className="flex flex-col gap-4 p-5">
@@ -68,12 +74,16 @@ export default function HotelCard({ hotel }) {
             </p>
             {pending && (
               <p className="shrink-0 rounded-full border-2 border-ochre/40 px-3 py-1 text-xs font-semibold text-ochre">
-                Not booked yet
+                <L en="Not booked yet" es="Sin reservar" />
               </p>
             )}
           </div>
           <h2 className="font-display text-xl font-semibold leading-snug">
-            {isReal(name) ? name : "Hotel still to decide"}
+            {isReal(name) ? (
+              <L v={name} />
+            ) : (
+              <L en="Hotel still to decide" es="Hotel por decidir" />
+            )}
           </h2>
           {nameJp && <p className="text-sm text-ink/50">{nameJp}</p>}
         </header>
@@ -93,7 +103,12 @@ export default function HotelCard({ hotel }) {
           </div>
           {nights !== null && (
             <p className="mt-3 border-t border-line pt-3 text-sm text-ink/70">
-              {nights} {nights === 1 ? "night" : "nights"}
+              {nights}{" "}
+              {nights === 1 ? (
+                <L en="night" es="noche" />
+              ) : (
+                <L en="nights" es="noches" />
+              )}
             </p>
           )}
         </div>
@@ -101,7 +116,7 @@ export default function HotelCard({ hotel }) {
         {(addressEn || addressJp || phone || website || nearestStation) && (
           <dl className="flex flex-col gap-3">
             {addressEn && (
-              <Detail label="Address">
+              <Detail label={<L en="Address" es="Dirección" />}>
                 {isReal(addressEn) && isReal(mapsUrl) ? (
                   <a
                     href={mapsUrl}
@@ -124,7 +139,10 @@ export default function HotelCard({ hotel }) {
                   <>
                     <CopyAddress value={hotel.addressJp} />
                     <span className="text-xs text-ink/50">
-                      Show this to the taxi driver
+                      <L
+                        en="Show this to the taxi driver"
+                        es="Enseñádsela al taxista"
+                      />
                     </span>
                   </>
                 )}
@@ -132,7 +150,7 @@ export default function HotelCard({ hotel }) {
             )}
 
             {phone && (
-              <Detail label="Phone">
+              <Detail label={<L en="Phone" es="Teléfono" />}>
                 {isReal(phone) ? (
                   <a
                     href={`tel:${phone.replace(/\s/g, "")}`}
@@ -147,7 +165,7 @@ export default function HotelCard({ hotel }) {
             )}
 
             {website && (
-              <Detail label="Website">
+              <Detail label={<L en="Website" es="Web" />}>
                 {isReal(website) ? (
                   <a
                     href={website}
@@ -155,7 +173,7 @@ export default function HotelCard({ hotel }) {
                     rel="noopener noreferrer"
                     className="font-medium text-momiji underline underline-offset-2"
                   >
-                    {websiteLabel}
+                    <L v={websiteLabel} />
                   </a>
                 ) : (
                   <span>{website}</span>
@@ -164,8 +182,10 @@ export default function HotelCard({ hotel }) {
             )}
 
             {nearestStation && (
-              <Detail label="Nearest station">
-                <span>{nearestStation}</span>
+              <Detail label={<L en="Nearest station" es="Estación más cercana" />}>
+                <span>
+                  <L v={nearestStation} />
+                </span>
               </Detail>
             )}
           </dl>

@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import {
@@ -24,7 +25,9 @@ export default function ArrivalOsakaItinerary({ food }) {
       {food}
 
       <section className="flex flex-col gap-3">
-        <SectionHeading>Timeline</SectionHeading>
+        <SectionHeading>
+          <L en="Timeline" es="Horario" />
+        </SectionHeading>
         <ol className="flex flex-col gap-2">
           {DAY2_TIMELINE.map((item, index) => (
             <li
@@ -59,8 +62,13 @@ export default function ArrivalOsakaItinerary({ food }) {
       </section>
 
       <section className="flex flex-col gap-3">
-        <SectionHeading>Airport arrival process (NRT)</SectionHeading>
-        <DataTable columns={["Step", "Duration", "Notes"]} minWidth={560}>
+        <SectionHeading>
+          <L
+            en="Airport arrival process (NRT)"
+            es="Llegada al aeropuerto (NRT)"
+          />
+        </SectionHeading>
+        <DataTable columns={[<L key="Step" en="Step" es="Paso" />, <L key="Duration" en="Duration" es="Duración" />, <L key="Notes" en="Notes" es="Notas" />]} minWidth={560}>
           {DAY2_AIRPORT_PROCESS.map((row, index) => (
             <tr key={index} className="border-b border-line/50 last:border-0">
               <td className="px-4 py-3 font-medium">{row.step}</td>
@@ -76,9 +84,19 @@ export default function ArrivalOsakaItinerary({ food }) {
       </section>
 
       <section className="flex flex-col gap-3">
-        <SectionHeading>The two trains: NRT → Shin-Osaka</SectionHeading>
+        <SectionHeading>
+          <L
+            en="The two trains: NRT → Shin-Osaka"
+            es="Los dos trenes: NRT → Shin-Osaka"
+          />
+        </SectionHeading>
         <DataTable
-          columns={["Leg", "Train", "Duration", "Cost"]}
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Train" en="Train" es="Tren" />,
+            <L key="Duration" en="Duration" es="Duración" />,
+            <L key="Cost" en="Cost" es="Coste" />,
+          ]}
           minWidth={560}
         >
           {DAY2_TRAINS.map((row, index) => (
@@ -93,12 +111,16 @@ export default function ArrivalOsakaItinerary({ food }) {
       </section>
 
       <section className="flex flex-col gap-3">
-        <SectionHeading>Things to keep in mind</SectionHeading>
+        <SectionHeading>
+          <L en="Things to keep in mind" es="A tener en cuenta" />
+        </SectionHeading>
         <BulletList items={DAY2_TIPS} />
       </section>
 
       <section className="flex flex-col gap-3">
-        <SectionHeading>Hotel in Osaka</SectionHeading>
+        <SectionHeading>
+          <L en="Hotel in Osaka" es="Hotel en Osaka" />
+        </SectionHeading>
         <div className="flex flex-col gap-3 rounded-xl border-2 border-line bg-card px-4 py-4 text-sm leading-6">
           <div>
             <p className="font-display text-lg font-semibold tracking-tight">
@@ -109,16 +131,23 @@ export default function ArrivalOsakaItinerary({ food }) {
 
           <dl className="flex flex-col gap-2">
             <div>
-              <dt className="inline font-medium text-ink">Address: </dt>
+              <dt className="inline font-medium text-ink">
+                <L en="Address:" es="Dirección:" />{" "}
+              </dt>
               <dd className="inline text-ink/80">{DAY2_HOTEL.address}</dd>
             </div>
             <div>
-              <dt className="inline font-medium text-ink">Nearest station: </dt>
+              <dt className="inline font-medium text-ink">
+                <L en="Nearest station:" es="Estación más cercana:" />{" "}
+              </dt>
               <dd className="inline text-ink/80">{DAY2_HOTEL.station}</dd>
             </div>
             <div>
               <dt className="inline font-medium text-ink">
-                Getting there from Shin-Osaka:{" "}
+                <L
+                  en="Getting there from Shin-Osaka:"
+                  es="Cómo llegar desde Shin-Osaka:"
+                />{" "}
               </dt>
               <dd className="inline text-ink/80">{DAY2_HOTEL.directions}</dd>
             </div>
@@ -138,7 +167,7 @@ export default function ArrivalOsakaItinerary({ food }) {
             rel="noopener noreferrer"
             className="self-start text-momiji hover:underline"
           >
-            Open in Google Maps
+            <L en="Open in Google Maps" es="Abrir en Google Maps" />
           </a>
         </div>
       </section>

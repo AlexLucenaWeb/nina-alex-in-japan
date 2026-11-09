@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DataTable from "@/components/DataTable";
 import DayMapEmbed from "@/components/DayMapEmbed";
@@ -78,7 +79,9 @@ export default function KanazawaArrivalItinerary({ food }) {
 
       {MY_MAPS_ID && (
         <section aria-label="Route map" className="flex flex-col gap-3">
-          <h2 className="font-display text-2xl font-semibold">The route</h2>
+          <h2 className="font-display text-2xl font-semibold">
+            <L en="The route" es="La ruta" />
+          </h2>
 
           <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
             <DayMapEmbed mid={MY_MAPS_ID} />
@@ -90,13 +93,15 @@ export default function KanazawaArrivalItinerary({ food }) {
             rel="noopener noreferrer"
             className="self-start text-sm text-momiji hover:underline"
           >
-            Open in Google Maps
+            <L en="Open in Google Maps" es="Abrir en Google Maps" />
           </a>
         </section>
       )}
 
       <section aria-label="Getting there" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Getting there</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Getting there" es="Cómo llegar" />
+        </h2>
 
         <div className="rounded-2xl border-2 border-momiji/40 bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <p>
@@ -120,17 +125,17 @@ export default function KanazawaArrivalItinerary({ food }) {
         </div>
 
         <h3 className="mt-2 font-display text-lg font-semibold text-pine">
-          If you miss it
+          <L en="If you miss it" es="Si se escapa el tren" />
         </h3>
         <DataTable
           columns={[
             "Thunderbird",
-            "Kyoto dep.",
-            "Tsuruga arr.",
+            <L key="Kyoto dep." en="Kyoto dep." es="Salida Kyoto" />,
+            <L key="Tsuruga arr." en="Tsuruga arr." es="Llegada Tsuruga" />,
             "Tsurugi",
-            "Tsuruga dep.",
-            "Kanazawa arr.",
-            "Note",
+            <L key="Tsuruga dep." en="Tsuruga dep." es="Salida Tsuruga" />,
+            <L key="Kanazawa arr." en="Kanazawa arr." es="Llegada Kanazawa" />,
+            <L key="Note" en="Note" es="Nota" />,
           ]}
           minWidth="720px"
         >
@@ -162,7 +167,9 @@ export default function KanazawaArrivalItinerary({ food }) {
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day12Stops.map((stop, index) => (
@@ -184,7 +191,9 @@ export default function KanazawaArrivalItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
         <BulletList items={GOOD_TO_KNOW} />
       </section>
     </JapanRouteDayShell>

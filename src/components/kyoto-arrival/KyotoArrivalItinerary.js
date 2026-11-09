@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -30,7 +31,9 @@ export default function KyotoArrivalItinerary({ food }) {
       </div>
 
       <section aria-label="Route map" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">The route</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="The route" es="La ruta" />
+        </h2>
 
         <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
           <DayMapEmbed mid={MY_MAPS_ID} />
@@ -42,14 +45,16 @@ export default function KyotoArrivalItinerary({ food }) {
           rel="noopener noreferrer"
           className="self-start text-sm text-momiji hover:underline"
         >
-          Open in Google Maps
+          <L en="Open in Google Maps" es="Abrir en Google Maps" />
         </a>
       </section>
 
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day7Stops.map((stop, index) => (
@@ -71,7 +76,9 @@ export default function KyotoArrivalItinerary({ food }) {
       </section>
 
       <section aria-label="Good to know" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Good to know</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Good to know" es="A tener en cuenta" />
+        </h2>
 
         <div className="rounded-2xl border-2 border-line bg-card px-4 py-4 text-sm leading-relaxed text-ink/80">
           <h3 className="font-display text-lg font-semibold text-pine">

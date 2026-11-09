@@ -154,7 +154,7 @@ export const TRAINS = [
       mapsQuery: "Kyoto Station JR",
     },
     status: "no-reservation",
-    note: "About 30 min. Leave around 9:00, with the suitcases.",
+    note: "About 30 min. Leave the hotel at ~08:40, with the suitcases.",
   },
   // Day 9 — the page times leaving the hotel (~7:30), not the train itself.
   {
@@ -176,7 +176,7 @@ export const TRAINS = [
       mapsQuery: "Saga-Arashiyama Station",
     },
     status: "no-reservation",
-    note: "About 15 min. Leave around 7:30 to be in the bamboo grove by 8:00. Pay with Suica.",
+    note: "About 15 min. Leave the hotel at 7:15 to be in the bamboo grove by 8:00. Pay with Suica.",
   },
   {
     id: "day9-sagano-back",

@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import BulletList from "@/components/BulletList";
 import DayMapEmbed from "@/components/DayMapEmbed";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
@@ -58,7 +59,9 @@ export default function HakoneLoopItinerary({ food }) {
 
       {MY_MAPS_ID && (
         <section aria-label="Route map" className="flex flex-col gap-3">
-          <h2 className="font-display text-2xl font-semibold">The route</h2>
+          <h2 className="font-display text-2xl font-semibold">
+            <L en="The route" es="La ruta" />
+          </h2>
 
           <div className="overflow-hidden rounded-2xl border-2 border-line bg-card shadow-sm">
             <DayMapEmbed mid={MY_MAPS_ID} />
@@ -70,7 +73,7 @@ export default function HakoneLoopItinerary({ food }) {
             rel="noopener noreferrer"
             className="self-start text-sm text-momiji hover:underline"
           >
-            Open in Google Maps
+            <L en="Open in Google Maps" es="Abrir en Google Maps" />
           </a>
         </section>
       )}
@@ -78,7 +81,9 @@ export default function HakoneLoopItinerary({ food }) {
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day16Stops.map((stop, index) => (
@@ -100,12 +105,16 @@ export default function HakoneLoopItinerary({ food }) {
       </section>
 
       <section aria-label="Tickets" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Tickets</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Tickets" es="Billetes" />
+        </h2>
         <BulletList items={TICKETS} />
       </section>
 
       <section aria-label="Luggage" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Luggage</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Luggage" es="Equipaje" />
+        </h2>
         <BulletList items={LUGGAGE} />
       </section>
 

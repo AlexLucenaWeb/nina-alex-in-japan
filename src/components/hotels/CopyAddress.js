@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import L from "@/components/L";
 
 // The one interactive piece of a hotel card, split out so HotelCard itself can
 // stay a server component — same split as FoodSection / FoodDisclosure.
@@ -33,7 +34,13 @@ export default function CopyAddress({ value }) {
       onClick={copy}
       className="inline-flex w-fit items-center rounded-full border-2 border-line bg-paper px-3 py-1.5 text-xs font-semibold transition-colors hover:border-momiji active:scale-[0.98]"
     >
-      <span aria-live="polite">{copied ? "Copied" : "Copy"}</span>
+      <span aria-live="polite">
+        {copied ? (
+          <L en="Copied" es="Copiada" />
+        ) : (
+          <L en="Copy" es="Copiar" />
+        )}
+      </span>
     </button>
   );
 }

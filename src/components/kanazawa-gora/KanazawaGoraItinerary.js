@@ -1,3 +1,4 @@
+import L from "@/components/L";
 import DataTable from "@/components/DataTable";
 import JapanRouteDayShell from "@/components/route-itinerary/JapanRouteDayShell";
 import StopCard from "@/components/route-itinerary/StopCard";
@@ -32,7 +33,9 @@ export default function KanazawaGoraItinerary({ food }) {
       {food}
 
       <section aria-label="Itinerary" className="flex flex-col gap-2">
-        <h2 className="font-display text-2xl font-semibold">Itinerary</h2>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Itinerary" es="Itinerario" />
+        </h2>
 
         <ol className="relative flex flex-col">
           {day15Stops.map((stop, index) => (
@@ -54,8 +57,15 @@ export default function KanazawaGoraItinerary({ food }) {
       </section>
 
       <section aria-label="Tickets" className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl font-semibold">Tickets</h2>
-        <DataTable columns={["Leg", "Ticket"]}>
+        <h2 className="font-display text-2xl font-semibold">
+          <L en="Tickets" es="Billetes" />
+        </h2>
+        <DataTable
+          columns={[
+            <L key="Leg" en="Leg" es="Tramo" />,
+            <L key="Ticket" en="Ticket" es="Billete" />,
+          ]}
+        >
           {TICKETS.map((row) => (
             <tr key={row.leg} className="border-b border-line/50 last:border-0">
               <td className="whitespace-nowrap px-4 py-3 font-medium text-momiji">

@@ -1,5 +1,7 @@
+import L from "@/components/L";
 import HotelCard from "@/components/hotels/HotelCard";
 import { hotelsInOrder } from "@/data/hotels";
+import { localizeHotel } from "@/data/es/hotels";
 
 export const metadata = {
   title: "Hotels · Nina & Alex in Japan",
@@ -8,21 +10,22 @@ export const metadata = {
 };
 
 export default function HotelsPage() {
-  const hotels = hotelsInOrder();
+  const hotels = hotelsInOrder().map(localizeHotel);
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-6 py-16">
       <header className="flex flex-col gap-2">
         <p className="text-sm font-medium uppercase tracking-wide text-momiji">
-          Where we sleep
+          <L en="Where we sleep" es="Dónde dormimos" />
         </p>
         <h1 className="font-display text-4xl font-semibold tracking-tight">
-          Hotels
+          <L en="Hotels" es="Hoteles" />
         </h1>
         <p className="text-lg leading-8 text-ink/70">
-          Every stay in check-in order, with the address in Japanese to show a
-          taxi driver, the phone number, and the nearest station. The ones we
-          have not booked yet are marked as such.
+          <L
+            en="Every stay in check-in order, with the address in Japanese to show a taxi driver, the phone number, and the nearest station. The ones we have not booked yet are marked as such."
+            es="Cada estancia por orden de check-in, con la dirección en japonés para enseñársela al taxista, el teléfono y la estación más cercana. Las que aún no hemos reservado están marcadas."
+          />
         </p>
       </header>
 

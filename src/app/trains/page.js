@@ -1,7 +1,9 @@
 import Link from "next/link";
+import L from "@/components/L";
 import TrainCard from "@/components/trains/TrainCard";
-import { formatDate } from "@/data/hotels";
+import { localizeTrain } from "@/data/es/trains";
 import { trainsByDay } from "@/data/trains";
+import { formatDateBi } from "@/lib/dates";
 
 export const metadata = {
   title: "Trains · Nina & Alex in Japan",
@@ -16,13 +18,16 @@ export default function TrainsPage() {
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-6 py-16">
       <header className="flex flex-col gap-2">
         <p className="text-sm font-medium uppercase tracking-wide text-momiji">
-          How we get around
+          <L en="How we get around" es="Cómo nos movemos" />
         </p>
         <h1 className="font-display text-4xl font-semibold tracking-tight">
-          Trains
+          <L en="Trains" es="Trenes" />
         </h1>
         <p className="text-lg leading-8 text-ink/70">
-          Every train of the trip, in order.
+          <L
+            en="Every train of the trip, in order."
+            es="Todos los trenes del viaje, en orden."
+          />
         </p>
       </header>
 
@@ -41,11 +46,12 @@ export default function TrainsPage() {
                 href={`/day/${group.day}`}
                 className="transition-colors hover:text-momiji"
               >
-                Day {group.day} · {formatDate(group.date)}
+                <L en={`Day ${group.day}`} es={`Día ${group.day}`} /> ·{" "}
+                <L v={formatDateBi(group.date)} />
               </Link>
             </h2>
             {group.trains.map((train) => (
-              <TrainCard key={train.id} train={train} />
+              <TrainCard key={train.id} train={localizeTrain(train)} />
             ))}
           </section>
         ))}
